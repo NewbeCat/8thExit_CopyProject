@@ -1,22 +1,71 @@
 using System;
-using Unity.VisualScripting;
+using System.Collections.Generic;
 using UnityEngine;
 
-// Manage Sigleton Managers
+// Manage Sigleton Managers Initiation order 
+// not static for using Instance Managers
 public class Managers : MonoBehaviour
 {
-    public static Managers Instance { get { Init(); return instance; } }
+    #region Singleton
+    public static Managers Instance 
+    { 
+        get 
+        { 
+            Init(); 
+            return instance; 
+        } 
+    }
     private static Managers instance;
     
-    public InputManager Input { get { InitMonoBehaviourSigleton(ref input); return Instance.input; } }
+    public InputManager Input 
+    { 
+        get 
+        { 
+            InitMonoBehaviourSigleton(ref input); 
+            return Instance.input; 
+        } 
+    }
     private InputManager input;
+    #endregion
 
+    #region Unity Methods
     private void Awake()
     {
         Init();
     }
+    #endregion
 
+    #region Init Methods
     private static void Init()
+    {
+        RemoveDuplicates();
+        InitManagers();
+    }
+
+    // Remove Managers Duplicates
+    private static void RemoveDuplicates()
+    {
+        List<Managers> managers = new List<Managers>(FindObjectsByType<Managers>(sortMode: FindObjectsSortMode.InstanceID));
+
+        while (managers.Count > 0 && managers.Count != 1)
+        {
+            try
+            {
+                Destroy(managers[1]);
+                managers.Remove(managers[1]);
+            }
+            catch (NullReferenceException e)
+            {
+                Debug.Assert(false, e.Message);
+            }
+            catch (IndexOutOfRangeException e)
+            {
+                Debug.Assert(false, e.Message);
+            }
+        }
+    }
+
+    private static void InitManagers()
     {
         if (instance == null)
         {
@@ -33,6 +82,7 @@ public class Managers : MonoBehaviour
         }
     }
 
+    // Init Singleton, inherit MonoBehaviour
     private static void InitMonoBehaviourSigleton<T>(ref T singletonInstance) where T : MonoBehaviour, IManager
     {
         if (singletonInstance == null)
@@ -56,4 +106,5 @@ public class Managers : MonoBehaviour
         singletonInstance = new T();
         singletonInstance.Init();
     }
+    #endregion
 }
