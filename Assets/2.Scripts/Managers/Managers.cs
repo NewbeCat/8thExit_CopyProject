@@ -1,40 +1,39 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
+// Manage Sigleton Managers
 public class Managers : MonoBehaviour
 {
+    public static Managers Instance { get { Init(); return instance; } }
     private static Managers instance;
-    public static Managers Instance
-    {
-        get
-        {
-            if (instance == null)
-            {
-                GameObject go = new GameObject(typeof(Managers).Name);
-                instance = go.AddComponent<Managers>();
-            }
-
-            return instance;
-        }
-    }
     
-    public static InputManager Input { get => input; }
-    private static InputManager input;
+    public InputManager Input { get { InitMonoBehaviourSigleton(ref input); return Instance.input; } }
+    private InputManager input;
 
     private void Awake()
     {
-        GameObject go = new GameObject(typeof(Managers).Name);
-        instance = go.AddComponent<Managers>();
-        InitMonoBehaviourSigleton(ref input);
+        Init();
     }
 
-    // Not inherit MonoBehaviour
-    private void InitSingleton<T>(ref T singletonInstance) where T : class, new()
+    private static void Init()
     {
-        singletonInstance = new T();
+        if (instance == null)
+        {
+            string className = typeof(Managers).Name;
+            GameObject go = GameObject.Find(className);
+            if (go == null)
+            {
+                go = new GameObject(className);
+                go.AddComponent<Managers>();
+            }
+
+            instance = go.GetComponent<Managers>();
+            DontDestroyOnLoad(go);
+        }
     }
 
-    private void InitMonoBehaviourSigleton<T>(ref T singletonInstance) where T : MonoBehaviour
+    private static void InitMonoBehaviourSigleton<T>(ref T singletonInstance) where T : MonoBehaviour, IManager
     {
         if (singletonInstance == null)
         {
@@ -46,6 +45,15 @@ public class Managers : MonoBehaviour
                 GameObject go = new GameObject(typeof(T).Name);
                 singletonInstance = go.AddComponent<T>();
             }
+
+            singletonInstance.Init();
         }
+    }
+
+    // Init Singleton, but doesn't inherit MonoBehaviour
+    private void InitSingleton<T>(ref T singletonInstance) where T : class, IManager, new()
+    {
+        singletonInstance = new T();
+        singletonInstance.Init();
     }
 }

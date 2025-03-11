@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using static UnityEngine.InputSystem.InputAction;
 
-public class InputManager : MonoBehaviour
+public class InputManager : MonoBehaviour, IManager
 {
     #region Fields
     /*[Header("Singleton Pattern")]
@@ -33,15 +33,10 @@ public class InputManager : MonoBehaviour
     #endregion
 
     #region Unity Methods
-    private void Awake()
-    {
-        Init();
-    }
     #endregion
 
     #region Init Methods
-
-    private void Init()
+    public void Init()
     {
         playerInput = GetComponent<PlayerInput>();
         InitActions();
