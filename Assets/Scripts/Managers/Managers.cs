@@ -6,8 +6,9 @@ using UnityEngine;
 // not static for using Instance Managers
 public class Managers : MonoBehaviour
 {
-    #region Singleton
-    public static Managers Instance 
+    #region Fields
+    [Header("Singleton")]
+    public static Managers Instance
     { 
         get 
         { 
@@ -26,6 +27,16 @@ public class Managers : MonoBehaviour
         } 
     }
     private InputManager input;
+
+    public PlayerController Player
+    {
+        get
+        {
+            InitMonoBehaviourSigleton(ref input);
+            return Instance.player;
+        }
+    }
+    private PlayerController player;
     #endregion
 
     #region Unity Methods
@@ -38,31 +49,7 @@ public class Managers : MonoBehaviour
     #region Init Methods
     private static void Init()
     {
-        RemoveDuplicates();
         InitManagers();
-    }
-
-    // Remove Managers Duplicates
-    private static void RemoveDuplicates()
-    {
-        List<Managers> managers = new List<Managers>(FindObjectsByType<Managers>(sortMode: FindObjectsSortMode.InstanceID));
-
-        while (managers.Count > 0 && managers.Count != 1)
-        {
-            try
-            {
-                Destroy(managers[1]);
-                managers.Remove(managers[1]);
-            }
-            catch (NullReferenceException e)
-            {
-                Debug.Assert(false, e.Message);
-            }
-            catch (IndexOutOfRangeException e)
-            {
-                Debug.Assert(false, e.Message);
-            }
-        }
     }
 
     private static void InitManagers()
@@ -79,6 +66,14 @@ public class Managers : MonoBehaviour
 
             instance = go.GetComponent<Managers>();
             DontDestroyOnLoad(go);
+
+            // Seperate Core or Content 
+            InitMonoBehaviourSigleton(ref instance.input);
+            InitMonoBehaviourSigleton(ref instance.player);
+        }
+        else
+        {
+            Destroy(instance.gameObject);
         }
     }
 

@@ -6,29 +6,11 @@ using static UnityEngine.InputSystem.InputAction;
 public class InputManager : MonoBehaviour, IManager
 {
     #region Fields
-    /*[Header("Singleton Pattern")]
-    // Dont
-    private static InputManager instance;
-    public static InputManager Instance
-    {
-        get
-        {
-            if (instance == null)
-            {
-                GameObject go = new GameObject(typeof(InputManager).Name);
-                InputManager inputManager = go.AddComponent<InputManager>();
-                instance = inputManager;
-            }
-
-            return instance;
-        }
-    }*/
-
     [field : Header("PlayerInput")]
-    // for not allowing to call input methods
-    public Action<Vector2> movement;
-    public Action<Vector2> look;
-    public Action<bool> sprint;
+    // for not allowing to call input methods -> methods are private
+    public event Action<Vector2> movement;
+    public event Action<Vector2> look;
+    public event Action<bool> sprint;
     private PlayerInput playerInput;
     #endregion
 
@@ -42,6 +24,7 @@ public class InputManager : MonoBehaviour, IManager
         InitActions();
     }
 
+    // Init Input actions
     private void InitActions()
     {
         InputAction moveAction = playerInput.actions.FindAction(EInputAction.Move.ToString());
