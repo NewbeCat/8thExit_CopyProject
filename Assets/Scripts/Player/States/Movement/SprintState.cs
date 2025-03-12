@@ -18,7 +18,7 @@ public class SprintState : PlayerMovementStateBase
 
     public override void Update()
     {
-        throw new System.NotImplementedException();
+        playerController.playerMovementModule.Move();
     }
 
     public override void Exit()

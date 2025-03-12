@@ -4,17 +4,20 @@ using UnityEngine;
 [Serializable]
 public class PlayerMovementStateModule : StateMachineBase<EPlayerMovement>
 {
-    public bool IsSprint { get; private set; }
-    [field: SerializeField] public float MoveSpeed { get; private set; } = 0.25f;
-    [field: SerializeField] public float SprintSpeed { get; private set; } = 0.5f;
+    [field: Header("For InGame")]
+    [field: SerializeField] public bool IsSprint { get; private set; }
+    [field: SerializeField] public float InGameWalkSpeed { get; private set; }
+    [field: SerializeField] public float InGameSprintSpeed { get; private set; }
 
     private Vector2 moveDirection;
 
     private CharacterController characterController;
 
-    public PlayerMovementStateModule(CharacterController characterController, EPlayerMovement ePlayerMovement, IState<EPlayerMovement> newState)
+    public PlayerMovementStateModule(CharacterController characterController, EPlayerMovement ePlayerMovement, IState<EPlayerMovement> newState, float walkSpeed, float sprintSpeed)
     {
         this.characterController = characterController;
+        InGameWalkSpeed = walkSpeed;
+        InGameSprintSpeed = sprintSpeed;
         TryAddState(ePlayerMovement, newState);
         ChangeState(newState);
     }
@@ -71,26 +74,27 @@ public class PlayerMovementStateModule : StateMachineBase<EPlayerMovement>
     private void UpdateMoveDirection(Vector2 direction)
     {
         moveDirection = direction;
-        if (direction == Vector2.zero)
+
+        EPlayerMovement targetState = (direction == Vector2.zero) ? EPlayerMovement.Idle : 
+            (IsSprint ? EPlayerMovement.Sprint : EPlayerMovement.Walk);
+
+        if (TryGetState(targetState, out IState<EPlayerMovement> newState))
         {
-            if (TryGetState(EPlayerMovement.Idle, out IState<EPlayerMovement> newState))
-            {
-                ChangeState(newState);
-            }
-        }
-        else
-        {
-            if (TryGetState(EPlayerMovement.Walk, out IState<EPlayerMovement> newState))
-            {
-                ChangeState(newState);
-            }
+            ChangeState(newState);
         }
     }
 
     public void Move()
     {
-        float speed = IsSprint ? SprintSpeed * Time.deltaTime : MoveSpeed * Time.deltaTime;
-        characterController.Move(new Vector3(moveDirection.x, 0, moveDirection.y) * speed);
+        if (moveDirection == Vector2.zero)
+        {
+            characterController.Move(Vector2.zero);
+            return;
+        }
+
+        float speed = IsSprint ? InGameSprintSpeed * Time.deltaTime : InGameWalkSpeed * Time.deltaTime;
+        Vector2 normalVec = moveDirection.normalized;
+        characterController.Move(new Vector3(normalVec.x, 0, normalVec.y) * speed);
     }
 
     private void UpdateSprint(bool isSprint)
@@ -111,7 +115,7 @@ public class PlayerMovementStateModule : StateMachineBase<EPlayerMovement>
             velocity.y += Physics.gravity.y * Time.fixedDeltaTime;
         }
 
-        characterController.Move(velocity);
+        characterController.Move(new Vector3(0, velocity.y, 0));
     }
     #endregion
 }
