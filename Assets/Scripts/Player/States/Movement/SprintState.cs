@@ -6,14 +6,14 @@ public class SprintState : PlayerMovementStateBase
     {
     }
 
+    #region State Methods
     public override void Enter()
     {
-        throw new System.NotImplementedException();
+        // TODO: 카메라 강하게 흔들림
     }
 
     public override void FixedUpdate()
     {
-        throw new System.NotImplementedException();
     }
 
     public override void Update()
@@ -23,6 +23,7 @@ public class SprintState : PlayerMovementStateBase
 
     public override void Exit()
     {
-        throw new System.NotImplementedException();
+        // 카메라 흔들림 초기화
     }
+    #endregion
 }

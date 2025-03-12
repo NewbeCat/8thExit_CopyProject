@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-// abstract for another stateMachine
 public abstract class StateMachineBase<T> where T : Enum
 {
+    #region Fields
+    [Header("State Fields")]
     private Dictionary<T, IState<T>> stateDict = new Dictionary<T, IState<T>>();
-
     protected IState<T> currentState;
+    #endregion
 
+    #region State Methods
     public virtual void ChangeState(IState<T> newState)
     {
         currentState?.Exit();
@@ -43,4 +45,5 @@ public abstract class StateMachineBase<T> where T : Enum
         stateDict.Add(t, newState);
         return true;
     }
+    #endregion
 }

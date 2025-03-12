@@ -6,8 +6,10 @@ public class WalkState : PlayerMovementStateBase
     {
     }
 
+    #region State Methods
     public override void Enter()
     {
+       // TODO: 카메라 걷는 속도로 흔들림
     }
 
     public override void FixedUpdate()
@@ -21,5 +23,8 @@ public class WalkState : PlayerMovementStateBase
 
     public override void Exit()
     {
+        // TODO: 카메라 흔들림 초기화
     }
+
+    #endregion
 }

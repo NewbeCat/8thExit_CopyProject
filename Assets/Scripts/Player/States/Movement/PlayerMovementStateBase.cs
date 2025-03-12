@@ -9,6 +9,7 @@ public abstract class PlayerMovementStateBase : IState<EPlayerMovement>
         this.playerController = playerController;
     }
 
+    #region State Methods
     public abstract void Enter();
     public abstract void FixedUpdate();
     public abstract void Update();
@@ -17,4 +18,5 @@ public abstract class PlayerMovementStateBase : IState<EPlayerMovement>
     {
         return playerController.playerMovementModule.GetStateType();
     }
+    #endregion
 }

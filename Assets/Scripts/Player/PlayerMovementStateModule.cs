@@ -4,14 +4,15 @@ using UnityEngine;
 [Serializable]
 public class PlayerMovementStateModule : StateMachineBase<EPlayerMovement>
 {
+    #region Fields
+    [Header("Movement Fields")]
     [field: Header("For InGame")]
     [field: SerializeField] public bool IsSprint { get; private set; }
     [field: SerializeField] public float InGameWalkSpeed { get; private set; }
     [field: SerializeField] public float InGameSprintSpeed { get; private set; }
-
     private Vector2 moveDirection;
-
     private CharacterController characterController;
+    #endregion
 
     public PlayerMovementStateModule(CharacterController characterController, EPlayerMovement ePlayerMovement, IState<EPlayerMovement> newState, float walkSpeed, float sprintSpeed)
     {
