@@ -38,9 +38,6 @@ public class CameraController : MonoBehaviour
         Quaternion rotationY = Quaternion.Euler(new Vector3(0, delta.x, 0));
         playerTransform.rotation *= rotationY;
 
-        //Quaternion rotationX = Quaternion.Euler(new Vector3(-delta.y, 0, 0));
-        //transform.localRotation *= rotationX;
-
         // limit rotationX look easy
         // localRotation.x is Quaternion value (0~1)
         float rotationX = transform.localEulerAngles.x - delta.y;
