@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour, IManager
     [field: Header("Movement Fields")]
     [field: SerializeField] public PlayerMovementStateModule playerMovementModule { get; private set; }
     [SerializeField] private CharacterController characterController;
+    [SerializeField] private CameraController cameraController;
     [SerializeField] private float walkSpeed = 2f;
     [SerializeField] private float sprintSpeed = 4f;
     #endregion
@@ -25,6 +26,7 @@ public class PlayerController : MonoBehaviour, IManager
     #region Init Methods
     public void Init()
     {
+        cameraController.Init();
         playerMovementModule = new PlayerMovementStateModule(characterController, EPlayerMovement.Idle, new IdleState(this), walkSpeed, sprintSpeed);
         playerMovementModule.TryAddState(EPlayerMovement.Walk, new WalkState(this));
         playerMovementModule.TryAddState(EPlayerMovement.Sprint, new SprintState(this));
