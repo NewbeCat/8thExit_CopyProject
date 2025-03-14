@@ -922,7 +922,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1144213335
 Light:
   m_ObjectHideFlags: 0
@@ -1186,6 +1186,22 @@ PrefabInstance:
     - target: {fileID: 1161412927055330094, guid: b6d191f4aba6a1344820a207daa7d230, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5761446501837649277, guid: b6d191f4aba6a1344820a207daa7d230, type: 3}
+      propertyPath: verticalSensitivity
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5761446501837649277, guid: b6d191f4aba6a1344820a207daa7d230, type: 3}
+      propertyPath: horizontalSensitivity
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6238123782147650032, guid: b6d191f4aba6a1344820a207daa7d230, type: 3}
+      propertyPath: walkSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6238123782147650032, guid: b6d191f4aba6a1344820a207daa7d230, type: 3}
+      propertyPath: sprintSpeed
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6471796306828986773, guid: b6d191f4aba6a1344820a207daa7d230, type: 3}
       propertyPath: m_LocalPosition.x
