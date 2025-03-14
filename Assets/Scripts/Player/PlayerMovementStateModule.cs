@@ -94,8 +94,9 @@ public class PlayerMovementStateModule : StateMachineBase<EPlayerMovement>
         }
 
         float speed = IsSprint ? InGameSprintSpeed * Time.deltaTime : InGameWalkSpeed * Time.deltaTime;
-        Vector2 normalVec = moveDirection.normalized;
-        characterController.Move(new Vector3(normalVec.x, 0, normalVec.y) * speed);
+
+        Vector3 finalDirection = characterController.transform.right * moveDirection.x + characterController.transform.forward * moveDirection.y;
+        characterController.Move(finalDirection.normalized * speed);
     }
 
     private void UpdateSprint(bool isSprint)

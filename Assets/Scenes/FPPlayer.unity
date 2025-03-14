@@ -157,7 +157,7 @@ MonoBehaviour:
     <InGameWalkSpeed>k__BackingField: 0
     <InGameSprintSpeed>k__BackingField: 0
   characterController: {fileID: 710534950}
-  cameraController: {fileID: 0}
+  cameraController: {fileID: 1256710768}
   walkSpeed: 2
   sprintSpeed: 4
 --- !u!4 &710534946
@@ -398,6 +398,7 @@ GameObject:
   - component: {fileID: 1256710765}
   - component: {fileID: 1256710764}
   - component: {fileID: 1256710767}
+  - component: {fileID: 1256710768}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -472,7 +473,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1256710763}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -523,6 +524,25 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &1256710768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256710763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bab3f710bf11a24e9be8a792c75d9b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 710534946}
+  horizontalReversal: 0
+  verticalReversal: 0
+  horizontalSensitivity: 1
+  verticalSensitivity: 1
+  upAngleLimitation: -90
+  downAngleLimitation: 90
 --- !u!1 &1761538712
 GameObject:
   m_ObjectHideFlags: 0
@@ -724,7 +744,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1904796966}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

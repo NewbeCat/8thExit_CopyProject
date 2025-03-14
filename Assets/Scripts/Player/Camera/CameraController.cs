@@ -12,6 +12,9 @@ public class CameraController : MonoBehaviour
     [Header("Sensitivity")]
     [SerializeField] private float horizontalSensitivity = 1.0f;
     [SerializeField] private float verticalSensitivity = 1.0f;
+    [Header("RotationX Limitation")]
+    [SerializeField] private float upAngleLimitation = -90f;
+    [SerializeField] private float downAngleLimitation = 90f;
     #endregion
 
     #region Unity Methods
@@ -38,7 +41,7 @@ public class CameraController : MonoBehaviour
         Quaternion rotationY = Quaternion.Euler(new Vector3(0, delta.x, 0));
         playerTransform.rotation *= rotationY;
 
-        // limit rotationX look easy
+        // limit rotationX to read easy
         // localRotation.x is Quaternion value (0~1)
         float rotationX = transform.localEulerAngles.x - delta.y;
         // unity eulerAngle's scope is 0~360
@@ -48,7 +51,7 @@ public class CameraController : MonoBehaviour
             rotationX -= 360f;
         }
 
-        rotationX = Mathf.Clamp(rotationX, -90f, 90f);
+        rotationX = Mathf.Clamp(rotationX, upAngleLimitation, downAngleLimitation);
 
         transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
     }
