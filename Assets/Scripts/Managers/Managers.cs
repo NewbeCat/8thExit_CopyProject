@@ -13,26 +13,36 @@ public class Managers : MonoBehaviour
         get 
         { 
             Init(); 
-            return instance; 
+            return _instance; 
         } 
     }
-    private static Managers instance;
+    private static Managers _instance;
     
     public InputManager Input 
     { 
         get 
         { 
-            InitMonoBehaviourSigleton(ref input); 
-            return Instance.input; 
+            InitMonoBehaviourSigleton(ref _input); 
+            return Instance._input; 
         } 
     }
-    private InputManager input;
+    private InputManager _input;
+
+    public SoundManager Sound
+    {
+        get
+        {
+            InitMonoBehaviourSigleton(ref _sound);
+            return Instance._sound;
+        }
+    }
+    private SoundManager _sound;
 
     public PlayerController Player
     {
         get
         {
-            InitMonoBehaviourSigleton(ref input);
+            InitMonoBehaviourSigleton(ref _input);
             return Instance.player;
         }
     }
@@ -54,7 +64,7 @@ public class Managers : MonoBehaviour
 
     private static void InitManagers()
     {
-        if (instance == null)
+        if (_instance == null)
         {
             string className = typeof(Managers).Name;
             GameObject go = GameObject.Find(className);
@@ -64,16 +74,16 @@ public class Managers : MonoBehaviour
                 go.AddComponent<Managers>();
             }
 
-            instance = go.GetComponent<Managers>();
+            _instance = go.GetComponent<Managers>();
             DontDestroyOnLoad(go);
 
             // Seperate Core or Content 
-            InitMonoBehaviourSigleton(ref instance.input);
-            InitMonoBehaviourSigleton(ref instance.player);
+            InitMonoBehaviourSigleton(ref _instance._input);
+            InitMonoBehaviourSigleton(ref _instance.player);
         }
         else
         {
-            Destroy(instance.gameObject);
+            Destroy(_instance.gameObject);
         }
     }
 

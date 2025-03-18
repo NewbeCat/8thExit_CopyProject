@@ -11,7 +11,7 @@ public class InputManager : MonoBehaviour, IManager
     public event Action<Vector2> movement;
     public event Action<Vector2> look;
     public event Action<bool> sprint;
-    private PlayerInput playerInput;
+    private PlayerInput _playerInput;
     #endregion
 
     #region Unity Methods
@@ -20,20 +20,20 @@ public class InputManager : MonoBehaviour, IManager
     #region Init Methods
     public void Init()
     {
-        playerInput = GetComponent<PlayerInput>();
+        _playerInput = GetComponent<PlayerInput>();
         InitActions();
     }
 
     // Init Input actions
     private void InitActions()
     {
-        InputAction moveAction = playerInput.actions.FindAction(EInputAction.Move.ToString());
+        InputAction moveAction = _playerInput.actions.FindAction(EInputAction.Move.ToString());
         moveAction.performed += OnMove;
         moveAction.canceled += OnMove;
-        InputAction lookAction = playerInput.actions.FindAction(EInputAction.Look.ToString());
+        InputAction lookAction = _playerInput.actions.FindAction(EInputAction.Look.ToString());
         lookAction.performed += OnLook;
         lookAction.canceled += OnLook;
-        InputAction sprintAction = playerInput.actions.FindAction(EInputAction.Sprint.ToString());
+        InputAction sprintAction = _playerInput.actions.FindAction(EInputAction.Sprint.ToString());
         sprintAction.started += OnSprint;
         sprintAction.canceled += OnSprint;
     }

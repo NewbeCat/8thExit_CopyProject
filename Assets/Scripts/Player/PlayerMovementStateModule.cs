@@ -10,13 +10,13 @@ public class PlayerMovementStateModule : StateMachineBase<EPlayerMovement>
     [field: SerializeField] public bool IsSprint { get; private set; }
     [field: SerializeField] public float InGameWalkSpeed { get; private set; }
     [field: SerializeField] public float InGameSprintSpeed { get; private set; }
-    private Vector2 moveDirection;
-    private CharacterController characterController;
+    private Vector2 _moveDirection;
+    private CharacterController _characterController;
     #endregion
 
     public PlayerMovementStateModule(CharacterController characterController, EPlayerMovement ePlayerMovement, IState<EPlayerMovement> newState, float walkSpeed, float sprintSpeed)
     {
-        this.characterController = characterController;
+        _characterController = characterController;
         InGameWalkSpeed = walkSpeed;
         InGameSprintSpeed = sprintSpeed;
         TryAddState(ePlayerMovement, newState);
@@ -72,9 +72,23 @@ public class PlayerMovementStateModule : StateMachineBase<EPlayerMovement>
     #endregion
 
     #region Move Methods
+    public void Move()
+    {
+        if (_moveDirection == Vector2.zero)
+        {
+            _characterController.Move(Vector2.zero);
+            return;
+        }
+
+        float speed = IsSprint ? InGameSprintSpeed * Time.deltaTime : InGameWalkSpeed * Time.deltaTime;
+
+        Vector3 finalDirection = _characterController.transform.right * _moveDirection.x + _characterController.transform.forward * _moveDirection.y;
+        _characterController.Move(finalDirection.normalized * speed);
+    }
+
     private void UpdateMoveDirection(Vector2 direction)
     {
-        moveDirection = direction;
+        _moveDirection = direction;
 
         EPlayerMovement targetState = (direction == Vector2.zero) ? EPlayerMovement.Idle : 
             (IsSprint ? EPlayerMovement.Sprint : EPlayerMovement.Walk);
@@ -85,20 +99,6 @@ public class PlayerMovementStateModule : StateMachineBase<EPlayerMovement>
         }
     }
 
-    public void Move()
-    {
-        if (moveDirection == Vector2.zero)
-        {
-            characterController.Move(Vector2.zero);
-            return;
-        }
-
-        float speed = IsSprint ? InGameSprintSpeed * Time.deltaTime : InGameWalkSpeed * Time.deltaTime;
-
-        Vector3 finalDirection = characterController.transform.right * moveDirection.x + characterController.transform.forward * moveDirection.y;
-        characterController.Move(finalDirection.normalized * speed);
-    }
-
     private void UpdateSprint(bool isSprint)
     {
         IsSprint = isSprint;
@@ -106,9 +106,9 @@ public class PlayerMovementStateModule : StateMachineBase<EPlayerMovement>
 
     private void ApplyGravity()
     {
-        Vector3 velocity = characterController.velocity;
+        Vector3 velocity = _characterController.velocity;
 
-        if (characterController.isGrounded)
+        if (_characterController.isGrounded)
         {
             velocity.y = -1f;
         }
@@ -117,7 +117,7 @@ public class PlayerMovementStateModule : StateMachineBase<EPlayerMovement>
             velocity.y += Physics.gravity.y * Time.fixedDeltaTime;
         }
 
-        characterController.Move(new Vector3(0, velocity.y, 0));
+        _characterController.Move(new Vector3(0, velocity.y, 0));
     }
     #endregion
 }

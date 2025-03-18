@@ -1,27 +1,22 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 // First Person View and using only One Camera in Player -> Controller
 public class CameraController : MonoBehaviour
 {
     #region Fields
-    [SerializeField] private Transform playerTransform;
+    [SerializeField] private Transform _playerTransform;
     [Header("Reversal Option")]
-    [SerializeField] private bool horizontalReversal = false;
-    [SerializeField] private bool verticalReversal = false;
+    [SerializeField] private bool _horizontalReversal = false;
+    [SerializeField] private bool _verticalReversal = false;
     [Header("Sensitivity")]
-    [SerializeField] private float horizontalSensitivity = 1.0f;
-    [SerializeField] private float verticalSensitivity = 1.0f;
+    [SerializeField][Range(0, 3f)] private float _horizontalSensitivity = 1.0f;
+    [SerializeField][Range(0, 3f)] private float _verticalSensitivity = 1.0f;
     [Header("RotationX Limitation")]
-    [SerializeField] private float upAngleLimitation = -90f;
-    [SerializeField] private float downAngleLimitation = 90f;
+    [SerializeField] private float _upAngleLimitation = -90f;
+    [SerializeField] private float _downAngleLimitation = 90f;
     #endregion
 
     #region Unity Methods
-    private void LateUpdate()
-    {
-
-    }
     #endregion
 
     #region Init Methods
@@ -34,16 +29,16 @@ public class CameraController : MonoBehaviour
     private void UpdateCameraRotation(Vector2 delta)
     {
         // reversal option
-        delta.x = horizontalReversal ? -delta.x : delta.x;
-        delta.y = verticalReversal ? -delta.y : delta.y;
+        delta.x = _horizontalReversal ? -delta.x : delta.x;
+        delta.y = _verticalReversal ? -delta.y : delta.y;
 
         // in unity, rotation order Z -> Y -> X
-        Quaternion rotationY = Quaternion.Euler(new Vector3(0, delta.x, 0));
-        playerTransform.rotation *= rotationY;
+        Quaternion rotationY = Quaternion.Euler(new Vector3(0, delta.x * _horizontalSensitivity, 0));
+        _playerTransform.rotation *= rotationY;
 
         // limit rotationX to read easy
         // localRotation.x is Quaternion value (0~1)
-        float rotationX = transform.localEulerAngles.x - delta.y;
+        float rotationX = transform.localEulerAngles.x - delta.y * _verticalSensitivity;
         // unity eulerAngle's scope is 0~360
         // transform rotation is -180~180
         if (rotationX > 180f)
@@ -51,7 +46,7 @@ public class CameraController : MonoBehaviour
             rotationX -= 360f;
         }
 
-        rotationX = Mathf.Clamp(rotationX, upAngleLimitation, downAngleLimitation);
+        rotationX = Mathf.Clamp(rotationX, _upAngleLimitation, _downAngleLimitation);
 
         transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
     }

@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public abstract class StateMachineBase<T> where T : Enum
+public abstract class StateMachineBase<TEnum> where TEnum : Enum
 {
     #region Fields
     [Header("State Fields")]
-    private Dictionary<T, IState<T>> stateDict = new Dictionary<T, IState<T>>();
-    protected IState<T> currentState;
+    protected IState<TEnum> currentState;
+    private Dictionary<TEnum, IState<TEnum>> _stateDict = new Dictionary<TEnum, IState<TEnum>>();
     #endregion
 
     #region State Methods
-    public virtual void ChangeState(IState<T> newState)
+    public virtual void ChangeState(IState<TEnum> newState)
     {
         currentState?.Exit();
         currentState = newState;
@@ -25,24 +25,24 @@ public abstract class StateMachineBase<T> where T : Enum
 
     public abstract void ExitState();
 
-    public T GetStateType()
+    public TEnum GetStateType()
     {
         return currentState.GetStateType();
     }
 
-    public bool TryGetState(T t, out IState<T> state)
+    public bool TryGetState(TEnum t, out IState<TEnum> state)
     {
-        return stateDict.TryGetValue(t, out state);
+        return _stateDict.TryGetValue(t, out state);
     }
 
-    public virtual bool TryAddState(T t, IState<T> newState)
+    public virtual bool TryAddState(TEnum t, IState<TEnum> newState)
     {
-        if (stateDict.ContainsKey(t))
+        if (_stateDict.ContainsKey(t))
         {
             return false;
         }
 
-        stateDict.Add(t, newState);
+        _stateDict.Add(t, newState);
         return true;
     }
     #endregion
