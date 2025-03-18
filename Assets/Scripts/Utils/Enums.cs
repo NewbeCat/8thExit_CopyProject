@@ -15,3 +15,10 @@ public enum EPlayerMovement
     Sprint,
 }
 #endregion
+#region Sound Types
+public enum ESoundType
+{
+    BGM,
+    SFX,
+}
+#endregion

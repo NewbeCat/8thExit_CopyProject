@@ -23,7 +23,7 @@ public class Managers : MonoBehaviour
         get 
         { 
             InitMonoBehaviourSigleton(ref _input); 
-            return Instance._input; 
+            return _input; 
         } 
     }
     private InputManager _input;
@@ -33,20 +33,40 @@ public class Managers : MonoBehaviour
         get
         {
             InitMonoBehaviourSigleton(ref _sound);
-            return Instance._sound;
+            return _sound;
         }
     }
     private SoundManager _sound;
+
+    public ResourceManager Resource
+    {
+        get
+        {
+            InitSingleton(ref _resource);
+            return _resource;
+        }
+    }
+    private ResourceManager _resource;
+
+    public CoroutineManager Coroutine
+    {
+        get
+        {
+            InitMonoBehaviourSigleton(ref _coroutine);
+            return _coroutine;
+        }
+    }
+    private CoroutineManager _coroutine;
 
     public PlayerController Player
     {
         get
         {
             InitMonoBehaviourSigleton(ref _input);
-            return Instance.player;
+            return _player;
         }
     }
-    private PlayerController player;
+    private PlayerController _player;
     #endregion
 
     #region Unity Methods
@@ -79,7 +99,7 @@ public class Managers : MonoBehaviour
 
             // Seperate Core or Content 
             InitMonoBehaviourSigleton(ref _instance._input);
-            InitMonoBehaviourSigleton(ref _instance.player);
+            InitMonoBehaviourSigleton(ref _instance._player);
         }
         else
         {
