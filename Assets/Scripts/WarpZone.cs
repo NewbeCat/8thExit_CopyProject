@@ -10,14 +10,16 @@ public class WarpZone : MonoBehaviour
     [Header("Loop Settings")]
     public int _curRoomNum = 0;
     [SerializeField] int _maxRoomNum = 8; //시작방과 끝 방 제외
-    [SerializeField] private List<Transform> _transformA = new List<Transform>();
-    [SerializeField] private List<Transform> _transformB = new List<Transform>();
-    [SerializeField] private int _lastEntryType = -1; // start = 0, end = 1, normalIn = 2, normalOut = 3
-    [SerializeField] private bool _lastEntryGroup = false; // A=false, B=true
+    private int _lastEntryType = -1; // start = 0, end = 1, normalIn = 2, normalOut = 3
+    private bool _lastEntryGroup = false; // A=false, B=true
 
     [Header("Event Settings")]
-    [SerializeField] private EventProbabilityManager eventManager;
     [SerializeField] private int _curEvent = -1;
+
+    [Header("Connections")]
+    [SerializeField] private EventProbabilityManager eventManager;
+    [SerializeField] private List<Transform> _transformA = new List<Transform>();
+    [SerializeField] private List<Transform> _transformB = new List<Transform>();
 
     private void Start()
     {
@@ -38,11 +40,11 @@ public class WarpZone : MonoBehaviour
             else
             {
                 WarpAmount(currentEntryType, currentEntryGroup, 2);
-                int eventManagerCheck = eventManager.GetRandomEvent();
+                eventManager.GetRandomEvent(_curEvent);
                 _curEvent = eventManager.GetLastEventType();
-                Debug.Log($"This Event triggered: {eventManagerCheck}");
-                Debug.Log("This Event Type is" + _curEvent);
                 _curRoomNum++;
+                Debug.Log($"This Event triggered: {eventManager.GetLastEventID()}");
+                Debug.Log("This Event Type is" + _curEvent);
             }
         }
         else
@@ -50,6 +52,7 @@ public class WarpZone : MonoBehaviour
             WarpAmount(currentEntryType, currentEntryGroup, 0);
             _curEvent = -1;
             _curRoomNum = 0;
+            eventManager.ResetProbabilities();
         }
 
         _lastEntryType = currentEntryType;
