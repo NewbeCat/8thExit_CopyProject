@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6859311926528757551}
   m_Layer: 0
   m_Name: PlayerController
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53,10 +53,10 @@ MonoBehaviour:
     <IsSprint>k__BackingField: 0
     <InGameWalkSpeed>k__BackingField: 0
     <InGameSprintSpeed>k__BackingField: 0
-  characterController: {fileID: 4132622281879569934}
-  cameraController: {fileID: 5761446501837649277}
-  walkSpeed: 2
-  sprintSpeed: 4
+  _characterController: {fileID: 4132622281879569934}
+  _cameraController: {fileID: 5761446501837649277}
+  _walkSpeed: 2
+  _sprintSpeed: 4
 --- !u!143 &4132622281879569934
 CharacterController:
   m_ObjectHideFlags: 0
@@ -308,10 +308,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bab3f710bf11a24e9be8a792c75d9b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 6471796306828986773}
-  horizontalReversal: 0
-  verticalReversal: 0
-  horizontalSensitivity: 1
-  verticalSensitivity: 1
-  upAngleLimitation: -90
-  downAngleLimitation: 90
+  _playerTransform: {fileID: 6471796306828986773}
+  _horizontalReversal: 0
+  _verticalReversal: 0
+  _horizontalSensitivity: 1
+  _verticalSensitivity: 1
+  _upAngleLimitation: -90
+  _downAngleLimitation: 90
