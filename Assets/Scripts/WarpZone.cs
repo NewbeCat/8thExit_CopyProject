@@ -12,7 +12,7 @@ public class WarpZone : MonoBehaviour
     [SerializeField] int _maxRoomNum = 8; //시작방과 끝 방 제외
     [SerializeField] private List<Transform> _transformA = new List<Transform>();
     [SerializeField] private List<Transform> _transformB = new List<Transform>();
-    [SerializeField] private int _lastEntryType = -1; // start = 0, end = 1, AorB = 2
+    [SerializeField] private int _lastEntryType = -1; // start = 0, end = 1, normalIn = 2, normalOut = 3
     [SerializeField] private bool _lastEntryGroup = false; // A=false, B=true
 
     [Header("Event Settings")]
@@ -28,12 +28,9 @@ public class WarpZone : MonoBehaviour
     {
         bool correct = (_lastEntryGroup == currentEntryGroup) ? (_curEvent == 0) : (_curEvent != 0);
 
-        Debug.Log($"you chose {(_lastEntryGroup == currentEntryGroup ? "YES" : "NO")}");
-        Debug.Log(correct ? "you were right" : "you were wrong, resetting");
-
         if (correct)
         {
-            if (_curRoomNum > _maxRoomNum)
+            if (_curRoomNum >= _maxRoomNum)
             {
                 WarpAmount(currentEntryType, currentEntryGroup, 1);
                 _curEvent = 0;
@@ -43,8 +40,8 @@ public class WarpZone : MonoBehaviour
                 WarpAmount(currentEntryType, currentEntryGroup, 2);
                 int eventManagerCheck = eventManager.GetRandomEvent();
                 _curEvent = eventManager.GetLastEventType();
-                Debug.Log("Next Event Type is" + _curEvent);
-                Debug.Log($"Event triggered: {eventManagerCheck}");
+                Debug.Log($"This Event triggered: {eventManagerCheck}");
+                Debug.Log("This Event Type is" + _curEvent);
                 _curRoomNum++;
             }
         }
@@ -54,16 +51,14 @@ public class WarpZone : MonoBehaviour
             _curEvent = -1;
             _curRoomNum = 0;
         }
+
         _lastEntryType = currentEntryType;
         _lastEntryGroup = currentEntryGroup;
-        Debug.Log($"Updating last entry: Type={currentEntryType}, Group={currentEntryGroup}");
-
     }
 
 
     private void WarpAmount(int no1, bool group, int no2)
     {
-        Debug.Log("warping from " + no1 + " to " + no2);
         Transform start = (!group) ? _transformA[no1] : _transformB[no1];
         Transform end = (group) ? _transformA[no2] : _transformB[no2];
         _playerController.enabled = false;
