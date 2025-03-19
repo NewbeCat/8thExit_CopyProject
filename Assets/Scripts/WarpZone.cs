@@ -11,7 +11,7 @@ public class WarpZone : MonoBehaviour
     public int _curRoomNum = 0;
     [SerializeField] int _maxRoomNum = 8; //시작방과 끝 방 제외
     private int _lastEntryType = -1; // start = 0, end = 1, normalIn = 2, normalOut = 3
-    private bool _lastEntryGroup = false; // A=false, B=true
+    private bool _lastEntryGroup = true;// A=false, B=true
 
     [Header("Event Settings")]
     [SerializeField] private int _curEvent = -1;
