@@ -6,6 +6,5 @@ public class PoolManager : MonoBehaviour, IManager
 
     public void Init()
     {
-        throw new System.NotImplementedException();
     }
 }

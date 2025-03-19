@@ -21,4 +21,14 @@ public enum ESoundType
     BGM,
     SFX,
 }
+public enum ESoundClip
+{
+    FootStep,
+}
+#endregion
+#region Addressable
+public enum EAddressableLabel
+{
+    Sound,
+}
 #endregion
