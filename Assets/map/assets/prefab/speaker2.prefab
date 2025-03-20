@@ -60,9 +60,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7903035058755059156, guid: 8f25e9373c82a40ad84759b705a8ffe3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7691160655384422519, guid: 8f25e9373c82a40ad84759b705a8ffe3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7666337818016468979, guid: 8f25e9373c82a40ad84759b705a8ffe3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -951885251550855028, guid: 8f25e9373c82a40ad84759b705a8ffe3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8f25e9373c82a40ad84759b705a8ffe3, type: 3}
       propertyPath: m_Name
       value: speaker2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f25e9373c82a40ad84759b705a8ffe3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2648547795230573632, guid: 8f25e9373c82a40ad84759b705a8ffe3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3187176718382165751, guid: 8f25e9373c82a40ad84759b705a8ffe3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4720842348933574359, guid: 8f25e9373c82a40ad84759b705a8ffe3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6173401132330835095, guid: 8f25e9373c82a40ad84759b705a8ffe3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7112707109549355485, guid: 8f25e9373c82a40ad84759b705a8ffe3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
