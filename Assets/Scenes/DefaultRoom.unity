@@ -7,7 +7,7 @@ OcclusionCullingSettings:
   m_OcclusionBakeSettings:
     smallestOccluder: 0.5
     smallestHole: 0.5
-    backfaceThreshold: 70
+    backfaceThreshold: 30
   m_SceneGUID: 99c9720ab356a0642a771bea13969a05
   m_OcclusionCullingData: {fileID: 36300000, guid: a900560165f08224b9ff99f36c4d7eac, type: 2}
 --- !u!104 &2
@@ -557,7 +557,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &832575518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -897,6 +897,8 @@ MonoBehaviour:
   _player: {fileID: 755821876}
   _curRoomNum: 0
   _maxRoomNum: 8
+  _curEvent: -1
+  eventManager: {fileID: 1175004474}
   _transformA:
   - {fileID: 2128121434}
   - {fileID: 1027086541}
@@ -907,10 +909,6 @@ MonoBehaviour:
   - {fileID: 1297556500}
   - {fileID: 1113592452}
   - {fileID: 1383810123}
-  _lastEntryType: -1
-  _lastEntryGroup: 1
-  eventManager: {fileID: 1175004474}
-  _curEvent: -1
 --- !u!114 &1175004474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -923,10 +921,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 281de688eb651cc4f96f6d35cdffd5a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialSubtleErrorProbability: 20
-  initialObviousErrorProbability: 10
+  initialErrorProbability: 40
+  subtleErrorProbability: 70
+  currentSubtleErrorProbability: 0
+  currentObviousErrorProbability: 0
+  currentNormalProbability: 0
   subtleErrorEventIDs: 01000000020000000300000004000000
   obviousErrorEventIDs: 01000000020000000300000004000000
+  _consecutiveNormalLimit: 2
 --- !u!4 &1179160124 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1860016241832515914, guid: 5a986161bd5dac54594b1bae204233eb, type: 3}
