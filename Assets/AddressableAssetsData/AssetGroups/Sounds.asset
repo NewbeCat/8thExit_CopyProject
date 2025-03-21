@@ -14,7 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GroupName: Sounds
   m_GUID: 8f6f11f650e3f7e40b273886254698f2
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 0c55cfe5381f4a14faeb4606fbb67fc2
+    m_Address: Assets/Classic Footstep SFX/Floor
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - FootStep
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 26c32d5cd8fe34743bf30ab78ac863a7, type: 2}
   m_SchemaSet:

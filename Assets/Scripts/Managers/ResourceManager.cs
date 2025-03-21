@@ -5,7 +5,7 @@ using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.ResourceManagement.ResourceLocations;
 
-public class ResourceManager : MonoBehaviour, IManager
+public class ResourceManager : IManager
 {
 
     public void Init()
@@ -32,6 +32,10 @@ public class ResourceManager : MonoBehaviour, IManager
             {
                 Addressables.LoadAssetAsync<T>(location).Completed += handle;
             }
+        }
+        else
+        {
+            Debug.Assert(false, "AsyncOperationStatus is Failed");
         }
     }
 }
