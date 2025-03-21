@@ -3,75 +3,131 @@ using System.Collections.Generic;
 
 public class EventProbabilityManager : MonoBehaviour
 {
-    [SerializeField, Range(0, 100)] private float subtleErrorProbability = 20f;
-    [SerializeField, Range(0, 100)] private float obviousErrorProbability = 10f;
-    private float normalProbability => 100f - (obviousErrorProbability + subtleErrorProbability);
+    [Header("에러확률")]
+    [SerializeField, Range(0, 100)] private float initialErrorProbability = 40f;
+    [Header("에러 발생시 subtle이 발생할 확률")]
+    [SerializeField, Range(0, 100)] private float subtleErrorProbability = 70f;
 
+    [Header("Current Probabilities")]
+    [SerializeField, Range(0, 100)] private float currentSubtleErrorProbability;
+    [SerializeField, Range(0, 100)] private float currentObviousErrorProbability;
+    [SerializeField, Range(0, 100)] private float currentNormalProbability;
+
+    [Header("Event Options")]
     [SerializeField] private List<int> subtleErrorEventIDs;
     [SerializeField] private List<int> obviousErrorEventIDs;
 
-    private int _lastEventType = -1; // 마지막 이벤트 타입 (-1: 없음)
-    private int _lastEventID = -1; // 마지막 선택된 이벤트 ID
+    private HashSet<int> usedSubtleErrorEventIDs;
+    private HashSet<int> usedObviousErrorEventIDs;
 
-    private void OnValidate()
+    private int _lastEventType = -1;
+    private int _lastEventID = -1;
+    private int _consecutiveNormalCount = 0;
+    [SerializeField] private int _consecutiveNormalLimit = 2;
+
+    private void Awake()
     {
-        // 이벤트 확률 합이 100을 초과하지 않도록 처리
-        if (obviousErrorProbability + subtleErrorProbability > 100f)
-        {
-            obviousErrorProbability = 100f - subtleErrorProbability;
-        }
+        ResetProbabilities();
     }
 
-    public int GetRandomEvent()
+    public void ResetProbabilities()
     {
-        int eventType = RandomType();
-        int selectedEventID = -1;
+        currentNormalProbability = (100f - initialErrorProbability);
+        currentSubtleErrorProbability = initialErrorProbability * (subtleErrorProbability / 100f);
+        currentObviousErrorProbability = initialErrorProbability * ((100f - subtleErrorProbability) / 100f);
 
-        do
+        usedSubtleErrorEventIDs = new HashSet<int>();
+        usedObviousErrorEventIDs = new HashSet<int>();
+    }
+
+    public void GetRandomEvent(int forceEvent)
+    {
+        if (forceEvent == -1)
         {
-            selectedEventID = RandomEventFromList(eventType);
-        } while (selectedEventID == _lastEventID && selectedEventID != -1); // 동일한 이벤트 연속 선택 방지
+            _lastEventType = 0;
+            _lastEventID = -1;
+            return;
+        }
 
+        int eventType = RandomType();
+        int selectedEventID = RandomEventFromList(eventType);
+        _lastEventType = eventType;
         _lastEventID = selectedEventID;
-        return selectedEventID;
     }
 
     private int RandomType()
     {
-        int eventType;
-        float rand = Random.value * 100f;
-        if (rand < normalProbability) eventType = 0;
-        else if (rand < normalProbability + subtleErrorProbability) eventType = 1;
-        else eventType = 2;
+        float totalProbability = currentNormalProbability + currentSubtleErrorProbability + currentObviousErrorProbability;
+        float rand = Random.value * totalProbability;
 
-        _lastEventType = eventType;
-        return eventType;
+        // No error event
+        if (rand < currentNormalProbability && _consecutiveNormalCount < _consecutiveNormalLimit)
+        {
+            _consecutiveNormalCount++;
+            return 0;
+        }
+
+        rand -= currentNormalProbability;
+
+        // Subtle error
+        if (rand < currentSubtleErrorProbability && subtleErrorEventIDs.Count - usedSubtleErrorEventIDs.Count > 0)
+        {
+            _consecutiveNormalCount = 0;
+            return 1;
+        }
+
+        rand -= currentSubtleErrorProbability;
+
+        // Obvious error
+        if (rand < currentObviousErrorProbability && obviousErrorEventIDs.Count - usedObviousErrorEventIDs.Count > 0)
+        {
+            _consecutiveNormalCount = 0;
+            return 2;
+        }
+
+        // No error due to lack of available events
+        Debug.Log("Normal is over limit, but there are no more events available.");
+        return 0;
     }
 
     private int RandomEventFromList(int eventType)
     {
-        List<int> selectedList = null;
-        switch (eventType)
+        List<int> selectedList = eventType switch
         {
-            case 2:
-                selectedList = obviousErrorEventIDs;
-                break;
-            case 1:
-                selectedList = subtleErrorEventIDs;
-                break;
-            default:
-                selectedList = null;
-                break;
-        }
+            2 => obviousErrorEventIDs,
+            1 => subtleErrorEventIDs,
+            _ => null
+        };
+
+        HashSet<int> usedSet = eventType switch
+        {
+            2 => usedObviousErrorEventIDs,
+            1 => usedSubtleErrorEventIDs,
+            _ => null
+        };
 
         if (selectedList != null && selectedList.Count > 0)
         {
-            return selectedList[Random.Range(0, selectedList.Count)];
+            List<int> availableEvents = new List<int>();
+
+            foreach (var eventID in selectedList)
+            {
+                if (!usedSet.Contains(eventID))
+                {
+                    availableEvents.Add(eventID);
+                }
+            }
+
+            if (availableEvents.Count > 0)
+            {
+                int selectedEventID = availableEvents[Random.Range(0, availableEvents.Count)];
+                usedSet.Add(selectedEventID);
+                return selectedEventID;
+            }
         }
         return -1;
     }
 
     public int GetLastEventType() => _lastEventType;
-
     public int GetLastEventID() => _lastEventID;
 }
