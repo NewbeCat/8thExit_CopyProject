@@ -18,12 +18,8 @@ MonoBehaviour:
   - m_GUID: 0c55cfe5381f4a14faeb4606fbb67fc2
     m_Address: Assets/Classic Footstep SFX/Floor
     m_ReadOnly: 0
-<<<<<<< HEAD
     m_SerializedLabels:
     - FootStep
-=======
-    m_SerializedLabels: []
->>>>>>> bfc24e9df4f0d1f1c4d6cd1fade35846355e28c9
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 26c32d5cd8fe34743bf30ab78ac863a7, type: 2}
