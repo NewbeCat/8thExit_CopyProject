@@ -29,6 +29,6 @@ public enum ESoundClip
 #region Addressable
 public enum EAddressableLabel
 {
-    Sound,
+    FootStep,
 }
 #endregion

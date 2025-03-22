@@ -82,6 +82,7 @@ public class Managers : MonoBehaviour
         InitManagers();
     }
 
+    // Add Init Manager in here
     private static void InitManagers()
     {
         if (_instance == null)
@@ -97,7 +98,11 @@ public class Managers : MonoBehaviour
             _instance = go.GetComponent<Managers>();
             DontDestroyOnLoad(go);
 
-            // Seperate Core or Content 
+            // Seperate Core or Content
+            // Add Init Manager in here
+            InitSingleton(ref _instance._resource);
+            InitMonoBehaviourSigleton(ref _instance._coroutine);
+            InitMonoBehaviourSigleton(ref _instance._sound);
             InitMonoBehaviourSigleton(ref _instance._input);
             InitMonoBehaviourSigleton(ref _instance._player);
         }
@@ -126,10 +131,13 @@ public class Managers : MonoBehaviour
     }
 
     // Init Singleton, but doesn't inherit MonoBehaviour
-    private void InitSingleton<T>(ref T singletonInstance) where T : class, IManager, new()
+    private static void InitSingleton<T>(ref T singletonInstance) where T : class, IManager, new()
     {
-        singletonInstance = new T();
-        singletonInstance.Init();
+        if (singletonInstance == null)
+        {
+            singletonInstance = new T();
+            singletonInstance.Init();
+        }
     }
     #endregion
 }

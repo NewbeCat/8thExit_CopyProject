@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3313dc8586dab4e4d91533eb7edd7d67
+guid: 2921c47b0bdded540b5b813c1e60001c
 AudioImporter:
   externalObjects: {}
   serializedVersion: 6
@@ -25,5 +25,5 @@ AssetOrigin:
   productId: 173668
   packageName: Classic Footstep SFX
   packageVersion: 1.0
-  assetPath: Assets/Classic Footstep SFX/Floor/Floor_step2.wav
+  assetPath: Assets/Classic Footstep SFX/Floor/Floor_step3.wav
   uploadId: 376034

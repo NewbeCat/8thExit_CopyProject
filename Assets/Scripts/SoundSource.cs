@@ -38,6 +38,12 @@ public class SoundSource : MonoBehaviour, IPoolable<SoundSource>
     private IEnumerator CoReleaseAfterPlaying(float clipLength)
     {
         yield return Managers.Instance.Coroutine.GetWaitForSeconds(clipLength);
+        Relase();
+    }
+
+    private void Relase()
+    {
         _audioSource.Stop();
+        returnAction?.Invoke(this);
     }
 }
