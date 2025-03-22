@@ -21,6 +21,7 @@ public class RoomLoop : MonoBehaviour
     [SerializeField] private int roomEvent;
     private bool notInRoom;
 
+    //trigger functions
     public void EnterRoom(bool isEntry)
     {
         toggleChoiceAndEntry();
@@ -66,6 +67,8 @@ public class RoomLoop : MonoBehaviour
         _warpZone.WarpPlayer(isRoom2, _yesAnswer);
     }
 
+
+    //private
     private void Awake()
     {
         Reset();
@@ -78,6 +81,18 @@ public class RoomLoop : MonoBehaviour
         killEvent();
     }
 
+    private void callEvent(int eventCode)
+    {
+        if (eventCode == 0) { return; }
+        else
+        {
+            Debug.Log("current Event called is" + eventCode);
+        }
+    }
+    private void killEvent() { }
+
+
+    //finished private
     private void toggleChoiceAndEntry(bool force = false)
     {
         notInRoom = (force) ? true : !notInRoom;
@@ -92,14 +107,4 @@ public class RoomLoop : MonoBehaviour
         _posterNormal.SetActive(normal);
         _posterCorrect.SetActive(!normal);
     }
-
-    private void callEvent(int eventCode)
-    {
-        if (eventCode == 0) { return; }
-        else
-        {
-            Debug.Log("current Event called is" + eventCode);
-        }
-    }
-    private void killEvent() { }
 }
