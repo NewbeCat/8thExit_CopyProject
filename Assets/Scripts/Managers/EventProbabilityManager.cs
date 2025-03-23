@@ -3,6 +3,12 @@ using System.Collections.Generic;
 
 public class EventProbabilityManager : MonoBehaviour
 {
+    [Header("Variables")]
+    [SerializeField] private int _lastEventType = -1;
+    [SerializeField] private int _lastEventID = -1;
+    private int _consecutiveNormalCount = 0;
+    [SerializeField] private int _consecutiveNormalLimit = 2;
+
     [Header("에러확률")]
     [SerializeField, Range(0, 100)] private float initialErrorProbability = 40f;
     [Header("에러 발생시 subtle이 발생할 확률")]
@@ -20,29 +26,9 @@ public class EventProbabilityManager : MonoBehaviour
     private HashSet<int> usedSubtleErrorEventIDs;
     private HashSet<int> usedObviousErrorEventIDs;
 
-    private int _lastEventType = -1;
-    private int _lastEventID = -1;
-    private int _consecutiveNormalCount = 0;
-    [SerializeField] private int _consecutiveNormalLimit = 2;
-
-    private void Awake()
+    public void GetRandomEvent(bool forceEvent = false)
     {
-        ResetProbabilities();
-    }
-
-    public void ResetProbabilities()
-    {
-        currentNormalProbability = (100f - initialErrorProbability);
-        currentSubtleErrorProbability = initialErrorProbability * (subtleErrorProbability / 100f);
-        currentObviousErrorProbability = initialErrorProbability * ((100f - subtleErrorProbability) / 100f);
-
-        usedSubtleErrorEventIDs = new HashSet<int>();
-        usedObviousErrorEventIDs = new HashSet<int>();
-    }
-
-    public void GetRandomEvent(int forceEvent)
-    {
-        if (forceEvent == -1)
+        if (forceEvent)
         {
             _lastEventType = 0;
             _lastEventID = -1;
@@ -53,6 +39,24 @@ public class EventProbabilityManager : MonoBehaviour
         int selectedEventID = RandomEventFromList(eventType);
         _lastEventType = eventType;
         _lastEventID = selectedEventID;
+    }
+    public int GetEventType() => _lastEventType;
+    public int GetEventID() => _lastEventID;
+
+    private void Awake()
+    {
+        ResetProbabilities();
+    }
+
+    private void ResetProbabilities()
+    {
+        currentNormalProbability = (100f - initialErrorProbability);
+        currentSubtleErrorProbability = initialErrorProbability * (subtleErrorProbability / 100f);
+        currentObviousErrorProbability = initialErrorProbability * ((100f - subtleErrorProbability) / 100f);
+
+        usedSubtleErrorEventIDs = new HashSet<int>();
+        usedObviousErrorEventIDs = new HashSet<int>();
+        _consecutiveNormalCount = 0;
     }
 
     private int RandomType()
@@ -127,7 +131,4 @@ public class EventProbabilityManager : MonoBehaviour
         }
         return -1;
     }
-
-    public int GetLastEventType() => _lastEventType;
-    public int GetLastEventID() => _lastEventID;
 }
