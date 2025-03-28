@@ -12,15 +12,25 @@ public class PlayerMovementStateModule : StateMachineBase<EPlayerMovement>
     [field: SerializeField] public float InGameSprintSpeed { get; private set; }
     private Vector2 _moveDirection;
     private CharacterController _characterController;
+
+    [field: Header("FootStep Fields")]
+    private float _movingElapsedTime = 0f;
+    private float _movingDifference = 2f;
+    private float _footStepUnitTime = 0f;
+    private bool _isLeftStep = true;
+    private float _footStepUnitPosX;
     #endregion
 
-    public PlayerMovementStateModule(CharacterController characterController, EPlayerMovement ePlayerMovement, IState<EPlayerMovement> newState, float walkSpeed, float sprintSpeed)
+    public PlayerMovementStateModule(CharacterController characterController, EPlayerMovement ePlayerMovement, IState<EPlayerMovement> newState, float walkSpeed, float sprintSpeed, float footStepUnitTime)
     {
         _characterController = characterController;
         InGameWalkSpeed = walkSpeed;
         InGameSprintSpeed = sprintSpeed;
         TryAddState(ePlayerMovement, newState);
         ChangeState(newState);
+        _movingDifference = sprintSpeed / walkSpeed;
+        _footStepUnitTime = footStepUnitTime;
+        _footStepUnitPosX = characterController.radius;
     }
 
     #region State Machine
@@ -77,6 +87,7 @@ public class PlayerMovementStateModule : StateMachineBase<EPlayerMovement>
         if (_moveDirection == Vector2.zero)
         {
             _characterController.Move(Vector2.zero);
+            Debug.Log("1");
             return;
         }
 
@@ -104,6 +115,26 @@ public class PlayerMovementStateModule : StateMachineBase<EPlayerMovement>
         IsSprint = isSprint;
     }
 
+    public void ResetMovingTime()
+    {
+        _movingElapsedTime = 0f;
+    }
+
+    public void IncreaseMovingTime()
+    {
+        _movingElapsedTime += IsSprint ? _movingDifference * Time.deltaTime : Time.deltaTime;
+        if (_movingElapsedTime >= _footStepUnitTime)
+        {
+            _movingElapsedTime -= _footStepUnitTime;
+            ESoundClip eSoundClip = IsSprint ? ESoundClip.Run : ESoundClip.Walk;
+            Vector3 footStepPos = _characterController.transform.position;
+            footStepPos.x = _isLeftStep ? -_footStepUnitPosX : _footStepUnitPosX;
+            Managers.Instance.Sound.PlaySFX(eSoundClip, footStepPos);
+        }
+    }
+
+    #endregion
+
     private void ApplyGravity()
     {
         Vector3 velocity = _characterController.velocity;
@@ -119,5 +150,6 @@ public class PlayerMovementStateModule : StateMachineBase<EPlayerMovement>
 
         _characterController.Move(new Vector3(0, velocity.y, 0));
     }
-    #endregion
+
+    
 }

@@ -10,6 +10,7 @@ public class IdleState : PlayerMovementStateBase
     #region State Methods
     public override void Enter()
     {
+        //playerController.playerMovementModule.ResetMovingTime();
         // TODO: 카메라 천천히 흔들리기 시작
     }
 

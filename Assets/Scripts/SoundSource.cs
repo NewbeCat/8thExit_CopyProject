@@ -1,12 +1,11 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class SoundSource : MonoBehaviour, IPoolable<SoundSource>
 {
     [SerializeField] private AudioSource _audioSource;
-    [SerializeField] private ESoundType _eSoundType = ESoundType.SFX;
-    
     // Return To PoolManager
     public event Action<SoundSource> returnAction;
 
@@ -29,10 +28,28 @@ public class SoundSource : MonoBehaviour, IPoolable<SoundSource>
         Managers.Instance.Coroutine.StartCoroutine(CoReleaseAfterPlaying(clip.length));
     }
 
-    public void Play(AudioClip clip, Vector3 pos)
+    public void Play(AudioClip clip, AudioMixerGroup mixer)
+    {
+        if (_audioSource.isPlaying)
+        {
+            if (_preCoroutine != null)
+            {
+                Managers.Instance.Coroutine.StopCoroutine(_preCoroutine);
+            }
+
+            _audioSource.Stop();
+        }
+
+        _audioSource.outputAudioMixerGroup = mixer;
+        _audioSource.PlayOneShot(clip);
+
+        Managers.Instance.Coroutine.StartCoroutine(CoReleaseAfterPlaying(clip.length));
+    }
+
+    public void Play(AudioClip clip, AudioMixerGroup mixer, Vector3 pos)
     {
         transform.position = pos;
-        Play(clip);
+        Play(clip, mixer);
     }
 
     private IEnumerator CoReleaseAfterPlaying(float clipLength)

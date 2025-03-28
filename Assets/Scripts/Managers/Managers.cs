@@ -87,16 +87,22 @@ public class Managers : MonoBehaviour
     {
         if (_instance == null)
         {
-            string className = typeof(Managers).Name;
-            GameObject go = GameObject.Find(className);
-            if (go == null)
+            _instance = FindAnyObjectByType<Managers>();
+
+            if (_instance == null)
             {
-                go = new GameObject(className);
-                go.AddComponent<Managers>();
+                string className = typeof(Managers).Name;
+                GameObject go = GameObject.Find(className);
+                if (go == null)
+                {
+                    go = new GameObject(className);
+                    go.AddComponent<Managers>();
+                }
+
+                _instance = go.GetComponent<Managers>();
             }
 
-            _instance = go.GetComponent<Managers>();
-            DontDestroyOnLoad(go);
+            DontDestroyOnLoad(_instance.gameObject);
 
             // Seperate Core or Content
             // Add Init Manager in here
@@ -105,10 +111,6 @@ public class Managers : MonoBehaviour
             InitMonoBehaviourSigleton(ref _instance._sound);
             InitMonoBehaviourSigleton(ref _instance._input);
             InitMonoBehaviourSigleton(ref _instance._player);
-        }
-        else
-        {
-            Destroy(_instance.gameObject);
         }
     }
 

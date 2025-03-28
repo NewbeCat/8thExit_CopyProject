@@ -443,11 +443,28 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
+    - target: {fileID: 7192361140054935988, guid: e3acd2d8beda54f45a1e1581f2c1b66f, type: 3}
+      propertyPath: _bgmSource
+      value: 
+      objectReference: {fileID: 1182565611}
+    - target: {fileID: 7192361140054935988, guid: e3acd2d8beda54f45a1e1581f2c1b66f, type: 3}
+      propertyPath: _sfxMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: b074d87511977d447bd36651668d3c05, type: 2}
+    - target: {fileID: 9111129874028257294, guid: e3acd2d8beda54f45a1e1581f2c1b66f, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: bd5ea2d497c86584fbe760957ccfac9f, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3acd2d8beda54f45a1e1581f2c1b66f, type: 3}
+--- !u!82 &1182565611 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 9111129874028257294, guid: e3acd2d8beda54f45a1e1581f2c1b66f, type: 3}
+  m_PrefabInstance: {fileID: 1182565610}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1295259832
 GameObject:
   m_ObjectHideFlags: 0

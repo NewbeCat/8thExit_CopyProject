@@ -16,19 +16,17 @@ public enum EPlayerMovement
 }
 #endregion
 #region Sound Types
-public enum ESoundType
-{
-    BGM,
-    SFX,
-}
 public enum ESoundClip
 {
-    FootStep,
+    Ambience,
+    Walk,
+    Run,
 }
 #endregion
 #region Addressable
 public enum EAddressableLabel
 {
+    Ambience,
     FootStep,
 }
 #endregion

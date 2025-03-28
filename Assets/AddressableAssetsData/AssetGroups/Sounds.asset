@@ -15,8 +15,56 @@ MonoBehaviour:
   m_GroupName: Sounds
   m_GUID: 8f6f11f650e3f7e40b273886254698f2
   m_SerializeEntries:
-  - m_GUID: 0c55cfe5381f4a14faeb4606fbb67fc2
-    m_Address: Assets/Classic Footstep SFX/Floor
+  - m_GUID: 2bc1ae1ab9bbeae4fa9349cdddd23011
+    m_Address: Assets/8thExit Sound/Run_1.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - FootStep
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 363bbb9c2fe80c8438cd436f48f631ba
+    m_Address: Assets/8thExit Sound/Walk_4.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - FootStep
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3759e3b180628804f8e79efd3ce7209b
+    m_Address: Assets/8thExit Sound/Ambience.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Ambience
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 40753758536f3af4888adaeb8e5a119f
+    m_Address: Assets/8thExit Sound/Walk_2.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - FootStep
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5fe1673be1bbe3248b229bb86f1c4af1
+    m_Address: Assets/8thExit Sound/Walk_3.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - FootStep
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 60e83ae250c5bcb40aadd25ac6de7b81
+    m_Address: Assets/8thExit Sound/Run_2.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - FootStep
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7d7ec5259e325db47ae0168562fc73d7
+    m_Address: Assets/8thExit Sound/Walk_1.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - FootStep
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 99fd6c998b738ab4c8e2077bd8f9847b
+    m_Address: Assets/8thExit Sound/Run_3.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - FootStep
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9ef3107d502128b43a7227ff7b75fb65
+    m_Address: Assets/8thExit Sound/Run_4.wav
     m_ReadOnly: 0
     m_SerializedLabels:
     - FootStep

@@ -19,6 +19,7 @@ public class WalkState : PlayerMovementStateBase
     public override void Update()
     {
         playerController.playerMovementModule.Move();
+        playerController.playerMovementModule.IncreaseMovingTime();
     }
 
     public override void Exit()

@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour, IManager
     [SerializeField] private CameraController _cameraController;
     [SerializeField] private float _walkSpeed = 2f;
     [SerializeField] private float _sprintSpeed = 4f;
+    [SerializeField] private float _footStepUnitTime = 0.5f;
     #endregion
 
     #region Unity Methods
@@ -27,7 +28,7 @@ public class PlayerController : MonoBehaviour, IManager
     public void Init()
     {
         _cameraController.Init();
-        playerMovementModule = new PlayerMovementStateModule(_characterController, EPlayerMovement.Idle, new IdleState(this), _walkSpeed, _sprintSpeed);
+        playerMovementModule = new PlayerMovementStateModule(_characterController, EPlayerMovement.Idle, new IdleState(this), _walkSpeed, _sprintSpeed, _footStepUnitTime);
         playerMovementModule.TryAddState(EPlayerMovement.Walk, new WalkState(this));
         playerMovementModule.TryAddState(EPlayerMovement.Sprint, new SprintState(this));
     }

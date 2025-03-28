@@ -4,7 +4,7 @@ using UnityEngine;
 public class ObjectPooler<T> where T : MonoBehaviour, IPoolable<T>
 {
     private T _prefab;
-    private Queue<T> _pool;
+    private Queue<T> _pool = new Queue<T>();
     private List<T> _activeObjects = new List<T>();
     private Transform _parent;
     private int _initCount;
@@ -18,7 +18,7 @@ public class ObjectPooler<T> where T : MonoBehaviour, IPoolable<T>
         _initCount = initCount;
         _maxCount = maxCount;
 
-        for (int i = 0; i < initCount && _totalCount <= _maxCount; i++)
+        for (int i = 0; i < initCount && _totalCount <= maxCount; i++)
         {
             InstantitateNewObject();
         }
@@ -66,6 +66,7 @@ public class ObjectPooler<T> where T : MonoBehaviour, IPoolable<T>
         t.transform.SetParent(_parent);
         t.gameObject.SetActive(false);
         t.returnAction += ReturnToPooler;
+        _pool.Enqueue(t);
         _totalCount++;
     }
     #endregion
