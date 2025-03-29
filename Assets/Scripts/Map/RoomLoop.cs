@@ -5,6 +5,7 @@ public class RoomLoop : MonoBehaviour
     [Header("Connections")]
     [SerializeField] private WarpZone _warpZone;
     [SerializeField] private EventProbabilityManager _eventPicker;
+    [SerializeField] private EventManager eventManager;
     [SerializeField] private RoomLoop otherRoom;
     [SerializeField] private GameObject _posterNormal;
     [SerializeField] private GameObject _posterCorrect;
@@ -18,7 +19,8 @@ public class RoomLoop : MonoBehaviour
 
     [Header("Variables")]
     [SerializeField] private bool isRoom2;
-    [SerializeField] private int roomEvent;
+    [SerializeField] private int eventType;
+    [SerializeField] private int eventID;
     private bool notInRoom;
 
     //trigger functions
@@ -29,9 +31,10 @@ public class RoomLoop : MonoBehaviour
         if (isEntry)
         {
             _eventPicker.GetRandomEvent();
-            roomEvent = _eventPicker.GetEventType();
-            callEvent(roomEvent);
-            if (roomEvent == 0)
+            eventType = _eventPicker.GetEventType();
+            eventID = _eventPicker.GetEventID();
+            callEvent();
+            if (eventType == 0)
             {
                 _warpZone.setWarpFlip(false);
             }
@@ -50,7 +53,7 @@ public class RoomLoop : MonoBehaviour
     public void ChoiceEvent(bool choseYes)
     {
         toggleChoiceAndEntry();
-        if ((roomEvent == 0) == (choseYes))
+        if ((eventType == 0) == (choseYes))
         { //맞음
             _warpZone.addRoom();
         }
@@ -81,12 +84,13 @@ public class RoomLoop : MonoBehaviour
         killEvent();
     }
 
-    private void callEvent(int eventCode)
+    private void callEvent()
     {
-        if (eventCode == 0) { return; }
+        if (eventType == 0) { return; }
         else
         {
-            Debug.Log("current Event called is" + eventCode);
+            Debug.Log("currently event is " + eventType + " - " + eventID);
+            //eventManager.CallEvent(eventType, eventID, isRoom2);
         }
     }
     private void killEvent() { }

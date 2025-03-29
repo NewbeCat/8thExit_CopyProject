@@ -1,11 +1,19 @@
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 
-public abstract class GameEvent : MonoBehaviour
+[System.Serializable]
+public class AssetReferenceGameEvent : AssetReferenceT<GameEvent>
 {
-    public bool isPersistent = false;
-    protected bool isActive = false;
+    public AssetReferenceGameEvent(string guid) : base(guid) { }
+}
 
-    public virtual void Call()
+public abstract class GameEvent : ScriptableObject
+{
+    public string eventDescription;
+
+    private bool isActive = false;
+
+    public void Trigger()
     {
         if (!isActive)
         {
@@ -14,17 +22,14 @@ public abstract class GameEvent : MonoBehaviour
         }
     }
 
-    public virtual void Kill()
+    public void Kill()
     {
         if (isActive)
         {
             ResetEvent();
-            if (!isPersistent)
-                isActive = false;
+            isActive = false;
         }
     }
-
     protected abstract void Execute();
     protected abstract void ResetEvent();
 }
-

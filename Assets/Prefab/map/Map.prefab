@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1048147988537073233}
   - component: {fileID: 1838643531150912094}
   - component: {fileID: 2171514690513713368}
+  - component: {fileID: 1109582205564847251}
   m_Layer: 0
   m_Name: Map
   m_TagString: Untagged
@@ -71,6 +72,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 281de688eb651cc4f96f6d35cdffd5a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventManager: {fileID: 1109582205564847251}
   _lastEventType: -1
   _lastEventID: -1
   _consecutiveNormalLimit: 2
@@ -79,8 +81,22 @@ MonoBehaviour:
   currentSubtleErrorProbability: 0
   currentObviousErrorProbability: 0
   currentNormalProbability: 0
-  subtleErrorEventIDs: 01000000020000000300000004000000
-  obviousErrorEventIDs: 01000000020000000300000004000000
+--- !u!114 &1109582205564847251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745769013893361573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d4b9b035aa202443b6b8cbd7ae0055a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  subtleEventReferences1: []
+  obviousEventReferences1: []
+  subtleEventReferences2: []
+  obviousEventReferences2: []
 --- !u!1001 &2912341969570790428
 PrefabInstance:
   m_ObjectHideFlags: 0
