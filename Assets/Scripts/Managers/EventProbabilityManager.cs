@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 public class EventProbabilityManager : MonoBehaviour
 {
+    [Header("Connections")]
+    [SerializeField] private EventManager eventManager;
+
     [Header("Variables")]
     [SerializeField] private int _lastEventType = -1;
     [SerializeField] private int _lastEventID = -1;
@@ -19,9 +22,8 @@ public class EventProbabilityManager : MonoBehaviour
     [SerializeField, Range(0, 100)] private float currentObviousErrorProbability;
     [SerializeField, Range(0, 100)] private float currentNormalProbability;
 
-    [Header("Event Options")]
-    [SerializeField] private List<int> subtleErrorEventIDs;
-    [SerializeField] private List<int> obviousErrorEventIDs;
+    private HashSet<int> subtleErrorEventIDs;
+    private HashSet<int> obviousErrorEventIDs;
 
     private HashSet<int> usedSubtleErrorEventIDs;
     private HashSet<int> usedObviousErrorEventIDs;
@@ -45,7 +47,33 @@ public class EventProbabilityManager : MonoBehaviour
 
     private void Awake()
     {
-        ResetProbabilities();
+        Reset();
+    }
+
+    private void Reset()
+    {
+
+        subtleErrorEventIDs = new HashSet<int>();
+        obviousErrorEventIDs = new HashSet<int>();
+
+        int subtleCount = eventManager.GetSubtleEventCount();
+        int obviousCount = eventManager.GetObviousEventCount();
+
+        for (int i = 0; i < subtleCount; i++)
+        {
+            subtleErrorEventIDs.Add(i);
+        }
+
+        for (int i = 0; i < obviousCount; i++)
+        {
+            obviousErrorEventIDs.Add(i);
+        }
+
+        usedSubtleErrorEventIDs = new HashSet<int>();
+        usedObviousErrorEventIDs = new HashSet<int>();
+        _consecutiveNormalCount = 0;
+
+        //ResetProbabilities - 확률 조정 추가시
     }
 
     private void ResetProbabilities()
@@ -53,10 +81,6 @@ public class EventProbabilityManager : MonoBehaviour
         currentNormalProbability = (100f - initialErrorProbability);
         currentSubtleErrorProbability = initialErrorProbability * (subtleErrorProbability / 100f);
         currentObviousErrorProbability = initialErrorProbability * ((100f - subtleErrorProbability) / 100f);
-
-        usedSubtleErrorEventIDs = new HashSet<int>();
-        usedObviousErrorEventIDs = new HashSet<int>();
-        _consecutiveNormalCount = 0;
     }
 
     private int RandomType()
@@ -91,12 +115,17 @@ public class EventProbabilityManager : MonoBehaviour
 
         // No error due to lack of available events
         Debug.Log("Normal is over limit, but there are no more events available.");
+        if (subtleErrorEventIDs.Count == usedSubtleErrorEventIDs.Count && obviousErrorEventIDs.Count == usedObviousErrorEventIDs.Count)
+        {
+            usedSubtleErrorEventIDs = new HashSet<int>();
+            usedObviousErrorEventIDs = new HashSet<int>();
+        }
         return 0;
     }
 
     private int RandomEventFromList(int eventType)
     {
-        List<int> selectedList = eventType switch
+        HashSet<int> selectedList = eventType switch
         {
             2 => obviousErrorEventIDs,
             1 => subtleErrorEventIDs,

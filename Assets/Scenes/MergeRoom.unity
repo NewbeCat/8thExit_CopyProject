@@ -247,7 +247,10 @@ PrefabInstance:
     - {fileID: 6997633064455326556, guid: 5a986161bd5dac54594b1bae204233eb, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7790580697401374322, guid: 5a986161bd5dac54594b1bae204233eb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 942994667}
   m_SourcePrefab: {fileID: 100100000, guid: 5a986161bd5dac54594b1bae204233eb, type: 3}
 --- !u!4 &200572989 stripped
 Transform:
@@ -342,6 +345,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2502358255929972121, guid: 09e82a04384b8bd4bbcd68e78724a5c2, type: 3}
   m_PrefabInstance: {fileID: 327113506}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &614441950 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7790580697401374322, guid: 5a986161bd5dac54594b1bae204233eb, type: 3}
+  m_PrefabInstance: {fileID: 1928912450}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,6 +399,35 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &942994666 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7790580697401374322, guid: 5a986161bd5dac54594b1bae204233eb, type: 3}
+  m_PrefabInstance: {fileID: 200572988}
+  m_PrefabAsset: {fileID: 0}
+--- !u!167 &942994667
+AudioReverbZone:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942994666}
+  m_Enabled: 1
+  m_MinDistance: 60
+  m_MaxDistance: 60
+  m_ReverbPreset: 27
+  m_Room: -1000
+  m_RoomHF: -100
+  m_DecayTime: 1.49
+  m_DecayHFRatio: 0.83
+  m_Reflections: -2602
+  m_ReflectionsDelay: 0.007
+  m_Reverb: 50
+  m_ReverbDelay: 0.011
+  m_HFReference: 5000
+  m_Diffusion: 100
+  m_Density: 100
+  m_LFReference: 250
+  m_RoomLF: 0
 --- !u!1001 &1182565610
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -452,6 +489,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 24300002, guid: b074d87511977d447bd36651668d3c05, type: 2}
     - target: {fileID: 9111129874028257294, guid: e3acd2d8beda54f45a1e1581f2c1b66f, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9111129874028257294, guid: e3acd2d8beda54f45a1e1581f2c1b66f, type: 3}
       propertyPath: OutputAudioMixerGroup
       value: 
       objectReference: {fileID: 24300002, guid: bd5ea2d497c86584fbe760957ccfac9f, type: 2}
@@ -495,6 +536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 281de688eb651cc4f96f6d35cdffd5a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventManager: {fileID: 0}
   _lastEventType: -1
   _lastEventID: -1
   _consecutiveNormalLimit: 2
@@ -503,8 +545,6 @@ MonoBehaviour:
   currentSubtleErrorProbability: 0
   currentObviousErrorProbability: 0
   currentNormalProbability: 0
-  subtleErrorEventIDs: 01000000020000000300000004000000
-  obviousErrorEventIDs: 01000000020000000300000004000000
 --- !u!114 &1295259834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -674,7 +714,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7790580697401374322, guid: 5a986161bd5dac54594b1bae204233eb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1928912454}
   m_SourcePrefab: {fileID: 100100000, guid: 5a986161bd5dac54594b1bae204233eb, type: 3}
 --- !u!114 &1928912451 stripped
 MonoBehaviour:
@@ -692,6 +735,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2749966019162437903, guid: 5a986161bd5dac54594b1bae204233eb, type: 3}
   m_PrefabInstance: {fileID: 1928912450}
   m_PrefabAsset: {fileID: 0}
+--- !u!167 &1928912454
+AudioReverbZone:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614441950}
+  m_Enabled: 1
+  m_MinDistance: 60
+  m_MaxDistance: 60
+  m_ReverbPreset: 27
+  m_Room: -1000
+  m_RoomHF: -100
+  m_DecayTime: 1.49
+  m_DecayHFRatio: 0.83
+  m_Reflections: -2602
+  m_ReflectionsDelay: 0.007
+  m_Reverb: 50
+  m_ReverbDelay: 0.011
+  m_HFReference: 5000
+  m_Diffusion: 100
+  m_Density: 100
+  m_LFReference: 250
+  m_RoomLF: 0
 --- !u!1 &2067658125
 GameObject:
   m_ObjectHideFlags: 0
