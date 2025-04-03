@@ -13,7 +13,7 @@ public class SpeakerEvent : GameEvent
 
     protected override void Execute()
     {
-        GameObject[] speakers = BringObjects(speakerTag); //태그를 통해 필요한 오브젝트 찾기. 룸 지정은 자동으로 됨
+        GameObject[] speakers = ObjectsByTag(speakerTag); //태그를 통해 필요한 오브젝트 찾기. 룸 지정은 자동으로 됨
         if (speakers.Length == 0) return;
 
         //speaker = speakers[Random.Range(0, speakers.Length)];

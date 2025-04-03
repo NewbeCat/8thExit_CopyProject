@@ -43,7 +43,7 @@ public abstract class GameEvent : ScriptableObject
 
     protected abstract void Execute();
     protected abstract void ResetEvent();
-    protected GameObject[] BringObjects(string objectTag)
+    protected GameObject[] ObjectsByTag(string objectTag)
     {
         if (room == null)
         {
