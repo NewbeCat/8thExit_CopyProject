@@ -30,15 +30,16 @@ public class SpeakerEvent : GameEvent
         else
         {
             randomEvent = 1; // movedList가 비엇을시 대비책, 수정 예정
-            Debug.Log("Speaker before deactivation: " + speaker.name + ", Active: " + speaker.activeSelf);
+            Debug.Log("Speaker before deactivation: " + speaker.name + ", Active: " + speaker.activeSelf + ", Heirarchy: " + speaker.activeInHierarchy);
             speaker.SetActive(false);
-            Debug.Log("Speaker after deactivation: " + speaker.name + ", Active: " + speaker.activeSelf);
+            Debug.Log("Speaker after deactivation: " + speaker.name + ", Active: " + speaker.activeSelf + ", Heirarchy: " + speaker.activeInHierarchy);
 
         }
     }
 
     protected override void ResetEvent()
     {
+        Debug.Log("resetting speaker event");
         if (speaker == null) return;
 
         if (randomEvent == 0)

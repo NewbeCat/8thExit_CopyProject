@@ -57,6 +57,7 @@ MonoBehaviour:
   _cameraController: {fileID: 7919905107683705875}
   _walkSpeed: 2
   _sprintSpeed: 4
+  _footStepUnitTime: 0.5
 --- !u!143 &59683620035530260
 CharacterController:
   m_ObjectHideFlags: 0
@@ -224,8 +225,8 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
+  near clip plane: 0.2
+  far clip plane: 40
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -311,7 +312,7 @@ MonoBehaviour:
   _playerTransform: {fileID: 8794029990432342185}
   _horizontalReversal: 0
   _verticalReversal: 0
-  _horizontalSensitivity: 1
-  _verticalSensitivity: 1
+  _horizontalSensitivity: 0.2
+  _verticalSensitivity: 0.2
   _upAngleLimitation: -90
   _downAngleLimitation: 90
