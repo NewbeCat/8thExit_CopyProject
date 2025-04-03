@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[CreateAssetMenu(menuName = "GameEvents/ChangingRotationEvent")]
 public class ChangingRotationEvent : GameEvent
 {
     [SerializeField] private Transform _myTransform;

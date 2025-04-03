@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 
+[CreateAssetMenu(menuName = "GameEvents/SwitchingObjectEvent")]
 public class SwitchingObjectEvent : GameEvent
 {
     [SerializeField] private GameObject _originObject;
