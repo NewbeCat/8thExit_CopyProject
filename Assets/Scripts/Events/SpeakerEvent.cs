@@ -1,10 +1,10 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-[CreateAssetMenu(menuName = "GameEvents/SpeakerEvent")]
+[CreateAssetMenu(menuName = "GameEvents/SpeakerEvent")] //ScriptableObject 생성 후 Addressible 켜기
 public class SpeakerEvent : GameEvent
 {
-    [SerializeField] private string speakerTag = "Speakers"; // 태그를 통해 찾기!!
+    private string speakerTag = "Speakers"; // 태그를 통해 찾기!!
     [SerializeField] private List<Vector3> movedList = new List<Vector3>();
 
     private GameObject speaker;
