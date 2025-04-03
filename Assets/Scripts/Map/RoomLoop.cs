@@ -93,7 +93,10 @@ public class RoomLoop : MonoBehaviour
             eventManager.CallEvent(eventType, eventID, isRoom2);
         }
     }
-    private void killEvent() { }
+    private void killEvent()
+    {
+        eventManager.KillEvent();
+    }
 
 
     //finished private
