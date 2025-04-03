@@ -703,6 +703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _warpZone: {fileID: 0}
   _eventPicker: {fileID: 0}
+  eventManager: {fileID: 0}
   otherRoom: {fileID: 0}
   _posterNormal: {fileID: 5659104995799448122}
   _posterCorrect: {fileID: 72654088583988698}
@@ -711,7 +712,8 @@ MonoBehaviour:
   choiceNo: {fileID: 3724520686704932344}
   choiceYes: {fileID: 8270603795538973733}
   isRoom2: 0
-  roomEvent: 0
+  eventType: 0
+  eventID: 0
 --- !u!1 &2211711744903673367
 GameObject:
   m_ObjectHideFlags: 0
@@ -3891,6 +3893,10 @@ PrefabInstance:
       value: speaker 04
       objectReference: {fileID: 0}
     - target: {fileID: 6582930395132920859, guid: 377553031d3d34a47bf13cd8a23a0f8b, type: 3}
+      propertyPath: m_TagString
+      value: Speakers
+      objectReference: {fileID: 0}
+    - target: {fileID: 6582930395132920859, guid: 377553031d3d34a47bf13cd8a23a0f8b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -4037,6 +4043,10 @@ PrefabInstance:
     - target: {fileID: 6336698050261079289, guid: c64f20052fd8a4ce9bb6486d832aa521, type: 3}
       propertyPath: m_Name
       value: speaker 03
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336698050261079289, guid: c64f20052fd8a4ce9bb6486d832aa521, type: 3}
+      propertyPath: m_TagString
+      value: Speakers
       objectReference: {fileID: 0}
     - target: {fileID: 6336698050261079289, guid: c64f20052fd8a4ce9bb6486d832aa521, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4787,6 +4797,10 @@ PrefabInstance:
       value: speaker 02
       objectReference: {fileID: 0}
     - target: {fileID: 6582930395132920859, guid: 377553031d3d34a47bf13cd8a23a0f8b, type: 3}
+      propertyPath: m_TagString
+      value: Speakers
+      objectReference: {fileID: 0}
+    - target: {fileID: 6582930395132920859, guid: 377553031d3d34a47bf13cd8a23a0f8b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -5451,6 +5465,10 @@ PrefabInstance:
       value: speaker 03
       objectReference: {fileID: 0}
     - target: {fileID: 6336698050261079289, guid: c64f20052fd8a4ce9bb6486d832aa521, type: 3}
+      propertyPath: m_TagString
+      value: Speakers
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336698050261079289, guid: c64f20052fd8a4ce9bb6486d832aa521, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -5767,6 +5785,10 @@ PrefabInstance:
     - target: {fileID: 6582930395132920859, guid: 377553031d3d34a47bf13cd8a23a0f8b, type: 3}
       propertyPath: m_Name
       value: speaker 04
+      objectReference: {fileID: 0}
+    - target: {fileID: 6582930395132920859, guid: 377553031d3d34a47bf13cd8a23a0f8b, type: 3}
+      propertyPath: m_TagString
+      value: Speakers
       objectReference: {fileID: 0}
     - target: {fileID: 6582930395132920859, guid: 377553031d3d34a47bf13cd8a23a0f8b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7379,6 +7401,10 @@ PrefabInstance:
       value: speaker 01
       objectReference: {fileID: 0}
     - target: {fileID: 6582930395132920859, guid: 377553031d3d34a47bf13cd8a23a0f8b, type: 3}
+      propertyPath: m_TagString
+      value: Speakers
+      objectReference: {fileID: 0}
+    - target: {fileID: 6582930395132920859, guid: 377553031d3d34a47bf13cd8a23a0f8b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -7627,6 +7653,10 @@ PrefabInstance:
     - target: {fileID: 6582930395132920859, guid: 377553031d3d34a47bf13cd8a23a0f8b, type: 3}
       propertyPath: m_Name
       value: speaker 01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6582930395132920859, guid: 377553031d3d34a47bf13cd8a23a0f8b, type: 3}
+      propertyPath: m_TagString
+      value: Speakers
       objectReference: {fileID: 0}
     - target: {fileID: 6582930395132920859, guid: 377553031d3d34a47bf13cd8a23a0f8b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9999,6 +10029,10 @@ PrefabInstance:
       value: speaker 02
       objectReference: {fileID: 0}
     - target: {fileID: 6582930395132920859, guid: 377553031d3d34a47bf13cd8a23a0f8b, type: 3}
+      propertyPath: m_TagString
+      value: Speakers
+      objectReference: {fileID: 0}
+    - target: {fileID: 6582930395132920859, guid: 377553031d3d34a47bf13cd8a23a0f8b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -10235,6 +10269,10 @@ PrefabInstance:
     - target: {fileID: 6582930395132920859, guid: 377553031d3d34a47bf13cd8a23a0f8b, type: 3}
       propertyPath: m_Name
       value: speaker 01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6582930395132920859, guid: 377553031d3d34a47bf13cd8a23a0f8b, type: 3}
+      propertyPath: m_TagString
+      value: Speakers
       objectReference: {fileID: 0}
     - target: {fileID: 6582930395132920859, guid: 377553031d3d34a47bf13cd8a23a0f8b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11407,6 +11445,10 @@ PrefabInstance:
     - target: {fileID: 6582930395132920859, guid: 377553031d3d34a47bf13cd8a23a0f8b, type: 3}
       propertyPath: m_Name
       value: speaker 01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6582930395132920859, guid: 377553031d3d34a47bf13cd8a23a0f8b, type: 3}
+      propertyPath: m_TagString
+      value: Speakers
       objectReference: {fileID: 0}
     - target: {fileID: 6582930395132920859, guid: 377553031d3d34a47bf13cd8a23a0f8b, type: 3}
       propertyPath: m_StaticEditorFlags

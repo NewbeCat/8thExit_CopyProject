@@ -5,15 +5,11 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class EventManager : MonoBehaviour
 {
-    [SerializeField] private List<AssetReferenceGameEvent> subtleEventReferences1;
-    [SerializeField] private List<AssetReferenceGameEvent> obviousEventReferences1;
-    [SerializeField] private List<AssetReferenceGameEvent> subtleEventReferences2;
-    [SerializeField] private List<AssetReferenceGameEvent> obviousEventReferences2;
+    [SerializeField] private List<AssetReferenceGameEvent> subtleEventReferences;
+    [SerializeField] private List<AssetReferenceGameEvent> obviousEventReferences;
 
-    private Dictionary<int, GameEvent> loadedSubtleEvents1 = new Dictionary<int, GameEvent>();
-    private Dictionary<int, GameEvent> loadedObviousEvents1 = new Dictionary<int, GameEvent>();
-    private Dictionary<int, GameEvent> loadedSubtleEvents2 = new Dictionary<int, GameEvent>();
-    private Dictionary<int, GameEvent> loadedObviousEvents2 = new Dictionary<int, GameEvent>();
+    private Dictionary<int, GameEvent> cachedSubtleEvents = new Dictionary<int, GameEvent>();
+    private Dictionary<int, GameEvent> cachedObviousEvents = new Dictionary<int, GameEvent>();
 
     private GameEvent curEvent = null;
     public static EventManager Instance { get; private set; }
@@ -23,19 +19,58 @@ public class EventManager : MonoBehaviour
         if (Instance == null)
             Instance = this;
         else
+        {
             Destroy(gameObject);
+            return;
+        }
+
+        PreloadEvents();
+    }
+
+    private void PreloadEvents()
+    {
+        for (int i = 0; i < subtleEventReferences.Count; i++)
+        {
+            int index = i;
+            subtleEventReferences[i].LoadAssetAsync().Completed += handle =>
+            {
+                if (handle.Status == AsyncOperationStatus.Succeeded)
+                {
+                    cachedSubtleEvents[index] = handle.Result;
+                }
+            };
+        }
+
+        for (int i = 0; i < obviousEventReferences.Count; i++)
+        {
+            int index = i;
+            obviousEventReferences[i].LoadAssetAsync().Completed += handle =>
+            {
+                if (handle.Status == AsyncOperationStatus.Succeeded)
+                {
+                    cachedObviousEvents[index] = handle.Result;
+                }
+            };
+        }
     }
 
     public void CallEvent(int eventType, int eventID, bool isRoom2)
     {
-        if (!isRoom2)
+        if (eventType == 1 && cachedSubtleEvents.TryGetValue(eventID, out var subtleEvent))
         {
-            LoadOrTriggerEvent(eventType, eventID, subtleEventReferences1, obviousEventReferences1, loadedSubtleEvents1, loadedObviousEvents1);
+            curEvent = subtleEvent;
+        }
+        else if (eventType == 2 && cachedObviousEvents.TryGetValue(eventID, out var obviousEvent))
+        {
+            curEvent = obviousEvent;
         }
         else
         {
-            LoadOrTriggerEvent(eventType, eventID, subtleEventReferences2, obviousEventReferences2, loadedSubtleEvents2, loadedObviousEvents2);
+            Debug.LogError($"[EventManager] Event ID {eventID} not preloaded.");
+            return;
         }
+
+        curEvent?.Trigger(isRoom2);
     }
 
     public void KillEvent()
@@ -47,53 +82,6 @@ public class EventManager : MonoBehaviour
         }
     }
 
-    public int GetSubtleEventCount() => subtleEventReferences1.Count;
-    public int GetObviousEventCount() => obviousEventReferences1.Count;
-
-    private void LoadOrTriggerEvent(int eventType, int eventID, List<AssetReferenceGameEvent> subtleRefs, List<AssetReferenceGameEvent> obviousRefs,
-        Dictionary<int, GameEvent> loadedSubtleEvents, Dictionary<int, GameEvent> loadedObviousEvents)
-    {
-        if (eventType == 1)
-        {
-            if (loadedSubtleEvents.ContainsKey(eventID))
-            {
-                curEvent = loadedSubtleEvents[eventID];
-                curEvent?.Trigger();
-            }
-            else
-            {
-                LoadEvent(subtleRefs[eventID], eventID, loadedSubtleEvents, true);
-            }
-        }
-        else if (eventType == 2)
-        {
-            if (loadedObviousEvents.ContainsKey(eventID))
-            {
-                curEvent = loadedObviousEvents[eventID];
-                curEvent?.Trigger();
-            }
-            else
-            {
-                LoadEvent(obviousRefs[eventID], eventID, loadedObviousEvents, false);
-            }
-        }
-    }
-
-    private void LoadEvent(AssetReferenceGameEvent eventReference, int eventID, Dictionary<int, GameEvent> loadedEvents, bool isSubtle)
-    {
-        eventReference.LoadAssetAsync<GameEvent>().Completed += handle =>
-        {
-            if (handle.Status == AsyncOperationStatus.Succeeded)
-            {
-                GameEvent loadedEvent = handle.Result;
-                loadedEvents[eventID] = loadedEvent;
-                curEvent = loadedEvent;
-                curEvent?.Trigger();
-            }
-            else
-            {
-                Debug.LogError($"Failed to load event {eventReference}");
-            }
-        };
-    }
+    public int GetSubtleEventCount() => subtleEventReferences.Count;
+    public int GetObviousEventCount() => obviousEventReferences.Count;
 }

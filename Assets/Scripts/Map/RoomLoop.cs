@@ -90,7 +90,7 @@ public class RoomLoop : MonoBehaviour
         else
         {
             Debug.Log("currently event is " + eventType + " - " + eventID);
-            //eventManager.CallEvent(eventType, eventID, isRoom2);
+            eventManager.CallEvent(eventType, eventID, isRoom2);
         }
     }
     private void killEvent() { }
