@@ -93,10 +93,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d4b9b035aa202443b6b8cbd7ae0055a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  subtleEventReferences1: []
-  obviousEventReferences1: []
-  subtleEventReferences2: []
-  obviousEventReferences2: []
+  subtleEventReferences: []
+  obviousEventReferences: []
 --- !u!1001 &2912341969570790428
 PrefabInstance:
   m_ObjectHideFlags: 0

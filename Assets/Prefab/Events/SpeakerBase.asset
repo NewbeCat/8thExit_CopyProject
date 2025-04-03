@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: SpeakerBase
   m_EditorClassIdentifier: 
   eventDescription: 
-  speakerTag: Speaker
   movedList: []
