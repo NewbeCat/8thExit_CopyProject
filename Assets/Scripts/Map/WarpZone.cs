@@ -59,6 +59,7 @@ public class WarpZone : MonoBehaviour
     //finished private
     private void Start()
     {
+        _player = Managers.Instance.Player.gameObject;
         _playerController = _player.GetComponent<CharacterController>();
 
         roomWarp = room2.position - room1.position; // 룸1 → 룸2 이동 벡터

@@ -87,7 +87,6 @@ public class PlayerMovementStateModule : StateMachineBase<EPlayerMovement>
         if (_moveDirection == Vector2.zero)
         {
             _characterController.Move(Vector2.zero);
-            Debug.Log("1");
             return;
         }
 
