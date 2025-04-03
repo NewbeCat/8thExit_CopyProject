@@ -401,8 +401,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1109582205564847251, guid: 1095ff864d9778747b1674c7e200bf2e, type: 3}
+      propertyPath: subtleEventReferences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1109582205564847251, guid: 1095ff864d9778747b1674c7e200bf2e, type: 3}
       propertyPath: subtleEventReferences1.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1109582205564847251, guid: 1095ff864d9778747b1674c7e200bf2e, type: 3}
+      propertyPath: subtleEventReferences.Array.data[0].m_AssetGUID
+      value: 4412f4c1254541049a8f6eab54c86a6c
       objectReference: {fileID: 0}
     - target: {fileID: 1745769013893361573, guid: 1095ff864d9778747b1674c7e200bf2e, type: 3}
       propertyPath: m_Name

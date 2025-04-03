@@ -28,8 +28,8 @@ public class InputManager : MonoBehaviour, IManager
     private void InitActions()
     {
         InputAction moveAction = _playerInput.actions.FindAction(EInputAction.Move.ToString());
-        moveAction.started += OnMove;
-        //moveAction.performed += OnMove;
+        //moveAction.started += OnMove;
+        moveAction.performed += OnMove;
         moveAction.canceled += OnMove;
         InputAction lookAction = _playerInput.actions.FindAction(EInputAction.Look.ToString());
         lookAction.performed += OnLook;
