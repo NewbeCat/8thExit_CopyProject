@@ -14,12 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GroupName: Default
   m_GUID: c6f5ce78a52d4fb41a9b0d0ba6154f7a
-  m_SerializeEntries:
-  - m_GUID: 4412f4c1254541049a8f6eab54c86a6c
-    m_Address: Assets/Prefab/Events/SpeakerBase.asset
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 26c32d5cd8fe34743bf30ab78ac863a7, type: 2}
   m_SchemaSet:

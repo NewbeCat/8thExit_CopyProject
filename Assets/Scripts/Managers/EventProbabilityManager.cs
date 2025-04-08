@@ -81,7 +81,6 @@ public class EventProbabilityManager : MonoBehaviour
         currentNormalProbability = (100f - initialErrorProbability);
         currentSubtleErrorProbability = initialErrorProbability * (subtleErrorProbability / 100f);
         currentObviousErrorProbability = initialErrorProbability * ((100f - subtleErrorProbability) / 100f);
-        Debug.Log(currentNormalProbability + ", " + currentSubtleErrorProbability);
     }
 
     private int RandomType()
