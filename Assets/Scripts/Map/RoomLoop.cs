@@ -94,7 +94,7 @@ public class RoomLoop : MonoBehaviour
 
     private void callEvent()
     {
-        Debug.Log("going to call a room!");
+        eventManager.CallEvent(eventType, eventID);
     }
 
     //finished private
