@@ -159,6 +159,10 @@ PrefabInstance:
       propertyPath: _eventPicker
       value: 
       objectReference: {fileID: 2171514690513713368}
+    - target: {fileID: 4529187937305550514, guid: 5a986161bd5dac54594b1bae204233eb, type: 3}
+      propertyPath: eventManager
+      value: 
+      objectReference: {fileID: 1109582205564847251}
     - target: {fileID: 7790580697401374322, guid: 5a986161bd5dac54594b1bae204233eb, type: 3}
       propertyPath: m_Name
       value: Room2
@@ -256,6 +260,10 @@ PrefabInstance:
       propertyPath: _eventPicker
       value: 
       objectReference: {fileID: 2171514690513713368}
+    - target: {fileID: 4529187937305550514, guid: 5a986161bd5dac54594b1bae204233eb, type: 3}
+      propertyPath: eventManager
+      value: 
+      objectReference: {fileID: 1109582205564847251}
     - target: {fileID: 5731811742438634494, guid: 5a986161bd5dac54594b1bae204233eb, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.85
