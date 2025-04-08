@@ -662,7 +662,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3435277068623161952}
-  - component: {fileID: 4529187937305550514}
   m_Layer: 0
   m_Name: Loop
   m_TagString: Untagged
@@ -689,31 +688,6 @@ Transform:
   - {fileID: 2694884268022201970}
   m_Father: {fileID: 2749966019162437903}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4529187937305550514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2065441145564924597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7a23c73d658b4b4ebb214cefccbbc70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _warpZone: {fileID: 0}
-  _eventPicker: {fileID: 0}
-  eventManager: {fileID: 0}
-  otherRoom: {fileID: 0}
-  _posterNormal: {fileID: 5659104995799448122}
-  _posterCorrect: {fileID: 72654088583988698}
-  entryRoom: {fileID: 2271593256298313259}
-  exitRoom: {fileID: 8000977066136416254}
-  choiceNo: {fileID: 3724520686704932344}
-  choiceYes: {fileID: 8270603795538973733}
-  isRoom2: 0
-  eventType: 0
-  eventID: 0
 --- !u!1 &2211711744903673367
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,7 +862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62e1ec91041dbda42bf548e07f4664d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _roomLoop: {fileID: 4529187937305550514}
+  _roomLoop: {fileID: 0}
   _isEntry: 1
 --- !u!1 &2288263122963791751
 GameObject:
@@ -1211,7 +1185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa9282915ef04384b8bfe4a503be092c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _roomLoop: {fileID: 4529187937305550514}
+  _roomLoop: {fileID: 0}
   _choice: 0
 --- !u!1 &4205513130883568714
 GameObject:
@@ -2478,7 +2452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62e1ec91041dbda42bf548e07f4664d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _roomLoop: {fileID: 4529187937305550514}
+  _roomLoop: {fileID: 0}
   _isEntry: 0
 --- !u!1 &8270603795538973733
 GameObject:
@@ -2546,7 +2520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa9282915ef04384b8bfe4a503be092c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _roomLoop: {fileID: 4529187937305550514}
+  _roomLoop: {fileID: 0}
   _choice: 1
 --- !u!1 &8418448988900220512
 GameObject:
@@ -10179,7 +10153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5de009db35f84744cb09dbe1ee28d696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _roomLoop: {fileID: 4529187937305550514}
+  _roomLoop: {fileID: 0}
   _yesAnswer: 0
 --- !u!4 &4170083213014950381 stripped
 Transform:
@@ -13298,7 +13272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5de009db35f84744cb09dbe1ee28d696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _roomLoop: {fileID: 4529187937305550514}
+  _roomLoop: {fileID: 0}
   _yesAnswer: 1
 --- !u!1001 &8361122422340105289
 PrefabInstance:
