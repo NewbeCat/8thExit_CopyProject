@@ -2,20 +2,28 @@ using UnityEngine;
 
 public class WarpTrigger : MonoBehaviour
 {
-    [SerializeField] private RoomLoop _roomLoop;
-    [SerializeField] private bool _yesAnswer;
+    [SerializeField] private WarpZone warpZone;
+    [SerializeField] private bool _outCorr;
+    [SerializeField] private bool active;
 
-    public void Initialize(RoomLoop room, bool yes)
+    public void Initialize(WarpZone warp, bool outCorr)
     {
-        _roomLoop = room;
-        _yesAnswer = yes;
+        warpZone = warp;
+        _outCorr = outCorr;
+        active = true;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (active && other.CompareTag("Player"))
         {
-            _roomLoop.WarpConnection(_yesAnswer);
+            Debug.Log("warp triggering!");
+            warpZone.WarpPlayer(_outCorr);
         }
+    }
+
+    public void controlTrigger(bool change)
+    {
+        active = change;
     }
 }

@@ -3,72 +3,81 @@ using UnityEngine;
 public class RoomLoop : MonoBehaviour
 {
     [Header("Connections")]
-    [SerializeField] private WarpZone _warpZone;
     [SerializeField] private EventProbabilityManager _eventPicker;
     [SerializeField] private EventManager eventManager;
-    [SerializeField] private RoomLoop otherRoom;
-    [SerializeField] private GameObject _posterNormal;
-    [SerializeField] private GameObject _posterCorrect;
-
+    [SerializeField] private WarpZone warpZone;
 
     [Header("Triggers")]
-    [SerializeField] private GameObject entryRoom;
-    [SerializeField] private GameObject exitRoom;
-    [SerializeField] private GameObject choiceNo;
-    [SerializeField] private GameObject choiceYes;
+    [SerializeField] private EnterTrigger entryRoom;
+    [SerializeField] private EnterTrigger exitRoom;
+    [SerializeField] private ChoiceTrigger choiceNo;
+    [SerializeField] private ChoiceTrigger choiceYes;
+
+    [Header("Posters")]
+    [SerializeField] private GameObject _posterNormal1;
+    [SerializeField] private GameObject _posterChanged1;
+    [SerializeField] private GameObject _posterNormal2;
+    [SerializeField] private GameObject _posterChanged2;
 
     [Header("Variables")]
-    [SerializeField] private bool isRoom2;
     [SerializeField] private int eventType;
     [SerializeField] private int eventID;
     private bool notInRoom;
 
     //trigger functions
-    public void EnterRoom(bool isEntry)
+    public void EnterRoom(bool _isEntry)
     {
         toggleChoiceAndEntry();
-        otherRoom.Reset();
-        if (isEntry)
+
+        if (!_isEntry)
         {
-            _eventPicker.GetRandomEvent();
-            eventType = _eventPicker.GetEventType();
-            eventID = _eventPicker.GetEventID();
-            callEvent();
-            if (eventType == 0)
+            warpZone.resetRoom();
+            if (eventType != 0)
             {
-                _warpZone.setWarpFlip(false);
-            }
-            else
-            {
-                _warpZone.setWarpFlip(true);
-                togglePosters(false);
+                eventType = 0;
+                eventID = -1;
+                callEvent();
             }
         }
         else
         {
-            _warpZone.resetRoom();
+            callEvent();
         }
+
     }
 
-    public void ChoiceEvent(bool choseYes)
+    public void ChoiceEvent(bool _yesAnswer)
     {
         toggleChoiceAndEntry();
-        if ((eventType == 0) == (choseYes))
-        { //맞음
-            _warpZone.addRoom();
+
+        //답 따라 워프 조정 & 포스터 조정
+        if (!_yesAnswer && eventType != 0)
+        { // no 답이 맞았을 경우
+            warpZone.setWarpFlip(true);
+            togglePosters(false);
         }
-        else // 틀림
+        else
         {
-            _warpZone.resetRoom();
-            togglePosters();
+            warpZone.setWarpFlip(false);
+            togglePosters(true);
         }
+
+        //답 따라 숫자 조정
+        if (_yesAnswer == (eventType == 0))
+        {
+            warpZone.addRoom();
+        }
+        else
+        {
+            warpZone.resetRoom();
+        }
+
+        //다음 번호 선택 & preload?
+        _eventPicker.GetRandomEvent();
+        eventType = _eventPicker.GetEventType();
+        eventID = _eventPicker.GetEventID();
     }
 
-    public void WarpConnection(bool _yesAnswer)
-    {
-        Debug.Log("entered to warp, you said yes? " + _yesAnswer);
-        _warpZone.WarpPlayer(isRoom2, _yesAnswer);
-    }
 
 
     //private
@@ -81,34 +90,28 @@ public class RoomLoop : MonoBehaviour
     {
         toggleChoiceAndEntry(true);
         togglePosters();
-        killEvent();
     }
 
     private void callEvent()
     {
-        if (eventType == 0) { return; }
-        else
-        {
-            Debug.Log("currently event is " + eventType + " - " + eventID);
-            //eventManager.CallEvent(eventType, eventID, isRoom2);
-        }
+        eventManager.CallEvent(eventType, eventID);
     }
-    private void killEvent() { }
-
 
     //finished private
     private void toggleChoiceAndEntry(bool force = false)
     {
         notInRoom = (force) ? true : !notInRoom;
-        choiceYes.SetActive(!notInRoom);
-        choiceNo.SetActive(!notInRoom);
-        entryRoom.SetActive(notInRoom);
-        exitRoom.SetActive(notInRoom);
+        choiceYes.controlTrigger(!notInRoom);
+        choiceNo.controlTrigger(!notInRoom);
+        entryRoom.controlTrigger(notInRoom);
+        exitRoom.controlTrigger(notInRoom);
     }
 
     private void togglePosters(bool normal = true)
     {
-        _posterNormal.SetActive(normal);
-        _posterCorrect.SetActive(!normal);
+        _posterNormal1.SetActive(normal);
+        _posterChanged1.SetActive(!normal);
+        _posterNormal2.SetActive(normal);
+        _posterChanged2.SetActive(!normal);
     }
 }

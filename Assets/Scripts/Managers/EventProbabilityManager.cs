@@ -73,7 +73,7 @@ public class EventProbabilityManager : MonoBehaviour
         usedObviousErrorEventIDs = new HashSet<int>();
         _consecutiveNormalCount = 0;
 
-        //ResetProbabilities - 확률 조정 추가시
+        ResetProbabilities();
     }
 
     private void ResetProbabilities()

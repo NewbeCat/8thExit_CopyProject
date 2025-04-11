@@ -3,19 +3,27 @@ using UnityEngine;
 public class ChoiceTrigger : MonoBehaviour
 {
     [SerializeField] private RoomLoop _roomLoop;
-    [SerializeField] private bool _choice; //false=noSelect, true=yesSelect
+    [SerializeField] private bool _yesAnswer; //false=noSelect, true=yesSelect
 
-    public void Initialize(RoomLoop room, bool choice)
+    [SerializeField] private bool active;
+
+    public void Initialize(RoomLoop room, bool yesAnswer)
     {
         _roomLoop = room;
-        _choice = choice;
+        _yesAnswer = yesAnswer;
+        active = false;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (active && other.CompareTag("Player"))
         {
-            _roomLoop.ChoiceEvent(_choice);
+            _roomLoop.ChoiceEvent(_yesAnswer);
         }
+    }
+
+    public void controlTrigger(bool change)
+    {
+        active = change;
     }
 }

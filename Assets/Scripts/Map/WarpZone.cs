@@ -14,18 +14,13 @@ public class WarpZone : MonoBehaviour
     private bool _flip = false;
 
     [Header("Transforms")]
-    [SerializeField] private GameObject pointNo;
-    [SerializeField] private GameObject pointYes;
-    [SerializeField] private Transform room1;
-    [SerializeField] private Transform room2;
-    [SerializeField] private Transform turnCorridor;
+    [SerializeField] private Transform inRoomOuter;
+    [SerializeField] private Transform inRoomInner;
+    [SerializeField] private Transform outRoomOuter;
+    [SerializeField] private Transform outRoomInner;
 
-    [Header("Travel length - 거리 확정될 경우 Transforms 삭제!!")]
-    [SerializeField] private Vector3 roomWarp;
-    [SerializeField] private Vector3 colsWarp;
-    [SerializeField] private Vector3 turnAround;
 
-    public void WarpPlayer(bool whichRoom, bool yesAnswer) //room1, yes - false true
+    public void WarpPlayer(bool outCoridoor) //직행 맞음 - outRoomOuter -> inRoomInner, 직행 틀림 - , 돌아감 맞음 inRoomOuter -> inRoomInner , 돌아감 틀림 inRoomOuter -> outRoomInner
     {
         if (_curRoomNum >= _maxRoomNum)
         {
@@ -36,18 +31,17 @@ public class WarpZone : MonoBehaviour
             return;
         }
 
-        Vector3 offset;
+        Vector3 offset; //끝 - 시작
         bool twerl = false;
-        if (yesAnswer || !_flip)
+        if (_flip)
         {
-            offset = ((!whichRoom) ? roomWarp : -roomWarp) + ((yesAnswer) ? colsWarp : -colsWarp);
+            offset = (!outCoridoor) ? 2 * (inRoomOuter.position - _player.transform.position) : 2 * (outRoomOuter.position - _player.transform.position);
+            offset = -(outRoomInner.position - outRoomOuter.position) + new Vector3(offset.x, 0f, offset.z);
+            twerl = true;
         }
         else
         {
-            //_player.transform.Rotate(0, 180, 0);
-            offset = 2 * (turnAround + -_player.transform.position);
-            offset = roomWarp + new Vector3(offset.x, 0f, offset.z);
-            twerl = true;
+            offset = (!outCoridoor) ? (outRoomInner.position - inRoomOuter.position) : (inRoomInner.position - outRoomOuter.position);
         }
 
         Debug.Log("playing warpplayer" + offset.x + "/" + offset.y + "/" + offset.z);
@@ -59,11 +53,8 @@ public class WarpZone : MonoBehaviour
     //finished private
     private void Start()
     {
+        _player = Managers.Instance.Player.gameObject;
         _playerController = _player.GetComponent<CharacterController>();
-
-        roomWarp = room2.position - room1.position; // 룸1 → 룸2 이동 벡터
-        colsWarp = pointNo.transform.position - pointYes.transform.position; // 나가는 길 → 들어오는 길 이동 벡터
-        turnAround = turnCorridor.position; // 회전 기준 위치
     }
     private void WarpAmount(Vector3 amount, bool twerl)
     {
