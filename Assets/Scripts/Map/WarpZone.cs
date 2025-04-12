@@ -74,7 +74,7 @@ public class WarpZone : MonoBehaviour
     }
     public void resetRoom()
     {
-        _curRoomNum = 0;
+        if (_curRoomNum > 0) _curRoomNum = 0;
         hallPoster.UpdatePosters(_curRoomNum);
         //deactivate all endrooms
     }

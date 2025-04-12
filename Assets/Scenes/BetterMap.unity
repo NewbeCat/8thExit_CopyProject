@@ -273,7 +273,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noEvent: {fileID: 1772368368600778619, guid: 50efaa97203990f49a6ad543070e629d, type: 3}
-  subtleEvent: []
+  subtleEvent:
+  - {fileID: 3493114342843548055, guid: 4e873aa8d8351a547a997840dac7199b, type: 3}
+  - {fileID: 1752613002465292807, guid: 2a9f57cc345dc7d47a1fa46f8b2b9590, type: 3}
+  - {fileID: 6067308301229591828, guid: 93238cb4b3ccfe9458a477304b6a0dab, type: 3}
   obviousEvent: []
 --- !u!1001 &1086857928
 PrefabInstance:

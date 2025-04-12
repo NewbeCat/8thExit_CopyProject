@@ -41,6 +41,10 @@ public class RoomLoop : MonoBehaviour
         }
         else
         {
+            //다음 번호 선택 & preload?
+            _eventPicker.GetRandomEvent();
+            eventType = _eventPicker.GetEventType();
+            eventID = _eventPicker.GetEventID();
             callEvent();
         }
 
@@ -71,11 +75,6 @@ public class RoomLoop : MonoBehaviour
         {
             warpZone.resetRoom();
         }
-
-        //다음 번호 선택 & preload?
-        _eventPicker.GetRandomEvent();
-        eventType = _eventPicker.GetEventType();
-        eventID = _eventPicker.GetEventID();
     }
 
 
