@@ -5,6 +5,7 @@ public class WarpZone : MonoBehaviour
 {
     [Header("Connections")]
     [SerializeField] private EventProbabilityManager eventManager;
+    [SerializeField] private HallPoster hallPoster;
     [SerializeField] private GameObject _player;
     private CharacterController _playerController;
 
@@ -69,10 +70,12 @@ public class WarpZone : MonoBehaviour
     public void addRoom()
     {
         _curRoomNum++;
+        hallPoster.UpdatePosters(_curRoomNum);
     }
     public void resetRoom()
     {
         _curRoomNum = 0;
+        hallPoster.UpdatePosters(_curRoomNum);
         //deactivate all endrooms
     }
     public void setWarpFlip(bool flip)
