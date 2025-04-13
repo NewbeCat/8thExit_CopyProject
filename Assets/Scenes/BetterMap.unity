@@ -392,6 +392,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 59683620035530260, guid: 09e82a04384b8bd4bbcd68e78724a5c2, type: 3}
+      propertyPath: m_SkinWidth
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 603298663697776767, guid: 09e82a04384b8bd4bbcd68e78724a5c2, type: 3}
+      propertyPath: _footStepUnitTime
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2502358255929972121, guid: 09e82a04384b8bd4bbcd68e78724a5c2, type: 3}
       propertyPath: m_Name
       value: PlayerController

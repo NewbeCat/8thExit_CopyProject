@@ -41,13 +41,13 @@ public class PlayerMovementStateModule : StateMachineBase<EPlayerMovement>
 
     public override void FixedUpdate()
     {
-        currentState.FixedUpdate();
-        ApplyGravity();
     }
 
     public override void Update()
     {
+        currentState.FixedUpdate();
         currentState.Update();
+        ApplyGravity();
     }
 
     public override void ExitState()
@@ -90,17 +90,17 @@ public class PlayerMovementStateModule : StateMachineBase<EPlayerMovement>
             return;
         }
 
-        float speed = IsSprint ? InGameSprintSpeed * Time.deltaTime : InGameWalkSpeed * Time.deltaTime;
+        float speed = IsSprint ? InGameSprintSpeed : InGameWalkSpeed;
 
         Vector3 finalDirection = _characterController.transform.right * _moveDirection.x + _characterController.transform.forward * _moveDirection.y;
-        _characterController.Move(finalDirection.normalized * speed);
+        _characterController.Move(finalDirection.normalized * speed * Time.deltaTime);
     }
 
     private void UpdateMoveDirection(Vector2 direction)
     {
         _moveDirection = direction;
 
-        EPlayerMovement targetState = (direction == Vector2.zero) ? EPlayerMovement.Idle : 
+        EPlayerMovement targetState = (direction == Vector2.zero) ? EPlayerMovement.Idle :
             (IsSprint ? EPlayerMovement.Sprint : EPlayerMovement.Walk);
 
         if (TryGetState(targetState, out IState<EPlayerMovement> newState))
@@ -150,5 +150,5 @@ public class PlayerMovementStateModule : StateMachineBase<EPlayerMovement>
         _characterController.Move(new Vector3(0, velocity.y, 0));
     }
 
-    
+
 }
