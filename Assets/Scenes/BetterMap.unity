@@ -277,7 +277,12 @@ MonoBehaviour:
   - {fileID: 3493114342843548055, guid: 4e873aa8d8351a547a997840dac7199b, type: 3}
   - {fileID: 1752613002465292807, guid: 2a9f57cc345dc7d47a1fa46f8b2b9590, type: 3}
   - {fileID: 6067308301229591828, guid: 93238cb4b3ccfe9458a477304b6a0dab, type: 3}
-  obviousEvent: []
+  - {fileID: 6901122102970142216, guid: 27103d9054ed9714b9558caca4022b15, type: 3}
+  - {fileID: 7719386409378215950, guid: 4fbb2bef691401e43a485f43dd3e6f35, type: 3}
+  - {fileID: 1346512792918303191, guid: a6ae349b17af39b408a8772e26245646, type: 3}
+  - {fileID: 5150968182713655519, guid: a7127767c388bf649b393cad7c7ecfce, type: 3}
+  obviousEvent:
+  - {fileID: 4394526197442507878, guid: e64cfa1f093ab8d40a316401db510d12, type: 3}
 --- !u!1001 &1086857928
 PrefabInstance:
   m_ObjectHideFlags: 0
