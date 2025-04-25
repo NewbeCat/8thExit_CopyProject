@@ -19,9 +19,17 @@ public class PlayerMovementStateModule : StateMachineBase<EPlayerMovement>
     private float _footStepUnitTime = 0f;
     private bool _isLeftStep = true;
     private float _footStepUnitPosX;
+
+    private ObjectPooler<BloodFootStep> pooler;
+    private Material[] footStepMaterials;
+
+    private bool isBloodStepActive;
+
     #endregion
 
-    public PlayerMovementStateModule(CharacterController characterController, EPlayerMovement ePlayerMovement, IState<EPlayerMovement> newState, float walkSpeed, float sprintSpeed, float footStepUnitTime)
+    public PlayerMovementStateModule(CharacterController characterController, EPlayerMovement ePlayerMovement, 
+        IState<EPlayerMovement> newState, BloodFootStep footStep, Material[] footStepMaterials, float walkSpeed, 
+        float sprintSpeed, float footStepUnitTime)
     {
         _characterController = characterController;
         InGameWalkSpeed = walkSpeed;
@@ -31,6 +39,14 @@ public class PlayerMovementStateModule : StateMachineBase<EPlayerMovement>
         _movingDifference = sprintSpeed / walkSpeed;
         _footStepUnitTime = footStepUnitTime;
         _footStepUnitPosX = characterController.radius;
+        pooler = new ObjectPooler<BloodFootStep>(footStep, null, 10, 100);
+
+        this.footStepMaterials = new Material[footStepMaterials.Length];
+
+        for (int i = 0; i < footStepMaterials.Length; i++)
+        {
+            this.footStepMaterials[i] = footStepMaterials[i];
+        }
     }
 
     #region State Machine
@@ -127,7 +143,25 @@ public class PlayerMovementStateModule : StateMachineBase<EPlayerMovement>
             _movingElapsedTime -= _footStepUnitTime;
             ESoundClip eSoundClip = IsSprint ? ESoundClip.Run : ESoundClip.Walk;
             Vector3 footStepPos = _characterController.transform.position;
-            footStepPos.x = _isLeftStep ? -_footStepUnitPosX : _footStepUnitPosX;
+
+            Debug.DrawRay(footStepPos, Vector3.down * 10f);
+
+            if (Physics.Raycast(footStepPos, Vector3.down * 10f, out RaycastHit hit, 1 << LayerMask.NameToLayer("Floor")))
+            {
+                Debug.Log(hit.point);
+                footStepPos = hit.point;
+                //footStepPos.x = _isLeftStep ? -_footStepUnitPosX : _footStepUnitPosX;
+
+                if (isBloodStepActive)
+                {
+                    eSoundClip = IsSprint ? ESoundClip.RunBlood : ESoundClip.WalkBlood;
+                    BloodFootStep bloodFootStep = pooler.Pool();
+                    bloodFootStep.transform.position = footStepPos;
+                    bloodFootStep.transform.rotation = Quaternion.LookRotation(_characterController.transform.forward);
+                    bloodFootStep.MeshRenderer.sharedMaterial = _isLeftStep ? footStepMaterials[0] : footStepMaterials[1];
+                }
+            }
+
             Managers.Instance.Sound.PlaySFX(eSoundClip, footStepPos);
         }
     }
@@ -150,5 +184,8 @@ public class PlayerMovementStateModule : StateMachineBase<EPlayerMovement>
         _characterController.Move(new Vector3(0, velocity.y, 0));
     }
 
-
+    public void OnUpdateBloodFootStepActiveState(bool isActive)
+    {
+        isBloodStepActive = isActive;
+    }
 }

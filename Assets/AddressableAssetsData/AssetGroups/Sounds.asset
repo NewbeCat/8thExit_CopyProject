@@ -15,6 +15,12 @@ MonoBehaviour:
   m_GroupName: Sounds
   m_GUID: 8f6f11f650e3f7e40b273886254698f2
   m_SerializeEntries:
+  - m_GUID: 2a478a19515e0694dbdb228aa0c4cd65
+    m_Address: Assets/8thExit Sound/Run_Blood_4.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - FootStep
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2bc1ae1ab9bbeae4fa9349cdddd23011
     m_Address: Assets/8thExit Sound/Run_1.wav
     m_ReadOnly: 0
@@ -32,6 +38,12 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - Ambience
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 39804fa9951342b42a6f48a053093364
+    m_Address: Assets/8thExit Sound/Walk_Blood_4.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - FootStep
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 40753758536f3af4888adaeb8e5a119f
     m_Address: Assets/8thExit Sound/Walk_2.wav
@@ -51,11 +63,23 @@ MonoBehaviour:
     m_SerializedLabels:
     - FootStep
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 716f14175af2f954da6563899f3c2219
+    m_Address: Assets/8thExit Sound/Walk_Blood_3.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - FootStep
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7d7ec5259e325db47ae0168562fc73d7
     m_Address: Assets/8thExit Sound/Walk_1.wav
     m_ReadOnly: 0
     m_SerializedLabels:
     - FootStep
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8dcbbb6802aecd94989cecde60e9dade
+    m_Address: Assets/8thExit Sound/ScreenVideo.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ScreenVideo
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 99fd6c998b738ab4c8e2077bd8f9847b
     m_Address: Assets/8thExit Sound/Run_3.wav
@@ -68,6 +92,48 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - FootStep
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a4b305e6971744442a2a7907202eaadf
+    m_Address: Assets/8thExit Sound/SpeakerLoop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Speaker
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c0d124e3ee493954b966a5b28864ab56
+    m_Address: Assets/8thExit Sound/Walk_Blood_1.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - FootStep
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c51e358d962c74a4f906fc2f50d8ec6a
+    m_Address: Assets/8thExit Sound/Walk_Blood_2.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - FootStep
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d1c70d1a6801f864e8618b43588da4a3
+    m_Address: Assets/8thExit Sound/Run_Blood_1.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - FootStep
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e9bfea3e25e6d1843aac2e2a3f184fb0
+    m_Address: Assets/8thExit Sound/Run_Blood_2.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - FootStep
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fa2b2125a15877647be477aec49ee0ca
+    m_Address: Assets/8thExit Sound/Run_Blood_3.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - FootStep
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fe3546da81667a848985b1bee05cb20b
+    m_Address: Assets/8thExit Sound/SpeakerOneShot.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Speaker
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 26c32d5cd8fe34743bf30ab78ac863a7, type: 2}

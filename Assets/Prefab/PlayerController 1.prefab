@@ -12,8 +12,6 @@ GameObject:
   - component: {fileID: 603298663697776767}
   - component: {fileID: 59683620035530260}
   - component: {fileID: 6470224988135659366}
-  - component: {fileID: 3608913465729222613}
-  - component: {fileID: 1329985944270843812}
   m_Layer: 0
   m_Name: PlayerController 1
   m_TagString: Player
@@ -58,6 +56,10 @@ MonoBehaviour:
   _walkSpeed: 2
   _sprintSpeed: 4
   _footStepUnitTime: 0.5
+  footStep: {fileID: 1078064371608620569, guid: ce9f35c274a5d1547aa592291f2895fe, type: 3}
+  footStepMaterials:
+  - {fileID: 2100000, guid: 53e91c803a5816245895541eb843a1dd, type: 2}
+  - {fileID: 2100000, guid: 85ae820c975d88e4e800e3d52f5c1366, type: 2}
 --- !u!143 &59683620035530260
 CharacterController:
   m_ObjectHideFlags: 0
@@ -80,7 +82,7 @@ CharacterController:
   m_Radius: 0.25
   m_SlopeLimit: 45
   m_StepOffset: 0.3
-  m_SkinWidth: 0.08
+  m_SkinWidth: 0.15
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!136 &6470224988135659366
@@ -98,7 +100,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -106,59 +108,6 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &3608913465729222613
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2502358255929972121}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &1329985944270843812
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2502358255929972121}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &7924029247925958746
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,3 +265,8 @@ MonoBehaviour:
   _verticalSensitivity: 0.2
   _upAngleLimitation: -90
   _downAngleLimitation: 90
+  shakeIntensity: 0.5
+  shakeDuration: 1.5
+  fallSpeed: 2
+  originalPosition: {x: 0, y: 0, z: 0}
+  isPlayerable: 1

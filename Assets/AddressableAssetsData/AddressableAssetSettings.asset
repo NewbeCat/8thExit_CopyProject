@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: c6f5ce78a52d4fb41a9b0d0ba6154f7a
   m_currentHash:
     serializedVersion: 2
-    Hash: 626bcddb2e8ed5c852b6ff1d89006318
+    Hash: e8f2d2351ec59ebe0da46b4b2730b29b
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_CatalogRequestsTimeout: 0
@@ -102,6 +102,8 @@ MonoBehaviour:
     - default
     - FootStep
     - Ambience
+    - ScreenVideo
+    - Speaker
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: b80ee082762960a448e4d82f12b38a79, type: 2}

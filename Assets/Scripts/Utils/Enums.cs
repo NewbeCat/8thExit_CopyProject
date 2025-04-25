@@ -21,6 +21,11 @@ public enum ESoundClip
     Ambience,
     Walk,
     Run,
+    WalkBlood,
+    RunBlood,
+    ScreenVideo,
+    SpeakerLoop,
+    SpeakerOneShot,
 }
 #endregion
 #region Addressable
@@ -28,5 +33,7 @@ public enum EAddressableLabel
 {
     Ambience,
     FootStep,
+    ScreenVideo,
+    Speaker,
 }
 #endregion

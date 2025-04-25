@@ -25,8 +25,10 @@ public class SoundManager : MonoBehaviour, IManager
     {
         _pooler = new ObjectPooler<SoundSource>(_soundSourcePrefab, transform, _poolInitCount, _poolMaxCount);
         // 로딩창 필요
-        Managers.Instance.Resource.LoadAddressableAssetFromLabel<AudioClip>(EAddressableLabel.Ambience, OnSoundAssetLoaded);
-        Managers.Instance.Resource.LoadAddressableAssetFromLabel<AudioClip>(EAddressableLabel.FootStep, OnSoundAssetLoaded);
+        foreach (EAddressableLabel label in Enum.GetValues(typeof(EAddressableLabel)))
+        {
+            Managers.Instance.Resource.LoadAddressableAssetFromLabel<AudioClip>(label, OnSoundAssetLoaded);
+        }
     }
 
     public void PlayBGM(ESoundClip eSoundClip)
@@ -116,7 +118,7 @@ public class SoundManager : MonoBehaviour, IManager
         return null;
     }
 
-    private AudioClip GetAudioClip(ESoundClip eSoundClip)
+    public AudioClip GetAudioClip(ESoundClip eSoundClip)
     {
         if (_audioClipDict.TryGetValue(eSoundClip, out AudioClip clip))
         {

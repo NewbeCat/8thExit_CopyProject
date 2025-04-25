@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 // First Person View and using only One Camera in Player -> Controller
@@ -17,6 +18,14 @@ public class CameraController : MonoBehaviour
     #endregion
 
     #region Unity Methods
+    public float shakeIntensity = 0.5f; // 흔들림 강도
+    public float shakeDuration = 1.5f; // 흔들림 지속 시간
+    public float fallSpeed = 2.0f; // 카메라 떨어지는 속도
+
+    public Vector3 originalPosition;
+
+    public bool isPlayerable = true;
+
     #endregion
 
     #region Init Methods
@@ -28,6 +37,11 @@ public class CameraController : MonoBehaviour
 
     private void UpdateCameraRotation(Vector2 delta)
     {
+        if (!isPlayerable)
+        {
+            return;
+        }
+
         // reversal option
         delta.x = _horizontalReversal ? -delta.x : delta.x;
         delta.y = _verticalReversal ? -delta.y : delta.y;
@@ -49,5 +63,16 @@ public class CameraController : MonoBehaviour
         rotationX = Mathf.Clamp(rotationX, _upAngleLimitation, _downAngleLimitation);
 
         transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
+    }
+
+    public void DoDeadMotion()
+    {
+        transform.position = Vector3.Lerp(transform.position, new Vector3(_playerTransform.position.x, _playerTransform.position.y + 1, _playerTransform.position.z), fallSpeed * Time.deltaTime);
+        transform.rotation = Quaternion.LookRotation(Vector3.up);  // 하늘을 향하도록 회전
+    }
+
+    public void DoShakeMotion()
+    {
+        transform.position = originalPosition + UnityEngine.Random.insideUnitSphere * shakeIntensity;
     }
 }
