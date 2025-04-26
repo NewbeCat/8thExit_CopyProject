@@ -18,11 +18,14 @@ public class RoomLoop : MonoBehaviour
     [SerializeField] private GameObject _posterChanged1;
     [SerializeField] private GameObject _posterNormal2;
     [SerializeField] private GameObject _posterChanged2;
+    [SerializeField] private GameObject startPoster;
+    [SerializeField] private GameObject startWall;
 
     [Header("Variables")]
     [SerializeField] private int eventType;
     [SerializeField] private int eventID;
     private bool notInRoom;
+    private bool start = true;
 
     //trigger functions
     public void EnterRoom(bool _isEntry)
@@ -42,7 +45,8 @@ public class RoomLoop : MonoBehaviour
         else
         {
             //다음 번호 선택 & preload?
-            _eventPicker.GetRandomEvent();
+            _eventPicker.GetRandomEvent(start);
+            if (start) start = false;
             eventType = _eventPicker.GetEventType();
             eventID = _eventPicker.GetEventID();
             callEvent();
@@ -101,16 +105,18 @@ public class RoomLoop : MonoBehaviour
     {
         notInRoom = (force) ? true : !notInRoom;
         choiceYes.controlTrigger(!notInRoom);
-        choiceNo.controlTrigger(!notInRoom);
+        choiceNo.controlTrigger(!notInRoom && !start);
         entryRoom.controlTrigger(notInRoom);
         exitRoom.controlTrigger(notInRoom);
     }
 
     private void togglePosters(bool normal = true)
     {
-        _posterNormal1.SetActive(normal);
+        _posterNormal1.SetActive(normal && !start);
         _posterChanged1.SetActive(!normal);
-        _posterNormal2.SetActive(normal);
+        _posterNormal2.SetActive(normal && !start);
         _posterChanged2.SetActive(!normal);
+        startPoster.SetActive(start);
+        startWall.SetActive(start);
     }
 }

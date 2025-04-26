@@ -25,11 +25,11 @@ public class WarpZone : MonoBehaviour
     {
         if (_curRoomNum >= _maxRoomNum)
         {
-            //whichRoom와 yesAnswer로 위치 파악해 endRoom 부르기 & 이동은 안하기!
-            //or
-            //warp하되 위치 설정 달라야함
-            Debug.Log("You reached the endRoom!! As long as you don't go back to prev room - you won");
-            return;
+            eventManager.CallEnd();
+        }
+        else
+        {
+            eventManager.CallEnd(false);
         }
 
         Vector3 offset; //끝 - 시작

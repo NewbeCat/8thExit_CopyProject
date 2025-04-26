@@ -27,23 +27,34 @@ public class EventProbabilityManager : MonoBehaviour
 
     private HashSet<int> usedSubtleErrorEventIDs;
     private HashSet<int> usedObviousErrorEventIDs;
+    private bool end = false;
 
     public void GetRandomEvent(bool forceEvent = false)
     {
-        if (forceEvent)
+        if (end)
+        {
+            _lastEventType = 8;
+            _lastEventID = -1;
+        }
+        else if (forceEvent)
         {
             _lastEventType = 0;
             _lastEventID = -1;
             return;
         }
-
-        int eventType = RandomType();
-        int selectedEventID = RandomEventFromList(eventType);
-        _lastEventType = eventType;
-        _lastEventID = selectedEventID;
+        else
+        {
+            _lastEventType = RandomType();
+            _lastEventID = RandomEventFromList(_lastEventType);
+        }
     }
     public int GetEventType() => _lastEventType;
     public int GetEventID() => _lastEventID;
+
+    public void CallEnd(bool ends = true)
+    {
+        end = ends;
+    }
 
     private void Awake()
     {

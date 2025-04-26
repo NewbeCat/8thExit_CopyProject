@@ -4,6 +4,7 @@ using System.Collections.Generic;
 public class EventManager : MonoBehaviour
 {
     [SerializeField] private GameObject noEvent;
+    [SerializeField] private GameObject endEvent;
     [SerializeField] private List<GameObject> subtleEvent;
     [SerializeField] private List<GameObject> obviousEvent;
     //[SerializeField] private Transform parent;
@@ -47,6 +48,9 @@ public class EventManager : MonoBehaviour
             case 2:
                 if (eventID >= 0 && eventID < obviousEvent.Count)
                     prefabToSpawn = obviousEvent[eventID];
+                break;
+            case 8:
+                prefabToSpawn = endEvent;
                 break;
         }
 
