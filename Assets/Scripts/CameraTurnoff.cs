@@ -6,6 +6,7 @@ public class CameraTurnoff : MonoBehaviour
 {
     public CanvasGroup fadeGroup;
     public float fadeDuration = 3f;
+    public float filmDuration = 3f;
 
     void Start()
     {
@@ -20,7 +21,8 @@ public class CameraTurnoff : MonoBehaviour
 
     public void FadeIn()
     {
-        StartCoroutine(Fade(1f, 0f));
+        // TODO 필름소리를 filmDuration시간 동안 내주세요.
+        StartCoroutine(Fade(1f, 0f, true));
     }
 
     public void TurnOff()
@@ -33,8 +35,9 @@ public class CameraTurnoff : MonoBehaviour
         fadeGroup.alpha = 0f;
     }
 
-    private IEnumerator Fade(float from, float to)
+    private IEnumerator Fade(float from, float to, bool wait = false)
     {
+        if (wait) yield return new WaitForSeconds(filmDuration);
         float time = 0f;
         while (time < fadeDuration)
         {

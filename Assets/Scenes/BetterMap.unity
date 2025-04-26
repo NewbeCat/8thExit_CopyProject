@@ -436,15 +436,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8794029990432342185, guid: 09e82a04384b8bd4bbcd68e78724a5c2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -41.27
+      value: -42
       objectReference: {fileID: 0}
     - target: {fileID: 8794029990432342185, guid: 09e82a04384b8bd4bbcd68e78724a5c2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.495
+      value: 6.85
       objectReference: {fileID: 0}
     - target: {fileID: 8794029990432342185, guid: 09e82a04384b8bd4bbcd68e78724a5c2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.56
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 8794029990432342185, guid: 09e82a04384b8bd4bbcd68e78724a5c2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -607,6 +607,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1153297189110086104, guid: 7948d523a1db02541bf606a0de8ac3d5, type: 3}
+      propertyPath: noEvent
+      value: 
+      objectReference: {fileID: 1262294811398535759, guid: 64c766641e2d023449a496a8c65de3d4, type: 3}
+    - target: {fileID: 1153297189110086104, guid: 7948d523a1db02541bf606a0de8ac3d5, type: 3}
+      propertyPath: endEvent
+      value: 
+      objectReference: {fileID: 1262294811398535759, guid: 64c766641e2d023449a496a8c65de3d4, type: 3}
     - target: {fileID: 1944659031147629425, guid: 7948d523a1db02541bf606a0de8ac3d5, type: 3}
       propertyPath: m_Name
       value: Map
