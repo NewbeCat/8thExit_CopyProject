@@ -12,6 +12,7 @@ public class SpotLightEvent : MonoBehaviour
 
     private void TriggerLight()
     {
+        Managers.Instance.Sound.PlaySFX(ESoundClip.Spotlight);
         spotLightParent.SetActive(true);
     }
 }

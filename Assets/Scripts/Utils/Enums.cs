@@ -26,6 +26,10 @@ public enum ESoundClip
     ScreenVideo,
     SpeakerLoop,
     SpeakerOneShot,
+    LightTurnoff,
+    LightTurnon,
+    Spotlight,
+    DarkComing,
 }
 #endregion
 #region Addressable
@@ -35,5 +39,7 @@ public enum EAddressableLabel
     FootStep,
     ScreenVideo,
     Speaker,
+    Light,
+    DarkComing,
 }
 #endregion

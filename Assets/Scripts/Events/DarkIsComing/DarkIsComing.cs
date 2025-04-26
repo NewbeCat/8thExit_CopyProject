@@ -35,6 +35,7 @@ public class DarkIsComing : MonoBehaviour
         sequence = DOTween.Sequence();
         sequence.Append(DOTween.To(() => directionalLight.intensity, x => directionalLight.intensity = x, 0f, 0.1f) // 2초 동안 0으로
             .SetEase(Ease.InQuad));
+        Managers.Instance.Sound.PlaySFX(ESoundClip.DarkComing);
         Managers.Instance.Player.LightObject.SetActive(true);
     }
 
