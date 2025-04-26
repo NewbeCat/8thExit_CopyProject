@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aff38b9c2a1164b4a97a16db6635c200, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originPos: {x: 0.52, y: -3.38, z: 14.71}
-  targetPos: {x: 0.52, y: -3.38, z: 9.57}
+  originPos: {x: 0.64, y: -3.38, z: 14.71}
+  targetPos: {x: 0.64, y: -3.38, z: 9.506}
   animator: {fileID: 5558560411710456547}
   moveDuration: 0
   handTransform: {fileID: 8267849598821327187}

@@ -17,8 +17,6 @@ public class ScreenHand : MonoBehaviour
     {
         boxEventTrigger.OnTrigger += Show;
         moveDuration = animator.GetCurrentAnimatorStateInfo(0).length;
-        originPos = handTransform.position;
-        targetPos = handTransform.position + new Vector3(0, 0, -5);
         handTransform.gameObject.SetActive(false);
     }
 
@@ -32,6 +30,6 @@ public class ScreenHand : MonoBehaviour
         // »ç¿îµå
         handTransform.gameObject.SetActive(true);
         isShowed = true;
-        handTransform.DOMove(targetPos, moveDuration).SetEase(Ease.OutQuad);
+        handTransform.DOLocalMove(targetPos, moveDuration).SetEase(Ease.OutQuad);
     }
 }
