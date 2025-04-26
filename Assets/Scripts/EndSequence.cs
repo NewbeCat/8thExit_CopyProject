@@ -73,16 +73,16 @@ public class EndSequence : MonoBehaviour
         yield return new WaitForSeconds(2f);
         yield return StartCoroutine(ZoomCamera(zoomFOV, zoomDuration));
         cameraTurnoff.TurnOff();
-        //불꺼지는 소리
+        // TODO 불꺼지는 소리 oneshot
         player.transform.position = endDestination;
-        player.transform.rotation = Quaternion.Euler(0, -90, 0);
+        player.transform.rotation = Quaternion.Euler(0, 0, 0);
         eraseScreen1.SetActive(false);
         eraseScreen2.SetActive(false);
         newScreen.SetActive(true);
         playerCamera.fieldOfView = originalFOV;
         yield return new WaitForSeconds(1f);
         cameraTurnoff.TurnOn();
-        //불켜지는 소리
+        // TODO 불켜지는 소리 oneshot
         yield return new WaitForSeconds(1f);
         playerController.enabled = true;
 
@@ -96,7 +96,7 @@ public class EndSequence : MonoBehaviour
         Vector3 startPos = credits.transform.position;
         Vector3 endPos = startPos + new Vector3(0, rollup, 0);
 
-        // [여기서 박수 소리 or 엔딩 음악 시작하면 좋음]
+        // TODO 박수 소리 등 엔딩 소리 시작
 
         float elapsed = 0f;
         while (elapsed < creditDuration)
@@ -107,7 +107,7 @@ public class EndSequence : MonoBehaviour
 
             if (!fading && creditDuration - elapsed <= 5f)
             {
-                // [소리 페이드 아웃 3f]
+                // TODO 소리 페이드 아웃 3f  -- 소리 음량 서서히 줄이다가 3f때 음량 = 0 ==> 그러면 소리 아예 끄기, 카메라 fadeout과 동시에 실행되어야함.
                 cameraTurnoff.FadeOut();
                 fading = true;
             }
@@ -115,7 +115,7 @@ public class EndSequence : MonoBehaviour
         }
 
         credits.transform.position = endPos;
-        //SceneManager.LoadScene("BetterMap");
+        // SceneManager.LoadScene("BetterMap"); // TODO 태초마을 스타일로 처음부터 다시!
     }
 
 

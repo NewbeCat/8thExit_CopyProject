@@ -682,8 +682,8 @@ MonoBehaviour:
   endDestination: {x: -6.7, y: 3, z: -5}
   cameraTurnoff: {fileID: 0}
   player: {fileID: 0}
-  zoomFOV: 30
-  zoomDuration: 5
+  zoomFOV: 20
+  zoomDuration: 10
   creditDuration: 45
   rollup: 30
   eraseScreen1: {fileID: 2663242130587067482}
