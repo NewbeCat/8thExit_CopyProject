@@ -33,7 +33,7 @@ public class DarkIsComing : MonoBehaviour
         isTriggered = true;
 
         sequence = DOTween.Sequence();
-        sequence.Append(DOTween.To(() => directionalLight.intensity, x => directionalLight.intensity = x, 0f, 2f) // 2초 동안 0으로
+        sequence.Append(DOTween.To(() => directionalLight.intensity, x => directionalLight.intensity = x, 0f, 0.1f) // 2초 동안 0으로
             .SetEase(Ease.InQuad));
         Managers.Instance.Player.LightObject.SetActive(true);
     }
