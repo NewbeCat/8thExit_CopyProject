@@ -54,6 +54,10 @@ public class WarpZone : MonoBehaviour
     //finished private
     private void Start()
     {
+        if (Managers.Instance.Player != null)
+        {
+
+        }
         _player = Managers.Instance.Player.gameObject;
         _playerController = _player.GetComponent<CharacterController>();
     }

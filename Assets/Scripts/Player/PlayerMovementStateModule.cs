@@ -1,5 +1,7 @@
 using System;
+using Unity.Jobs;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 [Serializable]
 public class PlayerMovementStateModule : StateMachineBase<EPlayerMovement>
@@ -61,6 +63,11 @@ public class PlayerMovementStateModule : StateMachineBase<EPlayerMovement>
 
     public override void Update()
     {
+        if (currentState == null)
+        {
+            return;
+        }
+
         currentState.FixedUpdate();
         currentState.Update();
         ApplyGravity();

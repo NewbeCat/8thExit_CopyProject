@@ -30,6 +30,9 @@ public enum ESoundClip
     LightTurnon,
     Spotlight,
     DarkComing,
+    StokerLoop,
+    StokerOneShot,
+    AmbienceEnding,
 }
 #endregion
 #region Addressable
@@ -41,5 +44,6 @@ public enum EAddressableLabel
     Speaker,
     Light,
     DarkComing,
+    Stoker,
 }
 #endregion

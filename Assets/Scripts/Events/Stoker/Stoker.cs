@@ -9,6 +9,7 @@ public class Stoker : MonoBehaviour
     [SerializeField] private Animator animator;
 
     [SerializeField] private bool isMove = false;
+    [SerializeField] private AudioSource source;
 
     private void Awake()
     {
@@ -17,8 +18,16 @@ public class Stoker : MonoBehaviour
 
     private void ChangeMoveState(bool isMove)
     {
-        animator.SetBool("IsMove", isMove);
+        if (isMove)
+        {
+            Managers.Instance.Sound.PlaySFX(ESoundClip.StokerOneShot);
+            source.clip = Managers.Instance.Sound.GetAudioClip(ESoundClip.StokerLoop);
+            source.Play();
+        }
+
         this.isMove = isMove;
+        
+        animator.SetBool("IsMove", isMove);
     }
 
     private void Update()

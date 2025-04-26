@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static Unity.VisualScripting.Member;
 
 public class EndSequence : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class EndSequence : MonoBehaviour
     [SerializeField] private GameObject eraseScreen2;
     [SerializeField] private GameObject newScreen;
     [SerializeField] private GameObject credits;
+
+    [SerializeField] private AudioSource source;
 
     private PlayerController playerController;
     private Camera playerCamera;
@@ -73,6 +76,7 @@ public class EndSequence : MonoBehaviour
         yield return new WaitForSeconds(2f);
         yield return StartCoroutine(ZoomCamera(zoomFOV, zoomDuration));
         cameraTurnoff.TurnOff();
+        Managers.Instance.Sound.PlaySFX(ESoundClip.LightTurnoff);
         // TODO 불꺼지는 소리 oneshot
         player.transform.position = endDestination;
         player.transform.rotation = Quaternion.Euler(0, 0, 0);
@@ -82,6 +86,7 @@ public class EndSequence : MonoBehaviour
         playerCamera.fieldOfView = originalFOV;
         yield return new WaitForSeconds(1f);
         cameraTurnoff.TurnOn();
+        Managers.Instance.Sound.PlaySFX(ESoundClip.LightTurnon);
         // TODO 불켜지는 소리 oneshot
         yield return new WaitForSeconds(1f);
         playerController.enabled = true;
@@ -96,6 +101,8 @@ public class EndSequence : MonoBehaviour
         Vector3 startPos = credits.transform.position;
         Vector3 endPos = startPos + new Vector3(0, rollup, 0);
 
+        source.clip = Managers.Instance.Sound.GetAudioClip(ESoundClip.AmbienceEnding);
+        source.Play();
         // TODO 박수 소리 등 엔딩 소리 시작
 
         float elapsed = 0f;
@@ -104,6 +111,7 @@ public class EndSequence : MonoBehaviour
             elapsed += Time.deltaTime;
             float t = Mathf.Clamp01(elapsed / creditDuration);
             credits.transform.position = Vector3.Lerp(startPos, endPos, t);
+            source.volume -= Time.deltaTime / 3f;
 
             if (!fading && creditDuration - elapsed <= 5f)
             {
@@ -115,7 +123,7 @@ public class EndSequence : MonoBehaviour
         }
 
         credits.transform.position = endPos;
-        // SceneManager.LoadScene("BetterMap"); // TODO 태초마을 스타일로 처음부터 다시!
+        SceneManager.LoadScene("BetterMap"); // TODO 태초마을 스타일로 처음부터 다시!
     }
 
 

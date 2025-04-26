@@ -15,9 +15,15 @@ public class PlayerController : MonoBehaviour, IManager
     [SerializeField] private BloodFootStep footStep;
     [SerializeField] private Material[] footStepMaterials;
     [field: SerializeField] public GameObject LightObject;
+    [SerializeField] private Vector3 originPos;
     #endregion
 
     #region Unity Methods
+    private void Awake()
+    {
+        DontDestroyOnLoad(this);
+    }
+
     private void FixedUpdate()
     {
         playerMovementModule.FixedUpdate();
@@ -78,7 +84,7 @@ public class PlayerController : MonoBehaviour, IManager
     {
         Debug.Log("Reset");
         _cameraController.isPlayerable = true;
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     
 }
