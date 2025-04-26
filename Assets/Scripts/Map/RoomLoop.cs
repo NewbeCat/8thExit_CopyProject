@@ -59,7 +59,7 @@ public class RoomLoop : MonoBehaviour
         toggleChoiceAndEntry();
 
         //답 따라 워프 조정 & 포스터 조정
-        if (!_yesAnswer && eventType != 0)
+        if (!_yesAnswer && eventType != 0 && eventType != 8)
         { // no 답이 맞았을 경우
             warpZone.setWarpFlip(true);
             togglePosters(false);
@@ -71,7 +71,7 @@ public class RoomLoop : MonoBehaviour
         }
 
         //답 따라 숫자 조정
-        if (_yesAnswer == (eventType == 0))
+        if (_yesAnswer == (eventType == 0 || eventType == 8))
         {
             warpZone.addRoom();
         }
