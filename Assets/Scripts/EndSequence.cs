@@ -79,7 +79,7 @@ public class EndSequence : MonoBehaviour
         Managers.Instance.Sound.PlaySFX(ESoundClip.LightTurnoff);
         // TODO 불꺼지는 소리 oneshot
         player.transform.position = endDestination;
-        player.transform.rotation = Quaternion.Euler(0, 0, 0);
+        player.transform.rotation = Quaternion.Euler(0, -90, 0);
         eraseScreen1.SetActive(false);
         eraseScreen2.SetActive(false);
         newScreen.SetActive(true);
