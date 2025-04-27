@@ -159,6 +159,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - FootStep
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d35340f69f9a7a54791f23c746b70f81
+    m_Address: Assets/8thExit Sound/Flim.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Screen
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d54bead9ac0423c46b0180aaeabec7ff
     m_Address: Assets/8thExit Sound/dark_coming.wav
     m_ReadOnly: 0

@@ -23,6 +23,7 @@ public class SoundManager : MonoBehaviour, IManager
 
     public void Init()
     {
+        DontDestroyOnLoad(this);
         _pooler = new ObjectPooler<SoundSource>(_soundSourcePrefab, transform, _poolInitCount, _poolMaxCount);
         // 로딩창 필요
         foreach (EAddressableLabel label in Enum.GetValues(typeof(EAddressableLabel)))

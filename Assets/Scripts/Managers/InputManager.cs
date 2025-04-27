@@ -20,6 +20,7 @@ public class InputManager : MonoBehaviour, IManager
     #region Init Methods
     public void Init()
     {
+        DontDestroyOnLoad(this);
         _playerInput = GetComponent<PlayerInput>();
         InitActions();
     }

@@ -62,7 +62,7 @@ public class Managers : MonoBehaviour
     {
         get
         {
-            InitMonoBehaviourSigleton(ref _input);
+            InitMonoBehaviourSigleton(ref _player);
             return _player;
         }
     }

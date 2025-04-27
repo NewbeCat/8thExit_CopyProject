@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour, IManager
     #region Unity Methods
     private void Awake()
     {
-        DontDestroyOnLoad(this);
+        //DontDestroyOnLoad(this);
     }
 
     private void FixedUpdate()

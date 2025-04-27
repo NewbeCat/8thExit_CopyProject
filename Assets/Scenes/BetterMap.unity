@@ -373,6 +373,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
+    - target: {fileID: 9111129874028257294, guid: e3acd2d8beda54f45a1e1581f2c1b66f, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 3759e3b180628804f8e79efd3ce7209b, type: 3}
+    - target: {fileID: 9111129874028257294, guid: e3acd2d8beda54f45a1e1581f2c1b66f, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3759e3b180628804f8e79efd3ce7209b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -610,11 +618,7 @@ PrefabInstance:
     - target: {fileID: 1153297189110086104, guid: 7948d523a1db02541bf606a0de8ac3d5, type: 3}
       propertyPath: noEvent
       value: 
-      objectReference: {fileID: 1262294811398535759, guid: 64c766641e2d023449a496a8c65de3d4, type: 3}
-    - target: {fileID: 1153297189110086104, guid: 7948d523a1db02541bf606a0de8ac3d5, type: 3}
-      propertyPath: endEvent
-      value: 
-      objectReference: {fileID: 1262294811398535759, guid: 64c766641e2d023449a496a8c65de3d4, type: 3}
+      objectReference: {fileID: 8732298215754015184, guid: 06ae94fbd200aa84c8a1cc88226540fe, type: 3}
     - target: {fileID: 1944659031147629425, guid: 7948d523a1db02541bf606a0de8ac3d5, type: 3}
       propertyPath: m_Name
       value: Map

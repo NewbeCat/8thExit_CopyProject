@@ -11,7 +11,7 @@ public class EyesPoster : MonoBehaviour
 
     private void Update()
     {
-        float currentDiff = Managers.Instance.Player.transform.position.z - transform.position.z;
+        float currentDiff = Managers.Instance.Player.transform.position.x - transform.position.x;
         if (diff != currentDiff)
         {
             diff = isReverse ? -currentDiff : currentDiff;

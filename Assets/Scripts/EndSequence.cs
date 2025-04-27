@@ -101,7 +101,7 @@ public class EndSequence : MonoBehaviour
         Vector3 startPos = credits.transform.position;
         Vector3 endPos = startPos + new Vector3(0, rollup, 0);
 
-        Managers.Instance.Sound.PlaySFX(ESoundClip.AmbienceEnding);
+        Managers.Instance.Sound.PlaySFX(ESoundClip.AmbienceEnding, source.transform.position);
         source.clip = Managers.Instance.Sound.GetAudioClip(ESoundClip.Flim);
         source.Play();
         // TODO 박수 소리 등 엔딩 소리 시작

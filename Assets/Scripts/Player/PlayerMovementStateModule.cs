@@ -155,7 +155,8 @@ public class PlayerMovementStateModule : StateMachineBase<EPlayerMovement>
 
             if (Physics.Raycast(footStepPos, Vector3.down * 10f, out RaycastHit hit, 1 << LayerMask.NameToLayer("Floor")))
             {
-                footStepPos = hit.point;
+                footStepPos = hit.point + new Vector3(0, 0.1f, 0);
+
                 //footStepPos.x = _isLeftStep ? -_footStepUnitPosX : _footStepUnitPosX;
 
                 if (isBloodStepActive)

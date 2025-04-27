@@ -28,6 +28,11 @@ public class CameraController : MonoBehaviour
 
     #endregion
 
+    private void OnDestroy()
+    {
+        Managers.Instance.Input.look -= UpdateCameraRotation;
+    }
+
     #region Init Methods
     public void Init()
     {
@@ -37,7 +42,7 @@ public class CameraController : MonoBehaviour
 
     private void UpdateCameraRotation(Vector2 delta)
     {
-        if (!isPlayerable)
+        if (!isPlayerable && _playerTransform == null)
         {
             return;
         }
@@ -48,7 +53,10 @@ public class CameraController : MonoBehaviour
 
         // in unity, rotation order Z -> Y -> X
         Quaternion rotationY = Quaternion.Euler(new Vector3(0, delta.x * _horizontalSensitivity, 0));
-        _playerTransform.rotation *= rotationY;
+        if (_playerTransform != null)
+        {
+            _playerTransform.rotation *= rotationY;
+        }
 
         // limit rotationX to read easy
         // localRotation.x is Quaternion value (0~1)
