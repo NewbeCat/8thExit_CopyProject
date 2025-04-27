@@ -782,8 +782,8 @@ MonoBehaviour:
   player: {fileID: 0}
   zoomFOV: 20
   zoomDuration: 10
-  creditDuration: 45
-  rollup: 30
+  creditDuration: 30
+  rollup: 20
   eraseScreen1: {fileID: 2663242130587067482}
   eraseScreen2: {fileID: 8136783167261742733}
   newScreen: {fileID: 1608924931509862811}

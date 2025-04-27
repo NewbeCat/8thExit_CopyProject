@@ -84,7 +84,7 @@ public class EndSequence : MonoBehaviour
         eraseScreen2.SetActive(false);
         newScreen.SetActive(true);
         playerCamera.fieldOfView = originalFOV;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(3f);
         cameraTurnoff.TurnOn();
         Managers.Instance.Sound.PlaySFX(ESoundClip.LightTurnon);
         // TODO 불켜지는 소리 oneshot
