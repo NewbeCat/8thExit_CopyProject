@@ -58,6 +58,9 @@ public class PlayerController : MonoBehaviour, IManager
 
         _cameraController.originalPosition = _cameraController.transform.position;
 
+        // TODO: 죽는 사운드
+        Managers.Instance.Sound.PlaySFX(ESoundClip.StokerCatch);
+
         while (time > 0f)
         {
             _cameraController.DoShakeMotion();
@@ -73,8 +76,7 @@ public class PlayerController : MonoBehaviour, IManager
             yield return null;
         }
 
-        // TODO: 죽는 사운드
-
+        
         yield return Managers.Instance.Coroutine.GetWaitForSeconds(1f);
         // TODO: 페이드
         GoNextScene();

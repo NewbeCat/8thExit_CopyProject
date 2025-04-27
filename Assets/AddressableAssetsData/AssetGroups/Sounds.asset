@@ -103,13 +103,19 @@ MonoBehaviour:
     m_Address: Assets/8thExit Sound/ScreenVideo.wav
     m_ReadOnly: 0
     m_SerializedLabels:
-    - ScreenVideo
+    - Screen
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 90ded44fd946f2e4c9e6d8a334e766c8
     m_Address: Assets/8thExit Sound/LightTurnon.wav
     m_ReadOnly: 0
     m_SerializedLabels:
     - Light
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 99d81cf2f33cbb540a7c51222258964a
+    m_Address: Assets/8thExit Sound/StokerCatch.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Stoker
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 99fd6c998b738ab4c8e2077bd8f9847b
     m_Address: Assets/8thExit Sound/Run_3.wav
@@ -160,10 +166,10 @@ MonoBehaviour:
     - DarkComing
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d9a0919f28d329c49982c5d7ae660756
-    m_Address: Assets/8thExit Sound/screen_hand.wav
+    m_Address: Assets/8thExit Sound/ScreenHand.wav
     m_ReadOnly: 0
     m_SerializedLabels:
-    - ScreenHand
+    - Screen
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e9bfea3e25e6d1843aac2e2a3f184fb0
     m_Address: Assets/8thExit Sound/Run_Blood_2.wav

@@ -46,8 +46,9 @@ public class SoundSource : MonoBehaviour, IPoolable<SoundSource>
         Managers.Instance.Coroutine.StartCoroutine(CoReleaseAfterPlaying(clip.length));
     }
 
-    public void Play(AudioClip clip, AudioMixerGroup mixer, Vector3 pos)
+    public void Play(AudioClip clip, AudioMixerGroup mixer, Vector3 pos, float volume = 1f)
     {
+        _audioSource.volume = volume;
         transform.position = pos;
         Play(clip, mixer);
     }

@@ -46,6 +46,7 @@ public class Stoker : MonoBehaviour
             Debug.Log("Die");
             other.GetComponent<PlayerController>().Die();
             ChangeMoveState(false);
+            source.Stop();
         }
     }
 

@@ -1,5 +1,6 @@
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class ScreenHand : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class ScreenHand : MonoBehaviour
     [SerializeField] private Transform handTransform;
 
     [SerializeField] private BoxEventTrigger boxEventTrigger;
+
+    [SerializeField] private AudioSource audioSource; 
 
     private bool isShowed;
 
@@ -28,8 +31,10 @@ public class ScreenHand : MonoBehaviour
         }
 
         // »ç¿îµå
-        handTransform.gameObject.SetActive(true);
         isShowed = true;
+        handTransform.gameObject.SetActive(true);
+        audioSource.clip = Managers.Instance.Sound.GetAudioClip(ESoundClip.ScreenHand);
+        audioSource.Play();
         handTransform.DOLocalMove(targetPos, moveDuration).SetEase(Ease.OutQuad);
     }
 }

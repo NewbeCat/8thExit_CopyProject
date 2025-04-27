@@ -101,22 +101,24 @@ public class EndSequence : MonoBehaviour
         Vector3 startPos = credits.transform.position;
         Vector3 endPos = startPos + new Vector3(0, rollup, 0);
 
-        source.clip = Managers.Instance.Sound.GetAudioClip(ESoundClip.AmbienceEnding);
+        Managers.Instance.Sound.PlaySFX(ESoundClip.AmbienceEnding);
+        source.clip = Managers.Instance.Sound.GetAudioClip(ESoundClip.Flim);
         source.Play();
         // TODO 박수 소리 등 엔딩 소리 시작
 
         float elapsed = 0f;
+
         while (elapsed < creditDuration)
         {
             elapsed += Time.deltaTime;
             float t = Mathf.Clamp01(elapsed / creditDuration);
             credits.transform.position = Vector3.Lerp(startPos, endPos, t);
-            source.volume -= Time.deltaTime / 3f;
 
             if (!fading && creditDuration - elapsed <= 5f)
             {
                 // TODO 소리 페이드 아웃 3f  -- 소리 음량 서서히 줄이다가 3f때 음량 = 0 ==> 그러면 소리 아예 끄기, 카메라 fadeout과 동시에 실행되어야함.
                 cameraTurnoff.FadeOut();
+                StartCoroutine(CoFadeFlimSound());
                 fading = true;
             }
             yield return null;
@@ -126,6 +128,24 @@ public class EndSequence : MonoBehaviour
         SceneManager.LoadScene("BetterMap"); // TODO 태초마을 스타일로 처음부터 다시!
     }
 
+    private IEnumerator CoFadeFlimSound()
+    {
+        float fadeDuration = 3f;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < fadeDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            float diff = fadeDuration - elapsedTime;
+            source.volume = diff;
+            yield return null;
+        }
+
+        if (source)
+        {
+            source.Stop();
+        }
+    }
 
     private IEnumerator RotatePlayer(Vector3 targetEulerAngles, float duration)
     {
