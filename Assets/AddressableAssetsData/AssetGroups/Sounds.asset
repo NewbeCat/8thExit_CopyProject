@@ -15,6 +15,18 @@ MonoBehaviour:
   m_GroupName: Sounds
   m_GUID: 8f6f11f650e3f7e40b273886254698f2
   m_SerializeEntries:
+  - m_GUID: 226ed2ecf89a6d64ba40e56809e9a2e0
+    m_Address: Assets/8thExit Sound/StokerStart(Loop).wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Stoker
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 231be4b45a560ae46982f44c6d3d4bbc
+    m_Address: Assets/8thExit Sound/AmbienceEnding.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Ambience
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2a478a19515e0694dbdb228aa0c4cd65
     m_Address: Assets/8thExit Sound/Run_Blood_4.wav
     m_ReadOnly: 0
@@ -51,6 +63,18 @@ MonoBehaviour:
     m_SerializedLabels:
     - FootStep
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4b6edc5eb8aa799439a2854ff9eacd7a
+    m_Address: Assets/8thExit Sound/Spotlight.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Light
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4fdb72be83c68494b8bd118c02c632ee
+    m_Address: Assets/8thExit Sound/StokerStart(OneShot).wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Stoker
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5fe1673be1bbe3248b229bb86f1c4af1
     m_Address: Assets/8thExit Sound/Walk_3.wav
     m_ReadOnly: 0
@@ -81,6 +105,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - ScreenVideo
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 90ded44fd946f2e4c9e6d8a334e766c8
+    m_Address: Assets/8thExit Sound/LightTurnon.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Light
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 99fd6c998b738ab4c8e2077bd8f9847b
     m_Address: Assets/8thExit Sound/Run_3.wav
     m_ReadOnly: 0
@@ -92,6 +122,12 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - FootStep
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a28073bfb3303b549be5fb186b83ffd0
+    m_Address: Assets/8thExit Sound/LightTurnoff.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Light
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a4b305e6971744442a2a7907202eaadf
     m_Address: Assets/8thExit Sound/SpeakerLoop.wav
@@ -116,6 +152,18 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - FootStep
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d54bead9ac0423c46b0180aaeabec7ff
+    m_Address: Assets/8thExit Sound/dark_coming.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DarkComing
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d9a0919f28d329c49982c5d7ae660756
+    m_Address: Assets/8thExit Sound/screen_hand.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ScreenHand
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e9bfea3e25e6d1843aac2e2a3f184fb0
     m_Address: Assets/8thExit Sound/Run_Blood_2.wav

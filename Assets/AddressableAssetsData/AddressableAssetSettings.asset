@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: c6f5ce78a52d4fb41a9b0d0ba6154f7a
   m_currentHash:
     serializedVersion: 2
-    Hash: e8f2d2351ec59ebe0da46b4b2730b29b
+    Hash: 8d8adf66901d2e9624f7450312d0edb1
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_CatalogRequestsTimeout: 0
@@ -104,6 +104,10 @@ MonoBehaviour:
     - Ambience
     - ScreenVideo
     - Speaker
+    - Light
+    - DarkComing
+    - ScreenHand
+    - Stoker
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: b80ee082762960a448e4d82f12b38a79, type: 2}

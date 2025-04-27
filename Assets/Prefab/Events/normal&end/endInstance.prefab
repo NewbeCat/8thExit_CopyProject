@@ -691,6 +691,7 @@ MonoBehaviour:
   eraseScreen2: {fileID: 8136783167261742733}
   newScreen: {fileID: 1608924931509862811}
   credits: {fileID: 664494527013925130}
+  source: {fileID: 8004662896533282173}
 --- !u!65 &8853427430701382226
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -724,10 +725,10 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
