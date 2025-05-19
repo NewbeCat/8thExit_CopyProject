@@ -57,6 +57,8 @@ MonoBehaviour:
   - {fileID: 5150968182713655519, guid: a7127767c388bf649b393cad7c7ecfce, type: 3}
   - {fileID: 8732298215754015184, guid: 06ae94fbd200aa84c8a1cc88226540fe, type: 3}
   - {fileID: 977496893416659635, guid: 943c21fc97ffae54981ab8f163ee65ae, type: 3}
+  - {fileID: 2682694533706279520, guid: db436a31079c1f24daf0ff9c6ba22cba, type: 3}
+  - {fileID: 4903778070817307510, guid: 9af71ef808399e845b8d657460b8e821, type: 3}
   obviousEvent:
   - {fileID: 4394526197442507878, guid: e64cfa1f093ab8d40a316401db510d12, type: 3}
   - {fileID: 3584533220409578363, guid: 70523456db15a0244b7496eeebd4bcff, type: 3}
@@ -67,6 +69,7 @@ MonoBehaviour:
   - {fileID: 2540405188650602268, guid: 2a39ba4feff48f246854e6b5e1bf36ca, type: 3}
   - {fileID: 137416759795791767, guid: 263d9c6741afe1842bb8ac4bc94a2cd6, type: 3}
   - {fileID: 7314649099353243045, guid: 49e3e41c0a6e6124590dae0ba5ba3cd0, type: 3}
+  - {fileID: 5486610636797544100, guid: 8a1a9f6508845ac45872cc75a4492d1e, type: 3}
 --- !u!114 &692063749771388683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,8 +86,8 @@ MonoBehaviour:
   _lastEventType: -1
   _lastEventID: -1
   _consecutiveNormalLimit: 2
-  initialErrorProbability: 40
-  subtleErrorProbability: 70
+  initialErrorProbability: 60
+  subtleErrorProbability: 50
   currentSubtleErrorProbability: 0
   currentObviousErrorProbability: 0
   currentNormalProbability: 0
@@ -282,7 +285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeGroup: {fileID: 0}
   fadeDuration: 3
-  filmDuration: 3
+  filmDuration: 2.5
 --- !u!1 &2298514909375584031
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,7 +449,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 58e3a601a23a8e84793444c25149d20f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0c3866b1e291d0f4b8f8eaccd631961f, type: 3}
   m_Color: {r: 0.836478, g: 0.83507854, b: 0.8233258, a: 1}
   m_FlipX: 0
   m_FlipY: 0
