@@ -448,7 +448,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8794029990432342185, guid: 09e82a04384b8bd4bbcd68e78724a5c2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.85
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8794029990432342185, guid: 09e82a04384b8bd4bbcd68e78724a5c2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -627,6 +627,14 @@ PrefabInstance:
       propertyPath: fadeGroup
       value: 
       objectReference: {fileID: 505570676}
+    - target: {fileID: 4844976542238543787, guid: 7948d523a1db02541bf606a0de8ac3d5, type: 3}
+      propertyPath: fadeDuration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4844976542238543787, guid: 7948d523a1db02541bf606a0de8ac3d5, type: 3}
+      propertyPath: filmDuration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

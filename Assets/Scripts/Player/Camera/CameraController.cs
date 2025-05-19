@@ -18,9 +18,9 @@ public class CameraController : MonoBehaviour
     #endregion
 
     #region Unity Methods
-    public float shakeIntensity = 0.5f; // Èçµé¸² °­µµ
-    public float shakeDuration = 1.5f; // Èçµé¸² Áö¼Ó ½Ã°£
-    public float fallSpeed = 2.0f; // Ä«¸Þ¶ó ¶³¾îÁö´Â ¼Óµµ
+    public float shakeIntensity = 0.5f; // ï¿½ï¿½é¸² ï¿½ï¿½ï¿½ï¿½
+    public float shakeDuration = 1.5f; // ï¿½ï¿½é¸² ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½
+    public float fallSpeed = 2.0f; // Ä«ï¿½Þ¶ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Óµï¿½
 
     public Vector3 originalPosition;
 
@@ -76,11 +76,22 @@ public class CameraController : MonoBehaviour
     public void DoDeadMotion()
     {
         transform.position = Vector3.Lerp(transform.position, new Vector3(_playerTransform.position.x, _playerTransform.position.y + 1, _playerTransform.position.z), fallSpeed * Time.deltaTime);
-        transform.rotation = Quaternion.LookRotation(Vector3.up);  // ÇÏ´ÃÀ» ÇâÇÏµµ·Ï È¸Àü
+        transform.rotation = Quaternion.LookRotation(Vector3.up);
     }
 
     public void DoShakeMotion()
     {
         transform.position = originalPosition + UnityEngine.Random.insideUnitSphere * shakeIntensity;
+    }
+
+    public (float, float) SensitivityRead()
+    {
+        return (_horizontalSensitivity, _verticalSensitivity);
+    }
+
+    public void SensitivitySet(float horizontalSensitivity, float verticalSensitivity)
+    {
+        _horizontalSensitivity = horizontalSensitivity;
+        _verticalSensitivity = verticalSensitivity;
     }
 }
