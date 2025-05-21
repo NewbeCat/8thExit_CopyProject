@@ -3,9 +3,26 @@ using UnityEngine;
 
 public class HallPoster : MonoBehaviour
 {
-    [SerializeField] private List<Sprite> imageAssets;
+    private List<Sprite> imageAssets = new List<Sprite>();
     [SerializeField] private List<GameObject> posterObjects;
     private int posterNum = 0;
+
+    private void Start()
+    {
+        for (int i = 0; i <= 8; i++)
+        {
+            var sprite = Resources.Load<Sprite>($"hall_poster/hall{i}");
+            if (sprite != null)
+            {
+                imageAssets.Add(sprite);
+            }
+            else
+            {
+                Debug.LogWarning($"poster{i} not found");
+            }
+        }
+    }
+
     public void UpdatePosters(int index)
     {
         int indexi = 0;
@@ -13,6 +30,7 @@ public class HallPoster : MonoBehaviour
 
         if (posterNum != indexi)
         {
+            posterNum = indexi;
             foreach (GameObject obj in posterObjects)
             {
                 SpriteRenderer renderer = obj.GetComponent<SpriteRenderer>();

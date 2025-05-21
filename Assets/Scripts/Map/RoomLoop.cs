@@ -71,7 +71,7 @@ public class RoomLoop : MonoBehaviour
         }
 
         //답 따라 숫자 조정
-        if (_yesAnswer == (eventType == 0 || eventType == 8))
+        if (_yesAnswer == (eventType == 0 || eventType == -1 || eventType == 8))
         {
             warpZone.addRoom();
         }
