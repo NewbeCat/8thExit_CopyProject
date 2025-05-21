@@ -25,6 +25,7 @@ public class HallPoster : MonoBehaviour
 
     public void UpdatePosters(int index)
     {
+        Debug.Log("Currently room " + index);
         int indexi = 0;
         if (index > 0) indexi = index;
 
@@ -40,8 +41,9 @@ public class HallPoster : MonoBehaviour
                     Debug.LogWarning($"Missing renderer on {obj.name}");
                     continue;
                 }
-
+                obj.SetActive(false);
                 renderer.sprite = imageAssets[indexi];
+                obj.SetActive(true);
             }
         }
     }

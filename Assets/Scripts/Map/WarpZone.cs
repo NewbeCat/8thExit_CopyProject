@@ -10,7 +10,7 @@ public class WarpZone : MonoBehaviour
     private CharacterController _playerController;
 
     [Header("Loop Settings")]
-    public int _curRoomNum = -1; // 포스터 전부 해당 번호대로 변경됨
+    [SerializeField] private int _curRoomNum = -1; // 포스터 전부 해당 번호대로 변경됨
     [SerializeField] private int _maxRoomNum = 8; // 시작방과 끝 방 제외
     private bool _flip = false;
 
@@ -80,7 +80,6 @@ public class WarpZone : MonoBehaviour
     {
         if (_curRoomNum > 0) _curRoomNum = 0;
         hallPoster.UpdatePosters(_curRoomNum);
-        //deactivate all endrooms
     }
     public void setWarpFlip(bool flip)
     {
