@@ -3,48 +3,25 @@ using UnityEngine;
 
 public class HallPoster : MonoBehaviour
 {
-    private List<Sprite> imageAssets = new List<Sprite>();
     [SerializeField] private List<GameObject> posterObjects;
-    private int posterNum = 0;
+    [SerializeField] private List<string> imagePaths; // Resources 내 경로들
+
+    private List<Sprite> imageAssets = new List<Sprite>();
 
     private void Start()
     {
-        for (int i = 0; i <= 8; i++)
-        {
-            var sprite = Resources.Load<Sprite>($"hall_poster/hall{i}");
-            if (sprite != null)
-            {
-                imageAssets.Add(sprite);
-            }
-            else
-            {
-                Debug.LogWarning($"poster{i} not found");
-            }
-        }
+        Cursor.visible = false;
+        foreach (string path in imagePaths) imageAssets.Add(Resources.Load<Sprite>(path));
     }
+
 
     public void UpdatePosters(int index)
     {
         Debug.Log("Currently room " + index);
-        int indexi = 0;
-        if (index > 0) indexi = index;
-
-        if (posterNum != indexi)
+        foreach (GameObject obj in posterObjects)
         {
-            posterNum = indexi;
-            foreach (GameObject obj in posterObjects)
-            {
-                SpriteRenderer renderer = obj.GetComponent<SpriteRenderer>();
-
-                if (renderer == null)
-                {
-                    Debug.LogWarning($"Missing renderer on {obj.name}");
-                    continue;
-                }
-                obj.SetActive(false);
-                renderer.sprite = imageAssets[indexi];
-                obj.SetActive(true);
-            }
+            SpriteRenderer renderer = obj.GetComponent<SpriteRenderer>();
+            renderer.sprite = imageAssets[index];
         }
     }
 }
