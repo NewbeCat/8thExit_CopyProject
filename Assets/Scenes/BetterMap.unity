@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.53826976, g: 0.58990556, b: 0.70440245, a: 1}
+  m_AmbientSkyColor: {r: 0.6844665, g: 0.69049364, b: 0.70440245, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -5049,7 +5049,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 12364
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 3.143e-42, y: 2.524355e-29, z: 0, w: 1.693046e+22}
+  m_BoundingSphereOverride: {x: 9.102061e-12, y: 1.10171565e+24, z: 42062240, w: 4.5452035e+30}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
