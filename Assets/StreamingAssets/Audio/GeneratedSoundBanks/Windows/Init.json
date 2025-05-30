@@ -1,0 +1,173 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "Type": "User",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "Hash": "{CA109C39-712D-AF3B-4030-E76183FE43C9}",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk",
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "2791153688",
+       "Name": "Hall_Small",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Halls\\Hall_Small",
+       "GUID": "{D65B5F04-B83B-412C-9434-34A13A477E24}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
+      {
+       "Id": "2995775460",
+       "Name": "Room_Small",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Small",
+       "GUID": "{577F1466-A63B-47F7-98BD-C56E433F8B5D}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ],
+     "AudioDevices": [
+      {
+       "Id": "2317455096",
+       "Name": "No_Output",
+       "ObjectPath": "\\Audio Devices\\Default Work Unit\\No_Output",
+       "GUID": "{802FF7B8-1E47-4546-9FE6-493768FD69B2}",
+       "LibName": "No Output",
+       "LibId": "11862023"
+      },
+      {
+       "Id": "3859886410",
+       "Name": "System",
+       "ObjectPath": "\\Audio Devices\\Default Work Unit\\System",
+       "GUID": "{548AF3B2-EE97-4791-BAF6-07AE2781A070}",
+       "LibName": "System",
+       "LibId": "11403271"
+      }
+     ]
+    },
+    "Busses": [
+     {
+      "Id": "3803692087",
+      "Name": "Master Audio Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
+      "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     }
+    ],
+    "AuxBusses": [
+     {
+      "Id": "348963605",
+      "Name": "Reverb",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+      "GUID": "{F6AE3741-EDC0-493F-B618-2B4D203921FC}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2995775460"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "3284365407",
+      "Name": "Reverb_Vox",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb_Vox",
+      "GUID": "{5FEB15FA-4750-4299-B2E3-34D72F9206F2}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2791153688"
+        }
+       ]
+      }
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "2338499969",
+      "Name": "filmEvent",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\filmEvent",
+      "GUID": "{4D0A740C-AA08-425D-9401-1D18CA2683E6}"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "3800848640",
+      "Name": "PlayerStatus",
+      "ObjectPath": "\\States\\Default Work Unit\\PlayerStatus",
+      "GUID": "{B08D5EA4-7278-4905-AEFA-E7E24A2EFCA6}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerStatus\\None",
+        "GUID": "{F203A3BE-7D38-47B1-9A32-8EB89B68ECCF}"
+       },
+       {
+        "Id": "816373421",
+        "Name": "Caught",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerStatus\\Caught",
+        "GUID": "{1DF41C17-4DA2-4270-8372-45586434DB0F}"
+       },
+       {
+        "Id": "1160234136",
+        "Name": "Normal",
+        "ObjectPath": "\\States\\Default Work Unit\\PlayerStatus\\Normal",
+        "GUID": "{3B6FC45C-A03E-4A83-BEB7-27FBCFEBFBCB}"
+       }
+      ]
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "63790334",
+      "Name": "SurfaceType",
+      "ObjectPath": "\\Switches\\Default Work Unit\\SurfaceType",
+      "GUID": "{7283D79B-4EB3-4D30-A443-1C809B8642CE}",
+      "Switches": [
+       {
+        "Id": "133642231",
+        "Name": "General",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SurfaceType\\General",
+        "GUID": "{D3C766DA-5DA5-4B9A-AF14-59D5677C7ECD}"
+       },
+       {
+        "Id": "3934470635",
+        "Name": "Blood",
+        "ObjectPath": "\\Switches\\Default Work Unit\\SurfaceType\\Blood",
+        "GUID": "{622125C1-C4BF-4EB6-A625-698027B672B2}"
+       }
+      ]
+     },
+     {
+      "Id": "2833833666",
+      "Name": "MovementType",
+      "ObjectPath": "\\Switches\\Default Work Unit\\MovementType",
+      "GUID": "{3357A486-2588-409D-815B-340981857EA8}",
+      "Switches": [
+       {
+        "Id": "712161704",
+        "Name": "Run",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MovementType\\Run",
+        "GUID": "{DB0930DF-0EF3-4160-A0C6-4236EDF9AEE7}"
+       },
+       {
+        "Id": "2108779966",
+        "Name": "Walk",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MovementType\\Walk",
+        "GUID": "{23B7FD58-5772-4418-AF57-D5B43734E496}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{C8E725BE-2BEA-D260-957B-602A3739D85D}"
+ }
+}

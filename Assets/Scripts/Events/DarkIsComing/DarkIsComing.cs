@@ -6,6 +6,7 @@ public class DarkIsComing : MonoBehaviour
 {
     [SerializeField] private BoxEventTrigger trigger;
     [SerializeField] private BoxEventTrigger[] triggers;
+    [SerializeField] private AK.Wwise.Event darkComingEvent;
     private Light directionalLight;
 
     private bool isTriggered = false;
@@ -35,7 +36,7 @@ public class DarkIsComing : MonoBehaviour
         sequence = DOTween.Sequence();
         sequence.Append(DOTween.To(() => directionalLight.intensity, x => directionalLight.intensity = x, 0f, 0.1f) // 2초 동안 0으로
             .SetEase(Ease.InQuad));
-        Managers.Instance.Sound.PlaySFX(ESoundClip.DarkComing);
+        darkComingEvent.Post(gameObject); // Wwise Event 호출
         Managers.Instance.Player.LightObject.SetActive(true);
     }
 

@@ -1,0 +1,1010 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70aa8413a430817488aed9cf55608536, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Virtual Acoustics
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 65d4db92a8f4954c86ff01296ec64c96
+    ParentPath: Virtual Acoustics\Default Work Unit
+    guid: 65d4db92a8f4954c86ff01296ec64c96
+    GuidInternal: 
+    m_lastTime: -8584536258442757950
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Master-Mixer Hierarchy
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: c648c53ff9a53e43b2ea071a62b62e33
+    ParentPath: Master-Mixer Hierarchy\Default Work Unit
+    guid: c648c53ff9a53e43b2ea071a62b62e33
+    GuidInternal: 
+    m_lastTime: -8584530783907350453
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c648c53ff9a53e43b2ea071a62b62e33
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Reverb
+      guid: 4137aef6c0ed3f49b6182b4d203921fc
+      id: 348963605
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c648c53ff9a53e43b2ea071a62b62e33
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Reverb
+        ObjectType: 1
+        guid: 4137aef6c0ed3f49b6182b4d203921fc
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb
+    - name: Reverb_Vox
+      guid: fa15eb5f50479942b2e334d72f9206f2
+      id: 3284365407
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c648c53ff9a53e43b2ea071a62b62e33
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Reverb_Vox
+        ObjectType: 1
+        guid: fa15eb5f50479942b2e334d72f9206f2
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Vox
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 18c2c9020ecd044283ffaea2148bebcc
+    ParentPath: SoundBanks\Default Work Unit
+    guid: 18c2c9020ecd044283ffaea2148bebcc
+    GuidInternal: 
+    m_lastTime: -8584535988835786971
+    List: []
+  - PhysicalPath: SoundBanks\Global.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 18c2c9020ecd044283ffaea2148bebcc
+    - ElementName: Global
+      ObjectType: 12
+      guid: ebe4525220386d4794471acacf8b91c2
+    ParentPath: SoundBanks\Default Work Unit\Global
+    guid: ebe4525220386d4794471acacf8b91c2
+    GuidInternal: 
+    m_lastTime: -8584535928781913128
+    List:
+    - name: Global
+      guid: d5fd9e331fb25a4fa2447e2fa4fa8ad0
+      id: 1465331116
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 18c2c9020ecd044283ffaea2148bebcc
+      - ElementName: Global
+        ObjectType: 12
+        guid: ebe4525220386d4794471acacf8b91c2
+      - ElementName: Global
+        ObjectType: 7
+        guid: d5fd9e331fb25a4fa2447e2fa4fa8ad0
+      Path: SoundBanks\Default Work Unit\Global\Global
+  EventWwu:
+  - PhysicalPath: Events\Ambience.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Ambience
+      ObjectType: 12
+      guid: ae807e3ae4ce144a9e4033fea95b68b2
+    ParentPath: Events\Ambience
+    guid: ae807e3ae4ce144a9e4033fea95b68b2
+    GuidInternal: 
+    m_lastTime: -8584536216782355017
+    List:
+    - name: Ending
+      guid: b2ded38a44ac5142a0fdc9fd2e9b3ba4
+      id: 3966194980
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Ambience
+        ObjectType: 12
+        guid: ae807e3ae4ce144a9e4033fea95b68b2
+      - ElementName: Ending
+        ObjectType: 3
+        guid: b2ded38a44ac5142a0fdc9fd2e9b3ba4
+      Path: Events\Ambience\Ending
+      maxAttenuation: 0
+      maxDuration: 28.488464
+      minDuration: 28.488464
+    - name: General
+      guid: bfb4dd1e560370439ee2923ff1b51823
+      id: 133642231
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Ambience
+        ObjectType: 12
+        guid: ae807e3ae4ce144a9e4033fea95b68b2
+      - ElementName: General
+        ObjectType: 3
+        guid: bfb4dd1e560370439ee2923ff1b51823
+      Path: Events\Ambience\General
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 5accb9d5f3173940866cf9b193e40e98
+    ParentPath: Events\Default Work Unit
+    guid: 5accb9d5f3173940866cf9b193e40e98
+    GuidInternal: 
+    m_lastTime: -8584536189046236258
+    List: []
+  - PhysicalPath: Events\Events.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Events
+      ObjectType: 12
+      guid: e672517b2fafe641af72586f2e1c8b6c
+    ParentPath: Events\Events
+    guid: e672517b2fafe641af72586f2e1c8b6c
+    GuidInternal: 
+    m_lastTime: -8584530783907202262
+    List:
+    - name: BlinkLight
+      guid: 6957008e2b3909418f1c66258681ad39
+      id: 2244400135
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Events
+        ObjectType: 12
+        guid: e672517b2fafe641af72586f2e1c8b6c
+      - ElementName: BlinkLight
+        ObjectType: 4
+        guid: 6957008e2b3909418f1c66258681ad39
+      Path: Events\Events\BlinkLight
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: BlinkLight_Shuffle
+      guid: 728487f525d5c6478908f66504321407
+      id: 2514709133
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Events
+        ObjectType: 12
+        guid: e672517b2fafe641af72586f2e1c8b6c
+      - ElementName: BlinkLight
+        ObjectType: 4
+        guid: 6957008e2b3909418f1c66258681ad39
+      - ElementName: BlinkLight_Shuffle
+        ObjectType: 3
+        guid: 728487f525d5c6478908f66504321407
+      Path: Events\Events\BlinkLight\BlinkLight_Shuffle
+      maxAttenuation: 0
+      maxDuration: 0.27318335
+      minDuration: 0.21145208
+    - name: BlinkLight_TurnOff
+      guid: af9c015578144b49acd766c38f546c1e
+      id: 3985402990
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Events
+        ObjectType: 12
+        guid: e672517b2fafe641af72586f2e1c8b6c
+      - ElementName: BlinkLight
+        ObjectType: 4
+        guid: 6957008e2b3909418f1c66258681ad39
+      - ElementName: BlinkLight_TurnOff
+        ObjectType: 3
+        guid: af9c015578144b49acd766c38f546c1e
+      Path: Events\Events\BlinkLight\BlinkLight_TurnOff
+      maxAttenuation: 0
+      maxDuration: 0.27318335
+      minDuration: 0.21682575
+    - name: BlinkLight_TurnOff2
+      guid: b6fd84087c2c7c429710f06fbe0469f7
+      id: 1645130008
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Events
+        ObjectType: 12
+        guid: e672517b2fafe641af72586f2e1c8b6c
+      - ElementName: BlinkLight
+        ObjectType: 4
+        guid: 6957008e2b3909418f1c66258681ad39
+      - ElementName: BlinkLight_TurnOff2
+        ObjectType: 3
+        guid: b6fd84087c2c7c429710f06fbe0469f7
+      Path: Events\Events\BlinkLight\BlinkLight_TurnOff2
+      maxAttenuation: 25
+      maxDuration: 0.27318335
+      minDuration: 0.21682575
+    - name: BlinkLight_TurnOn
+      guid: 30278e983f2acb408cf5ef41c2be1bfb
+      id: 2643953872
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Events
+        ObjectType: 12
+        guid: e672517b2fafe641af72586f2e1c8b6c
+      - ElementName: BlinkLight
+        ObjectType: 4
+        guid: 6957008e2b3909418f1c66258681ad39
+      - ElementName: BlinkLight_TurnOn
+        ObjectType: 3
+        guid: 30278e983f2acb408cf5ef41c2be1bfb
+      Path: Events\Events\BlinkLight\BlinkLight_TurnOn
+      maxAttenuation: 0
+      maxDuration: 0.2664129
+      minDuration: 0.21145208
+    - name: BlinkLight_TurnOn2
+      guid: d0565ec60ef035469ff8efc14e4accf1
+      id: 3851181890
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Events
+        ObjectType: 12
+        guid: e672517b2fafe641af72586f2e1c8b6c
+      - ElementName: BlinkLight
+        ObjectType: 4
+        guid: 6957008e2b3909418f1c66258681ad39
+      - ElementName: BlinkLight_TurnOn2
+        ObjectType: 3
+        guid: d0565ec60ef035469ff8efc14e4accf1
+      Path: Events\Events\BlinkLight\BlinkLight_TurnOn2
+      maxAttenuation: 25
+      maxDuration: 0.2664129
+      minDuration: 0.21145208
+    - name: DarkComing
+      guid: 94512434fb492a4c977656491147eb53
+      id: 2495659572
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Events
+        ObjectType: 12
+        guid: e672517b2fafe641af72586f2e1c8b6c
+      - ElementName: DarkComing
+        ObjectType: 4
+        guid: 94512434fb492a4c977656491147eb53
+      Path: Events\Events\DarkComing
+      maxAttenuation: 0
+      maxDuration: 2.8951929
+      minDuration: 2.8951929
+    - name: DarkComing
+      guid: beb3cfd6f4241848b0495859d28b7b10
+      id: 2495659572
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Events
+        ObjectType: 12
+        guid: e672517b2fafe641af72586f2e1c8b6c
+      - ElementName: DarkComing
+        ObjectType: 4
+        guid: 94512434fb492a4c977656491147eb53
+      - ElementName: DarkComing
+        ObjectType: 3
+        guid: beb3cfd6f4241848b0495859d28b7b10
+      Path: Events\Events\DarkComing\DarkComing
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Ending
+      guid: 3d9ab2e96982b045a29d3737f2d32e72
+      id: 3966194980
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Events
+        ObjectType: 12
+        guid: e672517b2fafe641af72586f2e1c8b6c
+      - ElementName: Ending
+        ObjectType: 4
+        guid: 3d9ab2e96982b045a29d3737f2d32e72
+      Path: Events\Events\Ending
+      maxAttenuation: 0
+      maxDuration: 28.488464
+      minDuration: 28.488464
+    - name: Ending_Screen
+      guid: 8f9fd87cd56c3144a77ede5dc4fcb18f
+      id: 893845055
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Events
+        ObjectType: 12
+        guid: e672517b2fafe641af72586f2e1c8b6c
+      - ElementName: Ending
+        ObjectType: 4
+        guid: 3d9ab2e96982b045a29d3737f2d32e72
+      - ElementName: Ending_Screen
+        ObjectType: 3
+        guid: 8f9fd87cd56c3144a77ede5dc4fcb18f
+      Path: Events\Events\Ending\Ending_Screen
+      maxAttenuation: 0
+      maxDuration: 16.130999
+      minDuration: 16.130999
+    - name: ScreenHand
+      guid: 83d889c9d4292b4c9e5a03380165a080
+      id: 2188306606
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Events
+        ObjectType: 12
+        guid: e672517b2fafe641af72586f2e1c8b6c
+      - ElementName: ScreenHand
+        ObjectType: 4
+        guid: 83d889c9d4292b4c9e5a03380165a080
+      Path: Events\Events\ScreenHand
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: ScreenHand
+      guid: 1f4c9dee55ff2948a9786b221c27775f
+      id: 2188306606
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Events
+        ObjectType: 12
+        guid: e672517b2fafe641af72586f2e1c8b6c
+      - ElementName: ScreenHand
+        ObjectType: 4
+        guid: 83d889c9d4292b4c9e5a03380165a080
+      - ElementName: ScreenHand
+        ObjectType: 3
+        guid: 1f4c9dee55ff2948a9786b221c27775f
+      Path: Events\Events\ScreenHand\ScreenHand
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ScreenVideo
+      guid: 34d3d4f94e1677489412f6bf5518452f
+      id: 969030586
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Events
+        ObjectType: 12
+        guid: e672517b2fafe641af72586f2e1c8b6c
+      - ElementName: ScreenVideo
+        ObjectType: 4
+        guid: 34d3d4f94e1677489412f6bf5518452f
+      Path: Events\Events\ScreenVideo
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: ScreenVideo
+      guid: 9fddb263a4a1914581f9112a8cfbcabf
+      id: 969030586
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Events
+        ObjectType: 12
+        guid: e672517b2fafe641af72586f2e1c8b6c
+      - ElementName: ScreenVideo
+        ObjectType: 4
+        guid: 34d3d4f94e1677489412f6bf5518452f
+      - ElementName: ScreenVideo
+        ObjectType: 3
+        guid: 9fddb263a4a1914581f9112a8cfbcabf
+      Path: Events\Events\ScreenVideo\ScreenVideo
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SpotLight
+      guid: 87d38b7f7afddd429999261bb14f7124
+      id: 3168364347
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Events
+        ObjectType: 12
+        guid: e672517b2fafe641af72586f2e1c8b6c
+      - ElementName: SpotLight
+        ObjectType: 4
+        guid: 87d38b7f7afddd429999261bb14f7124
+      Path: Events\Events\SpotLight
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SpotLight1
+      guid: 66b60493b57808449cc7d4411847d749
+      id: 2235400656
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Events
+        ObjectType: 12
+        guid: e672517b2fafe641af72586f2e1c8b6c
+      - ElementName: SpotLight
+        ObjectType: 4
+        guid: 87d38b7f7afddd429999261bb14f7124
+      - ElementName: SpotLight1
+        ObjectType: 3
+        guid: 66b60493b57808449cc7d4411847d749
+      Path: Events\Events\SpotLight\SpotLight1
+      maxAttenuation: 25
+      maxDuration: 2.638753
+      minDuration: 2.638753
+    - name: SpotLight2
+      guid: ad3de60ff947a742befd9ece161f3536
+      id: 2235400659
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Events
+        ObjectType: 12
+        guid: e672517b2fafe641af72586f2e1c8b6c
+      - ElementName: SpotLight
+        ObjectType: 4
+        guid: 87d38b7f7afddd429999261bb14f7124
+      - ElementName: SpotLight2
+        ObjectType: 3
+        guid: ad3de60ff947a742befd9ece161f3536
+      Path: Events\Events\SpotLight\SpotLight2
+      maxAttenuation: 25
+      maxDuration: 3.138753
+      minDuration: 3.138753
+    - name: SpotLight3
+      guid: 45fd2f320a373247b2d3f241bf1c418f
+      id: 2235400658
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Events
+        ObjectType: 12
+        guid: e672517b2fafe641af72586f2e1c8b6c
+      - ElementName: SpotLight
+        ObjectType: 4
+        guid: 87d38b7f7afddd429999261bb14f7124
+      - ElementName: SpotLight3
+        ObjectType: 3
+        guid: 45fd2f320a373247b2d3f241bf1c418f
+      Path: Events\Events\SpotLight\SpotLight3
+      maxAttenuation: 25
+      maxDuration: 3.638753
+      minDuration: 3.638753
+    - name: Stoker
+      guid: 3c78b143a955a64f82bf44325237a894
+      id: 1079967367
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Events
+        ObjectType: 12
+        guid: e672517b2fafe641af72586f2e1c8b6c
+      - ElementName: Stoker
+        ObjectType: 4
+        guid: 3c78b143a955a64f82bf44325237a894
+      Path: Events\Events\Stoker
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stoker_Catch
+      guid: 5eaa0199d5eedb49a00609500aff730f
+      id: 1239865531
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Events
+        ObjectType: 12
+        guid: e672517b2fafe641af72586f2e1c8b6c
+      - ElementName: Stoker
+        ObjectType: 4
+        guid: 3c78b143a955a64f82bf44325237a894
+      - ElementName: Stoker_Catch
+        ObjectType: 3
+        guid: 5eaa0199d5eedb49a00609500aff730f
+      Path: Events\Events\Stoker\Stoker_Catch
+      maxAttenuation: 0
+      maxDuration: 4.0552835
+      minDuration: 4.0552835
+    - name: Stoker_Start
+      guid: 17b80807a854864da4575614da0a9628
+      id: 534021290
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Events
+        ObjectType: 12
+        guid: e672517b2fafe641af72586f2e1c8b6c
+      - ElementName: Stoker
+        ObjectType: 4
+        guid: 3c78b143a955a64f82bf44325237a894
+      - ElementName: Stoker_Start
+        ObjectType: 3
+        guid: 17b80807a854864da4575614da0a9628
+      Path: Events\Events\Stoker\Stoker_Start
+      maxAttenuation: 0
+      maxDuration: 5.625805
+      minDuration: 5.625805
+    - name: Stoker_Start_Loop
+      guid: 34c5c55d353c6e45823e39e1f0e6114e
+      id: 63719771
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Events
+        ObjectType: 12
+        guid: e672517b2fafe641af72586f2e1c8b6c
+      - ElementName: Stoker
+        ObjectType: 4
+        guid: 3c78b143a955a64f82bf44325237a894
+      - ElementName: Stoker_Start_Loop
+        ObjectType: 3
+        guid: 34c5c55d353c6e45823e39e1f0e6114e
+      Path: Events\Events\Stoker\Stoker_Start_Loop
+      maxAttenuation: 12
+      maxDuration: 0
+      minDuration: 0
+    - name: WeirdSpeaker
+      guid: 02cf92fc2c4ab9488b0994168e0e0ec9
+      id: 1781063159
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Events
+        ObjectType: 12
+        guid: e672517b2fafe641af72586f2e1c8b6c
+      - ElementName: WeirdSpeaker
+        ObjectType: 4
+        guid: 02cf92fc2c4ab9488b0994168e0e0ec9
+      Path: Events\Events\WeirdSpeaker
+      maxAttenuation: 0
+      maxDuration: 4.24483
+      minDuration: 4.24483
+    - name: WeirdSpeaker
+      guid: 2b14796ec132b042851c292bee3ba55c
+      id: 1781063159
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Events
+        ObjectType: 12
+        guid: e672517b2fafe641af72586f2e1c8b6c
+      - ElementName: WeirdSpeaker
+        ObjectType: 4
+        guid: 02cf92fc2c4ab9488b0994168e0e0ec9
+      - ElementName: WeirdSpeaker
+        ObjectType: 3
+        guid: 2b14796ec132b042851c292bee3ba55c
+      Path: Events\Events\WeirdSpeaker\WeirdSpeaker
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: WeirdSpeaker_Loop
+      guid: 63d8bc65e9d15a4e9783f0cc3210c1d9
+      id: 1104531468
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Events
+        ObjectType: 12
+        guid: e672517b2fafe641af72586f2e1c8b6c
+      - ElementName: WeirdSpeaker
+        ObjectType: 4
+        guid: 02cf92fc2c4ab9488b0994168e0e0ec9
+      - ElementName: WeirdSpeaker_Loop
+        ObjectType: 3
+        guid: 63d8bc65e9d15a4e9783f0cc3210c1d9
+      Path: Events\Events\WeirdSpeaker\WeirdSpeaker_Loop
+      maxAttenuation: 25
+      maxDuration: 0
+      minDuration: 0
+  - PhysicalPath: Events\Player.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Player
+      ObjectType: 12
+      guid: 5bb935738b6da0408b5222ec5cf10c01
+    ParentPath: Events\Player
+    guid: 5bb935738b6da0408b5222ec5cf10c01
+    GuidInternal: 
+    m_lastTime: -8584535928781957554
+    List:
+    - name: Run_Blood
+      guid: 91fc785e832b134498a3c17205cf357b
+      id: 319837853
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 5bb935738b6da0408b5222ec5cf10c01
+      - ElementName: Run_Blood
+        ObjectType: 3
+        guid: 91fc785e832b134498a3c17205cf357b
+      Path: Events\Player\Run_Blood
+      maxAttenuation: 12
+      maxDuration: 0.29861966
+      minDuration: 0.2539471
+    - name: Run_General
+      guid: c2fe0049e5760245b9f12cde1f64d0c5
+      id: 106788393
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 5bb935738b6da0408b5222ec5cf10c01
+      - ElementName: Run_General
+        ObjectType: 3
+        guid: c2fe0049e5760245b9f12cde1f64d0c5
+      Path: Events\Player\Run_General
+      maxAttenuation: 12
+      maxDuration: 0.29861966
+      minDuration: 0.2539471
+    - name: Walk_Blood
+      guid: a540c30ba5a50540b7a08f31b5c7192a
+      id: 2702675819
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 5bb935738b6da0408b5222ec5cf10c01
+      - ElementName: Walk_Blood
+        ObjectType: 3
+        guid: a540c30ba5a50540b7a08f31b5c7192a
+      Path: Events\Player\Walk_Blood
+      maxAttenuation: 12
+      maxDuration: 0.39887226
+      minDuration: 0.2818353
+    - name: Walk_General
+      guid: d63ad5a92deb0f498cc5658694d0ad5d
+      id: 851050871
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 5bb935738b6da0408b5222ec5cf10c01
+      - ElementName: Walk_General
+        ObjectType: 3
+        guid: d63ad5a92deb0f498cc5658694d0ad5d
+      Path: Events\Player\Walk_General
+      maxAttenuation: 12
+      maxDuration: 0.39887226
+      minDuration: 0.2818353
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 6d7842063946cb4bb6232f603f7990fc
+    ParentPath: Game Parameters\Default Work Unit
+    guid: 6d7842063946cb4bb6232f603f7990fc
+    GuidInternal: 
+    m_lastTime: -8584535883988166193
+    List:
+    - name: filmEvent
+      guid: 0c740a4d08aa5d4294011d18ca2683e6
+      id: 2338499969
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6d7842063946cb4bb6232f603f7990fc
+      - ElementName: filmEvent
+        ObjectType: 13
+        guid: 0c740a4d08aa5d4294011d18ca2683e6
+      Path: Game Parameters\Default Work Unit\filmEvent
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 3958d5b3bcbe7041a920ecd825ec593a
+    ParentPath: States\Default Work Unit
+    guid: 3958d5b3bcbe7041a920ecd825ec593a
+    GuidInternal: 
+    m_lastTime: -8584531585851448850
+    List:
+    - name: PlayerStatus
+      guid: a45e8db078720549aefae7e24a2efca6
+      id: 3800848640
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3958d5b3bcbe7041a920ecd825ec593a
+      - ElementName: PlayerStatus
+        ObjectType: 9
+        guid: a45e8db078720549aefae7e24a2efca6
+      Path: States\Default Work Unit\PlayerStatus
+      values:
+      - name: Caught
+        guid: 171cf41da24d7042837245586434db0f
+        id: 816373421
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 3958d5b3bcbe7041a920ecd825ec593a
+        - ElementName: PlayerStatus
+          ObjectType: 9
+          guid: a45e8db078720549aefae7e24a2efca6
+        - ElementName: Caught
+          ObjectType: 8
+          guid: 171cf41da24d7042837245586434db0f
+      - name: None
+        guid: bea303f2387db1479a328eb89b68eccf
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 3958d5b3bcbe7041a920ecd825ec593a
+        - ElementName: PlayerStatus
+          ObjectType: 9
+          guid: a45e8db078720549aefae7e24a2efca6
+        - ElementName: None
+          ObjectType: 8
+          guid: bea303f2387db1479a328eb89b68eccf
+      - name: Normal
+        guid: 5cc46f3b3ea0834abeb727fbcfebfbcb
+        id: 1160234136
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 3958d5b3bcbe7041a920ecd825ec593a
+        - ElementName: PlayerStatus
+          ObjectType: 9
+          guid: a45e8db078720549aefae7e24a2efca6
+        - ElementName: Normal
+          ObjectType: 8
+          guid: 5cc46f3b3ea0834abeb727fbcfebfbcb
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Switches
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: afb2ab2a3d2c8045b4e50465f096f1f4
+    ParentPath: Switches\Default Work Unit
+    guid: afb2ab2a3d2c8045b4e50465f096f1f4
+    GuidInternal: 
+    m_lastTime: -8584536189046609006
+    List:
+    - name: MovementType
+      guid: 86a4573388259d40815b340981857ea8
+      id: 2833833666
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: afb2ab2a3d2c8045b4e50465f096f1f4
+      - ElementName: MovementType
+        ObjectType: 11
+        guid: 86a4573388259d40815b340981857ea8
+      Path: Switches\Default Work Unit\MovementType
+      values:
+      - name: Run
+        guid: df3009dbf30e6041a0c64236edf9aee7
+        id: 712161704
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: afb2ab2a3d2c8045b4e50465f096f1f4
+        - ElementName: MovementType
+          ObjectType: 11
+          guid: 86a4573388259d40815b340981857ea8
+        - ElementName: Run
+          ObjectType: 10
+          guid: df3009dbf30e6041a0c64236edf9aee7
+      - name: Walk
+        guid: 58fdb72372571844af57d5b43734e496
+        id: 2108779966
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: afb2ab2a3d2c8045b4e50465f096f1f4
+        - ElementName: MovementType
+          ObjectType: 11
+          guid: 86a4573388259d40815b340981857ea8
+        - ElementName: Walk
+          ObjectType: 10
+          guid: 58fdb72372571844af57d5b43734e496
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: SurfaceType
+      guid: 9bd78372b34e304da4431c809b8642ce
+      id: 63790334
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: afb2ab2a3d2c8045b4e50465f096f1f4
+      - ElementName: SurfaceType
+        ObjectType: 11
+        guid: 9bd78372b34e304da4431c809b8642ce
+      Path: Switches\Default Work Unit\SurfaceType
+      values:
+      - name: Blood
+        guid: c1252162bfc4b64ea625698027b672b2
+        id: 3934470635
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: afb2ab2a3d2c8045b4e50465f096f1f4
+        - ElementName: SurfaceType
+          ObjectType: 11
+          guid: 9bd78372b34e304da4431c809b8642ce
+        - ElementName: Blood
+          ObjectType: 10
+          guid: c1252162bfc4b64ea625698027b672b2
+      - name: General
+        guid: da66c7d3a55d9a4baf1459d5677c7ecd
+        id: 133642231
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: afb2ab2a3d2c8045b4e50465f096f1f4
+        - ElementName: SurfaceType
+          ObjectType: 11
+          guid: 9bd78372b34e304da4431c809b8642ce
+        - ElementName: General
+          ObjectType: 10
+          guid: da66c7d3a55d9a4baf1459d5677c7ecd
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Triggers
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 0f3f7664ca977a40bb3bae1c3eb42fb1
+    ParentPath: Triggers\Default Work Unit
+    guid: 0f3f7664ca977a40bb3bae1c3eb42fb1
+    GuidInternal: 
+    m_lastTime: -8584536258442864820
+    List: []
+  ExpandedFileSystemItemIds: 010000000200000003000000050000000600000007000000080000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001300000014000000160000001700000018000000190000001a0000002d0000002e0000002f000000
+  ExpandedWaapiItemIds: 010000000500000006000000070000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001300000016000000170000001800000019000000
+  AutoSyncSelection: 0
+  autoPopulateEnabled: 1
+  currentDataSource: 1
+  CurrentPluginConfig: 

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6F2FA390-2F57-4820-A675-100954829489}" SchemaVersion="123" RootDocumentID="{F3006103-DE78-4533-8E09-1F6B3CFCCB76}" ParentDocumentID="{F3006103-DE78-4533-8E09-1F6B3CFCCB76}">
+	<AudioObjects>
+		<WorkUnit Name="Ambience" ID="{6F2FA390-2F57-4820-A675-100954829489}" OwnerID="{F3006103-DE78-4533-8E09-1F6B3CFCCB76}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="Ambience" ID="{ECC49820-BCBE-496B-ABA0-ED2CD50A2F6B}" ShortID="814904734">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C1A22697-E655-412A-8993-9113AC2661E4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FC548C6-A5F9-433E-B2EA-071A62B62E33}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="ambience" ID="{F2B69EB7-F733-44F9-A6C4-1F24C9D75C53}" ShortID="38287058">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C1A22697-E655-412A-8993-9113AC2661E4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FC548C6-A5F9-433E-B2EA-071A62B62E33}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ambience" ID="{8C8AAF94-C470-45E7-BCD1-A566DE440C22}">
+									<Language>SFX</Language>
+									<AudioFile>ambience.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="389793090"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ambience" ID="{8C8AAF94-C470-45E7-BCD1-A566DE440C22}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ambience_ending(loop)" ID="{F2F46458-F60F-43EC-BED0-378DDB052265}" ShortID="383934083">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C1A22697-E655-412A-8993-9113AC2661E4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FC548C6-A5F9-433E-B2EA-071A62B62E33}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ambience_ending(loop)" ID="{7378E486-189D-4397-8368-B0E270814F35}">
+									<Language>SFX</Language>
+									<AudioFile>ambience_ending(loop).wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="577898278"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ambience_ending(loop)" ID="{7378E486-189D-4397-8368-B0E270814F35}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ambience_screen" ID="{A929F67F-BDF1-43CF-995E-416283F51047}" ShortID="173955999">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C1A22697-E655-412A-8993-9113AC2661E4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FC548C6-A5F9-433E-B2EA-071A62B62E33}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ambience_screen" ID="{19C3932E-2250-4CB2-B372-BAE95FCBC155}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="4.45221189102756"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="28.4884651228577"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ambience_screen.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="482949719"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ambience_screen" ID="{19C3932E-2250-4CB2-B372-BAE95FCBC155}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

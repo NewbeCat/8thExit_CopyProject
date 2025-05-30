@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7B5172E6-AF2F-41E6-AF72-586F2E1C8B6C}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="Events" ID="{7B5172E6-AF2F-41E6-AF72-586F2E1C8B6C}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="BlinkLight" ID="{8E005769-392B-4109-8F1C-66258681AD39}" ShortID="780788155">
+					<ChildrenList>
+						<Event Name="BlinkLight_TurnOn" ID="{988E2730-2A3F-40CB-8CF5-EF41C2BE1BFB}">
+							<ChildrenList>
+								<Action Name="" ID="{CCA51F4F-9743-4677-B4BF-C2CC3606A273}" ShortID="615133140">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="light_turnon" ID="{19CCE81F-8C24-4ED9-858A-813320DE1B2D}" WorkUnitID="{99DF1C51-E299-48BF-839D-60B7ADFB1EF3}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="BlinkLight_TurnOff" ID="{55019CAF-1478-494B-ACD7-66C38F546C1E}">
+							<ChildrenList>
+								<Action Name="" ID="{B5FEB262-6A62-48C3-A707-48FD2EB456F0}" ShortID="211316082">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="light_turnoff" ID="{AF7B83C0-E41B-4DE5-86FC-AB3B93372494}" WorkUnitID="{99DF1C51-E299-48BF-839D-60B7ADFB1EF3}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="BlinkLight_Shuffle" ID="{F5878472-D525-47C6-8908-F66504321407}">
+							<ChildrenList>
+								<Action Name="" ID="{00A892D5-0497-44FE-B7EF-7AF7383128EA}" ShortID="227835733">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BlinkLight" ID="{D7450F39-8475-480A-AF2F-F0837A46A810}" WorkUnitID="{99DF1C51-E299-48BF-839D-60B7ADFB1EF3}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="BlinkLight_TurnOn2" ID="{C65E56D0-F00E-4635-9FF8-EFC14E4ACCF1}">
+							<ChildrenList>
+								<Action Name="" ID="{D9159C52-6809-4853-893E-E48597F96080}" ShortID="937399722">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="light_turnon_01" ID="{377D5C14-D1D7-4C20-A62E-A8AC4AB93F94}" WorkUnitID="{99DF1C51-E299-48BF-839D-60B7ADFB1EF3}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="BlinkLight_TurnOff2" ID="{0884FDB6-2C7C-427C-9710-F06FBE0469F7}">
+							<ChildrenList>
+								<Action Name="" ID="{A2041ADA-DE4C-4ADC-BB86-8AC26FF1870D}" ShortID="837449038">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="light_turnoff_01" ID="{7A8E8C04-FEB8-4926-970E-2E22450CF5F4}" WorkUnitID="{99DF1C51-E299-48BF-839D-60B7ADFB1EF3}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="DarkComing" ID="{34245194-49FB-4C2A-9776-56491147EB53}" ShortID="727081301">
+					<ChildrenList>
+						<Event Name="DarkComing" ID="{D6CFB3BE-24F4-4818-B049-5859D28B7B10}">
+							<ChildrenList>
+								<Action Name="" ID="{0772853D-50BC-4266-A0E2-9CA5B9695934}" ShortID="363389881">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="dark_coming" ID="{A284EEBD-9BAD-4111-B415-36C4318557AE}" WorkUnitID="{99DF1C51-E299-48BF-839D-60B7ADFB1EF3}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="ScreenHand" ID="{C989D883-29D4-4C2B-9E5A-03380165A080}" ShortID="196484009">
+					<ChildrenList>
+						<Event Name="ScreenHand" ID="{EE9D4C1F-FF55-4829-A978-6B221C27775F}">
+							<ChildrenList>
+								<Action Name="" ID="{531DA464-F697-40BF-87F0-CC5B6DDA6804}" ShortID="126249302">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="screen_hand" ID="{C1AE79D8-B781-4647-A377-A5B1E7379F7A}" WorkUnitID="{99DF1C51-E299-48BF-839D-60B7ADFB1EF3}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="ScreenVideo" ID="{F9D4D334-164E-4877-9412-F6BF5518452F}" ShortID="29672944">
+					<ChildrenList>
+						<Event Name="ScreenVideo" ID="{63B2DD9F-A1A4-4591-81F9-112A8CFBCABF}">
+							<ChildrenList>
+								<Action Name="" ID="{D14181F1-E408-4ECA-BD62-1F31AD8A6D73}" ShortID="1030981955">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="screen_eye" ID="{DD63D535-CE2E-4152-984D-4606A46C7762}" WorkUnitID="{99DF1C51-E299-48BF-839D-60B7ADFB1EF3}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="SpotLight" ID="{7F8BD387-FD7A-42DD-9999-261BB14F7124}" ShortID="509882969">
+					<ChildrenList>
+						<Event Name="SpotLight1" ID="{9304B666-78B5-4408-9CC7-D4411847D749}">
+							<ChildrenList>
+								<Action Name="" ID="{6653B47B-581B-43F5-9AE8-A949861947BA}" ShortID="662137859">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="spotlight" ID="{95C0DC5C-D6B4-48DE-AD4D-97088F8612F9}" WorkUnitID="{99DF1C51-E299-48BF-839D-60B7ADFB1EF3}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SpotLight2" ID="{0FE63DAD-47F9-42A7-BEFD-9ECE161F3536}">
+							<ChildrenList>
+								<Action Name="" ID="{26636FB3-A072-4E4E-AD53-84DE669CAAB6}" ShortID="388960837">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="spotlight_01" ID="{BB3E8AAD-2DC7-4FE0-B89E-B01BC74733B3}" WorkUnitID="{99DF1C51-E299-48BF-839D-60B7ADFB1EF3}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SpotLight3" ID="{322FFD45-370A-4732-B2D3-F241BF1C418F}">
+							<ChildrenList>
+								<Action Name="" ID="{AC88CF44-A11E-4E0C-9A8B-A1E8C1BED0CE}" ShortID="707976145">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="spotlight_02" ID="{5362968D-44A4-42B2-B8D3-1FED39BA635D}" WorkUnitID="{99DF1C51-E299-48BF-839D-60B7ADFB1EF3}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Stoker" ID="{43B1783C-55A9-4FA6-82BF-44325237A894}" ShortID="925578161">
+					<ChildrenList>
+						<Event Name="Stoker_Catch" ID="{9901AA5E-EED5-49DB-A006-09500AFF730F}">
+							<ChildrenList>
+								<Action Name="" ID="{952C49B7-FDBE-4A76-8102-354F47A615E5}" ShortID="353252444">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="stoker_catch" ID="{1008C017-BAF3-4D22-A6A5-A70668D38C06}" WorkUnitID="{99DF1C51-E299-48BF-839D-60B7ADFB1EF3}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{755ECD18-2D3B-4940-96A3-B1B95D4EFF48}" ShortID="154238151">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="stoker_start2_1" ID="{98336D9B-A849-4307-831A-A175ED0FDFFE}" WorkUnitID="{99DF1C51-E299-48BF-839D-60B7ADFB1EF3}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stoker_Start_Loop" ID="{5DC5C534-3C35-456E-823E-39E1F0E6114E}">
+							<ChildrenList>
+								<Action Name="" ID="{0EE6AA28-A366-41CC-A8D1-7A430E9E1E78}" ShortID="522120228">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="stoker_start(loop)" ID="{2C8BCF3D-B7AE-462C-84FC-C4EE0FDBAD3A}" WorkUnitID="{99DF1C51-E299-48BF-839D-60B7ADFB1EF3}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{925ADFF8-0658-4101-ABCD-DEFDB200AE64}" ShortID="399636863">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="stoker_chase(loop)" ID="{FD600B30-96AB-4E2F-866A-BBA18FB1CBCE}" WorkUnitID="{99DF1C51-E299-48BF-839D-60B7ADFB1EF3}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stoker_Start" ID="{0708B817-54A8-4D86-A457-5614DA0A9628}">
+							<ChildrenList>
+								<Action Name="" ID="{061773FC-A686-4F63-B601-0CCC969FD6CB}" ShortID="847917276">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="stoker_start(one_shot)" ID="{B782AA70-FFCF-48DC-A38D-A71C4C4E8657}" WorkUnitID="{99DF1C51-E299-48BF-839D-60B7ADFB1EF3}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{44A4739A-8994-4AC8-BD2C-A2A0FFCA6940}" ShortID="1037405250">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="stoker_start2" ID="{65A9D922-6A33-4D0E-8238-A4974D6861EA}" WorkUnitID="{99DF1C51-E299-48BF-839D-60B7ADFB1EF3}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="WeirdSpeaker" ID="{FC92CF02-4A2C-48B9-8B09-94168E0E0EC9}" ShortID="123772198">
+					<ChildrenList>
+						<Event Name="WeirdSpeaker" ID="{6E79142B-32C1-42B0-851C-292BEE3BA55C}">
+							<ChildrenList>
+								<Action Name="" ID="{31200F21-0995-4951-81B2-02FC24104F0E}" ShortID="802686891">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="speaker_sound(one_shot)" ID="{21465301-0965-4C69-8F53-A08F39BCA203}" WorkUnitID="{99DF1C51-E299-48BF-839D-60B7ADFB1EF3}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{0B9E5F00-934C-41B0-BDAF-A9C2826233DF}" ShortID="871435335">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="female_scream" ID="{DD8B79FB-E1A4-4077-8D4D-C1FB47B7408A}" WorkUnitID="{99DF1C51-E299-48BF-839D-60B7ADFB1EF3}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="WeirdSpeaker_Loop" ID="{65BCD863-D1E9-4E5A-9783-F0CC3210C1D9}">
+							<ChildrenList>
+								<Action Name="" ID="{A88308DE-3908-46D9-8B74-F900E1DCFCEE}" ShortID="929187334">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="speaker_sound(loop)" ID="{6A0E492B-DD7E-4DE9-8350-11DC357AD963}" WorkUnitID="{99DF1C51-E299-48BF-839D-60B7ADFB1EF3}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Ending" ID="{E9B29A3D-8269-45B0-A29D-3737F2D32E72}" ShortID="237206008">
+					<ChildrenList>
+						<Event Name="Ending_Screen" ID="{7CD89F8F-6CD5-4431-A77E-DE5DC4FCB18F}">
+							<ChildrenList>
+								<Action Name="" ID="{E877495B-D0CC-4CDD-876F-5A2BAC7D7B21}" ShortID="517272898">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="screen_reverse2" ID="{288B6FA6-8210-44A7-924E-FEB53FAC7362}" WorkUnitID="{99DF1C51-E299-48BF-839D-60B7ADFB1EF3}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

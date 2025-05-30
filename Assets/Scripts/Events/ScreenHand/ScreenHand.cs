@@ -12,14 +12,15 @@ public class ScreenHand : MonoBehaviour
 
     [SerializeField] private BoxEventTrigger boxEventTrigger;
 
-    [SerializeField] private AudioSource audioSource; 
-
     private bool isShowed;
+
+    private AkAmbient handAkAmbient;
 
     private void Awake()
     {
         boxEventTrigger.OnTrigger += Show;
         moveDuration = animator.GetCurrentAnimatorStateInfo(0).length;
+        handAkAmbient = handTransform.GetComponent<AkAmbient>();
         handTransform.gameObject.SetActive(false);
     }
 
@@ -33,8 +34,12 @@ public class ScreenHand : MonoBehaviour
         // »ç¿îµå
         isShowed = true;
         handTransform.gameObject.SetActive(true);
-        audioSource.clip = Managers.Instance.Sound.GetAudioClip(ESoundClip.ScreenHand);
-        audioSource.Play();
+
+        if (handAkAmbient != null)
+        {
+            handAkAmbient.HandleEvent(handTransform.gameObject);
+        }
+
         handTransform.DOLocalMove(targetPos, moveDuration).SetEase(Ease.OutQuad);
     }
 }

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3A7E80AE-CEE4-4A14-9E40-33FEA95B68B2}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="Ambience" ID="{3A7E80AE-CEE4-4A14-9E40-33FEA95B68B2}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="General" ID="{1EDDB4BF-0356-4370-9EE2-923FF1B51823}">
+					<ChildrenList>
+						<Action Name="" ID="{13425180-8369-4EE0-80C7-F8A5F95D7693}" ShortID="246870532">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ambience" ID="{F2B69EB7-F733-44F9-A6C4-1F24C9D75C53}" WorkUnitID="{6F2FA390-2F57-4820-A675-100954829489}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Ending" ID="{8AD3DEB2-AC44-4251-A0FD-C9FD2E9B3BA4}">
+					<ChildrenList>
+						<Action Name="" ID="{032DAB4C-6573-4977-9C37-2E171703A42B}" ShortID="59392531">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ambience_ending(loop)" ID="{F2F46458-F60F-43EC-BED0-378DDB052265}" WorkUnitID="{6F2FA390-2F57-4820-A675-100954829489}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{47DA499E-DE4B-451A-B86D-BA35FE886DE5}" ShortID="320841978">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ambience_screen" ID="{A929F67F-BDF1-43CF-995E-416283F51047}" WorkUnitID="{6F2FA390-2F57-4820-A675-100954829489}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

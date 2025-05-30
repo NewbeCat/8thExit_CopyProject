@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using AK.Wwise;
 
 public class PlayerController : MonoBehaviour, IManager
 {
@@ -16,6 +17,13 @@ public class PlayerController : MonoBehaviour, IManager
     [SerializeField] private Material[] footStepMaterials;
     [field: SerializeField] public GameObject LightObject;
     [SerializeField] private Vector3 originPos;
+
+    [Header("Wwise Audio")]
+    //[SerializeField] private AK.Wwise.Event deathSoundEvent;
+    [SerializeField] private AK.Wwise.Event walkEvent;
+    [SerializeField] private AK.Wwise.Event runEvent;
+    [SerializeField] private AK.Wwise.Event walkBloodEvent;
+    [SerializeField] private AK.Wwise.Event runBloodEvent;
     #endregion
 
     #region Unity Methods
@@ -40,7 +48,7 @@ public class PlayerController : MonoBehaviour, IManager
     {
         _cameraController.Init();
         playerMovementModule = new PlayerMovementStateModule(_characterController, EPlayerMovement.Idle, new IdleState(this), 
-            footStep, footStepMaterials, _walkSpeed, _sprintSpeed, _footStepUnitTime);
+            footStep, footStepMaterials, _walkSpeed, _sprintSpeed, _footStepUnitTime, walkEvent, runEvent, walkBloodEvent, runBloodEvent);
         playerMovementModule.TryAddState(EPlayerMovement.Walk, new WalkState(this));
         playerMovementModule.TryAddState(EPlayerMovement.Sprint, new SprintState(this));
     }
@@ -58,8 +66,19 @@ public class PlayerController : MonoBehaviour, IManager
 
         _cameraController.originalPosition = _cameraController.transform.position;
 
+        // 루프 사운드 중지
+        if (Stoker.Instance != null)
+        {
+            Stoker.Instance.StopLoopSound();
+
+            // Catch 사운드 재생 (1회성)
+            var stokerCatchEvent = new AK.Wwise.Event();
+            stokerCatchEvent.Post(Stoker.Instance.gameObject); // 혹은 해당 오브젝트 직접 지정
+        }
+
+        AkSoundEngine.SetState("PlayerStatus", "Caught");
         // TODO: 죽는 사운드
-        Managers.Instance.Sound.PlaySFX(ESoundClip.StokerCatch);
+        Stoker.Instance.stokerCatchEvent.Post(Stoker.Instance.gameObject);
 
         while (time > 0f)
         {

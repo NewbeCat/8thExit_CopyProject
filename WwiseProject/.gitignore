@@ -1,0 +1,27 @@
+# GITIGNORE template for Wwise Project
+
+.backup*
+.cache*
+*.akd
+*.prof
+*.validationcache
+*.wsettings
+
+# Wwise Unity Integrationn Assets (Unity 생성성)
+AkWwiseProjectData.asset
+IncrementalSoundBankData.xml
+
+# Wwise Generated SoundBanks (자동 생성 가능)
+GeneratedSoundBanks/
+
+# Wwise 프로젝트 캐시 폴더
+ProjectCache/
+
+# 임시 및 로그 파일
+*.tmp
+*.log
+*.bak
+
+# OS Hidden Files (시스템/에디터 관련)
+.DS_Store
+Thumbs.db

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7335B95B-6D8B-40A0-8B52-22EC5CF10C01}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="Player" ID="{7335B95B-6D8B-40A0-8B52-22EC5CF10C01}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Walk_General" ID="{A9D53AD6-EB2D-490F-8CC5-658694D0AD5D}">
+					<ChildrenList>
+						<Action Name="" ID="{8ADEA559-8865-4363-A8B4-4AB862774035}" ShortID="611151145">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Walk_General" ID="{94F8F88A-B1B6-4B2A-B2C9-332996C911CD}" WorkUnitID="{B28D660E-6A4A-45D3-826E-35C6EF95B661}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Walk_Blood" ID="{0BC340A5-A5A5-4005-B7A0-8F31B5C7192A}">
+					<ChildrenList>
+						<Action Name="" ID="{A74EA382-2ECF-4731-878E-DA119A6FC2F8}" ShortID="672925364">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Walk_Blood" ID="{35F2FE48-A24F-4AC0-A01A-F11546A2BDD7}" WorkUnitID="{B28D660E-6A4A-45D3-826E-35C6EF95B661}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Run_General" ID="{4900FEC2-76E5-4502-B9F1-2CDE1F64D0C5}">
+					<ChildrenList>
+						<Action Name="" ID="{9C20123E-A3BD-4421-92A8-1A354EA81B3A}" ShortID="258620932">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Run_General" ID="{7FAEC47C-B4A7-42BA-8AB6-C1883EBC32E8}" WorkUnitID="{B28D660E-6A4A-45D3-826E-35C6EF95B661}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Run_Blood" ID="{5E78FC91-2B83-4413-98A3-C17205CF357B}">
+					<ChildrenList>
+						<Action Name="" ID="{2C0349A3-4E61-4537-86BB-753E1DB099B3}" ShortID="901194884">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Run_Blood" ID="{00582D44-CA35-4B4C-92F1-A15EC1ACCF68}" WorkUnitID="{B28D660E-6A4A-45D3-826E-35C6EF95B661}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
