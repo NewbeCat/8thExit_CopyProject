@@ -25,13 +25,18 @@ public class PlayerMovementStateModule : StateMachineBase<EPlayerMovement>
     private ObjectPooler<BloodFootStep> pooler;
     private Material[] footStepMaterials;
 
+    private AK.Wwise.Event walkEvent;
+    private AK.Wwise.Event runEvent;
+    private AK.Wwise.Event walkBloodEvent;
+    private AK.Wwise.Event runBloodEvent;
+
     private bool isBloodStepActive;
 
     #endregion
 
     public PlayerMovementStateModule(CharacterController characterController, EPlayerMovement ePlayerMovement, 
         IState<EPlayerMovement> newState, BloodFootStep footStep, Material[] footStepMaterials, float walkSpeed, 
-        float sprintSpeed, float footStepUnitTime)
+        float sprintSpeed, float footStepUnitTime, AK.Wwise.Event walkEvent, AK.Wwise.Event runEvent, AK.Wwise.Event walkBloodEvent, AK.Wwise.Event runBloodEvent)
     {
         _characterController = characterController;
         InGameWalkSpeed = walkSpeed;
@@ -44,6 +49,10 @@ public class PlayerMovementStateModule : StateMachineBase<EPlayerMovement>
         pooler = new ObjectPooler<BloodFootStep>(footStep, null, 10, 100);
 
         this.footStepMaterials = new Material[footStepMaterials.Length];
+        this.walkEvent = walkEvent;
+        this.runEvent = runEvent;
+        this.walkBloodEvent = walkBloodEvent;
+        this.runBloodEvent = runBloodEvent;
 
         for (int i = 0; i < footStepMaterials.Length; i++)
         {
@@ -151,8 +160,6 @@ public class PlayerMovementStateModule : StateMachineBase<EPlayerMovement>
             ESoundClip eSoundClip = IsSprint ? ESoundClip.Run : ESoundClip.Walk;
             Vector3 footStepPos = _characterController.transform.position;
 
-            Debug.DrawRay(footStepPos, Vector3.down * 10f);
-
             if (Physics.Raycast(footStepPos, Vector3.down * 10f, out RaycastHit hit, 1 << LayerMask.NameToLayer("Floor")))
             {
                 footStepPos = hit.point + new Vector3(0, 0.1f, 0);
@@ -161,15 +168,26 @@ public class PlayerMovementStateModule : StateMachineBase<EPlayerMovement>
 
                 if (isBloodStepActive)
                 {
-                    eSoundClip = IsSprint ? ESoundClip.RunBlood : ESoundClip.WalkBlood;
                     BloodFootStep bloodFootStep = pooler.Pool();
                     bloodFootStep.transform.position = footStepPos;
                     bloodFootStep.transform.rotation = Quaternion.LookRotation(_characterController.transform.forward);
                     bloodFootStep.MeshRenderer.sharedMaterial = _isLeftStep ? footStepMaterials[0] : footStepMaterials[1];
+
+                    // Wwise: Blood 발소리 이벤트
+                    if (IsSprint)
+                        runBloodEvent?.Post(_characterController.gameObject);
+                    else
+                        walkBloodEvent?.Post(_characterController.gameObject);
+                }
+                else
+                {
+                    // Wwise: 일반 발소리 이벤트
+                    if (IsSprint)
+                        runEvent?.Post(_characterController.gameObject);
+                    else
+                        walkEvent?.Post(_characterController.gameObject);
                 }
             }
-
-            Managers.Instance.Sound.PlaySFX(eSoundClip, footStepPos);
         }
     }
 

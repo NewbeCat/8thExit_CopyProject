@@ -17,8 +17,13 @@ public class EndSequence : MonoBehaviour
     [SerializeField] private GameObject eraseScreen2;
     [SerializeField] private GameObject newScreen;
     [SerializeField] private GameObject credits;
+    //[SerializeField] private GameObject ambiencePlayer;
+    [SerializeField] private AmbienceController ambienceController;
 
-    [SerializeField] private AudioSource source;
+    [SerializeField] private AK.Wwise.Event endingScreenEvent;
+    [SerializeField] private AK.Wwise.Event lightOffEvent;
+    [SerializeField] private AK.Wwise.Event lightOnEvent;
+    [SerializeField] private AK.Wwise.Event ambienceEndingEvent;
 
     private PlayerController playerController;
     private Camera playerCamera;
@@ -66,6 +71,7 @@ public class EndSequence : MonoBehaviour
         {
             sequenceStarted = true;
             GetComponent<Collider>().enabled = false;
+            endingScreenEvent.Post(gameObject);
             StartCoroutine(EndSequenceRoutine());
         }
     }
@@ -76,7 +82,7 @@ public class EndSequence : MonoBehaviour
         yield return new WaitForSeconds(2f);
         yield return StartCoroutine(ZoomCamera(zoomFOV, zoomDuration));
         cameraTurnoff.TurnOff();
-        Managers.Instance.Sound.PlaySFX(ESoundClip.LightTurnoff);
+        lightOffEvent.Post(gameObject);
         // TODO 불꺼지는 소리 oneshot
         player.transform.position = endDestination;
         player.transform.rotation = Quaternion.Euler(0, -90, 0);
@@ -86,7 +92,7 @@ public class EndSequence : MonoBehaviour
         playerCamera.fieldOfView = originalFOV;
         yield return new WaitForSeconds(3f);
         cameraTurnoff.TurnOn();
-        Managers.Instance.Sound.PlaySFX(ESoundClip.LightTurnon);
+        lightOnEvent.Post(gameObject);
         // TODO 불켜지는 소리 oneshot
         yield return new WaitForSeconds(1f);
         playerController.enabled = true;
@@ -101,9 +107,7 @@ public class EndSequence : MonoBehaviour
         Vector3 startPos = credits.transform.position;
         Vector3 endPos = startPos + new Vector3(0, rollup, 0);
 
-        Managers.Instance.Sound.PlaySFX(ESoundClip.AmbienceEnding, source.transform.position);
-        source.clip = Managers.Instance.Sound.GetAudioClip(ESoundClip.Flim);
-        source.Play();
+        ambienceEndingEvent.Post(gameObject);
         // TODO 박수 소리 등 엔딩 소리 시작
 
         float elapsed = 0f;
@@ -116,9 +120,10 @@ public class EndSequence : MonoBehaviour
 
             if (!fading && creditDuration - elapsed <= 5f)
             {
+                StartCoroutine(CoFadeFlimSound()); // 기존 엔딩 사운드 정지
+                StartCoroutine(CoFadeOutGeneralAmbience()); // 일반 BGM 페이드 아웃 추가
                 // TODO 소리 페이드 아웃 3f  -- 소리 음량 서서히 줄이다가 3f때 음량 = 0 ==> 그러면 소리 아예 끄기, 카메라 fadeout과 동시에 실행되어야함.
                 cameraTurnoff.FadeOut();
-                StartCoroutine(CoFadeFlimSound());
                 fading = true;
             }
             yield return null;
@@ -131,21 +136,32 @@ public class EndSequence : MonoBehaviour
     private IEnumerator CoFadeFlimSound()
     {
         float fadeDuration = 3f;
-        float elapsedTime = 0f;
 
-        while (elapsedTime < fadeDuration)
-        {
-            elapsedTime += Time.deltaTime;
-            float diff = fadeDuration - elapsedTime;
-            source.volume = diff;
-            yield return null;
-        }
+        AkUnitySoundEngine.ExecuteActionOnEvent(
+            ambienceEndingEvent.Name,                          // 이벤트 이름
+            AkActionOnEventType.AkActionOnEventType_Stop,      // 동작: 정지
+            gameObject,                                        // 대상 게임오브젝트
+            (int)(fadeDuration * 1000),                        // 밀리초 단위 시간 (3000ms)
+            AkCurveInterpolation.AkCurveInterpolation_Linear   // 볼륨 감소 커브
+        );
 
-        if (source)
-        {
-            source.Stop();
-        }
+        yield return new WaitForSeconds(fadeDuration);
     }
+
+
+    // 기존의 앰비언스를 멈추는 함수
+    private IEnumerator CoFadeOutGeneralAmbience()
+    {
+        if (ambienceController == null)
+        {
+            Debug.LogWarning("AmbienceController가 할당되지 않았습니다.");
+            yield break;
+        }
+
+        ambienceController.StopAmbience(3f);
+        yield return new WaitForSeconds(3f);
+    }
+
 
     private IEnumerator RotatePlayer(Vector3 targetEulerAngles, float duration)
     {

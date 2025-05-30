@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2AABB2AF-2C3D-4580-B4E5-0465F096F1F4}" SchemaVersion="123">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{2AABB2AF-2C3D-4580-B4E5-0465F096F1F4}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="MovementType" ID="{3357A486-2588-409D-815B-340981857EA8}">
+					<ChildrenList>
+						<Switch Name="Run" ID="{DB0930DF-0EF3-4160-A0C6-4236EDF9AEE7}"/>
+						<Switch Name="Walk" ID="{23B7FD58-5772-4418-AF57-D5B43734E496}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="SurfaceType" ID="{7283D79B-4EB3-4D30-A443-1C809B8642CE}">
+					<ChildrenList>
+						<Switch Name="General" ID="{D3C766DA-5DA5-4B9A-AF14-59D5677C7ECD}"/>
+						<Switch Name="Blood" ID="{622125C1-C4BF-4EB6-A625-698027B672B2}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

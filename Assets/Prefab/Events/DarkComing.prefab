@@ -49,6 +49,10 @@ MonoBehaviour:
   triggers:
   - {fileID: 652212616230900832}
   - {fileID: 1206336319807210605}
+  darkComingEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 60a6eadfc1ebdc04fbaada1edcb0547b, type: 2}
 --- !u!1001 &1147839043793204893
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -420,7 +420,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1608924931509862811}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -779,7 +779,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endDestination: {x: -6.7, y: 3, z: -5}
   cameraTurnoff: {fileID: 0}
-  player: {fileID: 0}
+  player: {fileID: 1161412927055330094, guid: b6d191f4aba6a1344820a207daa7d230, type: 3}
   zoomFOV: 20
   zoomDuration: 10
   creditDuration: 30
@@ -788,7 +788,23 @@ MonoBehaviour:
   eraseScreen2: {fileID: 8136783167261742733}
   newScreen: {fileID: 1608924931509862811}
   credits: {fileID: 664494527013925130}
-  source: {fileID: 2840685325133769003}
+  ambienceController: {fileID: 0}
+  endingScreenEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 0ca3056ea1e8cc542a83e83efda25f23, type: 2}
+  lightOffEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 105b8a39f002fc94e9ef2af1c9e3ab85, type: 2}
+  lightOnEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 40c5611cdf6084e468cfd3e68c03c17a, type: 2}
+  ambienceEndingEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 95ca52c2bbf1f4644a1e8e85342d80ae, type: 2}
 --- !u!65 &8853427430701382226
 BoxCollider:
   m_ObjectHideFlags: 0

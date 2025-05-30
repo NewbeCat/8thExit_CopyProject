@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B3D55839-BEBC-4170-A920-ECD825EC593A}" SchemaVersion="123">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{B3D55839-BEBC-4170-A920-ECD825EC593A}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="PlayerStatus" ID="{B08D5EA4-7278-4905-AEFA-E7E24A2EFCA6}">
+					<ChildrenList>
+						<State Name="None" ID="{F203A3BE-7D38-47B1-9A32-8EB89B68ECCF}"/>
+						<State Name="Normal" ID="{3B6FC45C-A03E-4A83-BEB7-27FBCFEBFBCB}"/>
+						<State Name="Caught" ID="{1DF41C17-4DA2-4270-8372-45586434DB0F}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

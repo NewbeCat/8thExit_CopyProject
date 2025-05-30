@@ -6,6 +6,9 @@ public class BlinkLight : MonoBehaviour
     [SerializeField] private GameObject[] lights;
     [SerializeField] private BoxEventTrigger trigger;
 
+    [SerializeField] private AK.Wwise.Event lightOffEvent;  // 불 꺼지는 사운드
+    [SerializeField] private AK.Wwise.Event lightOnEvent;   // 불 켜지는 사운드
+
     private bool isTriggered;
 
     private void Awake()
@@ -16,30 +19,31 @@ public class BlinkLight : MonoBehaviour
     private void TriggerLights()
     {
         if (isTriggered)
-        {
             return;
-        }
 
         isTriggered = true;
         foreach (GameObject light in lights)
         {
-            Managers.Instance.StartCoroutine(CoBlinkLight(light));
+            StartCoroutine(CoBlinkLight(light));
         }
     }
 
     private IEnumerator CoBlinkLight(GameObject light)
     {
         float delay = Random.Range(1f, 5f);
-        yield return Managers.Instance.Coroutine.GetWaitForSeconds(delay);
-        Managers.Instance.Sound.PlaySFX(ESoundClip.LightTurnoff);
+        yield return new WaitForSeconds(delay);
+
+        // 불 꺼지는 사운드
+        lightOffEvent?.Post(light);
         light.SetActive(false);
-        // 끄기 사운드
+
         delay = Random.Range(0f, 3f);
-        yield return Managers.Instance.Coroutine.GetWaitForSeconds(delay);
-        // 키기 사운드
-        Managers.Instance.Sound.PlaySFX(ESoundClip.LightTurnon);
+        yield return new WaitForSeconds(delay);
+
+        // 불 켜지는 사운드
+        lightOnEvent?.Post(light);
         light.SetActive(true);
 
-        Managers.Instance.StartCoroutine(CoBlinkLight(light));
+        StartCoroutine(CoBlinkLight(light));
     }
 }

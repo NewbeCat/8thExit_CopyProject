@@ -9,7 +9,7 @@ public class ScreenVideo : MonoBehaviour
     [SerializeField] private MeshRenderer meshRenderer;
     [SerializeField] private BoxEventTrigger boxEventTrigger;
     // 임시 추가
-    [SerializeField] private AudioSource source;
+    [SerializeField] private GameObject soundEmitterObject;
 
     private bool isFirstOn;
 
@@ -17,6 +17,12 @@ public class ScreenVideo : MonoBehaviour
     {
         meshRenderer.sharedMaterial = originMaterial;
         boxEventTrigger.OnTrigger += OnTrigger;
+
+        // 처음엔 사운드 오브젝트 비활성화 (자동 재생 방지)
+        if (soundEmitterObject != null)
+        {
+            soundEmitterObject.SetActive(false);
+        }
     }
 
     private void OnTrigger()
@@ -28,8 +34,11 @@ public class ScreenVideo : MonoBehaviour
         meshRenderer.sharedMaterial = afterMeterial;
         videoPlayer.Play();
         isFirstOn = true;
-        source.clip = Managers.Instance.Sound.GetAudioClip(ESoundClip.ScreenVideo);
-        source.Play();
-    }
 
+        // 3D 사운드 오브젝트 활성화 → AkAmbient 사운드 재생
+        if (soundEmitterObject != null)
+        {
+            soundEmitterObject.SetActive(true);
+        }
+    }
 }

@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 576204314212912581}
   - component: {fileID: 2958867261230414602}
+  - component: {fileID: 4608333478518199287}
+  - component: {fileID: 3135031200054000400}
   m_Layer: 0
   m_Name: BlinkLight
   m_TagString: Untagged
@@ -53,6 +55,72 @@ MonoBehaviour:
   - {fileID: 7076974243981229066}
   - {fileID: 2103402551408421784}
   trigger: {fileID: 3534076654379833273}
+  lightOffEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 1abbbf23495e99c4cbf5124ff9484445, type: 2}
+  lightOnEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: be7175b4c309d254998d2b60c58e09be, type: 2}
+--- !u!114 &4608333478518199287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7314649099353243045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ed4c16c8e2d3eb4791f83ed39fef6d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  usePositionOffsetData: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  scalingFactor: 1
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
+--- !u!114 &3135031200054000400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7314649099353243045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 648af20bbd44e264b82ed60615ca8c78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  useCallbacks: 0
+  stopSoundOnDestroy: 1
+  Callbacks: []
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+  MultiPositionType: 1
+  multiPositionTypeLabel: 0
+  attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
+  LargeModePositions: []
+  multiPositionArray: []
 --- !u!1001 &3717317982147917066
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -152,7 +220,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7330368699603125800, guid: 50efaa97203990f49a6ad543070e629d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2487179077592952311}
+    - targetCorrespondingSourceObject: {fileID: 7330368699603125800, guid: 50efaa97203990f49a6ad543070e629d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1950345219989635512}
+    - targetCorrespondingSourceObject: {fileID: 7330368699603125800, guid: 50efaa97203990f49a6ad543070e629d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6932114614659014903}
   m_SourcePrefab: {fileID: 100100000, guid: 50efaa97203990f49a6ad543070e629d, type: 3}
 --- !u!4 &761509906421758808 stripped
 Transform:
@@ -174,6 +251,103 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7033500927460987709, guid: 50efaa97203990f49a6ad543070e629d, type: 3}
   m_PrefabInstance: {fileID: 3717317982147917066}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6209375906493215522 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7330368699603125800, guid: 50efaa97203990f49a6ad543070e629d, type: 3}
+  m_PrefabInstance: {fileID: 3717317982147917066}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2487179077592952311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6209375906493215522}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ed4c16c8e2d3eb4791f83ed39fef6d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 1
+  usePositionOffsetData: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  scalingFactor: 1
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
+--- !u!114 &1950345219989635512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6209375906493215522}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 648af20bbd44e264b82ed60615ca8c78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 1abbbf23495e99c4cbf5124ff9484445, type: 2}
+  useCallbacks: 0
+  stopSoundOnDestroy: 1
+  Callbacks: []
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+  MultiPositionType: 1
+  multiPositionTypeLabel: 0
+  attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
+  LargeModePositions: []
+  multiPositionArray: []
+--- !u!114 &6932114614659014903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6209375906493215522}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 648af20bbd44e264b82ed60615ca8c78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: be7175b4c309d254998d2b60c58e09be, type: 2}
+  useCallbacks: 0
+  stopSoundOnDestroy: 1
+  Callbacks: []
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+  MultiPositionType: 1
+  multiPositionTypeLabel: 0
+  attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
+  LargeModePositions: []
+  multiPositionArray: []
 --- !u!1 &7076974243981229066 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5881955745482656000, guid: 50efaa97203990f49a6ad543070e629d, type: 3}
