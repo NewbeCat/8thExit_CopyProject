@@ -11,9 +11,6 @@
 AkWwiseProjectData.asset
 IncrementalSoundBankData.xml
 
-# Wwise Generated SoundBanks (자동 생성 가능)
-GeneratedSoundBanks/
-
 # Wwise 프로젝트 캐시 폴더
 ProjectCache/
 
