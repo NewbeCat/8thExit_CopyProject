@@ -1,0 +1,33 @@
+{
+ "PluginInfo": {
+  "Platform": "Web",
+  "BasePlatform": "Web",
+  "PluginLibs": [
+   {
+    "LibName": "Wwise Silence",
+    "LibId": "6619138",
+    "Type": "Source",
+    "DLL": "AkSilenceGenerator",
+    "StaticLib": "AkSilenceSource"
+   },
+   {
+    "LibName": "Wwise RoomVerb",
+    "LibId": "7733251",
+    "Type": "Effect",
+    "DLL": "AkRoomVerb",
+    "StaticLib": "AkRoomVerbFX"
+   },
+   {
+    "LibName": "System",
+    "LibId": "11403271",
+    "Type": "AudioDevice"
+   },
+   {
+    "LibName": "No Output",
+    "LibId": "11862023",
+    "Type": "AudioDevice"
+   }
+  ],
+  "FileHash": "{6D0D5F61-3A07-BA24-2C7B-65A21D3CBE02}"
+ }
+}

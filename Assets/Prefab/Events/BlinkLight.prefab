@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2958867261230414602}
   - component: {fileID: 4608333478518199287}
   - component: {fileID: 3135031200054000400}
+  - component: {fileID: 3073140953654655642}
   m_Layer: 0
   m_Name: BlinkLight
   m_TagString: Untagged
@@ -121,6 +122,19 @@ MonoBehaviour:
   attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
   LargeModePositions: []
   multiPositionArray: []
+--- !u!114 &3073140953654655642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7314649099353243045}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 530682e372111b840bc8ac4d9b8da840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stateName: BlinkLight
 --- !u!1001 &3717317982147917066
 PrefabInstance:
   m_ObjectHideFlags: 0

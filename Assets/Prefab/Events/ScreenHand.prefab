@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7298931633488835555}
   - component: {fileID: 49326672784428993}
+  - component: {fileID: -948532713140445715}
   m_Layer: 0
   m_Name: ScreenHand
   m_TagString: Untagged
@@ -51,6 +52,19 @@ MonoBehaviour:
   moveDuration: 0
   handTransform: {fileID: 8267849598821327187}
   boxEventTrigger: {fileID: 6659703366558508471}
+--- !u!114 &-948532713140445715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2951375848219567667}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 530682e372111b840bc8ac4d9b8da840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stateName: ScreenHand
 --- !u!1001 &520093409344167456
 PrefabInstance:
   m_ObjectHideFlags: 0

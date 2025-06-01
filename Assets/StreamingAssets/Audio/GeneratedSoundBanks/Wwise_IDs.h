@@ -30,6 +30,7 @@ namespace AK
         static const AkUniqueID SPOTLIGHT2 = 2235400659U;
         static const AkUniqueID SPOTLIGHT3 = 2235400658U;
         static const AkUniqueID STOKER_CATCH = 1239865531U;
+        static const AkUniqueID STOKER_RUN = 439440925U;
         static const AkUniqueID STOKER_START = 534021290U;
         static const AkUniqueID STOKER_START_LOOP = 63719771U;
         static const AkUniqueID WALK_BLOOD = 2702675819U;
@@ -51,6 +52,22 @@ namespace AK
                 static const AkUniqueID NORMAL = 1160234136U;
             } // namespace STATE
         } // namespace PLAYERSTATUS
+
+        namespace ROOMSTATE
+        {
+            static const AkUniqueID GROUP = 185713839U;
+
+            namespace STATE
+            {
+                static const AkUniqueID BLINKLIGHT = 2244400135U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID NORMAL = 1160234136U;
+                static const AkUniqueID SCREENHAND = 2188306606U;
+                static const AkUniqueID SCREENVIDEO = 969030586U;
+                static const AkUniqueID STOKER = 1079967367U;
+                static const AkUniqueID WEIRDSPEAKER = 1781063159U;
+            } // namespace STATE
+        } // namespace ROOMSTATE
 
     } // namespace STATES
 

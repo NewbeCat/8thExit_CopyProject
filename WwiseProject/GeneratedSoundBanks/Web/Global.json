@@ -1,0 +1,804 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Web",
+  "BasePlatform": "Web",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1465331116",
+    "Type": "User",
+    "GUID": "{339EFDD5-B21F-4F5A-A244-7E2FA4FA8AD0}",
+    "Language": "SFX",
+    "Hash": "{E74D83C8-1090-C74A-31DC-5E3C272C00DE}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Global\\Global",
+    "ShortName": "Global",
+    "Path": "Global.bnk",
+    "Media": [
+     {
+      "Id": "65679723",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "run_blood(2).wav",
+      "CachePath": "A7/{A7A4B9CF-3943-CA3F-179F-D7CAD39C328A}.wem"
+     },
+     {
+      "Id": "68472216",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "speaker_sound(loop).wav",
+      "CachePath": "B6/{B6D496F0-4295-8BB7-41BD-4CBC72D1DB97}.wem"
+     },
+     {
+      "Id": "90644780",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "walk(4).wav",
+      "CachePath": "38/{38CC4356-24C2-60A4-DF16-BA12D47B47B8}.wem"
+     },
+     {
+      "Id": "95533743",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "run_blood(1).wav",
+      "CachePath": "B6/{B6EF0BEF-3BED-4FD7-BD49-15CDE8580580}.wem"
+     },
+     {
+      "Id": "103623993",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "walk_blood(4).wav",
+      "CachePath": "EF/{EFC8887B-4034-C1A3-C456-F464C1A3B6CA}.wem"
+     },
+     {
+      "Id": "113164188",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "walk(3).wav",
+      "CachePath": "6F/{6FF333D9-B361-D954-3001-FA5096189923}.wem"
+     },
+     {
+      "Id": "126660671",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "run_blood(3).wav",
+      "CachePath": "44/{44A83FAB-97B0-A354-C17E-46AFAA422456}.wem"
+     },
+     {
+      "Id": "179665219",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "walk_blood(3).wav",
+      "CachePath": "49/{497BBF05-E8D7-AD40-62EA-10A47C5F58B2}.wem"
+     },
+     {
+      "Id": "256806451",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "walk_blood(1).wav",
+      "CachePath": "70/{70A56BDA-33AF-2C1E-4131-FF1822609735}.wem"
+     },
+     {
+      "Id": "259327606",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "light_turnon.wav",
+      "CachePath": "88/{88386F54-D235-F549-4963-F5289A0BE4AB}.wem"
+     },
+     {
+      "Id": "263052168",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "stoker_start(one_shot).wav",
+      "CachePath": "6E/{6EAD16A8-85C9-4568-F717-A7152120E8E3}.wem"
+     },
+     {
+      "Id": "299790253",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "walk(2).wav",
+      "CachePath": "63/{63E9A10A-1528-27E7-F142-09267A18A3FE}.wem"
+     },
+     {
+      "Id": "360479806",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "speaker_sound(one_shot).wav",
+      "CachePath": "AF/{AF1BE584-95F3-D5B9-8D78-BDB64C647E99}.wem"
+     },
+     {
+      "Id": "371559978",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "screen_eye(loop).wav",
+      "CachePath": "96/{96DC432B-24E7-D6E3-CE11-6EC189A2738E}.wem"
+     },
+     {
+      "Id": "389793090",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ambience.wav",
+      "CachePath": "8A/{8ADFBBD5-F950-B5AD-AD55-91CA08410BC3}.wem"
+     },
+     {
+      "Id": "482949719",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ambience_screen.wav",
+      "CachePath": "91/{91CD602C-E1B6-C8FE-B13A-D5455F9AB459}.wem"
+     },
+     {
+      "Id": "488683525",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "dark_coming.wav",
+      "CachePath": "5C/{5CB46117-6148-FB2C-0620-1281BB702180}.wem"
+     },
+     {
+      "Id": "517451576",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "run_blood(4).wav",
+      "CachePath": "87/{87BD329C-D9B9-328C-C67F-5D3061707D63}.wem"
+     },
+     {
+      "Id": "577898278",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ambience_ending(loop).wav",
+      "CachePath": "9A/{9A323333-7FEF-FDA2-722F-FDAC69AF0CDE}.wem"
+     },
+     {
+      "Id": "577900180",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "run(1).wav",
+      "CachePath": "63/{632AC4C5-5DE4-34F3-58DE-D3A08C0B5B40}.wem"
+     },
+     {
+      "Id": "668588309",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "stoker_start2_1.wav",
+      "CachePath": "42/{42C51FD8-886B-74E5-5199-373FA980C764}.wem"
+     },
+     {
+      "Id": "686085762",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "run(2).wav",
+      "CachePath": "5F/{5FE6F5D3-7A2B-05E6-72F1-D85859C6C53E}.wem"
+     },
+     {
+      "Id": "713339071",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "spotlight.wav",
+      "CachePath": "A4/{A4AD9DA6-0FC4-637A-65D2-E27F393E0B51}.wem"
+     },
+     {
+      "Id": "716045521",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "run(3).wav",
+      "CachePath": "49/{49F4F6F4-D23F-4512-5C97-8FE100DF5876}.wem"
+     },
+     {
+      "Id": "769336177",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "screen_reverse2.wav",
+      "CachePath": "2F/{2F8662F6-7C34-B195-7329-4203B8FAFFD8}.wem"
+     },
+     {
+      "Id": "801714849",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "female_scream.wav",
+      "CachePath": "11/{113BFD97-272F-79E7-3881-5DCA030CDBA2}.wem"
+     },
+     {
+      "Id": "802428064",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "stoker_start(loop).wav",
+      "CachePath": "AB/{ABD4AB19-2721-E71D-9335-A772963ACE35}.wem"
+     },
+     {
+      "Id": "855995229",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "screen_hand.wav",
+      "CachePath": "27/{27FDE7EC-D72D-E058-3E6B-39A43095506A}.wem"
+     },
+     {
+      "Id": "877341250",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "walk_blood(2).wav",
+      "CachePath": "50/{50E06C86-CFC6-C880-39D2-628A2B82D016}.wem"
+     },
+     {
+      "Id": "898772660",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "light_turnoff.wav",
+      "CachePath": "11/{1147A8DE-C215-F11F-BD0C-BFFFDFDA8DEB}.wem"
+     },
+     {
+      "Id": "981834315",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "run(4).wav",
+      "CachePath": "E3/{E3043827-C9D5-C110-DA69-36871DC9FAD6}.wem"
+     },
+     {
+      "Id": "1032795126",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "walk(1).wav",
+      "CachePath": "5C/{5C0CAB6C-64E6-9E0D-8FA6-0062608EC091}.wem"
+     },
+     {
+      "Id": "1040165338",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "stoker_catch.wav",
+      "CachePath": "1A/{1AF48804-E8E9-6FA7-4934-BAE816DA782F}.wem"
+     }
+    ],
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "245866408",
+       "Name": "Silence",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Events\\Events\\ScreenHand\\screen_hand\\Silence\\Silence",
+       "GUID": "{6F3496EC-2B39-46AB-9D0A-CCA0D319574C}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      },
+      {
+       "Id": "608214518",
+       "Name": "Silence",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Events\\Events\\ScreenVideo\\screen_eye\\SIlence\\Silence",
+       "GUID": "{4CC3D3DF-0476-4855-B9F3-E781D0B6B252}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      }
+     ]
+    },
+    "Events": [
+     {
+      "Id": "2514709133",
+      "Name": "BlinkLight_Shuffle",
+      "ObjectPath": "\\Events\\Events\\BlinkLight\\BlinkLight_Shuffle",
+      "GUID": "{F5878472-D525-47C6-8908-F66504321407}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.21145208",
+      "DurationMax": "0.27318335",
+      "MediaRefs": [
+       {
+        "Id": "259327606"
+       },
+       {
+        "Id": "898772660"
+       }
+      ]
+     },
+     {
+      "Id": "3985402990",
+      "Name": "BlinkLight_TurnOff",
+      "ObjectPath": "\\Events\\Events\\BlinkLight\\BlinkLight_TurnOff",
+      "GUID": "{55019CAF-1478-494B-ACD7-66C38F546C1E}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.21682575",
+      "DurationMax": "0.27318335",
+      "MediaRefs": [
+       {
+        "Id": "898772660"
+       }
+      ]
+     },
+     {
+      "Id": "1645130008",
+      "Name": "BlinkLight_TurnOff2",
+      "ObjectPath": "\\Events\\Events\\BlinkLight\\BlinkLight_TurnOff2",
+      "GUID": "{0884FDB6-2C7C-427C-9710-F06FBE0469F7}",
+      "MaxAttenuation": "25",
+      "DurationType": "OneShot",
+      "DurationMin": "0.21682575",
+      "DurationMax": "0.27318335",
+      "MediaRefs": [
+       {
+        "Id": "898772660"
+       }
+      ]
+     },
+     {
+      "Id": "2643953872",
+      "Name": "BlinkLight_TurnOn",
+      "ObjectPath": "\\Events\\Events\\BlinkLight\\BlinkLight_TurnOn",
+      "GUID": "{988E2730-2A3F-40CB-8CF5-EF41C2BE1BFB}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.21145208",
+      "DurationMax": "0.2664129",
+      "MediaRefs": [
+       {
+        "Id": "259327606"
+       }
+      ]
+     },
+     {
+      "Id": "3851181890",
+      "Name": "BlinkLight_TurnOn2",
+      "ObjectPath": "\\Events\\Events\\BlinkLight\\BlinkLight_TurnOn2",
+      "GUID": "{C65E56D0-F00E-4635-9FF8-EFC14E4ACCF1}",
+      "MaxAttenuation": "25",
+      "DurationType": "OneShot",
+      "DurationMin": "0.21145208",
+      "DurationMax": "0.2664129",
+      "MediaRefs": [
+       {
+        "Id": "259327606"
+       }
+      ]
+     },
+     {
+      "Id": "2495659572",
+      "Name": "DarkComing",
+      "ObjectPath": "\\Events\\Events\\DarkComing\\DarkComing",
+      "GUID": "{D6CFB3BE-24F4-4818-B049-5859D28B7B10}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.8951929",
+      "DurationMax": "2.8951929",
+      "MediaRefs": [
+       {
+        "Id": "488683525"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{F6AE3741-EDC0-493F-B618-2B4D203921FC}"
+       }
+      ]
+     },
+     {
+      "Id": "3966194980",
+      "Name": "Ending",
+      "ObjectPath": "\\Events\\Ambience\\Ending",
+      "GUID": "{8AD3DEB2-AC44-4251-A0FD-C9FD2E9B3BA4}",
+      "DurationType": "OneShot",
+      "DurationMin": "28.488464",
+      "DurationMax": "28.488464",
+      "MediaRefs": [
+       {
+        "Id": "482949719"
+       },
+       {
+        "Id": "577898278"
+       }
+      ]
+     },
+     {
+      "Id": "893845055",
+      "Name": "Ending_Screen",
+      "ObjectPath": "\\Events\\Events\\Ending\\Ending_Screen",
+      "GUID": "{7CD89F8F-6CD5-4431-A77E-DE5DC4FCB18F}",
+      "DurationType": "OneShot",
+      "DurationMin": "16.130999",
+      "DurationMax": "16.130999",
+      "MediaRefs": [
+       {
+        "Id": "769336177"
+       }
+      ]
+     },
+     {
+      "Id": "133642231",
+      "Name": "General",
+      "ObjectPath": "\\Events\\Ambience\\General",
+      "GUID": "{1EDDB4BF-0356-4370-9EE2-923FF1B51823}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "389793090"
+       }
+      ]
+     },
+     {
+      "Id": "319837853",
+      "Name": "Run_Blood",
+      "ObjectPath": "\\Events\\Player\\Run_Blood",
+      "GUID": "{5E78FC91-2B83-4413-98A3-C17205CF357B}",
+      "MaxAttenuation": "10",
+      "DurationType": "OneShot",
+      "DurationMin": "0.2539471",
+      "DurationMax": "0.29861966",
+      "MediaRefs": [
+       {
+        "Id": "65679723"
+       },
+       {
+        "Id": "95533743"
+       },
+       {
+        "Id": "126660671"
+       },
+       {
+        "Id": "517451576"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{F6AE3741-EDC0-493F-B618-2B4D203921FC}"
+       }
+      ]
+     },
+     {
+      "Id": "106788393",
+      "Name": "Run_General",
+      "ObjectPath": "\\Events\\Player\\Run_General",
+      "GUID": "{4900FEC2-76E5-4502-B9F1-2CDE1F64D0C5}",
+      "MaxAttenuation": "10",
+      "DurationType": "OneShot",
+      "DurationMin": "0.2539471",
+      "DurationMax": "0.29861966",
+      "MediaRefs": [
+       {
+        "Id": "577900180"
+       },
+       {
+        "Id": "686085762"
+       },
+       {
+        "Id": "716045521"
+       },
+       {
+        "Id": "981834315"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{F6AE3741-EDC0-493F-B618-2B4D203921FC}"
+       }
+      ]
+     },
+     {
+      "Id": "2188306606",
+      "Name": "ScreenHand",
+      "ObjectPath": "\\Events\\Events\\ScreenHand\\ScreenHand",
+      "GUID": "{EE9D4C1F-FF55-4829-A978-6B221C27775F}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "855995229"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "245866408"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "969030586",
+      "Name": "ScreenVideo",
+      "ObjectPath": "\\Events\\Events\\ScreenVideo\\ScreenVideo",
+      "GUID": "{63B2DD9F-A1A4-4591-81F9-112A8CFBCABF}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "371559978"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "608214518"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "2235400656",
+      "Name": "SpotLight1",
+      "ObjectPath": "\\Events\\Events\\SpotLight\\SpotLight1",
+      "GUID": "{9304B666-78B5-4408-9CC7-D4411847D749}",
+      "MaxAttenuation": "25",
+      "DurationType": "OneShot",
+      "DurationMin": "2.638753",
+      "DurationMax": "2.638753",
+      "MediaRefs": [
+       {
+        "Id": "713339071"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{F6AE3741-EDC0-493F-B618-2B4D203921FC}"
+       }
+      ]
+     },
+     {
+      "Id": "2235400659",
+      "Name": "SpotLight2",
+      "ObjectPath": "\\Events\\Events\\SpotLight\\SpotLight2",
+      "GUID": "{0FE63DAD-47F9-42A7-BEFD-9ECE161F3536}",
+      "MaxAttenuation": "25",
+      "DurationType": "OneShot",
+      "DurationMin": "3.138753",
+      "DurationMax": "3.138753",
+      "MediaRefs": [
+       {
+        "Id": "713339071"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{F6AE3741-EDC0-493F-B618-2B4D203921FC}"
+       }
+      ]
+     },
+     {
+      "Id": "2235400658",
+      "Name": "SpotLight3",
+      "ObjectPath": "\\Events\\Events\\SpotLight\\SpotLight3",
+      "GUID": "{322FFD45-370A-4732-B2D3-F241BF1C418F}",
+      "MaxAttenuation": "25",
+      "DurationType": "OneShot",
+      "DurationMin": "3.638753",
+      "DurationMax": "3.638753",
+      "MediaRefs": [
+       {
+        "Id": "713339071"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{F6AE3741-EDC0-493F-B618-2B4D203921FC}"
+       }
+      ]
+     },
+     {
+      "Id": "1239865531",
+      "Name": "Stoker_Catch",
+      "ObjectPath": "\\Events\\Events\\Stoker\\Stoker_Catch",
+      "GUID": "{9901AA5E-EED5-49DB-A006-09500AFF730F}",
+      "DurationType": "OneShot",
+      "DurationMin": "4.0552835",
+      "DurationMax": "4.0552835",
+      "MediaRefs": [
+       {
+        "Id": "668588309"
+       },
+       {
+        "Id": "1040165338"
+       }
+      ]
+     },
+     {
+      "Id": "439440925",
+      "Name": "Stoker_Run",
+      "ObjectPath": "\\Events\\Events\\Stoker\\Stoker_Run",
+      "GUID": "{9EC2A33A-9F7B-4A4D-AD33-9A835C4710C9}",
+      "MaxAttenuation": "10",
+      "DurationType": "OneShot",
+      "DurationMin": "0.2539471",
+      "DurationMax": "0.29861966",
+      "MediaRefs": [
+       {
+        "Id": "577900180"
+       },
+       {
+        "Id": "686085762"
+       },
+       {
+        "Id": "716045521"
+       },
+       {
+        "Id": "981834315"
+       }
+      ]
+     },
+     {
+      "Id": "534021290",
+      "Name": "Stoker_Start",
+      "ObjectPath": "\\Events\\Events\\Stoker\\Stoker_Start",
+      "GUID": "{0708B817-54A8-4D86-A457-5614DA0A9628}",
+      "DurationType": "OneShot",
+      "DurationMin": "5.625805",
+      "DurationMax": "5.625805",
+      "MediaRefs": [
+       {
+        "Id": "263052168"
+       }
+      ]
+     },
+     {
+      "Id": "63719771",
+      "Name": "Stoker_Start_Loop",
+      "ObjectPath": "\\Events\\Events\\Stoker\\Stoker_Start_Loop",
+      "GUID": "{5DC5C534-3C35-456E-823E-39E1F0E6114E}",
+      "MaxAttenuation": "10",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "802428064"
+       }
+      ]
+     },
+     {
+      "Id": "2702675819",
+      "Name": "Walk_Blood",
+      "ObjectPath": "\\Events\\Player\\Walk_Blood",
+      "GUID": "{0BC340A5-A5A5-4005-B7A0-8F31B5C7192A}",
+      "MaxAttenuation": "10",
+      "DurationType": "OneShot",
+      "DurationMin": "0.2818353",
+      "DurationMax": "0.39887226",
+      "MediaRefs": [
+       {
+        "Id": "103623993"
+       },
+       {
+        "Id": "179665219"
+       },
+       {
+        "Id": "256806451"
+       },
+       {
+        "Id": "877341250"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{F6AE3741-EDC0-493F-B618-2B4D203921FC}"
+       }
+      ]
+     },
+     {
+      "Id": "851050871",
+      "Name": "Walk_General",
+      "ObjectPath": "\\Events\\Player\\Walk_General",
+      "GUID": "{A9D53AD6-EB2D-490F-8CC5-658694D0AD5D}",
+      "MaxAttenuation": "10",
+      "DurationType": "OneShot",
+      "DurationMin": "0.2818353",
+      "DurationMax": "0.39887226",
+      "MediaRefs": [
+       {
+        "Id": "90644780"
+       },
+       {
+        "Id": "113164188"
+       },
+       {
+        "Id": "299790253"
+       },
+       {
+        "Id": "1032795126"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{F6AE3741-EDC0-493F-B618-2B4D203921FC}"
+       }
+      ]
+     },
+     {
+      "Id": "1781063159",
+      "Name": "WeirdSpeaker",
+      "ObjectPath": "\\Events\\Events\\WeirdSpeaker\\WeirdSpeaker",
+      "GUID": "{6E79142B-32C1-42B0-851C-292BEE3BA55C}",
+      "DurationType": "OneShot",
+      "DurationMin": "4.24483",
+      "DurationMax": "4.24483",
+      "MediaRefs": [
+       {
+        "Id": "360479806"
+       },
+       {
+        "Id": "801714849"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{F6AE3741-EDC0-493F-B618-2B4D203921FC}"
+       },
+       {
+        "Id": "3284365407",
+        "Name": "Reverb_Vox",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb_Vox",
+        "GUID": "{5FEB15FA-4750-4299-B2E3-34D72F9206F2}"
+       }
+      ]
+     },
+     {
+      "Id": "1104531468",
+      "Name": "WeirdSpeaker_Loop",
+      "ObjectPath": "\\Events\\Events\\WeirdSpeaker\\WeirdSpeaker_Loop",
+      "GUID": "{65BCD863-D1E9-4E5A-9783-F0CC3210C1D9}",
+      "MaxAttenuation": "25",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "68472216"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Reverb",
+        "GUID": "{F6AE3741-EDC0-493F-B618-2B4D203921FC}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{8957FC3C-57FA-0641-4B17-1B49B430A148}"
+ }
+}

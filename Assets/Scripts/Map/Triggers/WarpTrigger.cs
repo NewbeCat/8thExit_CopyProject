@@ -18,6 +18,11 @@ public class WarpTrigger : MonoBehaviour
         if (active && other.CompareTag("Player"))
         {
             Debug.Log("warp triggering!");
+
+            // Wwise State √ ±‚»≠
+            AkSoundEngine.SetState("RoomState", "Normal");
+            Debug.Log("[Wwise] RoomState set to: Normal");
+
             warpZone.WarpPlayer(_outCorr);
         }
     }

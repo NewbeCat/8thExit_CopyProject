@@ -17,7 +17,7 @@
 							</ValueList>
 						</Property>
 						<Property Name="ConeOuterAngle" Type="int32" Value="150"/>
-						<Property Name="RadiusMax" Type="Real64" Value="28"/>
+						<Property Name="RadiusMax" Type="Real64" Value="25"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -33,12 +33,17 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>12.5</XPos>
-											<YPos>-10</YPos>
+											<XPos>6</XPos>
+											<YPos>-5</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>28</XPos>
+											<XPos>12</XPos>
+											<YPos>-12</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>25</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -65,12 +70,12 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>18.6666666666667</XPos>
+											<XPos>16.6666666666667</XPos>
 											<YPos>44</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>28</XPos>
+											<XPos>25</XPos>
 											<YPos>100</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -143,7 +148,12 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>12.5</XPos>
+											<XPos>6.5</XPos>
+											<YPos>-4.5</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>12</XPos>
 											<YPos>-10</YPos>
 											<Flags>0</Flags>
 										</Point>
@@ -237,7 +247,7 @@
 				</Attenuation>
 				<Attenuation Name="Footstep Attenuation" ID="{70F4DAE1-A7F0-4FDA-838A-09643009D11F}" ShortID="1040992100">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="12"/>
+						<Property Name="RadiusMax" Type="Real64" Value="10"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -253,12 +263,12 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>6</XPos>
+											<XPos>5</XPos>
 											<YPos>-10</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>12</XPos>
+											<XPos>10</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -324,7 +334,7 @@
 				</Attenuation>
 				<Attenuation Name="Stoker Attenuation" ID="{8903641C-A2A8-4281-98EE-81772F8862EC}" ShortID="259159895">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="12"/>
+						<Property Name="RadiusMax" Type="Real64" Value="10"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -340,12 +350,12 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>7</XPos>
+											<XPos>4.5</XPos>
 											<YPos>-10</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>12</XPos>
+											<XPos>10</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -427,8 +437,8 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>10</XPos>
-											<YPos>-8</YPos>
+											<XPos>11</XPos>
+											<YPos>-10</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>

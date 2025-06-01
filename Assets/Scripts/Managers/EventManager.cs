@@ -62,6 +62,28 @@ public class EventManager : MonoBehaviour
 
         currentEventObject = Instantiate(prefabToSpawn, this.gameObject.transform);
         //currentEventObject.name = prefabToSpawn.name;
+
+        // 자동으로 이름 기준으로 상태 설정
+        string prefabStateName = prefabToSpawn.name;  // 예: "ScreenHand"
+
+        // 설정할 State 이름 (예외 프리팹만 따로 처리)
+        switch (prefabStateName)
+        {
+            case "BlinkLight":
+            case "ScreenHand":
+            case "ScreenVideo":
+            case "Stoker":
+            case "WeirdSpeaker":
+                AkSoundEngine.SetState("RoomState", prefabStateName);
+                Debug.Log($"[State] RoomState set to: {prefabStateName}");
+                break;
+
+            default:
+                AkSoundEngine.SetState("RoomState", "Normal");
+                Debug.Log("[State] RoomState set to: Normal (default)");
+                break;
+            }
+        Debug.Log($"[State] RoomState set to {prefabStateName}");
     }
 
     public void KillEvent()

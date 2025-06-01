@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 65d4db92a8f4954c86ff01296ec64c96
     GuidInternal: 
-    m_lastTime: -8584529891284775808
+    m_lastTime: -8584528392644775808
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: c648c53ff9a53e43b2ea071a62b62e33
     GuidInternal: 
-    m_lastTime: -8584529891284775808
+    m_lastTime: -8584528392644775808
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 18c2c9020ecd044283ffaea2148bebcc
     GuidInternal: 
-    m_lastTime: -8584529891284775808
+    m_lastTime: -8584528392644775808
     List: []
   - PhysicalPath: SoundBanks\Global.wwu
     PathAndIcons:
@@ -116,7 +116,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit\Global
     guid: ebe4525220386d4794471acacf8b91c2
     GuidInternal: 
-    m_lastTime: -8584529891284775808
+    m_lastTime: -8584528392644775808
     List:
     - name: Global
       guid: d5fd9e331fb25a4fa2447e2fa4fa8ad0
@@ -147,7 +147,7 @@ MonoBehaviour:
     ParentPath: Events\Ambience
     guid: ae807e3ae4ce144a9e4033fea95b68b2
     GuidInternal: 
-    m_lastTime: -8584529891284775808
+    m_lastTime: -8584528392644775808
     List:
     - name: Ending
       guid: b2ded38a44ac5142a0fdc9fd2e9b3ba4
@@ -164,8 +164,8 @@ MonoBehaviour:
         guid: b2ded38a44ac5142a0fdc9fd2e9b3ba4
       Path: Events\Ambience\Ending
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 28.488464
+      minDuration: 28.488464
     - name: General
       guid: bfb4dd1e560370439ee2923ff1b51823
       id: 133642231
@@ -181,8 +181,8 @@ MonoBehaviour:
         guid: bfb4dd1e560370439ee2923ff1b51823
       Path: Events\Ambience\General
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
@@ -194,7 +194,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5accb9d5f3173940866cf9b193e40e98
     GuidInternal: 
-    m_lastTime: -8584529891284775808
+    m_lastTime: -8584528392644775808
     List: []
   - PhysicalPath: Events\Events.wwu
     PathAndIcons:
@@ -207,7 +207,7 @@ MonoBehaviour:
     ParentPath: Events\Events
     guid: e672517b2fafe641af72586f2e1c8b6c
     GuidInternal: 
-    m_lastTime: -8584529891284775808
+    m_lastTime: -8584528014701187330
     List:
     - name: BlinkLight
       guid: 6957008e2b3909418f1c66258681ad39
@@ -244,8 +244,8 @@ MonoBehaviour:
         guid: 728487f525d5c6478908f66504321407
       Path: Events\Events\BlinkLight\BlinkLight_Shuffle
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.27318335
+      minDuration: 0.21145208
     - name: BlinkLight_TurnOff
       guid: af9c015578144b49acd766c38f546c1e
       id: 3985402990
@@ -264,8 +264,8 @@ MonoBehaviour:
         guid: af9c015578144b49acd766c38f546c1e
       Path: Events\Events\BlinkLight\BlinkLight_TurnOff
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.27318335
+      minDuration: 0.21682575
     - name: BlinkLight_TurnOff2
       guid: b6fd84087c2c7c429710f06fbe0469f7
       id: 1645130008
@@ -283,9 +283,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: b6fd84087c2c7c429710f06fbe0469f7
       Path: Events\Events\BlinkLight\BlinkLight_TurnOff2
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 25
+      maxDuration: 0.27318335
+      minDuration: 0.21682575
     - name: BlinkLight_TurnOn
       guid: 30278e983f2acb408cf5ef41c2be1bfb
       id: 2643953872
@@ -304,8 +304,8 @@ MonoBehaviour:
         guid: 30278e983f2acb408cf5ef41c2be1bfb
       Path: Events\Events\BlinkLight\BlinkLight_TurnOn
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.2664129
+      minDuration: 0.21145208
     - name: BlinkLight_TurnOn2
       guid: d0565ec60ef035469ff8efc14e4accf1
       id: 3851181890
@@ -323,9 +323,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: d0565ec60ef035469ff8efc14e4accf1
       Path: Events\Events\BlinkLight\BlinkLight_TurnOn2
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 25
+      maxDuration: 0.2664129
+      minDuration: 0.21145208
     - name: DarkComing
       guid: 94512434fb492a4c977656491147eb53
       id: 2495659572
@@ -341,8 +341,8 @@ MonoBehaviour:
         guid: 94512434fb492a4c977656491147eb53
       Path: Events\Events\DarkComing
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2.8951929
+      minDuration: 2.8951929
     - name: DarkComing
       guid: beb3cfd6f4241848b0495859d28b7b10
       id: 2495659572
@@ -378,8 +378,8 @@ MonoBehaviour:
         guid: 3d9ab2e96982b045a29d3737f2d32e72
       Path: Events\Events\Ending
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 28.488464
+      minDuration: 28.488464
     - name: Ending_Screen
       guid: 8f9fd87cd56c3144a77ede5dc4fcb18f
       id: 893845055
@@ -398,8 +398,8 @@ MonoBehaviour:
         guid: 8f9fd87cd56c3144a77ede5dc4fcb18f
       Path: Events\Events\Ending\Ending_Screen
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 16.130999
+      minDuration: 16.130999
     - name: ScreenHand
       guid: 83d889c9d4292b4c9e5a03380165a080
       id: 2188306606
@@ -415,8 +415,8 @@ MonoBehaviour:
         guid: 83d889c9d4292b4c9e5a03380165a080
       Path: Events\Events\ScreenHand
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: ScreenHand
       guid: 1f4c9dee55ff2948a9786b221c27775f
       id: 2188306606
@@ -452,8 +452,8 @@ MonoBehaviour:
         guid: 34d3d4f94e1677489412f6bf5518452f
       Path: Events\Events\ScreenVideo
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: ScreenVideo
       guid: 9fddb263a4a1914581f9112a8cfbcabf
       id: 969030586
@@ -508,9 +508,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 66b60493b57808449cc7d4411847d749
       Path: Events\Events\SpotLight\SpotLight1
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 25
+      maxDuration: 2.638753
+      minDuration: 2.638753
     - name: SpotLight2
       guid: ad3de60ff947a742befd9ece161f3536
       id: 2235400659
@@ -528,9 +528,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: ad3de60ff947a742befd9ece161f3536
       Path: Events\Events\SpotLight\SpotLight2
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 25
+      maxDuration: 3.138753
+      minDuration: 3.138753
     - name: SpotLight3
       guid: 45fd2f320a373247b2d3f241bf1c418f
       id: 2235400658
@@ -548,9 +548,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 45fd2f320a373247b2d3f241bf1c418f
       Path: Events\Events\SpotLight\SpotLight3
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 25
+      maxDuration: 3.638753
+      minDuration: 3.638753
     - name: Stoker
       guid: 3c78b143a955a64f82bf44325237a894
       id: 1079967367
@@ -586,8 +586,28 @@ MonoBehaviour:
         guid: 5eaa0199d5eedb49a00609500aff730f
       Path: Events\Events\Stoker\Stoker_Catch
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 4.0552835
+      minDuration: 4.0552835
+    - name: Stoker_Run
+      guid: 3aa3c29e7b9f4d4aad339a835c4710c9
+      id: 439440925
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Events
+        ObjectType: 12
+        guid: e672517b2fafe641af72586f2e1c8b6c
+      - ElementName: Stoker
+        ObjectType: 4
+        guid: 3c78b143a955a64f82bf44325237a894
+      - ElementName: Stoker_Run
+        ObjectType: 3
+        guid: 3aa3c29e7b9f4d4aad339a835c4710c9
+      Path: Events\Events\Stoker\Stoker_Run
+      maxAttenuation: 12
+      maxDuration: 0.29861966
+      minDuration: 0.2539471
     - name: Stoker_Start
       guid: 17b80807a854864da4575614da0a9628
       id: 534021290
@@ -606,8 +626,8 @@ MonoBehaviour:
         guid: 17b80807a854864da4575614da0a9628
       Path: Events\Events\Stoker\Stoker_Start
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 5.625805
+      minDuration: 5.625805
     - name: Stoker_Start_Loop
       guid: 34c5c55d353c6e45823e39e1f0e6114e
       id: 63719771
@@ -625,9 +645,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 34c5c55d353c6e45823e39e1f0e6114e
       Path: Events\Events\Stoker\Stoker_Start_Loop
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 10
+      maxDuration: 0
+      minDuration: 0
     - name: WeirdSpeaker
       guid: 02cf92fc2c4ab9488b0994168e0e0ec9
       id: 1781063159
@@ -643,8 +663,8 @@ MonoBehaviour:
         guid: 02cf92fc2c4ab9488b0994168e0e0ec9
       Path: Events\Events\WeirdSpeaker
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 4.24483
+      minDuration: 4.24483
     - name: WeirdSpeaker
       guid: 2b14796ec132b042851c292bee3ba55c
       id: 1781063159
@@ -682,9 +702,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 63d8bc65e9d15a4e9783f0cc3210c1d9
       Path: Events\Events\WeirdSpeaker\WeirdSpeaker_Loop
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 25
+      maxDuration: 0
+      minDuration: 0
   - PhysicalPath: Events\Player.wwu
     PathAndIcons:
     - ElementName: Events
@@ -696,7 +716,7 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: 5bb935738b6da0408b5222ec5cf10c01
     GuidInternal: 
-    m_lastTime: -8584529891284775808
+    m_lastTime: -8584528392644775808
     List:
     - name: Run_Blood
       guid: 91fc785e832b134498a3c17205cf357b
@@ -712,9 +732,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 91fc785e832b134498a3c17205cf357b
       Path: Events\Player\Run_Blood
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 12
+      maxDuration: 0.29861966
+      minDuration: 0.2539471
     - name: Run_General
       guid: c2fe0049e5760245b9f12cde1f64d0c5
       id: 106788393
@@ -729,9 +749,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: c2fe0049e5760245b9f12cde1f64d0c5
       Path: Events\Player\Run_General
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 12
+      maxDuration: 0.29861966
+      minDuration: 0.2539471
     - name: Walk_Blood
       guid: a540c30ba5a50540b7a08f31b5c7192a
       id: 2702675819
@@ -746,9 +766,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: a540c30ba5a50540b7a08f31b5c7192a
       Path: Events\Player\Walk_Blood
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 12
+      maxDuration: 0.39887226
+      minDuration: 0.2818353
     - name: Walk_General
       guid: d63ad5a92deb0f498cc5658694d0ad5d
       id: 851050871
@@ -763,9 +783,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: d63ad5a92deb0f498cc5658694d0ad5d
       Path: Events\Player\Walk_General
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 12
+      maxDuration: 0.39887226
+      minDuration: 0.2818353
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -778,7 +798,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 6d7842063946cb4bb6232f603f7990fc
     GuidInternal: 
-    m_lastTime: -8584529891284775808
+    m_lastTime: -8584528392644775808
     List:
     - name: filmEvent
       guid: 0c740a4d08aa5d4294011d18ca2683e6
@@ -806,7 +826,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 3958d5b3bcbe7041a920ecd825ec593a
     GuidInternal: 
-    m_lastTime: -8584529891284775808
+    m_lastTime: -8584528010147806256
     List:
     - name: PlayerStatus
       guid: a45e8db078720549aefae7e24a2efca6
@@ -874,6 +894,136 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: RoomState
+      guid: 7a416afd42ef4a48ab4bd27707103ed0
+      id: 185713839
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3958d5b3bcbe7041a920ecd825ec593a
+      - ElementName: RoomState
+        ObjectType: 9
+        guid: 7a416afd42ef4a48ab4bd27707103ed0
+      Path: States\Default Work Unit\RoomState
+      values:
+      - name: BlinkLight
+        guid: 72759c2683731347aff2485fc37574e4
+        id: 2244400135
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 3958d5b3bcbe7041a920ecd825ec593a
+        - ElementName: RoomState
+          ObjectType: 9
+          guid: 7a416afd42ef4a48ab4bd27707103ed0
+        - ElementName: BlinkLight
+          ObjectType: 8
+          guid: 72759c2683731347aff2485fc37574e4
+      - name: None
+        guid: dc303e718d7d8b499138861d6ef709b7
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 3958d5b3bcbe7041a920ecd825ec593a
+        - ElementName: RoomState
+          ObjectType: 9
+          guid: 7a416afd42ef4a48ab4bd27707103ed0
+        - ElementName: None
+          ObjectType: 8
+          guid: dc303e718d7d8b499138861d6ef709b7
+      - name: Normal
+        guid: 0456bb138f73514287bbaa5ec259a344
+        id: 1160234136
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 3958d5b3bcbe7041a920ecd825ec593a
+        - ElementName: RoomState
+          ObjectType: 9
+          guid: 7a416afd42ef4a48ab4bd27707103ed0
+        - ElementName: Normal
+          ObjectType: 8
+          guid: 0456bb138f73514287bbaa5ec259a344
+      - name: ScreenHand
+        guid: 9e20fae7c01ff64f975f840b1e49b342
+        id: 2188306606
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 3958d5b3bcbe7041a920ecd825ec593a
+        - ElementName: RoomState
+          ObjectType: 9
+          guid: 7a416afd42ef4a48ab4bd27707103ed0
+        - ElementName: ScreenHand
+          ObjectType: 8
+          guid: 9e20fae7c01ff64f975f840b1e49b342
+      - name: ScreenVideo
+        guid: cbb75accd4e0634a9629e4395c4ddecd
+        id: 969030586
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 3958d5b3bcbe7041a920ecd825ec593a
+        - ElementName: RoomState
+          ObjectType: 9
+          guid: 7a416afd42ef4a48ab4bd27707103ed0
+        - ElementName: ScreenVideo
+          ObjectType: 8
+          guid: cbb75accd4e0634a9629e4395c4ddecd
+      - name: Stoker
+        guid: 940248608b79a84f94e7787a2f75dcc0
+        id: 1079967367
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 3958d5b3bcbe7041a920ecd825ec593a
+        - ElementName: RoomState
+          ObjectType: 9
+          guid: 7a416afd42ef4a48ab4bd27707103ed0
+        - ElementName: Stoker
+          ObjectType: 8
+          guid: 940248608b79a84f94e7787a2f75dcc0
+      - name: WeirdSpeaker
+        guid: 537c86574bc2124a93c2694c7eb3dbba
+        id: 1781063159
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 3958d5b3bcbe7041a920ecd825ec593a
+        - ElementName: RoomState
+          ObjectType: 9
+          guid: 7a416afd42ef4a48ab4bd27707103ed0
+        - ElementName: WeirdSpeaker
+          ObjectType: 8
+          guid: 537c86574bc2124a93c2694c7eb3dbba
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -886,7 +1036,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: afb2ab2a3d2c8045b4e50465f096f1f4
     GuidInternal: 
-    m_lastTime: -8584529891284775808
+    m_lastTime: -8584528392644775808
     List:
     - name: MovementType
       guid: 86a4573388259d40815b340981857ea8
@@ -1000,7 +1150,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 0f3f7664ca977a40bb3bae1c3eb42fb1
     GuidInternal: 
-    m_lastTime: -8584529891284775808
+    m_lastTime: -8584528392644775808
     List: []
   ExpandedFileSystemItemIds: 010000000200000003000000050000000600000007000000080000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001300000014000000160000001700000018000000190000001a0000002d0000002e0000002f000000
   ExpandedWaapiItemIds: 010000000500000006000000070000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001300000016000000170000001800000019000000
