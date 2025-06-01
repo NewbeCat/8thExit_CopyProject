@@ -317,7 +317,7 @@ GameObject:
   - component: {fileID: 2466770193235105009}
   - component: {fileID: 2840685325133769003}
   m_Layer: 0
-  m_Name: Screen (1)
+  m_Name: CreditScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
