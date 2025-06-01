@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{F6BAF170-1F6D-4048-CB67-66BC2881DFBB}",
+    "Hash": "{4732994D-04B6-298D-5D21-FEC48FF2EB7E}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -98,6 +98,56 @@
     ],
     "StateGroups": [
      {
+      "Id": "185713839",
+      "Name": "RoomState",
+      "ObjectPath": "\\States\\Default Work Unit\\RoomState",
+      "GUID": "{FD6A417A-EF42-484A-AB4B-D27707103ED0}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\RoomState\\None",
+        "GUID": "{713E30DC-7D8D-498B-9138-861D6EF709B7}"
+       },
+       {
+        "Id": "969030586",
+        "Name": "ScreenVideo",
+        "ObjectPath": "\\States\\Default Work Unit\\RoomState\\ScreenVideo",
+        "GUID": "{CC5AB7CB-E0D4-4A63-9629-E4395C4DDECD}"
+       },
+       {
+        "Id": "1079967367",
+        "Name": "Stoker",
+        "ObjectPath": "\\States\\Default Work Unit\\RoomState\\Stoker",
+        "GUID": "{60480294-798B-4FA8-94E7-787A2F75DCC0}"
+       },
+       {
+        "Id": "1160234136",
+        "Name": "Normal",
+        "ObjectPath": "\\States\\Default Work Unit\\RoomState\\Normal",
+        "GUID": "{13BB5604-738F-4251-87BB-AA5EC259A344}"
+       },
+       {
+        "Id": "1781063159",
+        "Name": "WeirdSpeaker",
+        "ObjectPath": "\\States\\Default Work Unit\\RoomState\\WeirdSpeaker",
+        "GUID": "{57867C53-C24B-4A12-93C2-694C7EB3DBBA}"
+       },
+       {
+        "Id": "2188306606",
+        "Name": "ScreenHand",
+        "ObjectPath": "\\States\\Default Work Unit\\RoomState\\ScreenHand",
+        "GUID": "{E7FA209E-1FC0-4FF6-975F-840B1E49B342}"
+       },
+       {
+        "Id": "2244400135",
+        "Name": "BlinkLight",
+        "ObjectPath": "\\States\\Default Work Unit\\RoomState\\BlinkLight",
+        "GUID": "{269C7572-7383-4713-AFF2-485FC37574E4}"
+       }
+      ]
+     },
+     {
       "Id": "3800848640",
       "Name": "PlayerStatus",
       "ObjectPath": "\\States\\Default Work Unit\\PlayerStatus",
@@ -168,6 +218,6 @@
     ]
    }
   ],
-  "FileHash": "{A6CBB299-0C6C-FFC9-32D5-C20F69EB5770}"
+  "FileHash": "{4911D4CB-34DE-D4F2-97EC-A9EC505AD998}"
  }
 }

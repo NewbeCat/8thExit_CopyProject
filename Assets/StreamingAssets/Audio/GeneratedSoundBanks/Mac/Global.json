@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{339EFDD5-B21F-4F5A-A244-7E2FA4FA8AD0}",
     "Language": "SFX",
-    "Hash": "{DA4211D5-1864-44AD-2191-882524FA200F}",
+    "Hash": "{E74D83C8-1090-C74A-31DC-5E3C272C00DE}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Global\\Global",
     "ShortName": "Global",
     "Path": "Global.bnk",
@@ -446,7 +446,7 @@
       "Name": "Run_Blood",
       "ObjectPath": "\\Events\\Player\\Run_Blood",
       "GUID": "{5E78FC91-2B83-4413-98A3-C17205CF357B}",
-      "MaxAttenuation": "12",
+      "MaxAttenuation": "10",
       "DurationType": "OneShot",
       "DurationMin": "0.2539471",
       "DurationMax": "0.29861966",
@@ -478,7 +478,7 @@
       "Name": "Run_General",
       "ObjectPath": "\\Events\\Player\\Run_General",
       "GUID": "{4900FEC2-76E5-4502-B9F1-2CDE1F64D0C5}",
-      "MaxAttenuation": "12",
+      "MaxAttenuation": "10",
       "DurationType": "OneShot",
       "DurationMin": "0.2539471",
       "DurationMax": "0.29861966",
@@ -630,6 +630,30 @@
       ]
      },
      {
+      "Id": "439440925",
+      "Name": "Stoker_Run",
+      "ObjectPath": "\\Events\\Events\\Stoker\\Stoker_Run",
+      "GUID": "{9EC2A33A-9F7B-4A4D-AD33-9A835C4710C9}",
+      "MaxAttenuation": "10",
+      "DurationType": "OneShot",
+      "DurationMin": "0.2539471",
+      "DurationMax": "0.29861966",
+      "MediaRefs": [
+       {
+        "Id": "577900180"
+       },
+       {
+        "Id": "686085762"
+       },
+       {
+        "Id": "716045521"
+       },
+       {
+        "Id": "981834315"
+       }
+      ]
+     },
+     {
       "Id": "534021290",
       "Name": "Stoker_Start",
       "ObjectPath": "\\Events\\Events\\Stoker\\Stoker_Start",
@@ -648,7 +672,7 @@
       "Name": "Stoker_Start_Loop",
       "ObjectPath": "\\Events\\Events\\Stoker\\Stoker_Start_Loop",
       "GUID": "{5DC5C534-3C35-456E-823E-39E1F0E6114E}",
-      "MaxAttenuation": "12",
+      "MaxAttenuation": "10",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -661,7 +685,7 @@
       "Name": "Walk_Blood",
       "ObjectPath": "\\Events\\Player\\Walk_Blood",
       "GUID": "{0BC340A5-A5A5-4005-B7A0-8F31B5C7192A}",
-      "MaxAttenuation": "12",
+      "MaxAttenuation": "10",
       "DurationType": "OneShot",
       "DurationMin": "0.2818353",
       "DurationMax": "0.39887226",
@@ -693,7 +717,7 @@
       "Name": "Walk_General",
       "ObjectPath": "\\Events\\Player\\Walk_General",
       "GUID": "{A9D53AD6-EB2D-490F-8CC5-658694D0AD5D}",
-      "MaxAttenuation": "12",
+      "MaxAttenuation": "10",
       "DurationType": "OneShot",
       "DurationMin": "0.2818353",
       "DurationMax": "0.39887226",
@@ -775,6 +799,6 @@
     ]
    }
   ],
-  "FileHash": "{3A22A765-603D-1838-D765-378C8D5B0901}"
+  "FileHash": "{364DD3BF-E089-C6F5-BC20-85648E809C6D}"
  }
 }
