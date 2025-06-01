@@ -52,6 +52,59 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="RoomState" ID="{FD6A417A-EF42-484A-AB4B-D27707103ED0}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Normal" ID="{13BB5604-738F-4251-87BB-AA5EC259A344}"/>
+										<CustomState Name="" ID="{90C0C678-FED4-467E-AC39-3068FB7796A3}" ShortID="283421562"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="BlinkLight" ID="{269C7572-7383-4713-AFF2-485FC37574E4}"/>
+										<CustomState Name="" ID="{8A77F409-5D3F-4D23-967A-A5A877E1241C}" ShortID="1060195046">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="WeirdSpeaker" ID="{57867C53-C24B-4A12-93C2-694C7EB3DBBA}"/>
+										<CustomState Name="" ID="{03EB8712-C201-47C7-B9E6-6507696C87D8}" ShortID="822363663">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ScreenVideo" ID="{CC5AB7CB-E0D4-4A63-9629-E4395C4DDECD}"/>
+										<CustomState Name="" ID="{DBC43048-6CE0-4BAC-B460-02EB823CAFDC}" ShortID="462711155">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Stoker" ID="{60480294-798B-4FA8-94E7-787A2F75DCC0}"/>
+										<CustomState Name="" ID="{8A7B580D-68DE-403D-8AC9-8F10DC954EB8}" ShortID="914547187">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ScreenHand" ID="{E7FA209E-1FC0-4FF6-975F-840B1E49B342}"/>
+										<CustomState Name="" ID="{0BAB479B-06F4-4052-80EC-37220CD4FDE0}" ShortID="625170431">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</ActorMixer>
 						<ActorMixer Name="ScreenHand" ID="{62195061-28C4-4568-9055-015212AC9926}" ShortID="404397661">
 							<ReferenceList>
@@ -146,6 +199,59 @@
 									</ObjectLists>
 								</RandomSequenceContainer>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="RoomState" ID="{FD6A417A-EF42-484A-AB4B-D27707103ED0}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Normal" ID="{13BB5604-738F-4251-87BB-AA5EC259A344}"/>
+										<CustomState Name="" ID="{ED827D33-9217-473D-A921-5B632AEDB8F8}" ShortID="186265165">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="BlinkLight" ID="{269C7572-7383-4713-AFF2-485FC37574E4}"/>
+										<CustomState Name="" ID="{3347B9CB-AF0A-4D7B-9FF1-6D7E43935B4B}" ShortID="880411733">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="WeirdSpeaker" ID="{57867C53-C24B-4A12-93C2-694C7EB3DBBA}"/>
+										<CustomState Name="" ID="{6FF73435-466C-4A1E-B4D4-24934E5BCD8E}" ShortID="388125645">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ScreenVideo" ID="{CC5AB7CB-E0D4-4A63-9629-E4395C4DDECD}"/>
+										<CustomState Name="" ID="{E5C35B61-7C66-496A-B3A1-8876BA6113FD}" ShortID="457282552">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Stoker" ID="{60480294-798B-4FA8-94E7-787A2F75DCC0}"/>
+										<CustomState Name="" ID="{831E496E-3510-4286-B176-ADE1F6D4C8F0}" ShortID="491802633">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ScreenHand" ID="{E7FA209E-1FC0-4FF6-975F-840B1E49B342}"/>
+										<CustomState Name="" ID="{D3F120B3-B3A5-409F-A4AB-361041768260}" ShortID="456264878"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</ActorMixer>
 						<ActorMixer Name="ScreenVideo" ID="{C860DE7F-1F57-40B7-8ED5-54091217A9D7}" ShortID="83114559">
 							<ReferenceList>
@@ -235,6 +341,59 @@
 									</ObjectLists>
 								</RandomSequenceContainer>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="RoomState" ID="{FD6A417A-EF42-484A-AB4B-D27707103ED0}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Normal" ID="{13BB5604-738F-4251-87BB-AA5EC259A344}"/>
+										<CustomState Name="" ID="{55649487-1A5D-4DD0-891F-ABE96360BD58}" ShortID="497700893">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="BlinkLight" ID="{269C7572-7383-4713-AFF2-485FC37574E4}"/>
+										<CustomState Name="" ID="{E3226960-6976-46D7-9FF4-AB26DA0AC1E4}" ShortID="450577067">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="WeirdSpeaker" ID="{57867C53-C24B-4A12-93C2-694C7EB3DBBA}"/>
+										<CustomState Name="" ID="{8D9D889F-1226-4154-B377-ACC11497F181}" ShortID="125043144">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ScreenVideo" ID="{CC5AB7CB-E0D4-4A63-9629-E4395C4DDECD}"/>
+										<CustomState Name="" ID="{036A7A8B-A77A-4B36-9DF9-01FBCE6808FC}" ShortID="981453070"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Stoker" ID="{60480294-798B-4FA8-94E7-787A2F75DCC0}"/>
+										<CustomState Name="" ID="{FAC21286-9A41-45BD-BE1E-B2E0EE3AA733}" ShortID="414389137">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ScreenHand" ID="{E7FA209E-1FC0-4FF6-975F-840B1E49B342}"/>
+										<CustomState Name="" ID="{14287178-2F64-43DB-916B-9E75ACFEE696}" ShortID="80314735">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</ActorMixer>
 						<ActorMixer Name="SpotLight" ID="{10B1F732-AACB-4128-859D-E22BB01183DC}" ShortID="873581033">
 							<PropertyList>
@@ -366,6 +525,59 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="RoomState" ID="{FD6A417A-EF42-484A-AB4B-D27707103ED0}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Normal" ID="{13BB5604-738F-4251-87BB-AA5EC259A344}"/>
+										<CustomState Name="" ID="{C2B8630C-E365-4B09-A5CD-A87A10F40038}" ShortID="189438851"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="BlinkLight" ID="{269C7572-7383-4713-AFF2-485FC37574E4}"/>
+										<CustomState Name="" ID="{76451844-CE1A-4A5C-A0D9-206322666AD5}" ShortID="420396625">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="WeirdSpeaker" ID="{57867C53-C24B-4A12-93C2-694C7EB3DBBA}"/>
+										<CustomState Name="" ID="{EFBD1A2F-981D-43B1-8A9B-007C0EA318CE}" ShortID="44039816">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ScreenVideo" ID="{CC5AB7CB-E0D4-4A63-9629-E4395C4DDECD}"/>
+										<CustomState Name="" ID="{BCD8DDE4-DD0D-4852-9E08-004E2ADC4436}" ShortID="514593664">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Stoker" ID="{60480294-798B-4FA8-94E7-787A2F75DCC0}"/>
+										<CustomState Name="" ID="{E69B535A-A71E-41B0-AE35-49FEAF6FA99E}" ShortID="532375561">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ScreenHand" ID="{E7FA209E-1FC0-4FF6-975F-840B1E49B342}"/>
+										<CustomState Name="" ID="{9B9F8640-E770-44C9-9158-6634F1502530}" ShortID="934681707">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</ActorMixer>
 						<ActorMixer Name="Stoker" ID="{AA301EC8-2F78-4CDD-B02F-F373EC5F4C6C}" ShortID="938926569">
 							<ReferenceList>
@@ -597,7 +809,181 @@
 										<ActiveSource Name="stoker_start2_1" ID="{2C2350E2-59E0-4549-8C09-DE844A3D80E5}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<RandomSequenceContainer Name="stoker_run" ID="{138DAB30-11DE-4DD8-81AF-2A9FB33976FD}" ShortID="108092111">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{67B67091-4CEA-4CAB-9317-7579651BB68F}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Footstep Attenuation" ID="{70F4DAE1-A7F0-4FDA-838A-09643009D11F}" WorkUnitID="{F947CE3C-1936-46AC-AA96-2569249171DE}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C1A22697-E655-412A-8993-9113AC2661E4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FC548C6-A5F9-433E-B2EA-071A62B62E33}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="run(3)" ID="{D3FB4F76-5FB5-4474-8F64-C5FF2824B6FE}" ShortID="612741226">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C1A22697-E655-412A-8993-9113AC2661E4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FC548C6-A5F9-433E-B2EA-071A62B62E33}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="run(3)" ID="{B6B3F16A-8933-47E8-800D-E700A0B4F412}">
+													<Language>SFX</Language>
+													<AudioFile>run(3).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="716045521"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="run(3)" ID="{B6B3F16A-8933-47E8-800D-E700A0B4F412}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="run(2)" ID="{C9C7069D-5133-4CB5-A749-E007F7B96222}" ShortID="795720995">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C1A22697-E655-412A-8993-9113AC2661E4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FC548C6-A5F9-433E-B2EA-071A62B62E33}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="run(2)" ID="{D5A9378B-41D7-4C37-B254-DE15D7D58D20}">
+													<Language>SFX</Language>
+													<AudioFile>run(2).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="686085762"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="run(2)" ID="{D5A9378B-41D7-4C37-B254-DE15D7D58D20}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="run(1)" ID="{E926B0A7-C66E-4840-A4A4-F9C9B89B5B5E}" ShortID="715909672">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C1A22697-E655-412A-8993-9113AC2661E4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FC548C6-A5F9-433E-B2EA-071A62B62E33}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="run(1)" ID="{847E8A40-14CA-4045-AA44-5C0CAB46769A}">
+													<Language>SFX</Language>
+													<AudioFile>run(1).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="577900180"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="run(1)" ID="{847E8A40-14CA-4045-AA44-5C0CAB46769A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="run(4)" ID="{69C9E241-4A75-4C01-9177-963D32FF19F7}" ShortID="501580610">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C1A22697-E655-412A-8993-9113AC2661E4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3FC548C6-A5F9-433E-B2EA-071A62B62E33}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="run(4)" ID="{5A25BD2F-C618-48A5-9781-526BA5420BA7}">
+													<Language>SFX</Language>
+													<AudioFile>run(4).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="981834315"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="run(4)" ID="{5A25BD2F-C618-48A5-9781-526BA5420BA7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="RoomState" ID="{FD6A417A-EF42-484A-AB4B-D27707103ED0}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Normal" ID="{13BB5604-738F-4251-87BB-AA5EC259A344}"/>
+										<CustomState Name="" ID="{40F7D6A9-0AF7-43FD-BDE6-5181023A40FD}" ShortID="636594148">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="BlinkLight" ID="{269C7572-7383-4713-AFF2-485FC37574E4}"/>
+										<CustomState Name="" ID="{E1178352-893A-4530-A278-B693E7EF0A05}" ShortID="494238312">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="WeirdSpeaker" ID="{57867C53-C24B-4A12-93C2-694C7EB3DBBA}"/>
+										<CustomState Name="" ID="{8EF76CD6-41FA-402C-99C2-ED73D4A35311}" ShortID="430560477">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ScreenVideo" ID="{CC5AB7CB-E0D4-4A63-9629-E4395C4DDECD}"/>
+										<CustomState Name="" ID="{FDCDEC9E-D02E-4F0B-9AF7-977E4CF8A5E3}" ShortID="900961076">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Stoker" ID="{60480294-798B-4FA8-94E7-787A2F75DCC0}"/>
+										<CustomState Name="" ID="{DFB75B32-782A-448A-AF22-9861428C8191}" ShortID="465196863"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ScreenHand" ID="{E7FA209E-1FC0-4FF6-975F-840B1E49B342}"/>
+										<CustomState Name="" ID="{D28DE01C-96E6-4D6C-8D23-872364B81F51}" ShortID="250693508">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</ActorMixer>
 						<ActorMixer Name="WeirdSpeaker" ID="{198085FB-20ED-4AB0-AA65-9A465D86C8DB}" ShortID="451896430">
 							<PropertyList>
@@ -736,6 +1122,59 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="RoomState" ID="{FD6A417A-EF42-484A-AB4B-D27707103ED0}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Normal" ID="{13BB5604-738F-4251-87BB-AA5EC259A344}"/>
+										<CustomState Name="" ID="{8CD50B07-38D2-43A2-A764-DE9AD5353DFB}" ShortID="186506863">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="BlinkLight" ID="{269C7572-7383-4713-AFF2-485FC37574E4}"/>
+										<CustomState Name="" ID="{840DDDA5-F2E3-45D0-8E33-C13800CD1925}" ShortID="421389433">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="WeirdSpeaker" ID="{57867C53-C24B-4A12-93C2-694C7EB3DBBA}"/>
+										<CustomState Name="" ID="{6EA82659-57AC-400B-BBE2-8E4589F3BC70}" ShortID="1059117070"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ScreenVideo" ID="{CC5AB7CB-E0D4-4A63-9629-E4395C4DDECD}"/>
+										<CustomState Name="" ID="{B8A34BBD-C763-439D-A245-E826E7A93F97}" ShortID="366165027">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Stoker" ID="{60480294-798B-4FA8-94E7-787A2F75DCC0}"/>
+										<CustomState Name="" ID="{2C9DC3A2-160F-40A8-856E-A122E69FCA17}" ShortID="9485845">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ScreenHand" ID="{E7FA209E-1FC0-4FF6-975F-840B1E49B342}"/>
+										<CustomState Name="" ID="{E71C7763-8845-4860-880D-5E9D969D72F0}" ShortID="275395714">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</ActorMixer>
 						<RandomSequenceContainer Name="BlinkLight" ID="{D7450F39-8475-480A-AF2F-F0837A46A810}" ShortID="727138893">
 							<PropertyList>
@@ -782,6 +1221,59 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="RoomState" ID="{FD6A417A-EF42-484A-AB4B-D27707103ED0}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Normal" ID="{13BB5604-738F-4251-87BB-AA5EC259A344}"/>
+												<CustomState Name="" ID="{AD0300B4-1C11-4E07-A5FA-4A191C41D06B}" ShortID="11518354"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="BlinkLight" ID="{269C7572-7383-4713-AFF2-485FC37574E4}"/>
+												<CustomState Name="" ID="{D5043B99-1920-4618-99CE-F855305EBC99}" ShortID="780571844">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="WeirdSpeaker" ID="{57867C53-C24B-4A12-93C2-694C7EB3DBBA}"/>
+												<CustomState Name="" ID="{1E6640C1-E9C6-436D-95A3-1CC7F1580DDD}" ShortID="254061989">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="ScreenVideo" ID="{CC5AB7CB-E0D4-4A63-9629-E4395C4DDECD}"/>
+												<CustomState Name="" ID="{3BEB2EEB-FC9E-49E3-9CF7-0BD3197C7D24}" ShortID="165337401">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Stoker" ID="{60480294-798B-4FA8-94E7-787A2F75DCC0}"/>
+												<CustomState Name="" ID="{89538377-C7F2-4F6E-9090-339492451750}" ShortID="1050172680">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="ScreenHand" ID="{E7FA209E-1FC0-4FF6-975F-840B1E49B342}"/>
+												<CustomState Name="" ID="{0F0E2907-D931-406B-8224-4D7CDA98FA69}" ShortID="297410596">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="light_turnoff" ID="{9CD49365-E826-4353-AF2B-52870B09C4A1}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -804,6 +1296,59 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="RoomState" ID="{FD6A417A-EF42-484A-AB4B-D27707103ED0}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Normal" ID="{13BB5604-738F-4251-87BB-AA5EC259A344}"/>
+												<CustomState Name="" ID="{3C504075-8CE5-4569-937E-E111CF3B79E5}" ShortID="551277768"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="BlinkLight" ID="{269C7572-7383-4713-AFF2-485FC37574E4}"/>
+												<CustomState Name="" ID="{8C3C1520-0C11-496A-9886-88BA990FCB97}" ShortID="6953728">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="WeirdSpeaker" ID="{57867C53-C24B-4A12-93C2-694C7EB3DBBA}"/>
+												<CustomState Name="" ID="{3AFBE41A-EF48-46B3-9C65-D8286A9C7F1A}" ShortID="977234228">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="ScreenVideo" ID="{CC5AB7CB-E0D4-4A63-9629-E4395C4DDECD}"/>
+												<CustomState Name="" ID="{D38679B3-A6BA-4E01-9845-9648FE31FFC0}" ShortID="820858181">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Stoker" ID="{60480294-798B-4FA8-94E7-787A2F75DCC0}"/>
+												<CustomState Name="" ID="{E7AA25CF-4778-4D16-A54D-AC279BAA4048}" ShortID="888354550">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="ScreenHand" ID="{E7FA209E-1FC0-4FF6-975F-840B1E49B342}"/>
+												<CustomState Name="" ID="{5A72A674-89B6-49E5-9453-AF4850457099}" ShortID="806627600">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="light_turnon" ID="{19A2168A-EBB4-4C07-A771-C4DFD863A336}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -838,6 +1383,59 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="RoomState" ID="{FD6A417A-EF42-484A-AB4B-D27707103ED0}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Normal" ID="{13BB5604-738F-4251-87BB-AA5EC259A344}"/>
+												<CustomState Name="" ID="{191A4F1C-9B88-42F3-AAA2-218CD86FCE0D}" ShortID="962555408">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="BlinkLight" ID="{269C7572-7383-4713-AFF2-485FC37574E4}"/>
+												<CustomState Name="" ID="{00159881-3D2F-497B-B644-AB23B77A1BED}" ShortID="934233264"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="WeirdSpeaker" ID="{57867C53-C24B-4A12-93C2-694C7EB3DBBA}"/>
+												<CustomState Name="" ID="{9C0670E7-F14D-4030-B9EE-E30CF1BE3572}" ShortID="783043609">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="ScreenVideo" ID="{CC5AB7CB-E0D4-4A63-9629-E4395C4DDECD}"/>
+												<CustomState Name="" ID="{CFE6D937-B902-4413-89E1-A31EB47532B6}" ShortID="46277821">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Stoker" ID="{60480294-798B-4FA8-94E7-787A2F75DCC0}"/>
+												<CustomState Name="" ID="{BEA37E7D-D452-4CB4-9B1C-81E5E3FCD4FB}" ShortID="244322015">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="ScreenHand" ID="{E7FA209E-1FC0-4FF6-975F-840B1E49B342}"/>
+												<CustomState Name="" ID="{2356B019-B59B-41DF-99CF-70B26EEA7BF3}" ShortID="325852241">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="light_turnoff" ID="{7834063A-338E-483D-BBFF-FC3F07D791B3}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -872,6 +1470,59 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="RoomState" ID="{FD6A417A-EF42-484A-AB4B-D27707103ED0}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Normal" ID="{13BB5604-738F-4251-87BB-AA5EC259A344}"/>
+												<CustomState Name="" ID="{EFB434DA-6E0D-4BB3-A349-CF993ABB991E}" ShortID="122257085">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="BlinkLight" ID="{269C7572-7383-4713-AFF2-485FC37574E4}"/>
+												<CustomState Name="" ID="{B7AB5509-4180-4CBC-B988-61093DB7F004}" ShortID="882403349"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="WeirdSpeaker" ID="{57867C53-C24B-4A12-93C2-694C7EB3DBBA}"/>
+												<CustomState Name="" ID="{BC91FE88-5A53-48BC-8A33-D36E5E9FDF13}" ShortID="129498756">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="ScreenVideo" ID="{CC5AB7CB-E0D4-4A63-9629-E4395C4DDECD}"/>
+												<CustomState Name="" ID="{8BD3ED1E-32C7-4DE4-9316-67BB82F99881}" ShortID="317322232">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Stoker" ID="{60480294-798B-4FA8-94E7-787A2F75DCC0}"/>
+												<CustomState Name="" ID="{A3AF5472-3274-41F0-B292-49FD49DCDABA}" ShortID="488641196">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="ScreenHand" ID="{E7FA209E-1FC0-4FF6-975F-840B1E49B342}"/>
+												<CustomState Name="" ID="{5A1E8CD3-9F19-4FE9-BE95-3AB09398F491}" ShortID="684379050">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="light_turnon" ID="{03C07F2D-1AA7-44AF-A33C-B1A655B53BA7}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -911,6 +1562,59 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="RoomState" ID="{FD6A417A-EF42-484A-AB4B-D27707103ED0}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Normal" ID="{13BB5604-738F-4251-87BB-AA5EC259A344}"/>
+										<CustomState Name="" ID="{CA186500-DB85-4C70-A2B7-6FCE16D73378}" ShortID="936077900"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="BlinkLight" ID="{269C7572-7383-4713-AFF2-485FC37574E4}"/>
+										<CustomState Name="" ID="{E4A5F854-EE31-4C73-8391-62270F23CEF1}" ShortID="720991183">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="WeirdSpeaker" ID="{57867C53-C24B-4A12-93C2-694C7EB3DBBA}"/>
+										<CustomState Name="" ID="{B48347E0-3CA5-4BC4-A3DC-CC7B1A022431}" ShortID="698234764">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ScreenVideo" ID="{CC5AB7CB-E0D4-4A63-9629-E4395C4DDECD}"/>
+										<CustomState Name="" ID="{C7FACD4D-9308-427A-B8C0-DCB1CD22A8A4}" ShortID="55430889">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Stoker" ID="{60480294-798B-4FA8-94E7-787A2F75DCC0}"/>
+										<CustomState Name="" ID="{5D3F8FFB-0DEB-4BCB-B3EF-DAAC566EE034}" ShortID="375275052">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ScreenHand" ID="{E7FA209E-1FC0-4FF6-975F-840B1E49B342}"/>
+										<CustomState Name="" ID="{066400F7-D2BF-4193-BF23-C0252FF75603}" ShortID="574728823">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>

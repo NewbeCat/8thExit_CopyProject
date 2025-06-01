@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1715911276270355122}
   - component: {fileID: 2889159029824990415}
+  - component: {fileID: 39240122442936746}
   m_Layer: 0
   m_Name: BloodFootStep
   m_TagString: Untagged
@@ -55,6 +56,19 @@ MonoBehaviour:
   triggerOff:
   - {fileID: 6790375298174034271}
   - {fileID: 4508414742718571091}
+--- !u!114 &39240122442936746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137416759795791767}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 530682e372111b840bc8ac4d9b8da840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stateName: Normal
 --- !u!1001 &1833423914040146748
 PrefabInstance:
   m_ObjectHideFlags: 0

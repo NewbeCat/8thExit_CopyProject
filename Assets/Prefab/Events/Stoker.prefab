@@ -164,6 +164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5071118309357249219}
+  - component: {fileID: -3007852630911660737}
   m_Layer: 0
   m_Name: Stoker
   m_TagString: Untagged
@@ -187,6 +188,19 @@ Transform:
   - {fileID: 3326107991852630751}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-3007852630911660737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8732298215754015184}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 530682e372111b840bc8ac4d9b8da840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stateName: Stoker
 --- !u!1001 &1670634952294288525
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -709,7 +723,7 @@ MonoBehaviour:
   footstepEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 72627e2dab35b1547a6bbc6941d21e0b, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 9fdf8110cb6b2e64b9e4ebc3a19e7e51, type: 2}
   stokerCatchEvent:
     idInternal: 0
     valueGuidInternal: 
@@ -743,7 +757,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3194477013003438100}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}

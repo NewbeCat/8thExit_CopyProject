@@ -406,6 +406,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5537186478745405449}
   - component: {fileID: 2525434530641408646}
+  - component: {fileID: 7059949840136657611}
   m_Layer: 0
   m_Name: SpotLightEvent
   m_TagString: Untagged
@@ -444,10 +445,19 @@ MonoBehaviour:
   spotLightParent: {fileID: 2386132508420728427}
   boxTrigger: {fileID: 7678174221521571758}
   spotLights: []
-  spotlightEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+--- !u!114 &7059949840136657611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5940847439241590892}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 530682e372111b840bc8ac4d9b8da840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stateName: Normal
 --- !u!1 &7715870639624482387
 GameObject:
   m_ObjectHideFlags: 0

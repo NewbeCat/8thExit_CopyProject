@@ -1,0 +1,31 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	185713839	RoomState			\Default Work Unit\RoomState	
+	3800848640	PlayerStatus			\Default Work Unit\PlayerStatus	
+
+State	ID	Name	State Group			Notes
+	748895195	None	RoomState			
+	969030586	ScreenVideo	RoomState			
+	1079967367	Stoker	RoomState			
+	1160234136	Normal	RoomState			
+	1781063159	WeirdSpeaker	RoomState			
+	2188306606	ScreenHand	RoomState			
+	2244400135	BlinkLight	RoomState			
+	748895195	None	PlayerStatus			
+	816373421	Caught	PlayerStatus			
+	1160234136	Normal	PlayerStatus			
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	348963605	Reverb			\Default Work Unit\Master Audio Bus\Reverb	
+	3284365407	Reverb_Vox			\Default Work Unit\Master Audio Bus\Reverb_Vox	
+
+Effect plug-ins	ID	Name	Type				Notes
+	2791153688	Hall_Small	Wwise RoomVerb			
+	2995775460	Room_Small	Wwise RoomVerb			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

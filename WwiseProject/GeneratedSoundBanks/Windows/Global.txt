@@ -1,0 +1,81 @@
+Event	ID	Name			Wwise Object Path	Notes
+	63719771	Stoker_Start_Loop			\Events\Stoker\Stoker_Start_Loop	
+	106788393	Run_General			\Player\Run_General	
+	133642231	General			\Ambience\General	
+	319837853	Run_Blood			\Player\Run_Blood	
+	439440925	Stoker_Run			\Events\Stoker\Stoker_Run	
+	534021290	Stoker_Start			\Events\Stoker\Stoker_Start	
+	851050871	Walk_General			\Player\Walk_General	
+	893845055	Ending_Screen			\Events\Ending\Ending_Screen	
+	969030586	ScreenVideo			\Events\ScreenVideo\ScreenVideo	
+	1104531468	WeirdSpeaker_Loop			\Events\WeirdSpeaker\WeirdSpeaker_Loop	
+	1239865531	Stoker_Catch			\Events\Stoker\Stoker_Catch	
+	1645130008	BlinkLight_TurnOff2			\Events\BlinkLight\BlinkLight_TurnOff2	
+	1781063159	WeirdSpeaker			\Events\WeirdSpeaker\WeirdSpeaker	
+	2188306606	ScreenHand			\Events\ScreenHand\ScreenHand	
+	2235400656	SpotLight1			\Events\SpotLight\SpotLight1	
+	2235400658	SpotLight3			\Events\SpotLight\SpotLight3	
+	2235400659	SpotLight2			\Events\SpotLight\SpotLight2	
+	2495659572	DarkComing			\Events\DarkComing\DarkComing	
+	2514709133	BlinkLight_Shuffle			\Events\BlinkLight\BlinkLight_Shuffle	
+	2643953872	BlinkLight_TurnOn			\Events\BlinkLight\BlinkLight_TurnOn	
+	2702675819	Walk_Blood			\Player\Walk_Blood	
+	3851181890	BlinkLight_TurnOn2			\Events\BlinkLight\BlinkLight_TurnOn2	
+	3966194980	Ending			\Ambience\Ending	
+	3985402990	BlinkLight_TurnOff			\Events\BlinkLight\BlinkLight_TurnOff	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	185713839	RoomState			\Default Work Unit\RoomState	
+	3800848640	PlayerStatus			\Default Work Unit\PlayerStatus	
+
+State	ID	Name	State Group			Notes
+	748895195	None	RoomState			
+	969030586	ScreenVideo	RoomState			
+	1079967367	Stoker	RoomState			
+	1160234136	Normal	RoomState			
+	1781063159	WeirdSpeaker	RoomState			
+	2188306606	ScreenHand	RoomState			
+	2244400135	BlinkLight	RoomState			
+	748895195	None	PlayerStatus			
+	816373421	Caught	PlayerStatus			
+	1160234136	Normal	PlayerStatus			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	245866408	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Events\Events\ScreenHand\screen_hand\Silence\Silence	
+	608214518	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Events\Events\ScreenVideo\screen_eye\SIlence\Silence	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	65679723	run_blood(2)	D:\8thExit_CopyProject-main\WwiseProject\.cache\A7\{A7A4B9CF-3943-CA3F-179F-D7CAD39C328A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player\Run_Blood\run_blood(2)		48264
+	68472216	speaker_sound(loop)	D:\8thExit_CopyProject-main\WwiseProject\.cache\B6\{B6D496F0-4295-8BB7-41BD-4CBC72D1DB97}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Events\WeirdSpeaker\speaker_sound(loop)		1796356
+	90644780	walk(4)	D:\8thExit_CopyProject-main\WwiseProject\.cache\38\{38CC4356-24C2-60A4-DF16-BA12D47B47B8}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player\Walk_General\walk(4)		53760
+	95533743	run_blood(1)	D:\8thExit_CopyProject-main\WwiseProject\.cache\B6\{B6EF0BEF-3BED-4FD7-BD49-15CDE8580580}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player\Run_Blood\run_blood(1)		49816
+	103623993	walk_blood(4)	D:\8thExit_CopyProject-main\WwiseProject\.cache\EF\{EFC8887B-4034-C1A3-C456-F464C1A3B6CA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player\Walk_Blood\walk_blood(4)		53760
+	113164188	walk(3)	D:\8thExit_CopyProject-main\WwiseProject\.cache\6F\{6FF333D9-B361-D954-3001-FA5096189923}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player\Walk_General\walk(3)		52768
+	126660671	run_blood(3)	D:\8thExit_CopyProject-main\WwiseProject\.cache\44\{44A83FAB-97B0-A354-C17E-46AFAA422456}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player\Run_Blood\run_blood(3)		49784
+	179665219	walk_blood(3)	D:\8thExit_CopyProject-main\WwiseProject\.cache\49\{497BBF05-E8D7-AD40-62EA-10A47C5F58B2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player\Walk_Blood\walk_blood(3)		52768
+	256806451	walk_blood(1)	D:\8thExit_CopyProject-main\WwiseProject\.cache\70\{70A56BDA-33AF-2C1E-4131-FF1822609735}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player\Walk_Blood\walk_blood(1)		66508
+	259327606	light_turnon_01	D:\8thExit_CopyProject-main\WwiseProject\.cache\88\{88386F54-D235-F549-4963-F5289A0BE4AB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Events\BlinkLight\light_turnon_01		41964
+	263052168	stoker_start(one_shot)	D:\8thExit_CopyProject-main\WwiseProject\.cache\6E\{6EAD16A8-85C9-4568-F717-A7152120E8E3}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Events\Stoker\stoker_start(one_shot)		992488
+	299790253	walk(2)	D:\8thExit_CopyProject-main\WwiseProject\.cache\63\{63E9A10A-1528-27E7-F142-09267A18A3FE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player\Walk_General\walk(2)		64208
+	360479806	speaker_sound(one_shot)	D:\8thExit_CopyProject-main\WwiseProject\.cache\AF\{AF1BE584-95F3-D5B9-8D78-BDB64C647E99}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Events\WeirdSpeaker\speaker_sound(one_shot)		748884
+	371559978	screen_eye_head	D:\8thExit_CopyProject-main\WwiseProject\.cache\96\{96DC432B-24E7-D6E3-CE11-6EC189A2738E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Events\ScreenVideo\screen_eye\screen_eye_head		959492
+	389793090	ambience	D:\8thExit_CopyProject-main\WwiseProject\.cache\8A\{8ADFBBD5-F950-B5AD-AD55-91CA08410BC3}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience\ambience		20112700
+	482949719	ambience_screen	D:\8thExit_CopyProject-main\WwiseProject\.cache\91\{91CD602C-E1B6-C8FE-B13A-D5455F9AB459}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience\ambience_screen		5025460
+	488683525	dark_coming	D:\8thExit_CopyProject-main\WwiseProject\.cache\5C\{5CB46117-6148-FB2C-0620-1281BB702180}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Events\DarkComing\dark_coming		510808
+	517451576	run_blood(4)	D:\8thExit_CopyProject-main\WwiseProject\.cache\87\{87BD329C-D9B9-328C-C67F-5D3061707D63}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player\Run_Blood\run_blood(4)		47556
+	577898278	ambience_ending(loop)	D:\8thExit_CopyProject-main\WwiseProject\.cache\9A\{9A323333-7FEF-FDA2-722F-FDAC69AF0CDE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience\ambience_ending(loop)		2277976
+	577900180	run(1)	D:\8thExit_CopyProject-main\WwiseProject\.cache\63\{632AC4C5-5DE4-34F3-58DE-D3A08C0B5B40}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Events\Stoker\stoker_run\run(1)		49816
+	668588309	stoker_start2_1	D:\8thExit_CopyProject-main\WwiseProject\.cache\42\{42C51FD8-886B-74E5-5199-373FA980C764}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Events\Stoker\stoker_start2_1		378612
+	686085762	run(2)	D:\8thExit_CopyProject-main\WwiseProject\.cache\5F\{5FE6F5D3-7A2B-05E6-72F1-D85859C6C53E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player\Run_General\run(2)		48144
+	713339071	spotlight_02	D:\8thExit_CopyProject-main\WwiseProject\.cache\A4\{A4AD9DA6-0FC4-637A-65D2-E27F393E0B51}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Events\SpotLight\spotlight_02		465572
+	716045521	run(3)	D:\8thExit_CopyProject-main\WwiseProject\.cache\49\{49F4F6F4-D23F-4512-5C97-8FE100DF5876}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Events\Stoker\stoker_run\run(3)		49784
+	769336177	screen_reverse2	D:\8thExit_CopyProject-main\WwiseProject\.cache\2F\{2F8662F6-7C34-B195-7329-4203B8FAFFD8}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Events\Screen_Start\screen_reverse2		2845604
+	801714849	female_scream	D:\8thExit_CopyProject-main\WwiseProject\.cache\11\{113BFD97-272F-79E7-3881-5DCA030CDBA2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Events\WeirdSpeaker\female_scream		352572
+	802428064	stoker_start(loop)	D:\8thExit_CopyProject-main\WwiseProject\.cache\AB\{ABD4AB19-2721-E71D-9335-A772963ACE35}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Events\Stoker\stoker_start(loop)		724388
+	855995229	screen_hand_head	D:\8thExit_CopyProject-main\WwiseProject\.cache\27\{27FDE7EC-D72D-E058-3E6B-39A43095506A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Events\ScreenHand\screen_hand\screen_hand_head		516680
+	877341250	walk_blood(2)	D:\8thExit_CopyProject-main\WwiseProject\.cache\50\{50E06C86-CFC6-C880-39D2-628A2B82D016}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player\Walk_Blood\walk_blood(2)		64208
+	898772660	light_turnoff	D:\8thExit_CopyProject-main\WwiseProject\.cache\11\{1147A8DE-C215-F11F-BD0C-BFFFDFDA8DEB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Events\BlinkLight\light_turnoff		43028
+	981834315	run(4)	D:\8thExit_CopyProject-main\WwiseProject\.cache\E3\{E3043827-C9D5-C110-DA69-36871DC9FAD6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Events\Stoker\stoker_run\run(4)		47556
+	1032795126	walk(1)	D:\8thExit_CopyProject-main\WwiseProject\.cache\5C\{5C0CAB6C-64E6-9E0D-8FA6-0062608EC091}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player\Walk_General\walk(1)		66508
+	1040165338	stoker_catch	D:\8thExit_CopyProject-main\WwiseProject\.cache\1A\{1AF48804-E8E9-6FA7-4934-BAE816DA782F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Events\Events\Stoker\stoker_catch		715448
+

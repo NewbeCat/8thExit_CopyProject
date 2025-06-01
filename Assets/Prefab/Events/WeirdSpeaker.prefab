@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1392556469997528620}
   - component: {fileID: 8982923955032491803}
+  - component: {fileID: 375240749117353266}
   m_Layer: 0
   m_Name: WeirdSpeaker
   m_TagString: Untagged
@@ -57,6 +58,19 @@ MonoBehaviour:
   BoxEventEndTriggers:
   - {fileID: 2888996858570706890}
   - {fileID: 6293121412107199789}
+--- !u!114 &375240749117353266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3584533220409578363}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 530682e372111b840bc8ac4d9b8da840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stateName: WeirdSpeaker
 --- !u!1001 &472215818792357263
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -10,6 +10,49 @@
 						<State Name="Caught" ID="{1DF41C17-4DA2-4270-8372-45586434DB0F}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="RoomState" ID="{FD6A417A-EF42-484A-AB4B-D27707103ED0}">
+					<ChildrenList>
+						<State Name="None" ID="{713E30DC-7D8D-498B-9138-861D6EF709B7}"/>
+						<State Name="BlinkLight" ID="{269C7572-7383-4713-AFF2-485FC37574E4}"/>
+						<State Name="Normal" ID="{13BB5604-738F-4251-87BB-AA5EC259A344}"/>
+						<State Name="WeirdSpeaker" ID="{57867C53-C24B-4A12-93C2-694C7EB3DBBA}"/>
+						<State Name="ScreenVideo" ID="{CC5AB7CB-E0D4-4A63-9629-E4395C4DDECD}"/>
+						<State Name="ScreenHand" ID="{E7FA209E-1FC0-4FF6-975F-840B1E49B342}"/>
+						<State Name="Stoker" ID="{60480294-798B-4FA8-94E7-787A2F75DCC0}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Normal" ID="{13BB5604-738F-4251-87BB-AA5EC259A344}"/>
+							<EndState Name="BlinkLight" ID="{269C7572-7383-4713-AFF2-485FC37574E4}"/>
+							<Time>1.5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Normal" ID="{13BB5604-738F-4251-87BB-AA5EC259A344}"/>
+							<EndState Name="ScreenVideo" ID="{CC5AB7CB-E0D4-4A63-9629-E4395C4DDECD}"/>
+							<Time>1.5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Normal" ID="{13BB5604-738F-4251-87BB-AA5EC259A344}"/>
+							<EndState Name="ScreenHand" ID="{E7FA209E-1FC0-4FF6-975F-840B1E49B342}"/>
+							<Time>1.5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Normal" ID="{13BB5604-738F-4251-87BB-AA5EC259A344}"/>
+							<EndState Name="Stoker" ID="{60480294-798B-4FA8-94E7-787A2F75DCC0}"/>
+							<Time>1.5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Normal" ID="{13BB5604-738F-4251-87BB-AA5EC259A344}"/>
+							<EndState Name="WeirdSpeaker" ID="{57867C53-C24B-4A12-93C2-694C7EB3DBBA}"/>
+							<Time>1.5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7497073372438384324}
   - component: {fileID: 4120498370424490838}
+  - component: {fileID: 2639374480260641927}
   m_Layer: 0
   m_Name: DarkComing
   m_TagString: Untagged
@@ -53,6 +54,19 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 60a6eadfc1ebdc04fbaada1edcb0547b, type: 2}
+--- !u!114 &2639374480260641927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2540405188650602268}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 530682e372111b840bc8ac4d9b8da840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stateName: Normal
 --- !u!1001 &1147839043793204893
 PrefabInstance:
   m_ObjectHideFlags: 0
