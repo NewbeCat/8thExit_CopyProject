@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 65d4db92a8f4954c86ff01296ec64c96
     GuidInternal: 
-    m_lastTime: -8584528392644775808
+    m_lastTime: -8584526346075158217
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: c648c53ff9a53e43b2ea071a62b62e33
     GuidInternal: 
-    m_lastTime: -8584528392644775808
+    m_lastTime: -8584526346084502855
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 18c2c9020ecd044283ffaea2148bebcc
     GuidInternal: 
-    m_lastTime: -8584528392644775808
+    m_lastTime: -8584526346075203893
     List: []
   - PhysicalPath: SoundBanks\Global.wwu
     PathAndIcons:
@@ -116,7 +116,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit\Global
     guid: ebe4525220386d4794471acacf8b91c2
     GuidInternal: 
-    m_lastTime: -8584528392644775808
+    m_lastTime: -8584526346075193865
     List:
     - name: Global
       guid: d5fd9e331fb25a4fa2447e2fa4fa8ad0
@@ -147,7 +147,7 @@ MonoBehaviour:
     ParentPath: Events\Ambience
     guid: ae807e3ae4ce144a9e4033fea95b68b2
     GuidInternal: 
-    m_lastTime: -8584528392644775808
+    m_lastTime: -8584526346084533057
     List:
     - name: Ending
       guid: b2ded38a44ac5142a0fdc9fd2e9b3ba4
@@ -194,7 +194,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 5accb9d5f3173940866cf9b193e40e98
     GuidInternal: 
-    m_lastTime: -8584528392644775808
+    m_lastTime: -8584526346084528053
     List: []
   - PhysicalPath: Events\Events.wwu
     PathAndIcons:
@@ -207,7 +207,7 @@ MonoBehaviour:
     ParentPath: Events\Events
     guid: e672517b2fafe641af72586f2e1c8b6c
     GuidInternal: 
-    m_lastTime: -8584528014701187330
+    m_lastTime: -8584525544304568253
     List:
     - name: BlinkLight
       guid: 6957008e2b3909418f1c66258681ad39
@@ -605,7 +605,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 3aa3c29e7b9f4d4aad339a835c4710c9
       Path: Events\Events\Stoker\Stoker_Run
-      maxAttenuation: 12
+      maxAttenuation: 10
       maxDuration: 0.29861966
       minDuration: 0.2539471
     - name: Stoker_Start
@@ -716,7 +716,7 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: 5bb935738b6da0408b5222ec5cf10c01
     GuidInternal: 
-    m_lastTime: -8584528392644775808
+    m_lastTime: -8584526346084523032
     List:
     - name: Run_Blood
       guid: 91fc785e832b134498a3c17205cf357b
@@ -732,7 +732,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 91fc785e832b134498a3c17205cf357b
       Path: Events\Player\Run_Blood
-      maxAttenuation: 12
+      maxAttenuation: 10
       maxDuration: 0.29861966
       minDuration: 0.2539471
     - name: Run_General
@@ -749,7 +749,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: c2fe0049e5760245b9f12cde1f64d0c5
       Path: Events\Player\Run_General
-      maxAttenuation: 12
+      maxAttenuation: 10
       maxDuration: 0.29861966
       minDuration: 0.2539471
     - name: Walk_Blood
@@ -766,7 +766,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: a540c30ba5a50540b7a08f31b5c7192a
       Path: Events\Player\Walk_Blood
-      maxAttenuation: 12
+      maxAttenuation: 10
       maxDuration: 0.39887226
       minDuration: 0.2818353
     - name: Walk_General
@@ -783,7 +783,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: d63ad5a92deb0f498cc5658694d0ad5d
       Path: Events\Player\Walk_General
-      maxAttenuation: 12
+      maxAttenuation: 10
       maxDuration: 0.39887226
       minDuration: 0.2818353
   RtpcWwu:
@@ -798,7 +798,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 6d7842063946cb4bb6232f603f7990fc
     GuidInternal: 
-    m_lastTime: -8584528392644775808
+    m_lastTime: -8584526346084518029
     List:
     - name: filmEvent
       guid: 0c740a4d08aa5d4294011d18ca2683e6
@@ -826,7 +826,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 3958d5b3bcbe7041a920ecd825ec593a
     GuidInternal: 
-    m_lastTime: -8584528010147806256
+    m_lastTime: -8584525544296745045
     List:
     - name: PlayerStatus
       guid: a45e8db078720549aefae7e24a2efca6
@@ -1036,7 +1036,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: afb2ab2a3d2c8045b4e50465f096f1f4
     GuidInternal: 
-    m_lastTime: -8584528392644775808
+    m_lastTime: -8584526346075173530
     List:
     - name: MovementType
       guid: 86a4573388259d40815b340981857ea8
@@ -1150,7 +1150,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 0f3f7664ca977a40bb3bae1c3eb42fb1
     GuidInternal: 
-    m_lastTime: -8584528392644775808
+    m_lastTime: -8584526346075163304
     List: []
   ExpandedFileSystemItemIds: 010000000200000003000000050000000600000007000000080000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001300000014000000160000001700000018000000190000001a0000002d0000002e0000002f000000
   ExpandedWaapiItemIds: 010000000500000006000000070000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001300000016000000170000001800000019000000

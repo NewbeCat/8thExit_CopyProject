@@ -1,0 +1,1448 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to the License Client on channel: "LicenseClient-kevin" at "2025-06-04T15:57:38.8813166Z"
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.16.2'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-kevin"
+[Licensing::IpcConnector] License Client channel disconnected successfully.
+[Licensing::IpcConnector] Connection attempt to the License Client on channel: "LicenseClient-kevin-6000.0.35" failed because channel doesn't exist; code: "0x80000002"
+[Licensing::Module] Successfully launched the LicensingClient (PId: 11036)
+Starting IPC server.
+Waiting for clients to connect on \\.\pipe\Unity-LicenseClient-kevin-6000.0.35, press Ctrl-C to exit.
+[Licensing::IpcConnector] Successfully connected to the License Client on channel: "LicenseClient-kevin-6000.0.35" at "2025-06-04T15:57:42.0730376Z"
+[Licensing::Client] Error: Code 10 while verifying Licensing Client signature (process Id: 11036, path: "C:/Program Files/Unity/Hub/Editor/6000.0.35f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] Error: LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.16.2+bdef8f5
+  Session Id:              78fe2b58575c46a5b7f25b3252ef5d09
+  Correlation Id:          80792964ccacc87a7b1102b769c1e5f4
+  External correlation Id: 888068690520768084
+  Machine Id:              ujulUaWChT2Nc3jQl4CMMyyxUEo=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-kevin-6000.0.35" (connect: 1.28s, validation: 0.07s, handshake: 0.01s)
+[Licensing::IpcConnector] Successfully connected to the License Notification on channel: "LicenseClient-kevin-6000.0.35-notifications" at "2025-06-04T15:57:42.1571736Z"
+[Licensing::Module] Connected to LicensingClient (PId: 11036, launch time: 0.00, total connection time: 1.37s)
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully updated license
+Built from '6000.0/release' branch; Version is '6000.0.35f1 (9a3bc604008a) revision 10107846'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'ko' Physical Memory: 24435 MB
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Serial number assigned to: "F4-TBZ6-AKJ2-77AY-BASX-XXXX"
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+[Licensing::Client] Successfully resolved entitlement details
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Unity.exe
+-batchmode
+-nographics
+-logFile
+logRunSetup.txt
+-projectPath
+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp
+-executeMethod
+WwiseSetupWizard.RunModify
+-quit
+Successfully changed project path to: C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp
+C:/GitHub/8thExit_CopyProject_WwiseIntegrationTemp
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [30724]  Target information:
+
+Player connection [30724]  * "[IP] 49.164.162.224 [Port] 55504 [Flags] 2 [Guid] 1517624135 [EditorId] 1517624135 [Version] 1048832 [Id] WindowsEditor(7,Kevin) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [30724]  * "[IP] 25.10.155.109 [Port] 55504 [Flags] 2 [Guid] 1517624135 [EditorId] 1517624135 [Version] 1048832 [Id] WindowsEditor(7,Kevin) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [30724] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [30724] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-29348" after 0.3 seconds.
+Library Redirect Path: Library/
+[Package Manager] Done resolving packages in 0.67 seconds
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 61 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.addressables@2.2.2 (location: C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.addressables@4f7e840f4cce)
+    com.unity.ai.navigation@2.0.7 (location: C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.ai.navigation@39ae74efb85f)
+    com.unity.burst@1.8.18 (location: C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.burst@616862665d8c)
+    com.unity.cinemachine@2.10.3 (location: C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.cinemachine@dcc61ebd6655)
+    com.unity.collab-proxy@2.7.1 (location: C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.collab-proxy@50ac96531b63)
+    com.unity.collections@2.5.1 (location: C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.collections@56bff8827a7e)
+    com.unity.ext.nunit@2.0.5 (location: C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.ext.nunit@60ef35ffd3cd)
+    com.unity.ide.rider@3.0.31 (location: C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.ide.rider@7921be93db40)
+    com.unity.ide.visualstudio@2.0.22 (location: C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.ide.visualstudio@8140e851d83e)
+    com.unity.inputsystem@1.11.2 (location: C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.inputsystem@3c4a97c3950f)
+    com.unity.mathematics@1.3.2 (location: C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.mathematics@8017b507cc74)
+    com.unity.nuget.mono-cecil@1.11.4 (location: C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.nuget.mono-cecil@d6f9955a5d5f)
+    com.unity.package-validation-suite@0.22.0-preview (location: C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.package-validation-suite@536239bd7458)
+    com.unity.searcher@4.9.2 (location: C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.searcher@90d011a70418)
+    com.unity.test-framework@1.4.5 (location: C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.test-framework@0a21eb82d95c)
+    com.unity.test-framework.performance@3.0.3 (location: C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.test-framework.performance@fb0dc592af8b)
+    com.unity.timeline@1.8.7 (location: C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.timeline@c58b4ee65782)
+    com.unity.visualscripting@1.9.5 (location: C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.visualscripting@1b53f46e931b)
+    com.unity.profiling.core@1.0.2 (location: C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.profiling.core@aac7b93912bc)
+    com.unity.scriptablebuildpipeline@2.1.4 (location: C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.scriptablebuildpipeline@101dcb4353ce)
+  Built-in packages:
+    com.unity.multiplayer.center@1.0.0 (location: C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.multiplayer.center@f502d8ac613f)
+    com.unity.render-pipelines.core@17.0.3 (location: C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.render-pipelines.core@a50b3570474f)
+    com.unity.render-pipelines.universal@17.0.3 (location: C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.render-pipelines.universal@39c80789bb81)
+    com.unity.render-pipelines.universal-config@17.0.3 (location: C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.render-pipelines.universal-config@fa63c96d3e1a)
+    com.unity.rendering.light-transport@1.0.1 (location: C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.rendering.light-transport@307bc27a498f)
+    com.unity.shadergraph@17.0.3 (location: C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.shadergraph@911117698220)
+    com.unity.ugui@2.0.0 (location: C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.ugui@24b10291b18f)
+    com.unity.modules.accessibility@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.accessibility)
+    com.unity.modules.ai@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.director)
+    com.unity.modules.hierarchycore@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.hierarchycore)
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.physics2d)
+    com.unity.modules.screencapture@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.screencapture)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.subsystems)
+    com.unity.modules.terrain@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.terrainphysics)
+    com.unity.modules.tilemap@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.tilemap)
+    com.unity.modules.ui@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vehicles@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.video)
+    com.unity.modules.vr@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.vr)
+    com.unity.modules.wind@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.xr)
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+[Subsystems] No new subsystems found in resolved package list.
+Package Manager log level set to [2]
+[Package Manager] Done registering packages in 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.35f1 (9a3bc604008a)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.35f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/GitHub/8thExit_CopyProject_WwiseIntegrationTemp/Assets
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+[Licensing::Client] Successfully resolved entitlement details
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.35f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.35f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.35f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56348
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Registered in 0.004912 seconds.
+- Loaded All Assemblies, in  0.461 seconds
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.255 seconds
+Domain Reload Profiling: 708ms
+	BeginReloadAssembly (203ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (63ms)
+	LoadAllAssembliesAndSetupDomain (136ms)
+		LoadAssemblies (194ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (133ms)
+			TypeCache.Refresh (130ms)
+				TypeCache.ScanAssembly (115ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (256ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (225ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (39ms)
+			ProcessInitializeOnLoadAttributes (115ms)
+			ProcessInitializeOnLoadMethodAttributes (51ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[API Updater] Processing imported assemblies took 88 ms (2/2 assembly(ies)).
+Filename: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\NetCoreRuntime\dotnet.exe
+Arguments: "C:/Program Files/Unity/Hub/Editor/6000.0.35f1/Editor/Data/Tools/Compilation/ApiUpdater/AssemblyUpdater.dll" update -a "Assets/Plugins/Demigiant/DOTween/DOTween.dll" --output "C:/Users/kevin/AppData/Local/Temp/tmp40b9a208.tmp" --api-version 6000.0.35f1  -s "C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\NetStandard\ref\2.1.0;C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard;C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx;+C:/GitHub/8thExit_CopyProject_WwiseIntegrationTemp/Assets;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.addressables@4f7e840f4cce;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.ai.navigation@39ae74efb85f;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.burst@616862665d8c;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.cinemachine@dcc61ebd6655;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.collab-proxy@50ac96531b63;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.collections@56bff8827a7e;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.ext.nunit@60ef35ffd3cd;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.ide.rider@7921be93db40;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.ide.visualstudio@8140e851d83e;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.inputsystem@3c4a97c3950f;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.mathematics@8017b507cc74;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.multiplayer.center@f502d8ac613f;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.nuget.mono-cecil@d6f9955a5d5f;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.package-validation-suite@536239bd7458;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.render-pipelines.core@a50b3570474f;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.render-pipelines.universal@39c80789bb81;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.render-pipelines.universal-config@fa63c96d3e1a;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.rendering.light-transport@307bc27a498f;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.searcher@90d011a70418;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.shadergraph@911117698220;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.test-framework@0a21eb82d95c;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.test-framework.performance@fb0dc592af8b;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.timeline@c58b4ee65782;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.ugui@24b10291b18f;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.visualscripting@1b53f46e931b;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.accessibility;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.ai;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.androidjni;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.animation;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.assetbundle;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.audio;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.cloth;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.director;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.hierarchycore;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.imageconversion;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.imgui;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.jsonserialize;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.particlesystem;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.physics;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.physics2d;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.screencapture;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.subsystems;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.terrain;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.terrainphysics;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.tilemap;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.ui;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.uielements;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.umbra;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unityanalytics;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequest;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestassetbundle;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestaudio;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequesttexture;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestwww;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.vehicles;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.video;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.vr;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.wind;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.xr;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.profiling.core@aac7b93912bc;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.scriptablebuildpipeline@101dcb4353ce;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Managed" "C:/Program Files/Unity/Hub/Editor/6000.0.35f1/Editor/Data/Managed/UnityEngine.dll"
+Filename: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\NetCoreRuntime\dotnet.exe
+Arguments: "C:/Program Files/Unity/Hub/Editor/6000.0.35f1/Editor/Data/Tools/Compilation/ApiUpdater/AssemblyUpdater.dll" update -a "Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll" --output "C:/Users/kevin/AppData/Local/Temp/tmp45c58fec.tmp" --api-version 6000.0.35f1  -s "C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\NetStandard\ref\2.1.0;C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard;C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx;+C:/GitHub/8thExit_CopyProject_WwiseIntegrationTemp/Assets;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.addressables@4f7e840f4cce;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.ai.navigation@39ae74efb85f;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.burst@616862665d8c;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.cinemachine@dcc61ebd6655;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.collab-proxy@50ac96531b63;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.collections@56bff8827a7e;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.ext.nunit@60ef35ffd3cd;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.ide.rider@7921be93db40;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.ide.visualstudio@8140e851d83e;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.inputsystem@3c4a97c3950f;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.mathematics@8017b507cc74;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.multiplayer.center@f502d8ac613f;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.nuget.mono-cecil@d6f9955a5d5f;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.package-validation-suite@536239bd7458;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.render-pipelines.core@a50b3570474f;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.render-pipelines.universal@39c80789bb81;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.render-pipelines.universal-config@fa63c96d3e1a;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.rendering.light-transport@307bc27a498f;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.searcher@90d011a70418;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.shadergraph@911117698220;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.test-framework@0a21eb82d95c;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.test-framework.performance@fb0dc592af8b;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.timeline@c58b4ee65782;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.ugui@24b10291b18f;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.visualscripting@1b53f46e931b;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.accessibility;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.ai;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.androidjni;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.animation;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.assetbundle;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.audio;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.cloth;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.director;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.hierarchycore;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.imageconversion;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.imgui;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.jsonserialize;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.particlesystem;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.physics;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.physics2d;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.screencapture;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.subsystems;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.terrain;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.terrainphysics;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.tilemap;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.ui;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.uielements;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.umbra;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unityanalytics;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequest;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestassetbundle;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestaudio;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequesttexture;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.unitywebrequestwww;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.vehicles;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.video;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.vr;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.wind;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.modules.xr;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.profiling.core@aac7b93912bc;+C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\Library\PackageCache\com.unity.scriptablebuildpipeline@101dcb4353ce;+C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Managed" "C:/Program Files/Unity/Hub/Editor/6000.0.35f1/Editor/Data/Managed/UnityEngine.dll" "C:/Program Files/Unity/Hub/Editor/6000.0.35f1/Editor/Data/Managed/UnityEditor.dll"
+[API Updater] Assemblies not requiring updates:
+[API Updater] Assets/Plugins/Demigiant/DOTween/DOTween.dll
+[API Updater] Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll
+[API Updater] Update finished with success in 2196 ms (0/2 assembly(ies) updated).
+Assembly Updater Post Process Assets time: 2.291809s
+[ScriptCompilation] Requested script compilation because: Assembly Definition File(s) changed
+[ScriptCompilation] Requested script compilation because: Assetdatabase observed changes in script compilation related files
+Duplicate assembly 'log4net.dll' with different versions detected, using 'Packages/com.unity.package-validation-suite/Lib/Editor/log4net.dll, AssemblyName=log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a' and ignoring 'Packages/com.unity.collab-proxy/Lib/Editor/log4netPlastic.dll, AssemblyName=log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a'.info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:80
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\GitHub\8thExit_CopyProject_WwiseIntegrationTemp\
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 46.5256ms
+Starting: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\bee_backend.exe --dont-print-to-structured-log --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/GitHub/8thExit_CopyProject_WwiseIntegrationTemp
+Duplicate assembly 'log4net.dll' with different versions detected, using 'Packages/com.unity.package-validation-suite/Lib/Editor/log4net.dll, AssemblyName=log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a' and ignoring 'Packages/com.unity.collab-proxy/Lib/Editor/log4netPlastic.dll, AssemblyName=log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a'.Duplicate assembly 'log4net.dll' with different versions detected, using 'Packages/com.unity.package-validation-suite/Lib/Editor/log4net.dll, AssemblyName=log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a' and ignoring 'Packages/com.unity.collab-proxy/Lib/Editor/log4netPlastic.dll, AssemblyName=log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a'.DisplayProgressbar: Compiling Scripts
+ExitCode: 4 Duration: 0s415ms
+[ 539/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.dll.mvfrm
+[ 540/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/UnityEngine.TestRunner.dll.mvfrm
+[ 545/1004  0s] CopyFiles Library/ScriptAssemblies/UnityEngine.TestRunner.pdb
+[ 546/1004  0s] CopyFiles Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+Rebuilding DAG because FileSignature timestamp changed: Library/Bee/1900b0aE-inputdata.json
+[ 547/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/UnityEditor.TestRunner.dll.mvfrm
+*** Tundra requires additional run (0.36 seconds), 5 items updated, 546 evaluated
+Starting: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Tools\netcorerun\netcorerun.exe "C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Tools\BuildPipeline\ScriptCompilationBuildProgram.exe" "Library/Bee/1900b0aE.dag.json" "Library/Bee/1900b0aE-inputdata.json" "Library\Bee\buildprogram0.traceevents"
+WorkingDir: C:/GitHub/8thExit_CopyProject_WwiseIntegrationTemp
+ExitCode: 0 Duration: 0s751ms
+Starting: C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\bee_backend.exe --dont-print-to-structured-log --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --dagfilejson="Library\Bee\1900b0aE.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
+WorkingDir: C:/GitHub/8thExit_CopyProject_WwiseIntegrationTemp
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+warn: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.runtime.interopservices.windowsruntime has duplicate hint path. Ignoring "C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.InteropServices.WindowsRuntime.dll" in favor of "C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll"
+warn: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.componentmodel.composition has duplicate hint path. Ignoring "C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ComponentModel.Composition.dll" in favor of "C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.ComponentModel.Composition.dll"
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Burst.Cecil, Version=0.11.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library\PackageCache\com.unity.burst@616862665d8c\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Mono.Cecil, Version=0.11.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library\PackageCache\com.unity.nuget.mono-cecil@d6f9955a5d5f\Mono.Cecil.dll
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc - - 200 - application/grpc 114.6764ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll, with 132 defines and 313 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with Library\Bee\artifacts\1900b0aE.dag\Unity.Collections.dll
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Managed\UnityEngine\UnityEditor.CoreModule.dll
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll, with 130 defines and 333 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Burst.Cecil.Rocks, Version=0.11.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library\PackageCache\com.unity.burst@616862665d8c\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 325.5959ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 123.4847ms
+ExitCode: 0 Duration: 5s313ms
+Finished compiling graph: 1008 nodes, 18474 flattened edges (14742 ToBuild, 164 ToUse), maximum node priority 1100
+[ 481/1004  0s] WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp
+[ 550/1004  0s] CopyFiles Library/ScriptAssemblies/UnityEditor.TestRunner.pdb
+[ 551/1004  0s] CopyFiles Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+[ 552/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.dll.mvfrm
+[ 555/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.Burst.dll.mvfrm
+[ 558/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.InputSystem.dll.mvfrm
+[ 561/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.AI.Navigation.Editor.ConversionSystem.dll.mvfrm
+[ 563/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.dll.mvfrm
+[ 566/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/AK.Wwise.Unity.API.dll.mvfrm
+[ 568/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.Profiling.Core.dll.mvfrm
+[ 571/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/AK.Wwise.Unity.ProjectDatabase.dll.mvfrm
+[ 572/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.PackageValidationSuite.Editor.dll.mvfrm
+[ 573/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.ShaderGraph.Utilities.dll.mvfrm
+[ 574/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.VisualStudio.Editor.dll.mvfrm
+[ 579/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.dll.mvfrm
+[ 581/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.ScriptableBuildPipeline.dll.mvfrm
+[ 582/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/AK.Wwise.Unity.API.Editor.dll.mvfrm
+[ 584/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.Multiplayer.Center.Common.dll.mvfrm
+[ 586/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.Mathematics.dll.mvfrm
+[ 588/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Ak.Wwise.Api.WAAPI.dll.mvfrm
+[ 589/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.Searcher.Editor.dll.mvfrm
+[ 590/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.AI.Navigation.dll.mvfrm
+[ 592/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.dll.mvfrm
+[ 593/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/AK.Wwise.Unity.MonoBehaviour.Editor.dll.mvfrm
+[ 603/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.Burst.CodeGen.dll.mvfrm
+[ 607/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.dll.mvfrm
+[ 610/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.Burst.Editor.dll.mvfrm
+[ 611/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.Editor.dll.mvfrm
+[ 616/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/AK.Wwise.Unity.Timeline.dll.mvfrm
+[ 617/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.ResourceManager.dll.mvfrm
+[ 620/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.dll.mvfrm
+[ 623/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Rider.Editor.dll
+[ 624/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Rider.Editor.pdb
+[ 625/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.InputSystem.ForUI.dll.mvfrm
+[ 626/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Burst.CodeGen.dll
+[ 628/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Burst.CodeGen.pdb
+[ 630/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.VisualStudio.Editor.pdb
+[ 631/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
+[ 632/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.RenderPipelines.Core.ShaderLibrary.dll.mvfrm
+[ 635/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.PackageValidationSuite.Editor.Extension.dll.mvfrm
+[ 638/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.RenderPipelines.Universal.Shaders.dll.mvfrm
+[ 641/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll.mvfrm
+[ 642/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.Collections.dll.mvfrm
+[ 647/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.AI.Navigation.Editor.dll.mvfrm
+[ 648/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.Multiplayer.Center.Editor.dll.mvfrm
+[ 649/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.Rendering.LightTransport.Editor.dll.mvfrm
+[ 656/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/AK.Wwise.Unity.Timeline.Editor.dll.mvfrm
+[ 657/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.ScriptableBuildPipeline.Editor.dll.mvfrm
+[ 658/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.PerformanceTesting.dll.mvfrm
+[ 659/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.Mathematics.Editor.dll.mvfrm
+[ 666/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.dll.mvfrm
+[ 669/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.Editor.dll.mvfrm
+[ 672/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.InputSystem.TestFramework.dll.mvfrm
+[ 674/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.CollabProxy.Editor.dll.mvfrm
+[ 676/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.Addressables.dll.mvfrm
+[ 679/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.Collections.Editor.dll.mvfrm
+[ 682/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.Collections.CodeGen.dll.mvfrm
+[ 684/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.PerformanceTesting.Editor.dll.mvfrm
+[ 686/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Collections.CodeGen.pdb
+[ 687/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.Rendering.LightTransport.Runtime.dll.mvfrm
+[ 688/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Collections.CodeGen.dll
+[ 689/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.AI.Navigation.Updater.dll.mvfrm
+[ 691/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.RenderPipelines.Core.Runtime.dll.mvfrm
+[ 697/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.State.dll.mvfrm
+[ 700/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.Editor.dll.mvfrm
+[ 703/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/AK.Wwise.Unity.API.WwiseTypes.dll.mvfrm
+[ 704/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/AK.Wwise.Unity.MonoBehaviour.dll.mvfrm
+[ 705/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.Addressables.Editor.dll.mvfrm
+[ 708/1004  0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[ 709/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.RenderPipelines.Core.Runtime.Shared.dll.mvfrm
+[ 710/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.RenderPipeline.Universal.ShaderLibrary.dll.mvfrm
+[ 711/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.RenderPipelines.Universal.Config.Runtime.dll.mvfrm
+[ 712/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.Editor.dll.mvfrm
+[ 713/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.RenderPipelines.GPUDriven.Runtime.dll.mvfrm
+[ 724/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.Addressables.Editor.Tests.DocExampleCode.dll.mvfrm
+[ 725/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.State.Editor.dll.mvfrm
+[ 726/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.SettingsProvider.Editor.dll.mvfrm
+[ 727/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/AK.Wwise.Unity.AddressableInstaller.dll.mvfrm
+[ 786/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.PerformanceTesting.dll
+[ 787/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.AI.Navigation.dll
+[ 788/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll
+[ 789/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
+[ 790/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Shared.dll
+[ 791/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Multiplayer.Center.Common.dll
+[ 792/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.InputSystem.ForUI.dll
+[ 793/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Timeline.dll
+[ 794/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.TextMeshPro.dll
+[ 795/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll
+[ 796/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Core.dll
+[ 797/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.InputSystem.TestFramework.dll
+[ 798/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll
+[ 799/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Mathematics.dll
+[ 800/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.InputSystem.dll
+[ 801/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll
+[ 802/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll
+[ 803/1004  0s] CopyFiles Library/ScriptAssemblies/UnityEngine.UI.dll
+[ 804/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Collections.dll
+[ 805/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Runtime.dll
+[ 806/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll
+[ 807/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.GPUDriven.Runtime.dll
+[ 808/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.ResourceManager.dll
+[ 809/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Rendering.LightTransport.Editor.pdb
+[ 810/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Profiling.Core.dll
+[ 811/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.State.dll
+[ 812/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Burst.dll
+[ 813/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Rendering.LightTransport.Editor.dll
+[ 814/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Rendering.LightTransport.Runtime.dll
+[ 815/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll
+[ 816/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.pdb
+[ 817/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Addressables.Editor.Tests.DocExampleCode.pdb
+[ 818/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Addressables.Editor.Tests.DocExampleCode.dll
+[ 819/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.pdb
+[ 820/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll
+[ 821/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Collections.Editor.pdb
+[ 822/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Addressables.dll
+[ 823/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Collections.Editor.dll
+[ 824/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.pdb
+[ 825/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Timeline.Editor.pdb
+[ 826/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll
+[ 827/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.pdb
+[ 828/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+[ 829/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.ShaderGraph.Utilities.pdb
+[ 830/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.ShaderGraph.Utilities.dll
+[ 831/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll
+[ 832/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Searcher.Editor.pdb
+[ 833/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Searcher.Editor.dll
+[ 834/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.PackageValidationSuite.Editor.Extension.pdb
+[ 835/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.pdb
+[ 836/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.pdb
+[ 837/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll
+[ 838/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.PackageValidationSuite.Editor.Extension.dll
+[ 839/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll
+[ 840/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.PerformanceTesting.Editor.pdb
+[ 841/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.AI.Navigation.Updater.pdb
+[ 842/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.PerformanceTesting.Editor.dll
+[ 843/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.AI.Navigation.Updater.dll
+[ 844/1004  0s] CopyFiles Library/ScriptAssemblies/UnityEditor.UI.pdb
+[ 845/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.TextMeshPro.Editor.pdb
+[ 846/1004  0s] CopyFiles Library/ScriptAssemblies/UnityEditor.UI.dll
+[ 847/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.AI.Navigation.Editor.pdb
+[ 848/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+[ 849/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.AI.Navigation.Editor.dll
+[ 850/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Addressables.Editor.pdb
+[ 851/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.CollabProxy.Editor.pdb
+[ 852/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Addressables.Editor.dll
+[ 853/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.PlasticSCM.Editor.pdb
+[ 854/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+[ 855/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll
+[ 856/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.PackageValidationSuite.Editor.dll
+[ 857/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Shared.pdb
+[ 858/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.GPUDriven.Runtime.pdb
+[ 859/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.PackageValidationSuite.Editor.pdb
+[ 860/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Mathematics.Editor.pdb
+[ 861/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Burst.Editor.pdb
+[ 862/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Burst.Editor.dll
+[ 863/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Mathematics.Editor.dll
+[ 864/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.pdb
+[ 865/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Runtime.pdb
+[ 866/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.State.pdb
+[ 867/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.dll
+[ 868/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.InputSystem.TestFramework.pdb
+[ 869/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.ResourceManager.pdb
+[ 870/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Burst.pdb
+[ 871/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.pdb
+[ 872/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.PerformanceTesting.pdb
+[ 873/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.InputSystem.ForUI.pdb
+[ 874/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.pdb
+[ 875/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.pdb
+[ 876/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Rendering.LightTransport.Runtime.pdb
+[ 877/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.pdb
+[ 878/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Profiling.Core.pdb
+[ 879/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Collections.pdb
+[ 880/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.TextMeshPro.pdb
+[ 881/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.RenderPipelines.Universal.Runtime.dll.mvfrm
+[ 882/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Addressables.pdb
+[ 883/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Multiplayer.Center.Common.pdb
+[ 884/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.pdb
+[ 885/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Timeline.pdb
+[ 888/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.RenderPipelines.Core.Editor.dll.mvfrm
+[ 889/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.AI.Navigation.pdb
+[ 890/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.pdb
+[ 891/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Flow.pdb
+[ 892/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Core.pdb
+[ 893/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.InputSystem.pdb
+[ 894/1004  0s] CopyFiles Library/ScriptAssemblies/UnityEngine.UI.pdb
+[ 895/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.Mathematics.pdb
+[ 899/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Shared.Editor.dll.mvfrm
+[ 901/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.pdb
+[ 904/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll
+[ 905/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.pdb
+[ 907/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll
+[ 908/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.pdb
+[ 909/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll
+[ 910/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.ShaderGraph.Editor.dll.mvfrm
+[ 911/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.RenderPipelines.Universal.2D.Runtime.dll.mvfrm
+[ 912/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.RenderPipelines.Core.Editor.Shared.dll.mvfrm
+[ 922/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Shared.pdb
+[ 923/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.2D.Runtime.pdb
+[ 924/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Shared.dll
+[ 925/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.2D.Runtime.dll
+[ 926/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.ShaderGraph.Editor.pdb
+[ 927/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll
+[ 928/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Cinemachine.dll.mvfrm
+[ 930/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Unity.RenderPipelines.Universal.Editor.dll.mvfrm
+[ 935/1004  0s] CopyFiles Library/ScriptAssemblies/Cinemachine.pdb
+[ 936/1004  0s] CopyFiles Library/ScriptAssemblies/Cinemachine.dll
+[ 937/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.pdb
+[ 938/1004  0s] CopyFiles Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll
+[ 939/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/PPv2URPConverters.dll.mvfrm
+[ 941/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/com.unity.cinemachine.editor.dll.mvfrm
+[ 944/1004  0s] CopyFiles Library/ScriptAssemblies/PPv2URPConverters.pdb
+[ 945/1004  0s] CopyFiles Library/ScriptAssemblies/PPv2URPConverters.dll
+[ 947/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-firstpass.dll.mvfrm
+[ 948/1004  0s] CopyFiles Library/ScriptAssemblies/com.unity.cinemachine.editor.pdb
+[ 949/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll.mvfrm
+[ 950/1004  0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll.mvfrm
+[ 951/1004  0s] CopyFiles Library/ScriptAssemblies/com.unity.cinemachine.editor.dll
+[ 952/1004  1s] Csc Library/Bee/artifacts/1900b0aE.dag/AK.Wwise.Unity.ProjectDatabase.dll (+2 others)
+[ 954/1004  0s] CopyFiles Library/ScriptAssemblies/AK.Wwise.Unity.ProjectDatabase.pdb
+[ 955/1004  0s] CopyFiles Library/ScriptAssemblies/AK.Wwise.Unity.ProjectDatabase.dll
+[ 956/1004  0s] Csc Library/Bee/artifacts/1900b0aE.dag/AK.Wwise.Unity.API.dll (+2 others)
+[ 958/1004  0s] CopyFiles Library/ScriptAssemblies/AK.Wwise.Unity.API.pdb
+[ 959/1004  0s] CopyFiles Library/ScriptAssemblies/AK.Wwise.Unity.API.dll
+[ 960/1004  0s] Csc Library/Bee/artifacts/1900b0aE.dag/AK.Wwise.Unity.API.WwiseTypes.dll (+2 others)
+[ 962/1004  0s] CopyFiles Library/ScriptAssemblies/AK.Wwise.Unity.API.WwiseTypes.pdb
+[ 963/1004  0s] CopyFiles Library/ScriptAssemblies/AK.Wwise.Unity.API.WwiseTypes.dll
+[ 964/1004  0s] Csc Library/Bee/artifacts/1900b0aE.dag/AK.Wwise.Unity.Timeline.dll (+2 others)
+[ 965/1004  0s] Csc Library/Bee/artifacts/1900b0aE.dag/AK.Wwise.Unity.MonoBehaviour.dll (+2 others)
+Assets\Wwise\MonoBehaviour\Runtime\AkAmbient.cs(122,19): warning CS0109: The member 'AkAmbient.OnDisable()' does not hide an accessible member. The new keyword is not required.
+[ 967/1004  0s] Csc Library/Bee/artifacts/1900b0aE.dag/Ak.Wwise.Api.WAAPI.dll (+2 others)
+[ 968/1004  0s] CopyFiles Library/ScriptAssemblies/AK.Wwise.Unity.Timeline.pdb
+[ 969/1004  0s] CopyFiles Library/ScriptAssemblies/AK.Wwise.Unity.Timeline.dll
+[ 971/1004  0s] CopyFiles Library/ScriptAssemblies/AK.Wwise.Unity.MonoBehaviour.pdb
+[ 972/1004  0s] CopyFiles Library/ScriptAssemblies/AK.Wwise.Unity.MonoBehaviour.dll
+[ 974/1004  0s] CopyFiles Library/ScriptAssemblies/Ak.Wwise.Api.WAAPI.pdb
+[ 975/1004  0s] CopyFiles Library/ScriptAssemblies/Ak.Wwise.Api.WAAPI.dll
+[ 976/1004  0s] Csc Library/Bee/artifacts/1900b0aE.dag/AK.Wwise.Unity.API.Editor.dll (+2 others)
+[ 978/1004  0s] CopyFiles Library/ScriptAssemblies/AK.Wwise.Unity.API.Editor.pdb
+[ 979/1004  0s] CopyFiles Library/ScriptAssemblies/AK.Wwise.Unity.API.Editor.dll
+[ 980/1004  0s] Csc Library/Bee/artifacts/1900b0aE.dag/AK.Wwise.Unity.Timeline.Editor.dll (+2 others)
+[ 982/1004  0s] CopyFiles Library/ScriptAssemblies/AK.Wwise.Unity.Timeline.Editor.pdb
+[ 983/1004  0s] CopyFiles Library/ScriptAssemblies/AK.Wwise.Unity.Timeline.Editor.dll
+[ 984/1004  0s] Csc Library/Bee/artifacts/1900b0aE.dag/AK.Wwise.Unity.MonoBehaviour.Editor.dll (+2 others)
+[ 986/1004  0s] CopyFiles Library/ScriptAssemblies/AK.Wwise.Unity.MonoBehaviour.Editor.pdb
+[ 987/1004  0s] CopyFiles Library/ScriptAssemblies/AK.Wwise.Unity.MonoBehaviour.Editor.dll
+[ 988/1004  0s] Csc Library/Bee/artifacts/1900b0aE.dag/AK.Wwise.Unity.AddressableInstaller.dll (+2 others)
+[ 990/1004  0s] CopyFiles Library/ScriptAssemblies/AK.Wwise.Unity.AddressableInstaller.pdb
+[ 991/1004  0s] CopyFiles Library/ScriptAssemblies/AK.Wwise.Unity.AddressableInstaller.dll
+[ 994/1004  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-firstpass.pdb
+[ 995/1004  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+[ 996/1004  0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)
+Assets\RoomStateController.cs(15,9): warning CS0618: 'AkSoundEngine' is obsolete: 'AkSoundEngine has been renamed to AkUnitySoundEngine as of Wwise v2024.1.0.'
+
+Assets\AmbienceController.cs(33,9): warning CS0618: 'AkSoundEngine' is obsolete: 'AkSoundEngine has been renamed to AkUnitySoundEngine as of Wwise v2024.1.0.'
+
+Assets\Scripts\Map\Triggers\WarpTrigger.cs(23,13): warning CS0618: 'AkSoundEngine' is obsolete: 'AkSoundEngine has been renamed to AkUnitySoundEngine as of Wwise v2024.1.0.'
+
+Assets\Scripts\Player\PlayerController.cs(79,9): warning CS0618: 'AkSoundEngine' is obsolete: 'AkSoundEngine has been renamed to AkUnitySoundEngine as of Wwise v2024.1.0.'
+
+Assets\Scripts\Managers\EventManager.cs(77,17): warning CS0618: 'AkSoundEngine' is obsolete: 'AkSoundEngine has been renamed to AkUnitySoundEngine as of Wwise v2024.1.0.'
+
+Assets\Scripts\Managers\EventManager.cs(82,17): warning CS0618: 'AkSoundEngine' is obsolete: 'AkSoundEngine has been renamed to AkUnitySoundEngine as of Wwise v2024.1.0.'
+[ 997/1004  0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+[ 998/1004  0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll, with 130 defines and 333 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[ 999/1004  0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll, with 132 defines and 313 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[1000/1004  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[1001/1004  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+[1002/1004  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+[1003/1004  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
+*** Tundra build success (5.28 seconds), 257 items updated, 1004 evaluated
+Assets\Wwise\MonoBehaviour\Runtime\AkAmbient.cs(122,19): warning CS0109: The member 'AkAmbient.OnDisable()' does not hide an accessible member. The new keyword is not required.
+Assets\RoomStateController.cs(15,9): warning CS0618: 'AkSoundEngine' is obsolete: 'AkSoundEngine has been renamed to AkUnitySoundEngine as of Wwise v2024.1.0.'
+Assets\AmbienceController.cs(33,9): warning CS0618: 'AkSoundEngine' is obsolete: 'AkSoundEngine has been renamed to AkUnitySoundEngine as of Wwise v2024.1.0.'
+Assets\Scripts\Map\Triggers\WarpTrigger.cs(23,13): warning CS0618: 'AkSoundEngine' is obsolete: 'AkSoundEngine has been renamed to AkUnitySoundEngine as of Wwise v2024.1.0.'
+Assets\Scripts\Player\PlayerController.cs(79,9): warning CS0618: 'AkSoundEngine' is obsolete: 'AkSoundEngine has been renamed to AkUnitySoundEngine as of Wwise v2024.1.0.'
+Assets\Scripts\Managers\EventManager.cs(77,17): warning CS0618: 'AkSoundEngine' is obsolete: 'AkSoundEngine has been renamed to AkUnitySoundEngine as of Wwise v2024.1.0.'
+Assets\Scripts\Managers\EventManager.cs(82,17): warning CS0618: 'AkSoundEngine' is obsolete: 'AkSoundEngine has been renamed to AkUnitySoundEngine as of Wwise v2024.1.0.'
+AssetDatabase: script compilation time: 7.199229s
+Begin MonoManager ReloadAssembly
+Duplicate assembly 'log4net.dll' with different versions detected, using 'Packages/com.unity.package-validation-suite/Lib/Editor/log4net.dll, AssemblyName=log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a' and ignoring 'Packages/com.unity.collab-proxy/Lib/Editor/log4netPlastic.dll, AssemblyName=log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a'.- Loaded All Assemblies, in  2.497 seconds
+Refreshing native plugins compatible for Editor in 53.95 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 56.57 ms, found 17 plugins.
+Duplicate assembly 'log4net.dll' with different versions detected, using 'Packages/com.unity.package-validation-suite/Lib/Editor/log4net.dll, AssemblyName=log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a' and ignoring 'Packages/com.unity.collab-proxy/Lib/Editor/log4netPlastic.dll, AssemblyName=log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a'.Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.797 seconds
+Domain Reload Profiling: 6275ms
+	BeginReloadAssembly (305ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (124ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (2089ms)
+		LoadAssemblies (1984ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (237ms)
+			TypeCache.Refresh (173ms)
+				TypeCache.ScanAssembly (159ms)
+			BuildScriptInfoCaches (51ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (3798ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (3579ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (166ms)
+			ProcessInitializeOnLoadAttributes (3052ms)
+			ProcessInitializeOnLoadMethodAttributes (321ms)
+			AfterProcessingInitializeOnLoad (23ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Start importing Assets/Scenes/BetterMap.unity using Guid(3b0358d7fd98d654098e2d7f5d9d0be7) (DefaultImporter) -> (artifact id: '3a2ee418a2dbfe286db4342cf69b1a9c') in 0.0214318 seconds
+Start importing Assets/StreamingAssets/Audio/GeneratedSoundBanks/Wwise_IDs.h using Guid(89ce863ec618bc34181a0bb44df0e83c) (DefaultImporter) -> (artifact id: '325b2b2cf6012e3dad8184cfd2deeec1') in 0.0641382 seconds
+Start importing Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset using Guid(f03aedb57068b4e42b16b4fd0054d88c) (NativeFormatImporter) -> (artifact id: '8348ea86d9a6501988c96ce7600e5831') in 0.008808 seconds
+Start importing Assets/Wwise/ScriptableObjects/Event/9EC2A33A-9F7B-4A4D-AD33-9A835C4710C9.asset using Guid(9fdf8110cb6b2e64b9e4ebc3a19e7e51) (NativeFormatImporter) -> (artifact id: 'd54a97b32149e4fed3feeef2b53636d5') in 0.0145262 seconds
+Start importing Assets/Prefab/Events/normal&end/roomInstance.prefab using Guid(50efaa97203990f49a6ad543070e629d) (PrefabImporter) -> (artifact id: 'fcbec4d07e927c19f5b5d161be6bc85f') in 0.102229 seconds
+Start importing Assets/Prefab/Events/SpotLightEvent.prefab using Guid(408e8b193593fa84fa0798dce88524f2) (PrefabImporter) -> (artifact id: '53ff407f8e7970597106b2f25f2c6af4') in 0.0331906 seconds
+Start importing Assets/Prefab/Events/WeirdSpeaker.prefab using Guid(70523456db15a0244b7496eeebd4bcff) (PrefabImporter) -> (artifact id: '6fc313476b19216ee937abf4c65d1b02') in 0.0256591 seconds
+Start importing Assets/Prefab/Events/ScreenHand.prefab using Guid(701be2c9233e7734ab35b2c74d0f5d88) (PrefabImporter) -> (artifact id: '9986442263b606877533d85dbf94d2d9') in 0.0192722 seconds
+Start importing Assets/Prefab/Events/no_vents Variant.prefab using Guid(93238cb4b3ccfe9458a477304b6a0dab) (PrefabImporter) -> (artifact id: 'cf278b848dc5eda1f8a537a23878ec0b') in 0.012515 seconds
+Start importing Assets/Prefab/Events/normal&end/endInstance.prefab using Guid(64c766641e2d023449a496a8c65de3d4) (PrefabImporter) -> (artifact id: '35c8242c15cd2f17c4fc40735f690b9c') in 0.0352974 seconds
+Start importing Assets/Prefab/Events/NPCTextureBroken.prefab using Guid(943c21fc97ffae54981ab8f163ee65ae) (PrefabImporter) -> (artifact id: '3f4cdd1586ca405217f7016d7a69123c') in 0.0342616 seconds
+Start importing Assets/Prefab/Events/ScreenVideo.prefab using Guid(45c3d4d7c72905f4fa13abb28b13a793) (PrefabImporter) -> (artifact id: '63f80e68133d88a4b984796cc8aad697') in 0.0172433 seconds
+Start importing Assets/Prefab/Events/Stoker.prefab using Guid(06ae94fbd200aa84c8a1cc88226540fe) (PrefabImporter) -> (artifact id: 'fd6cd769e5d9b96011fb2b61e7712fe5') in 0.0294728 seconds
+Start importing Assets/Prefab/Events/BloodFootStep.prefab using Guid(263d9c6741afe1842bb8ac4bc94a2cd6) (PrefabImporter) -> (artifact id: '4bac0cb23cd6f94ec7fefe31b32e8f29') in 0.0141139 seconds
+Start importing Assets/Prefab/Events/ChangeAdvertisementPoster.prefab using Guid(a6ae349b17af39b408a8772e26245646) (PrefabImporter) -> (artifact id: 'b9d238a48ee88d5e52b04c67d559a123') in 0.011488 seconds
+Start importing Assets/Prefab/Events/PopCornPeople.prefab using Guid(e64cfa1f093ab8d40a316401db510d12) (PrefabImporter) -> (artifact id: 'f600500716be1a167ccaddc01ed049f3') in 0.0123673 seconds
+Start importing Assets/Prefab/Events/FasterNPCEvent.prefab using Guid(27103d9054ed9714b9558caca4022b15) (PrefabImporter) -> (artifact id: '2b84250d2f24f8ea9bc7767f9c1902ba') in 0.0126143 seconds
+Start importing Assets/Prefab/Events/ChangeEscapePoster.prefab using Guid(a7127767c388bf649b393cad7c7ecfce) (PrefabImporter) -> (artifact id: 'ac92779b06f7e9544ab33cc7cd806836') in 0.0119711 seconds
+Start importing Assets/Prefab/Events/Eyes.prefab using Guid(b8fa740c5706c074499e304533449788) (PrefabImporter) -> (artifact id: 'bbfe0ec524bdaedd6442d3ad4fce994f') in 0.0188596 seconds
+Start importing Assets/Prefab/Events/BlinkLight.prefab using Guid(49e3e41c0a6e6124590dae0ba5ba3cd0) (PrefabImporter) -> (artifact id: '3887aacfd942ee8236cdb80eb1c4fb34') in 0.0131612 seconds
+Start importing Assets/Prefab/Events/DarkComing.prefab using Guid(2a39ba4feff48f246854e6b5e1bf36ca) (PrefabImporter) -> (artifact id: '786d1066ce9befe0322b781fd4c37cc5') in 0.0125724 seconds
+Start importing Assets/Prefab/Events/missingLight Variant.prefab using Guid(2a9f57cc345dc7d47a1fa46f8b2b9590) (PrefabImporter) -> (artifact id: '7f0d71c0761a73be4894f73dcc8e6df6') in 0.0115924 seconds
+Start importing Assets/Prefab/Events/cushionedTower Variant.prefab using Guid(8a1a9f6508845ac45872cc75a4492d1e) (PrefabImporter) -> (artifact id: '5d33f0b65c845ea6f4fcf9f93773238c') in 0.0205751 seconds
+Start importing Assets/Prefab/Events/folded chair.prefab using Guid(9af71ef808399e845b8d657460b8e821) (PrefabImporter) -> (artifact id: '111bfe7d36b31bf4832fcc33b5576d73') in 0.0123873 seconds
+Start importing Assets/Prefab/Events/random cusion.prefab using Guid(db436a31079c1f24daf0ff9c6ba22cba) (PrefabImporter) -> (artifact id: '5cea1d894856b9efe9be6d37ebf34834') in 0.0103997 seconds
+Start importing Assets/Prefab/Events/missing_Speaker Variant.prefab using Guid(4e873aa8d8351a547a997840dac7199b) (PrefabImporter) -> (artifact id: '219821261735a39aade6115a8664e49b') in 0.0118259 seconds
+Start importing Assets/Prefab/Events/Toilet.prefab using Guid(9e5e03c326e9518479f20b99a703b782) (PrefabImporter) -> (artifact id: '2bd102598665b471648582ba30ab916b') in 0.0146311 seconds
+Start importing Assets/Prefab/Events/GhostScreen.prefab using Guid(4fbb2bef691401e43a485f43dd3e6f35) (PrefabImporter) -> (artifact id: '586bff13aafecfb112904a6bd919c4c8') in 0.0143173 seconds
+[C:\build\output\unity\unity\Modules\LocalizationEditor\LocalizationDatabase.cpp:807]Packages/com.unity.timeline/Editor/Localization/ja.po
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+WwiseUnity: Plugins successfully activated for Profile in Editor.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+AkPluginActivator:ActivatePluginsForEditor () (at Assets/Wwise/API/Editor/PluginActivator/Common/AkPluginActivator.cs:274)
+AkPluginActivator:OnPostprocessAllAssets (string[],string[],string[],string[],bool) (at Assets/Wwise/API/Editor/PluginActivator/Common/AkPluginActivator.cs:45)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.AssetPostprocessingInternal:InvokeMethod (System.Reflection.MethodInfo,object[])
+UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)
+
+(Filename: Assets/Wwise/API/Editor/PluginActivator/Common/AkPluginActivator.cs Line: 274)
+
+DisplayProgressbar: Populating Wwise Picker
+Refreshing native plugins compatible for Editor in 51.23 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=0db2c90ab88be9c4786f1d96c7efef4b): Total: 22.658 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=27 (actual=27, local cache=0, cache server=0)
+		Asset DB Process Time: managed=7 ms, native=7675 ms
+		Asset DB Callback time: managed=1320 ms, native=1426 ms
+		Scripting: domain reloads=1, domain reload time=2607 ms, compile time=9515 ms, other=103 ms
+		Project Asset Count: scripts=1574, non-scripts=2723
+		Asset File Changes: new=11571, changed=11571, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokeCustomDependenciesCallbacks: 0.003ms
+	InvokePackagesCallback: 5.374ms
+	ApplyChangesToAssetFolders: 0.925ms
+	Scan: 2431.558ms
+	OnSourceAssetsModified: 63.356ms
+	CategorizeAssetsWithTransientArtifact: 79.663ms
+	ProcessAssetsWithTransientArtifactChanges: 78.403ms
+	CategorizeAssets: 85.856ms
+	ImportOutOfDateAssets: 4753.276ms (-5461.381ms without children)
+		ImportManagerImport: 694.459ms (58.215ms without children)
+			ImportInProcess: 636.014ms
+			UpdateCategorizedAssets: 0.231ms
+		CompileScripts: 9515.411ms
+		ReloadNativeAssets: 0.122ms
+		UnloadImportedAssets: 2.288ms
+		ReloadImportedAssets: 0.004ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 1.610ms
+		InitializingProgressBar: 0.023ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.001ms
+		OnDemandSchedulerStart: 0.739ms
+	PostProcessAllAssets: 2644.004ms
+	Hotreload: 73.754ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.537ms
+	UnloadStreamsBegin: 1.525ms
+	PersistCurrentRevisions: 0.577ms
+	UnloadStreamsEnd: 0.187ms
+	GenerateScriptTypeHashes: 4.142ms
+	Untracked: 12439.114ms
+
+Application.AssetDatabase Initial Refresh End
+Scanning for USB devices : 5.412ms
+Initializing Unity extensions:
+[Licensing::Client] Successfully resolved entitlement details
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Silent Reel
+Unloading 386 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 10560 unused Assets / (75.0 MB). Loaded Objects now: 7882.
+Memory consumption went from 334.6 MB to 259.5 MB.
+Total: 19.048000 ms (FindLiveObjects: 0.573100 ms CreateObjectMapping: 0.557500 ms MarkObjects: 6.029000 ms  DeleteObjects: 11.887300 ms)
+
+WwiseUnity: Running modify setup...
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WwiseSetupWizard:RunModify () (at Assets/Wwise/MonoBehaviour/Editor/WwiseSetupWizard/AkWwiseSetupWizard.cs:42)
+
+(Filename: Assets/Wwise/MonoBehaviour/Editor/WwiseSetupWizard/AkWwiseSetupWizard.cs Line: 42)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (2.7 KB). Loaded Objects now: 7891.
+Memory consumption went from 249.5 MB to 249.5 MB.
+Total: 5.580800 ms (FindLiveObjects: 0.231700 ms CreateObjectMapping: 0.176500 ms MarkObjects: 5.144900 ms  DeleteObjects: 0.026800 ms)
+
+Refreshing native plugins compatible for Editor in 58.60 ms, found 17 plugins.
+Loading style catalogs (8)
+	StyleSheets/Extensions/base/common.uss
+	UIPackageResources/StyleSheets/Default/Variables/Public/common.uss
+	StyleSheets/Northstar/common.uss
+	StyleSheets/Extensions/fonts/inter.uss
+	StyleSheets/Extensions/base/dark.uss
+	UIPackageResources/StyleSheets/Default/Northstar/Palette/dark.uss
+	Packages/com.unity.timeline/Editor/StyleSheets/Extensions/dark.uss
+	Packages/com.unity.timeline/Editor/StyleSheets/Extensions/common.uss
+Refreshing native plugins compatible for Editor in 60.59 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=7467dfe26c9f1594283ac81b96c2eb94): Total: 0.294 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.73 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 55.38 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=cfa6162d6fb086d44b38c4c0cb1ed210): Total: 0.155 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.79 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 53.51 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=76d23b59d87281e4e98d949ffb26845d): Total: 0.147 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.62 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 59.22 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=5b18346cf5f32bf41b74eba257fe5bcc): Total: 0.157 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 60.88 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 56.65 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=67a06402968487d4f8bf47789697750d): Total: 0.161 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 56.79 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.56 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=31831c68324975f4093ce3e1666686e4): Total: 0.153 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 55.97 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 58.61 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=a2f51b40032a8b54f8009bcdcc53fc86): Total: 0.162 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.64 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 52.48 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=aa2f0bde89e43e44685acd110677797e): Total: 0.148 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 53.46 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 53.37 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=2719f9df07b3b3640ad6168334b72d09): Total: 0.146 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.69 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.47 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=7b48d4de06d81eb4fba53badd87a3d55): Total: 0.146 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 50.69 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.94 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=d1490640f78d16e4f81bb6bf985b8f99): Total: 0.144 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.05 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 52.25 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=206ac755e71c3b748bdadc81e3739ff7): Total: 0.146 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 50.76 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 55.09 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=07a640b6e1db8e343bf4ad61d35e77c3): Total: 0.147 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 56.95 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.63 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=d20fcf8be434dac4a91daebbe3f2cda7): Total: 0.151 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.39 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.73 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=620cac788ece40648807ed6fa08eb54a): Total: 0.145 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 53.14 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 56.63 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=c4a1b516ead2e1d4e9f659a02e6aeafb): Total: 0.153 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.24 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 52.45 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=83e37b8dd5c6ab24cbec9d45c00a976d): Total: 0.147 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.25 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.14 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=42be26cd083233a4da5101733a2fa30a): Total: 0.145 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.41 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 49.29 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=170d3cfb25a980a41932059f2baa5fb2): Total: 0.140 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.03 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 55.25 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=b4c216c09060cb344b89e62420b20dc1): Total: 0.148 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 50.66 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 52.85 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=7f44ec4f5839b5a4cb5ae6948ad42afd): Total: 0.145 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.28 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.80 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=de11ff5aa7c49b54ea098163dfa1cb4b): Total: 0.144 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 50.87 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.05 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=22179838be0b499409de09a8c3863a14): Total: 0.142 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.50 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 52.10 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=dde82e48af9f6d24c8cbb9678c8259b5): Total: 0.145 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.39 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.62 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=0db5f74bdec1ac64c84ab34d471e2ff6): Total: 0.144 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.00 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 53.67 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=5123ffb37aeb52f40951533b54e8f5a3): Total: 0.145 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 49.86 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 53.42 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=112568ecee17bb64aaf136d53a365cc8): Total: 0.146 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 56.43 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 56.46 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=2fd52c3a05a58564c84813e0f348ce54): Total: 0.165 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.43 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.12 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=f372c1cefabf01044962790184b8287a): Total: 0.144 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.09 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 52.02 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=abcdde5056f6a2f4c9dfe4ed8a71ef43): Total: 0.147 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 50.31 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.47 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=e3ef3d4e136eb4f4d859850ce36ef6b8): Total: 0.145 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 50.02 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.13 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=a3b75e845e69522418ac376bcc951673): Total: 0.141 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 50.19 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.35 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=bca74b7effd269f41b76bf04726f1701): Total: 0.142 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.10 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.84 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=888a88d7c5246d149a714c46b31fc199): Total: 0.144 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 55.43 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 55.49 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=0f55bed70c0b7e54b93b1fa81b08ab82): Total: 0.154 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 71.13 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 58.89 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=1103447ba8f088f4fa421d65f4931bf0): Total: 0.180 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 60.35 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 59.64 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=8e32d25471e3bab4dba79a805bd349b2): Total: 0.182 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 54.62 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.27 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=59fed4a95112904418a79d3570a3e20e): Total: 0.150 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.81 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.78 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=973194b814bb84d4695fe93ab7f35fd3): Total: 0.145 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 53.88 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.10 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=0a4876f91e3ba48438bf28250d52864d): Total: 0.148 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.17 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.89 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=64f7ad2542e9a274b9c0bd33cf036571): Total: 0.143 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.39 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.18 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=90db268691bd8c5418fbdfa670e19e32): Total: 0.143 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 49.79 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 52.67 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=0ceb6e4d5e1db824689789e519069ce5): Total: 0.152 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 64.30 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 58.06 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=5ca8f3c4014ddb541ad25c4338dd2c63): Total: 0.167 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.28 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 52.36 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=82a6b9e5c1a58d0428773628ac2fb258): Total: 0.144 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.84 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.06 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=39adceff4f3152b48b8f9a49ffb14db2): Total: 0.144 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 49.67 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 52.78 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=3189622de80119b42ae5331d1b4c2aa6): Total: 0.146 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.37 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 52.99 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=186eff7d3e6ed3c42870ff725ce5fdf4): Total: 0.145 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 53.46 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.44 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=26d5ad9be384d8e42a692383cc3efe6f): Total: 0.148 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.38 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 55.09 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=82086999be3a13d4bb5d6dcece53b11b): Total: 0.146 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.12 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.39 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=504f50e2dfaedee48b476b51e8738047): Total: 0.143 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.84 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 52.22 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=ec7ac927c95c9f744a512abd683c9fd8): Total: 0.157 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.02 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 52.65 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=158fcee67df93294a94974cf2bde3147): Total: 0.147 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 50.97 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 52.48 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=eaf47b0bac42e4f488c08d0e422ad6d1): Total: 0.147 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.16 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 55.89 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=8350dbd0ffd3011419a60a88459b73de): Total: 0.151 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 50.43 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.92 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=336b365fbd44c8b4894a444663f7cf56): Total: 0.148 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 50.76 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.49 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=e5717832a7b5dbf4095dc1b66e4b28be): Total: 0.142 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 50.50 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 53.24 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=35a206221717fca45b4b50a3ea09d552): Total: 0.145 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 53.98 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.59 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=91114b4e185f7d4489739d0a063f7a5c): Total: 0.148 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.20 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.95 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=50d7f3e171e26cb4aa0de7081cf890fb): Total: 0.144 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.25 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.95 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=6afa1eb6bc6b74e46a733d9f770a0f42): Total: 0.144 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 50.44 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.95 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=ce1102237d1a9c7478c98df49e4ffe71): Total: 0.143 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 53.24 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.57 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=9d6b4490cd96a934093e92a35dc67c67): Total: 0.144 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.10 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.55 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=fdb9fdf51474e7340bdb49fa6cbaef39): Total: 0.143 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.40 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 52.33 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=97136d37d8bd24f47893fe9869c370c7): Total: 0.153 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.51 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 53.21 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=9115692c3d9167248b667fb120de1a52): Total: 0.154 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.14 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 52.28 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=5b14ebf41cff28848a0e9a871702c943): Total: 0.144 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.87 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 53.37 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=aebf2948eee018542ab5f880b098c32f): Total: 0.146 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 50.68 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.33 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=a3128f97607870243b15437a611b9b7a): Total: 0.143 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.74 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.97 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=f6947c5969553f44381ef23ed083f196): Total: 0.146 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.16 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.38 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=0fbbf53d1fd5bc9459a39e704ee66dd5): Total: 0.144 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.10 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.62 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=289186695c956614ca4759f0f6637a0c): Total: 0.147 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.51 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.97 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=fb404ccfaf7ecac48a85ca16dc4a9644): Total: 0.146 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 50.93 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.04 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=4b6de78293749164886df72e1cc386ae): Total: 0.144 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.01 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 52.21 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=9c5f50319e4420f4ba676e745bb84d88): Total: 0.147 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.64 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 54.43 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=f9c51bb690dd33a41af8513272fbe8ab): Total: 0.148 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 53.79 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.15 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=bc0a09e72c61a5a46a39ce9341aeebf4): Total: 0.149 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.39 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.78 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=8d58839a8797d1244aa83e40b0688ff4): Total: 0.152 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.22 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 52.64 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=41037e700f3976645a1ffb9118fd2a60): Total: 0.154 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 56.00 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 59.79 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=ee11d1382011abf4c83e9c0d85caec03): Total: 0.162 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 55.10 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 53.80 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=ac8d6acdbfc997446aec30691d6d10bd): Total: 0.153 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.70 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 53.49 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=3f46f588f6bf7314393a1b7f87e8d37f): Total: 0.149 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.53 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.39 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=f921d11e5a96edf4d8b064d43f93cc3f): Total: 0.143 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.00 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.76 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=fa947a04ed597c6419f8ac747bd235ac): Total: 0.146 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.24 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 52.65 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=55c0b998e9589ce40a07949d8b41d067): Total: 0.144 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 50.60 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.13 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=0450b1b1347e248458661a96c90df0df): Total: 0.143 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 50.23 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.70 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=6daec31b2f478ef4e850732b1e20c04a): Total: 0.145 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.14 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.53 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=d364a6d41c312e6408ae8d8c6a991574): Total: 0.144 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.03 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.83 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=1253b8e21b4c0f1449d194b6fd846083): Total: 0.144 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.07 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 52.18 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=08a2f99406fb7f34ebcb9bf3b26d3c15): Total: 0.154 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 54.05 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.86 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=5db76605194d7d0469d20de72541c8e3): Total: 0.147 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 50.27 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.77 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=f3f0e7cf921cb8f46bafa8a7c2ac45c1): Total: 0.142 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.13 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 52.21 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=7e97b2d5b0ebf964692226b5a360a0ca): Total: 0.146 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.52 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.10 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=4ebb20632ec67ae4e95dbdc3e2d3f543): Total: 0.142 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.27 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.67 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=9f938c1687ec6f64196af2d1c0fc21a9): Total: 0.145 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 50.44 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.63 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=5726fca846a53b849aa6b4f4605c18d5): Total: 0.143 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 50.87 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 53.89 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=2e712848ba5bf2c40b91afb81ede181b): Total: 0.146 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 55.28 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 52.61 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=bbe9e298290d7a84599d19b3f03cd5b9): Total: 0.152 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 50.93 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.36 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=141d47d4960ffbf49936455706502512): Total: 0.143 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.33 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.58 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=0a8b9d55c24d72e4299c59b12b62286e): Total: 0.144 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 53.74 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 55.61 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=022faa3798bea94458cffc15ed6e2890): Total: 0.153 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.01 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.05 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=522da9ce5c80fc4428d89e17a9988f6d): Total: 0.142 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.28 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.36 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=c2508b998af4ad642b6c4515d14bfb53): Total: 0.145 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.97 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 53.50 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=517ee6f8f9855cb47850ef6d9e6ed50e): Total: 0.152 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 49.90 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 53.07 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=eb18f8417e225564a97ee56b62ae489f): Total: 0.145 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.67 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.45 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=a7f5fc56e8bf5ed4f96d984a241eeee0): Total: 0.146 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.48 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.94 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=72c5fde22a963c54b946cb689356b1ec): Total: 0.142 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.35 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.66 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=b115d5643b99d194184ffa5b377239fc): Total: 0.145 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 54.33 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 52.29 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=e86557cc8a4016d4d9d45f3ed79170fb): Total: 0.146 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.17 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 52.25 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=e47faa237fd888f4086838e5e5a81d7d): Total: 0.147 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 50.71 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.63 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=24ec1b458968a1445a4835dc72a27e3a): Total: 0.146 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.48 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.43 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=85c47dac52b3df9408b317dbef5afff3): Total: 0.142 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 49.77 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.26 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=d503af6588945a148bfc3588aae9db17): Total: 0.142 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 50.75 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 55.40 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=c0bdca69bc48c7f41bc918f54181911e): Total: 0.158 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.91 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.38 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=4f0d649f87bf13346bdcaa71d5494d81): Total: 0.146 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 50.21 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.61 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=0632aa72e5fb7b944aa3b3e5e187488f): Total: 0.143 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 54.23 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 57.22 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=94d104b3fb13dfb4c8b961ce4c01d93f): Total: 0.156 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.33 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 54.28 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=a5b7c3fed186bea4998941c11494c333): Total: 0.150 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 55.12 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 55.48 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=99b0cf4dd3595a747906df6c27b0700e): Total: 0.154 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.00 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.87 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=1cc69733ba7c44545a367864ca36d983): Total: 0.145 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.02 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 49.50 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=b50d126f7422f9f4786e388549352011): Total: 0.141 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 53.57 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 57.72 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=6a0035227ce4a014d9053d04e2e38639): Total: 0.154 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.26 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.81 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=28a9c1ecbc956494f8e90f3743e72de9): Total: 0.147 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.31 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 52.31 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=c0db9bd6cdb98a642b3fe1ca61dd0d29): Total: 0.146 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 70.90 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.99 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=2c2e65db72387fb449ddc1981689a717): Total: 0.165 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.49 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.99 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=3bf8b3a6a18ed4645a75249879f6c55d): Total: 0.147 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 53.19 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.88 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=a30a3f599dabbab42a3a101ef9a5d3e2): Total: 0.146 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.96 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.81 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=f1de81e13c6ce1d43ab6a31f91ee2bf2): Total: 0.147 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.83 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.90 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=54c6ec6711c3f1249a8aafd3dbdecd55): Total: 0.144 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 50.66 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.46 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=0ed8b6ccfd780644390be41417510fa1): Total: 0.146 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.79 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.73 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=afdd28115e20c154999166c9cdb2b5dd): Total: 0.146 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.72 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 52.44 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=5c78a7d20c1a6964ca51b09c43dc6ccc): Total: 0.146 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 49.83 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.24 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=2bb7836d0eea43942bef509721decff9): Total: 0.141 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 50.87 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.55 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=64f5cc6324fec0b449d0c420ac56245f): Total: 0.144 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 50.42 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.92 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=e751af554a79e3446a0ddf6cf67d2051): Total: 0.144 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 50.47 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.98 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=9696d9e818012c245be5e6b35991cdac): Total: 0.146 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 53.41 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.63 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=e5707458201a5844a9f406b92e2db0ed): Total: 0.147 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 50.35 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 52.73 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=2287d1d82ddf2fd43b6133f32a43aba1): Total: 0.146 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 52.30 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 52.19 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=80b2f9db7f0d7694590fb97a0abe8897): Total: 0.146 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 55.09 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 54.97 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=8a233996ceea6744ca2ef990a12da1cf): Total: 0.153 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 50.92 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 50.73 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=a78bf7541c52a5f46b188657bfcf8e48): Total: 0.143 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 55.38 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 64.46 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=50731ffb19fa0ad46a12687a2356ef68): Total: 0.162 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 56.11 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 66.23 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=e548a2cafe4af2d4a9b00084bfba4617): Total: 0.172 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 59.63 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 52.98 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=5dd1ad37c36520b42aa6922fc7543499): Total: 0.166 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 56.87 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 55.05 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=357003cdcf72fdb46b53600af24433e3): Total: 0.156 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 54.99 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 58.42 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=925728b49a02e844bb39d80b95c0b583): Total: 0.160 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 54.16 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 56.43 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=37f7d3ac24cad1f4d91ca18d00be7a30): Total: 0.164 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 49.94 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 51.78 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=c41d5df276eaabc4686d30f30b9c285e): Total: 0.144 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 51.05 ms, found 17 plugins.
+Refreshing native plugins compatible for Editor in 52.71 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=09dc9343eb3b5af4399cf17f8cc49169): Total: 0.146 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=377810f16aaa62347b24f042e40b73b0): Total: 0.001 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+WwiseUnity: Plugins successfully activated for Profile in Editor.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+AkPluginActivator:ActivatePluginsForEditor () (at Assets/Wwise/API/Editor/PluginActivator/Common/AkPluginActivator.cs:274)
+WwiseSetupWizard:ModifySetup () (at Assets/Wwise/MonoBehaviour/Editor/WwiseSetupWizard/AkWwiseSetupWizard.cs:537)
+WwiseSetupWizard:RunModify () (at Assets/Wwise/MonoBehaviour/Editor/WwiseSetupWizard/AkWwiseSetupWizard.cs:46)
+
+(Filename: Assets/Wwise/API/Editor/PluginActivator/Common/AkPluginActivator.cs Line: 274)
+
+Asset Pipeline Refresh (id=3da7869899e9fb043bef989d21a91604): Total: 0.003 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+WwiseUnity: Refreshing asset database.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WwiseSetupWizard:RunModify () (at Assets/Wwise/MonoBehaviour/Editor/WwiseSetupWizard/AkWwiseSetupWizard.cs:48)
+
+(Filename: Assets/Wwise/MonoBehaviour/Editor/WwiseSetupWizard/AkWwiseSetupWizard.cs Line: 48)
+
+Asset Pipeline Refresh (id=a9d6acb9b3a382545954e0606eb785da): Total: 0.003 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+WwiseUnity: End of setup, exiting Unity.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WwiseSetupWizard:RunModify () (at Assets/Wwise/MonoBehaviour/Editor/WwiseSetupWizard/AkWwiseSetupWizard.cs:52)
+
+(Filename: Assets/Wwise/MonoBehaviour/Editor/WwiseSetupWizard/AkWwiseSetupWizard.cs Line: 52)
+
+Batchmode quit successfully invoked - shutting down!
+Start importing ProjectSettings/ProjectSettings.asset using Guid(00000000000000004000000000000000) (LibraryAssetImporter) -> (artifact id: 'a22a1eac47ad83fe5bf0d65e5f2b38df') in 0.0047314 seconds
+Start importing Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset using Guid(f03aedb57068b4e42b16b4fd0054d88c) (NativeFormatImporter) -> (artifact id: '3207c6deb954430476380edb2e791040') in 0.0029606 seconds
+Refreshing native plugins compatible for Editor in 54.95 ms, found 17 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=6b0acf1d90246ae4b91816eaf6edeeb1): Total: 0.118 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+[Physics::Module] Cleanup current backned.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input System polling thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] License Notification channel disconnected successfully.
+[Licensing::IpcConnector] License Client channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+Shut down.
+Cleanup mono
+abort_threads: Failed aborting id: 0000000000006B40, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 0000000000005CF0, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 0000000000006B40, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 0000000000005CF0, mono_thread_manage will ignore it
+
+debugger-agent: Unable to listen on 3732
+Exiting batchmode successfully now!
+Exiting without the bug reporter. Application will terminate with return code 0
